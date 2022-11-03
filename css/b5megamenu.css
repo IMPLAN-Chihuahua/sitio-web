@@ -1,0 +1,7 @@
+/* CSS Document */
+.mega-men{width: 650px; overflow: hidden; padding: 10px;}
+.mega-men a{text-decoration: none; color: rgb(60, 60, 60);}
+.mega-men .sub-men-heading{ color: rgb(120, 120, 120);}
+@media(max-width:500px){
+	.mega-men{width: 300px;}
+}

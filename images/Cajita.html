@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>IMPLAN │ Chihuahua</title>
+  <meta name="author" content="IMPLAN" />
+  <meta name="keywords" content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w" />
+  <script src="https://kit.fontawesome.com/509388ec50.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="img/implan.ico">  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+</head>
+<body>
+  <script>
+    
+   $('.multi-level-dropdown .dropdown-submenu > a').on("click", function(e) {
+  var submenu = $(this);
+  $('.multi-level-dropdown .dropdown-submenu .dropdown-menu').removeClass('show');
+  submenu.next('.dropdown-menu').addClass('show');
+  e.stopPropagation();
+});
+
+$('.multi-level-dropdown .dropdown').on("hidden.bs.dropdown", function() {
+  // hide any open menus when parent closes
+  $('.multi-level-dropdown .dropdown-menu.show').removeClass('show');
+}); 
+  </script>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark pink darken-4">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand text-uppercase" href="#">Navbar</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+    aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+
+      <!-- Features -->
+      <li class="nav-item dropdown mega-dropdown active">
+        <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Features
+          <span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu mega-menu v-2 z-depth-1 pink darken-4 py-5 px-3"
+          aria-labelledby="navbarDropdownMenuLink2">
+          <div class="row">
+            <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-3 sub-menu mb-0">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                    architecto
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Technology -->
+      <li class="nav-item dropdown mega-dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Technology</a>
+        <div class="dropdown-menu mega-menu v-2 z-depth-1 pink darken-4 py-5 px-3"
+          aria-labelledby="navbarDropdownMenuLink3">
+          <div class="row">
+            <div class="col-md-12 col-xl-4 sub-menu mb-xl-0 mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+              <!--Featured image-->
+              <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/8-col/img%20(37).jpg"
+                  class="img-fluid" alt="First sample image">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+              <p class="font-small text-uppercase white-text">
+                <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                  class="far fa-comments px-1" aria-hidden="true"></i> 20
+              </p>
+            </div>
+            <div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Quis nostrud exercitation
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Duis aute irure dolor in
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Laboris nisi ut aliquip ex ea commodo consequat
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Reprehenderit in voluptate
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu fugiat nulla pariatur
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-4 sub-menu mb-0">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Excepteur sint occaecat
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Sunt in culpa qui officia
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Sed ut perspiciatis unde omnis iste natus error
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Mollit anim id est laborum
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Accusantium doloremque laudantium
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Lifestyle -->
+      <li class="nav-item dropdown mega-dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownMenuLink4" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Lifestyle</a>
+        <div class="dropdown-menu mega-menu v-2 z-depth-1 pink darken-4 py-5 px-3"
+          aria-labelledby="navbarDropdownMenuLink4">
+          <div class="row">
+            <div class="col-md-6 col-xl-3 sub-menu mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Featured</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Lorem ipsum dolor sit amet
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Consectetur adipiscing elit
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Sed do eiusmod tempor incididunt
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Ut labore et dolore magna
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Ut enim ad minim veniam
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-3 sub-menu mb-4 mb-xl-0">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Related</h6>
+              <!--Featured image-->
+              <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg"
+                  class="img-fluid" alt="First sample image">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+              <p class="font-small text-uppercase white-text">
+                <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                  class="far fa-comments px-1" aria-hidden="true"></i> 20
+              </p>
+            </div>
+            <div class="col-md-6 col-xl-3 sub-menu mb-md-0 mb-xl-0 mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Design</h6>
+              <!--Featured image-->
+              <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg"
+                  class="img-fluid" alt="First sample image">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <a class="news-title font-weight-bold pl-0" href="#!">Ut labore et dolore magna</a>
+              <p class="font-small text-uppercase white-text">
+                <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 16, 2017 / <i
+                  class="far fa-comments px-1" aria-hidden="true"></i> 25
+              </p>
+            </div>
+            <div class="col-md-6 col-xl-3 sub-menu mb-0">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Programming</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Totam rem aperiam eaque
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Beatae vitae dicta sun
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Quae ab illo inventore veritatis et quasi
+                    architecto
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Nemo enim ipsam voluptatem
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Neque porro quisquam est
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Multi-level dropdown -->
+      <li class="nav-item dropdown multi-level-dropdown">
+        <a href="#" id="menu" data-toggle="dropdown"
+          class="nav-link dropdown-toggle text-uppercase">Multi-level</a>
+        <ul class="dropdown-menu mt-2 rounded-0 pink darken-4 border-0 z-depth-1">
+          <li class="dropdown-item dropdown-submenu p-0">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Click Me! </a>
+            <ul class="dropdown-menu ml-2 rounded-0 pink darken-4 border-0 z-depth-1">
+              <li class="dropdown-item p-0">
+                <a href="#" class="text-white w-100">Hey</a>
+              </li>
+              <li class="dropdown-item p-0">
+                <a href="#" class="text-white w-100">Hi</a>
+              </li>
+              <li class="dropdown-item p-0">
+                <a href="#" class="text-white w-100">Hello</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown-item dropdown-submenu p-0">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-white w-100">Click Me Too! </a>
+            <ul class="dropdown-menu mr-2 rounded-0 pink darken-4 border-0 z-depth-1 r-100 l-auto">
+              <li class="dropdown-item p-0">
+                <a href="#" class="text-white w-100">How</a>
+              </li>
+              <li class="dropdown-item p-0">
+                <a href="#" class="text-white w-100">are</a>
+              </li>
+              <li class="dropdown-item p-0">
+                <a href="#" class="text-white w-100">you?</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <!-- Search form -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!-- Navbar -->
+<!--inicia página -->
+<div class="container">
+  <div class="row">
+    <div class="col pt-3">
+       <h1 class="w3-left-align" style="font-family: 'Cabin Sketch', cursive;">¿Qué es Cajita Ordenada?</h1>
+        <p style="text-align:justify;">Conscientes de la importancia de atender la formación de los niños en el tema de ciudad, se diseñó el programa de participación infantil Cajita Ordenada, abriendo un canal de comunicación directa con ellos.</p>
+        <p>Comenzó en el Ciclo escolar 2015-2016 y  hasta el momento hemos visitado a 3,981  niños de 31 diferentes escuelas de la ciudad de Chihuahua,  desde entonces hasta el día de hoy.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      &nbsp;
+    </div>
+    <div class="col-sm-4 embed-responsive embed-responsive-21by9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-Rkq4NLZGD8?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="col-sm-4">
+      &nbsp;
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-sm-9">
+            <h1 class="w3-left-align" style="font-family: 'Cabin Sketch', cursive;">Objetivo Principal</h1>
+            <p style="text-align:justify;">Promover una Pedagogía Urbana y una Participación Ciudadana infantil.</p>
+            <h1 class="w3-left-align" style="font-family: 'Cabin Sketch', cursive;">Objetivos secundarios</h1>
+
+            <p style="text-align:justify;">Generar en los niños de manera sencilla, el conocimiento básico sobre el complejo sistema que es una ciudad. Lograr la comprensión de que existe un entorno físico creado por el hombre y la existencia de un entorno social que lo moldea, así como un entorno natural en el que se desarrolla.</p>
+            <p style="text-align:justify;">Promover la reflexión sobre los elementos urbanos para lograr una experiencia física diferente dentro de su ciudad.</p>
+            <p style="text-align:justify;">Enseñarles que existen problemas en la ciudad que son atendidos por especialistas en muchas disciplinas. 
+</p>
+            <p style="text-align:justify;">Acercarles el mensaje en el sentido de que concebimos a la niñez como posibilidad y realidad de cambio y que no es necesario esperar «a que sean grandes»  para que puedan participar.</p>        
+    </div>
+    <div class="col-sm-3 center">
+        <img src="img/Niños.png" alt="cajita" class="img-fluid">        
+    </div>
+  </div>
+  <h1 style="font-family: 'Cabin Sketch', cursive;">Sustento Legal</h1>
+ 
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/ONU.jpg" alt="Niña Recicla" style="width:250px;  height: 280px; padding: 10px 0px 0px 0px;" class="img-fluid"> 
+      <img src="img/Ciudad.jpg" alt="Niña Recicla" style="width:250px;  height: 280px; padding: 10px 0px 0px 0px;" class="img-fluid">
+      <p class="text-center"><b>Asociación Internacional de </b></p>
+      <p class="text-center"><b>Ciudades Educadoras</b></p>           
+    </div>
+    <div class="col-sm-9 pt-3">
+          <p><b>LA LEY GENERAL DE DERECHOS DE LAS NIÑAS, NIÑOS Y ADOLESCENTES</b></p>
+           <p style="text-align:justify;">ARTÍCULO 2.- Para garantizar la protección de los derechos de niñas, niños y adolescentes, las autoridades realizarán acciones y tomarán medidasde conformidad con los principios establecidos en la presente Ley. Para tal efecto, deberán:</p>
+           <ul>
+             <li>Garantizar un enfoque integral, transversal y con perspectiva de derechos humanos del diseño y la instrumentación de políticas y programas de gobierno.</li>           
+             <li>Promover la participación, tomar en cuenta la opinión y considerar los aspectos culturales, éticos, afectuosos, educativos y de salud de niñas, niños y adolescentes, en todos aquellos asuntos de su incumbencia, de acuerdo a su edad, desarrollo intelectual, cognoscitivo y de madurez</li>
+           </ul>
+           <p style="text-align:justify;">REGLAMENTO DEL INSTITUTO MUNICIPAL DE PLANEACIÓN URBANA</p>
+           <p style="text-align:justify;">OBJETIVO ESPECIFICO</p>
+           <p style="text-align:justify;">ART. 7- Fomentar una conciencia colectiva de desarrollo municipal.</p>
+           <p style="text-align:justify;">ATRIBUCIONES DEL EQUIPO TÉCNICO</p>
+           <p style="text-align:justify;">ART. 8</p>
+           <p style="text-align:justify;"><b>VI)</b> Difundir la información que considere necesaria para el cumplimiento de sus fines, por cualquiera de los medios que el propio instituto determine.</p>
+           <p style="text-align:justify;"><b>IX)</b> Proponer planes y programas para preservar y restaurar el equilibrio 
+                ecológico dentro del municipio de Chihuahua.</p>      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+        <h1 style="font-family: 'Cabin Sketch', cursive;">Proyectos similares</h1>
+         <p><b>Colectivo Arkitente.</b> España</p>
+         <p>El Proyecto de Participación infantil para Co-diseñar con los niños la plaza Mateo Hernández de Portugalete, España.</p>
+         <p>Nace de una idea del Área de Participación Ciudadana e Innovación Social.</p>
+         <p><b>Colectivo Judgend Architektur Stadts, (JAS).</b> Alemania</p>
+         <p>“La ciudad  de  hoy  es  producto  de  nuestros  padres  y  abuelos,  la  ciudad  de  mañana,   será producto de nosotros y de los niños. Es por eso que el trabajo debe ir enfocado a eso.”</p>      
+    </div>
+    <div class="col-md-3">
+        <img src="img/espana.jpg" alt="Niña Recicla" style="width:80%;  height: 220px; padding: 50px 0px 0px 0px;" class="img-fluid">
+        <img src="img/niños_alemania.jpg" alt="Niña Recicla" style="width:80%;  height: 200px; padding: 50px 0px 0px 0px;" class="img-fluid">      
+    </div>
+  </div>
+   <h1 style="font-family: 'Cabin Sketch', cursive;">Otros proyectos con participación infantil</h1>
+  <div class="row mt-3">
+    <div class="col-sm-3">
+      <img src="img/paraguay.jpg" alt="Niña Recicla" style="width:80%;  height: 200px;" class="img-fluid">      
+    </div>
+    <div class="col-sm-9 pt-3">
+      <br>
+      <p>“Cuando niños, niñas y adolescentes empiezan a cuestionarse prácticas e ideas que manejamos las personas adultas acerca de cómo funciona el mundo, de qué es lo mejor para todas y todos y de cuáles son los modos de vivir mejor. Este cuestionamiento puede constituirse en un puntapié del cambio.“ </p>
+       <p class="text-right"><b>UNICEF. Global infancia Paraguay</b></p>      
+    </div>
+  </div> 
+  <h1 class="text-center" style="font-family: 'Cabin Sketch', cursive;">Estrategia</h1> 
+  <p>El equipo del IMPLAN visita a los niños en sus salones de clase, llevándoles el mensaje adaptado según su edad a todos los grados desde 1° hasta 6°. Los materiales presentados son:</p>
+       <ul>
+         <li>Video animado introductorio (presentación)</li>
+         <li>Plática ecológica interactiva</li>
+         <li>Maqueta gigante (lona con traza urbana impresa y 33 elementos urbanos manipulables)</li>
+         <li>Video musical con tema ecológico de las 3R’s (cierre)</li>
+       </ul>
+       <h5>Temas abordados:</h5>
+       <ul>
+          <li>El niño y la ciudad:
+              <ul>
+                <li>Equipamiento Urbano</li>
+                <li>Movilidad</li>
+              </ul>
+
+          </li>
+          <li>El niño y su barrio:
+            <ul>
+              <li>Espacio Público</li>
+              <li>Equipamientos de proximidad</li>
+              <li>Comercio, abasto y servicios</li>
+            </ul>
+          </li>
+          <li>El niño y su comunidad
+            <ul>
+              <li>Salud pública</li>
+              <li>Derecho a la participación</li>
+              <li>Identidad y patrimonio</li>
+            </ul>
+          </li> 
+          <li>El niño y su medio ambiente
+            <ul>
+              <li>Manejo de residuos</li>
+              <li>Aplicación de las 3R´s</li>
+            </ul>
+          </li>
+          <li>Otros temas:
+            <ul>
+              <li>¿Que hace el IMPLAN?</li>
+              <li>Concepto Planeación Urbana</li>
+              <li>Escalas y Jerarquías</li>
+              <li>Valores como: Orden, responsabilidad</li>
+              <li>Participación ciudadana infantil</li>
+              <li>Las 3R´s (Reducir, Reutilizar,  Reciclar)</li>
+              <li>Ecología como práctica positiva</li>
+              <li>Entorno e identidad</li>
+              <li>Elementos actuales en mi ciudad</li>
+              <li>Igualdad de género</li>
+            </ul>
+          </li>
+       </ul>
+
+  </div>
+<!--  <div class="jumbotron mb-0">
+      <div class="container">
+        <p class="text-center">Si estás interesado en que visitemos tu escuela, comunícate con nosotros, oficina de Extensión y Difusión teléfono (614) 200 48 00, extensión 5719</p>
+      </div>
+  </div> --> 
+<!--foot -->
+<blockquote class="blockquote mb-0" style="background-color:rgb(251, 174, 65);">
+    <div class="row">
+      <div class="col-sm-3 pt-3 pt-5">
+        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
+      </div>
+      <div class="col-sm-3 pt-3 pt-5">
+        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
+        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
+        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
+      </div>
+      <div class="col-sm-3 pt-5">
+        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
+        <p class="text-center">
+          <a href="https://facebook.com/implanchihuahua" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
+          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>         
+          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
+          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
+        </p>
+      </div>
+      <div class="col-sm-3 pt-5">
+        <img src="img/premioOX.png" alt="premioOX">
+        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
+      </div>        
+    </div>
+      <div class="clearfix bg-secondary p-2">
+        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
+        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
+      </div>
+</blockquote>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80309318-1');
+</script>
+<!-- fin -->
+  </body>
+</html> 

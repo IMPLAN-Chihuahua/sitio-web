@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>IMPLAN │ Chihuahua</title>
+  <meta name="author" content="IMPLAN" />
+  <meta name="keywords" content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w" />
+  <script src="https://kit.fontawesome.com/509388ec50.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="img/implan.ico">  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/estilo.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+              <img src="img/xvaniversario.png" class="float-left" alt="IMPLAN Chihuahua"> 
+          </div>
+          <div class="col-sm-4 text-right">
+              <script>
+                  (function() {
+                    var cx = '014259653855378612527:660y0yq3cyu';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+                <gcse:search></gcse:search>
+          </div>
+          <div class="col-sm-2 text-right">
+              <a href="https://facebook.com/implanchihuahua" target="_blank"><span style="font-size: 32px; color: rgb(251, 174, 65);"><i class="fab fa-facebook-square"></i></span></a>
+              <a href="https://twitter.com/IMPLANChih?s=08" target="_blank"><span style="font-size: 32px; color: rgb(251, 174, 65);"><i class="fab fa-twitter"></i></span></a>         
+              <a href="https://www.instagram.com/implanchihuahua/" target="_blank"><span style="font-size: 32px; color: rgb(251, 174, 65);"><i class="fab fa-instagram"></i></span></a>
+              <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" target="_blank"><span style="font-size: 32px; color: rgb(251, 174, 65);"><i class="fab fa-youtube"></i></span></a>   
+          </div>        
+        </div>
+      </div>
+   <div class="sticky-top navbar navbar-dark bg-secondary navbar-static-top navbar-expand-md">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</button>
+                <a class="navbar-brand" href="https://implanchihuahua.gob.mx">
+                <img src="img/IMPLAN_2017_LOGO_HR.png" height="28" alt="IMPLAN Chihuahua">
+                </a>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">NOSOTROS</a>
+                <ul class="dropdown-menu megamenu">
+                  <div class="row">
+                   <li class="col-md-3 dropdown-item">
+                    <ul>
+                        <li><a href="/Mision.html" target="_self">MISIÓN/VISIÓN</a>
+                        </li>                    
+                        <li class="divider"></li>
+                    </ul>
+                    </li>
+                    <li class="col-md-3 dropdown-item">
+                      <ul>
+                          <li><a href="/Consejo.html" target="_self">CONSEJO</a>
+                          </li>                     
+                          <li class="divider"></li>
+                      </ul>
+                      </li>
+                      <li class="col-md-3 dropdown-item">
+                          <ul>
+                              <li><a href="/EquipoTecnico.html" target="_self">EQUIPO TÉCNICO</a>
+                              </li>
+                              <li class="divider"></li>
+                          </ul>
+                      </li>                     
+                  </div>
+                </ul>
+              </li>  
+                <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">CHIHUAHUA</a>
+                  <ul class="dropdown-menu megamenu">
+                      <div class="row">
+                      <li class="col-md-3 dropdown-item">
+                          <ul>
+                              <li class="dropdown-header">ÁMBITO</li>
+                              <li><a href="/Entorno.html#AmbitoRegional" target="_self">REGIONAL</a>
+                              </li>
+                              <li class="disabled"><a href="/Entorno.html#AmbitoMunicipal" target="_self">MUNICIPAL</a>
+                              </li>
+                              <li class="divider"></li>
+                          </ul>
+                      </li>
+                      <li class="col-md-3 dropdown-item">
+                          <ul>
+                              <li class="dropdown-header">ENTORNO</li>
+                              <li><a href="/Entorno.html#AmbitoEconomico" target="_self">ECONÓMICO</a>
+                              </li>
+                              <li><a href="/Entorno.html#AmbitoUrbano" target="_self">URBANO</a>
+                              </li>
+                              <li class="divider"></li>
+                        </ul>
+                    </li>
+                    </div>
+                  </ul>
+                </li>                  
+                <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">PROYECTOS</a>
+                      <ul class="dropdown-menu megamenu">
+                          <div class="row">
+                          <li class="col-md-3 dropdown-item">
+                              <ul>
+                                  <li class="dropdown-header">SOCIALES</li>
+                                  <li><a href="/Cajita.html">CAJITA</a>
+                                  </li>
+                                  <li class="disabled"><a href="/ForoFCCUU.html">FORO FCCUU</a>
+                                  </li>
+                                  <li><a href="/ForoCiudades.html">FORO 1.2019</a>
+                                  </li>
+                                  <li class="divider"></li>
+                              </ul>
+                          </li>
+                          <li class="col-md-3 dropdown-item">
+                        <ul>
+                            <li class="dropdown-header">URBANOS</li>
+                            <li><a href="/Proyecto1.html" target="_self">PLAZA DE ARMAS</a>
+                            </li>
+                            <li><a href="/Proyecto3.html" target="_self">PEATONALIZACIÓN CALLE MORELOS</a>
+                            </li>
+                            <li><a href="/Proyecto2.html" target="_self">AV. VENUSTIANO CARRANZA</a>
+                            </li>
+                            <li><a href="/Proyecto4.html" target="_self">PARQUE LERDO</a>
+                            </li>
+                            <li><a href="/Proyecto5.html" target="_self">CORREDOR ESCULTÓRICO</a>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-3 dropdown-item">
+                        <ul>
+                            <li class="dropdown-header">URBANOS</li>
+                            <li><a href="/Proyecto7.html" target="_self">PARQUE EL REJÓN</a>
+                            </li>
+                            <li><a href="/Proyecto8.html" target="_self">EDIFICIO DEL REAL</a>                              
+                            </li>
+                            <li><a href="/Proyecto9.html" target="_self">CENTRO HISTÓRICO</a>
+                            </li>
+                            <li><a href="/Proyecto10.html" target="_self">QUINTA TOUCHE</a>
+                            </li>
+                            <li><a href="/Proyecto11.html" target="_self">PARQUE EL ENCINO</a>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>                    
+                    <li class="col-md-3 dropdown-item">
+                        <ul>
+                            <li class="dropdown-header">CENTRO DE ESTUDIOS</li>
+                            <li><a href="/EstudioCE1.html">GUÍA METODOLÓGICA</a>
+                            </li>
+                            <li><a href="/EstudioCE2.html">INDICADORES</a>
+                            </li>
+                            <li><a href="/EstudioCE3.html" target="_self">MODELOS DE DENSIFICACIÓN</a>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
+                    </div>
+                    </ul>
+                </li>
+                <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">PDU2040</a>
+              <ul class="dropdown-menu megamenu">
+                  <div class="row">
+                  <li class="col-md-3 dropdown-item">
+                      <ul>
+                          <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
+                          <li><a href="/PDU2040.html#Poblacion" target="_self">POBLACIÓN</a>
+                          </li>
+                          <li class="disabled"><a href="/PDU2040.html#Soporte" target="_self">ECONOMÍA</a>
+                          </li>
+                      
+                          <li class="divider"></li>
+                      </ul>
+                  </li>
+              <li class="col-md-3 dropdown-item">
+                <ul>
+                    <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
+                    <li><a href="/PDU2040.html#Marco" target="_self">MARCO</a>
+                    </li>
+                    <li><a href="/PDU2040.html#Equipamiento" target="_self">EQUIPAMIENTO</a>
+                    </li>                        
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="col-md-3 dropdown-item">
+                <ul>
+                    <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
+                    <li><a href="/PDU2040.html#Movilidad" target="_self">MOVILIDAD</a>
+                    </li>
+                    <li><a href="/PDU2040.html#Infraestructura" target="_self">INFRAESTRUCTURA</a>
+                    </li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="col-md-3 dropdown-item">
+                <ul>
+                    <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
+                    <li><a href="/PDU2040.html#Medio" target="_self">AMBIENTE</a>
+                    </li>
+                    <li><a href="/PDU2040.html#Medio" target="_self">ARCHIVOS DESCARGABLES PDU 2040
+                    </a>
+                    </li>
+                    <li class="divider"></li>
+                </ul>
+            </li>                        
+            </div>
+            </ul>
+                </li>   
+                <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">DATOS ABIERTOS</a>
+                  <ul class="dropdown-menu megamenu">
+                    <div class="row">
+                     <li class="col-md-3 dropdown-item">
+                      <ul>
+                          <li><a href="/PDU2040.html#Poblacion" target="_self">BUSCAR</a>
+                          </li>                    
+                          <li class="divider"></li>
+                      </ul>
+                      </li>
+                      <li class="col-md-3 dropdown-item">
+                        <ul>
+                            <li><a href="/PDU2040.html#Marco" target="_self">ESTUDIOS Y PROYECTOS</a>
+                            </li>                     
+                            <li class="divider"></li>
+                        </ul>
+                        </li>
+                        <li class="col-md-3 dropdown-item">
+                            <ul>
+                                <li><a href="/PDU2040.html#Movilidad" target="_self">CARTOGRAFÍA</a>
+                                </li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>                     
+                    </div>
+                  </ul>
+                </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="/Licitaciones.html" target="_self">LICITACIONES</a>
+            </li>  
+            <li class="nav-item bg-info">
+              <a class="nav-link" href="http://ovie.mpiochih.gob.mx" target="_blank">OVIE</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="/Directorio.html" target="_self">DIRECTORIO</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Transparencia.html" target="_self">TRANSPARENCIA</a>
+              </li>                                           
+            </ul>
+        </div>
+</div>
+<!--inicia página -->
+<div class="container">
+        <h1 class="text-warning text-center display-4 pt-3 d-none d-lg-block" style="font-family: 'Roboto', sans-serif;">FORO DE CIUDADES 1.2019 ¿Qué ciudad merecemos?</h1>
+        <h4 class="text-warning text-center pt-3 d-lg-none" style="font-family: 'Roboto', sans-serif;">FORO DE CIUDADES 1.2019 ¿Qué ciudad merecemos?</h4>
+
+ <div class="row pt-3">
+    <div class="col-sm-6">
+        <p>En la actualidad los tratados internacionales en cualquier materia conciben la participación social como un legítimo derecho de los ciudadanos, para que la participación social se facilite se requieren de mecanismos democráticos que propicien las condiciones para que la sociedad organizada haga llegar su voz y propuestas a todos los niveles de gobierno. </p>
+        <p>2019 es el año de la modificación del Plan de Desarrollo Urbano de la Ciudad de Chihuahua, el cual da al gobierno la oportunidad de establecer las bases para la transformación del proceso de planeación de la ciudad y este a su vez contribuye a la planeación territorial del país. </p>       
+    </div>
+    <div class="col-sm-6">
+        <img src="https://implanchihuahua.gob.mx/img/poster_2019.jpg" width="400" height="200" class="img-thumbnail img-fluid" alt="FCCUU Agenda">
+    </div>
+  </div>
+  <div class="row pt-5">
+     <div class="col-sm-6">
+        <img src="https://implanchihuahua.gob.mx/img/programa_2019.jpg" class="img-thumbnail img-fluid" alt="FCCUU Agenda">
+    </div>
+    <div class="col-sm-6">
+       <p>La elaboración del Plan de Desarrollo Urbano de la Ciudad de Chihuahua contiene en su proceso una importante participación social y ciudadana, ya que este instrumento es clave en el desarrollo integral, la reducción de la desigualdad y el fortalecimiento de la cohesión social. </p>
+       <p>El objeto del proyecto es la realización de un evento público que sirva como punto de encuentro de los actores sociales, educativos, económicos y gobierno en el tema transversal de hacer ciudad en conjunto y afrontar de manera consensuada los retos que hoy nos pone la ciudad.</p>
+       <p>Acciones:</p>
+       <ul>
+         <li>Foro de Ciudades es un evento responsable con el medio ambiente por lo que para su realización la convocatoria fue digital a través de correos electrónicos, junto con una estrategia de publicidad en redes sociales, radio y tv; el registro del evento se llevo a cabo a través de una aplicación móvil.</li>
+         <li>Se creo una agenda basada en ejemplos de ciudades mexicanas que recientemente han atravesado el proceso de actualización y/o creación de algún instrumento de planeación, coordinando el trabajo con la Asociación Mexicana de Institutos Municipales (AMIMP).</li>
+       </ul>
+    </div>
+  </div>
+  <h4 class="pt-3 text-center font-weight-bold d-none d-lg-block" style="font-family: 'Roboto', sans-serif;">Estas pequeñas acciones colocan al Foro de Ciudades en un evento sostenible en el tiempo y el medio ambiente, predicando con el ejemplo la responsabilidad social de cuidar nuestro medio ambiente.</h4>
+  <p class="pt-3 text-center font-weight-bold d-lg-none" style="font-family: 'Roboto', sans-serif;">Estas pequeñas acciones colocan al Foro de Ciudades en un evento sostenible en el tiempo y el medio ambiente, predicando con el ejemplo la responsabilidad social de cuidar nuestro medio ambiente.</p>
+  <h3 class="pt-3 text-center text-warning display-4 d-none d-lg-block" style="font-family: 'Roboto', sans-serif;">FORO DE CIUDADES 1.2019 ¿Qué ciudad merecemos?</h3>
+  <h4 class="pt-3 text-center text-warning d-lg-none" style="font-family: 'Roboto', sans-serif;">FORO DE CIUDADES 1.2019 ¿Qué ciudad merecemos?</h4>
+
+  <div class="row">
+    <div class="col-sm-12">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/h79Bg_8VWzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-sm-12">
+            <h1 class="w3-left-align pt-3 text-warning d-lg-block d-none" style="font-family: 'Roboto', sans-serif;">Conferencias</h1>
+            <h4 class="w3-left-align pt-3 text-warning d-lg-none" style="font-family: 'Roboto', sans-serif;">Conferencias</h4>
+            <ul> 
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/FCCUU/01_19_SEDATU.pptx" class="transx" target="_blank">“La participación ciudadana en los instrumentos de planeación urbana: una contribución desde la SEDATU” por <b>DR. Armando Rosales García</b> – Subsecretaria de Desarrollo Urbano y Vivienda de la SEDATU.</a></li>
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/FCCUU/02_19_ AMIMP.pptx" class="transx" target="_blank">“¿Qué es la Asociación Mexicana de Institutos Municipales de Planeación?” por <b>Mtro. Jaime Gallo Camacho </b> – Presidente de la   Asociación Mexicana de Institutos Municipales de Planeación (AMIMP).</a></li>
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/FCCUU/03_19_IMPLANQUERETARO.pdf" class="transx" target="_blank">“Guiar la visión de ciudad en Querétaro: Q500 y Plan 2050” por <b>Arq. Gustavo Botello Montes </b> - Director del IMPLAN de Querétaro.</a></li>
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/FCCUU/01_19_SEDATU.pptx" class="transx" target="_blank">"Retos de la Planeación Urbana en Morelia” por <b>Mtro. Cesar Flores García</b> – Director del IMPLAN Morelia.</a></li>
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/FCCUU/05 _19_WRI.pptx" class="transx" target="_blank">“Hacia una Chihuahua más humana, cercana y responsable” por <b>Jorge Macías Mora </b> – Director de Desarrollo Urbano y Accesibilidad de World Resources Institute.</a></li>           
+            </ul>
+    </div>
+ 
+  </div>
+</div>
+<!-- 
+<div class="container">
+            <div class="row mt-3 mb-2">
+              <div class="col-sm-12">
+                    <div id="foto2" class="carousel slide" data-ride="carousel">
+                      <ul class="carousel-indicators">
+                        <li data-target="#foto2" data-slide-to="0" class="active"></li>
+                        <li data-target="#foto2" data-slide-to="1"></li>
+                        <li data-target="#foto2" data-slide-to="2"></li>
+                        <li data-target="#foto2" data-slide-to="3"></li>
+                        <li data-target="#foto2" data-slide-to="4"></li>
+                        <li data-target="#foto2" data-slide-to="5"></li>  
+                        <li data-target="#foto2" data-slide-to="6"></li>
+                        <li data-target="#foto2" data-slide-to="7"></li>  
+                        <li data-target="#foto2" data-slide-to="8"></li>
+                        <li data-target="#foto2" data-slide-to="9"></li>
+                        <li data-target="#foto2" data-slide-to="10"></li>
+                        <li data-target="#foto2" data-slide-to="11"></li>
+                        <li data-target="#foto2" data-slide-to="12"></li>  
+                        <li data-target="#foto2" data-slide-to="13"></li>
+                        <li data-target="#foto2" data-slide-to="14"></li> 
+                        <li data-target="#foto2" data-slide-to="15"></li>
+                        <li data-target="#foto2" data-slide-to="16"></li>
+                        <li data-target="#foto2" data-slide-to="17"></li>  
+                        <li data-target="#foto2" data-slide-to="18"></li>
+                        <li data-target="#foto2" data-slide-to="19"></li> 
+                        <li data-target="#foto2" data-slide-to="20"></li>
+                        <li data-target="#foto2" data-slide-to="21"></li>
+                        <li data-target="#foto2" data-slide-to="22"></li>  
+                        <li data-target="#foto2" data-slide-to="23"></li>
+                        <li data-target="#foto2" data-slide-to="24"></li> 
+                        <li data-target="#foto2" data-slide-to="25"></li>
+                        <li data-target="#foto2" data-slide-to="26"></li>
+                        <li data-target="#foto2" data-slide-to="27"></li>  
+                        <li data-target="#foto2" data-slide-to="28"></li>
+                        <li data-target="#foto2" data-slide-to="29"></li>  
+                        <li data-target="#foto2" data-slide-to="30"></li>
+                        <li data-target="#foto2" data-slide-to="31"></li>
+                        <li data-target="#foto2" data-slide-to="32"></li>  
+                        <li data-target="#foto2" data-slide-to="33"></li>
+                        <li data-target="#foto2" data-slide-to="34"></li>  
+                        <li data-target="#foto2" data-slide-to="35"></li>
+                        <li data-target="#foto2" data-slide-to="36"></li>
+                        <li data-target="#foto2" data-slide-to="37"></li>  
+                        <li data-target="#foto2" data-slide-to="38"></li>
+                        <li data-target="#foto2" data-slide-to="39"></li>  
+                        <li data-target="#foto2" data-slide-to="40"></li>
+                        <li data-target="#foto2" data-slide-to="41"></li>
+                        <li data-target="#foto2" data-slide-to="42"></li>  
+                        <li data-target="#foto2" data-slide-to="43"></li>
+                        <li data-target="#foto2" data-slide-to="44"></li>                                                                            
+                      </ul>
+                      <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="img/FCCUU/62.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/61.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="img/FCCUU/53.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>                      
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/44.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/35.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/20.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/17.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/28.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/22.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="img/FCCUU/63.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>                      
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/14.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/11.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/16.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/27.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/38.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/42.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="img/FCCUU/45.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>                      
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/24.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/60.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/46.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/41.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/48.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/49.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="img/FCCUU/23.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>                      
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/39.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/26.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/56.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/37.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/25.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/52.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="img/FCCUU/15.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>                      
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/30.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/50.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/6.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/7.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/18.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/40.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                       <div class="carousel-item">
+                           <img src="img/FCCUU/33.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>                      
+                      <div class="carousel-item">
+                          <img src="img/FCCUU/54.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/65.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/36.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/12.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/58.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/66.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                        <div class="carousel-item">
+                          <img src="img/FCCUU/5.jpg" class="FCCUU" alt="IMPLAN" width="304" height="236">
+                       </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#foto2" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#foto2" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>                
+              </div>
+            </div>
+</div>
+-->
+<!--  <div class="jumbotron mb-0">
+      <div class="container">
+        <p class="text-center">Si estás interesado en que visitemos tu escuela, comunícate con nosotros, oficina de Extensión y Difusión teléfono (614) 200 48 00, extensión 5719</p>
+      </div>
+  </div> --> 
+<!--foot -->
+<blockquote class="blockquote mb-0" style="background-color:rgb(251, 174, 65);">
+    <div class="row">
+      <div class="col-sm-3 pt-3 pt-5">
+        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
+      </div>
+      <div class="col-sm-3 pt-3 pt-5">
+        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
+        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
+        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
+      </div>
+      <div class="col-sm-3 pt-5">
+        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
+        <p class="text-center">
+          <a href="https://facebook.com/implanchihuahua" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
+          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>         
+          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
+          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
+        </p>
+      </div>
+      <div class="col-sm-3 pt-5">
+        <img src="img/premioOX.png" alt="premioOX">
+        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
+      </div>        
+    </div>
+      <div class="clearfix bg-secondary p-2">
+        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
+        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
+      </div>
+</blockquote>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80309318-1');
+</script>
+<!-- fin -->
+  </body>
+</html> 

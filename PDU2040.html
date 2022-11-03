@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>IMPLAN │ Chihuahua</title>
+  <meta name="author" content="IMPLAN" />
+  <meta name="keywords" content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/b4megamenu.css">
+  <link rel="stylesheet" href="css/b5megamenu.css">  
+  <link rel="shortcut icon" href="img/implan.ico">  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <style>
+    body {
+      background: #FFFFFF;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+   /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+    .fm-nav a{
+      color: #fff;
+    }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}    
+</style>
+<style>
+a.trans:link {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.trans:visited {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.trans:hover {
+    color: lightgray;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.trans:active {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+</style>   
+<!-- EMPIEZA CODIGO DE GRAFICAS -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawChartM);
+      google.charts.setOnLoadCallback(drawChartE);
+      google.charts.setOnLoadCallback(drawChartK);
+      google.charts.setOnLoadCallback(drawChartL);
+      google.charts.setOnLoadCallback(drawChart1);
+      google.charts.setOnLoadCallback(drawChart11);
+      google.charts.setOnLoadCallback(drawChart22);
+      google.charts.setOnLoadCallback(drawChart111);
+      google.charts.setOnLoadCallback(drawChart222);  
+      google.charts.setOnLoadCallback(drawChart9);
+      google.charts.setOnLoadCallback(drawChart18);
+      google.charts.setOnLoadCallback(drawChart28);
+      google.charts.setOnLoadCallback(drawChart17);
+      google.charts.setOnLoadCallback(drawChart27);
+      google.charts.setOnLoadCallback(drawChart10);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+         ['Actividad', '% de Personas'],
+       ['TV', 31],
+       ['Música', 28],
+       ['Deporte', 14],
+       ['Cine', 9],
+       ['Conciertos', 7],
+       ['Museos', 4],
+       ['Ferias',3],
+       ['Teatro', 2],
+       ['Biblioteca',2]    
+        ]);
+
+        var options = {
+          title: 'Actividades Preferidas',
+          pieHole: 0.4
+          
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+    
+ 
+      }
+    
+    
+    
+    
+      function drawChartM() {
+        var data = google.visualization.arrayToDataTable([
+         ['Actividad', '% de Personas'],
+         ['Bajo', 7797],
+         ['Medio', 13472],
+         ['Alto', 3636],
+           
+        ]);
+
+        var options = {
+          title: 'Grado de Marginación Urbana en Zonas de Atención Prioritaria',
+          pieHole: 0.4
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+        chart.draw(data, options);
+      }
+    
+ //- GRAFICAS PARA ESTRUCTURA-->
+ 
+      function drawChartE() {
+        var data = google.visualization.arrayToDataTable([
+       ['Rango Superficie', '% '],
+       ['Menor a 1,000 m2', 32.67],
+       ['De 1,000 a 5,000 m2', 44.70],
+       ['De 5,000 a 1 Ha', 12.65],
+       ['De 1 a 2 Has', 5.07],
+       ['Mayor a 2 Has', 4.92],
+         
+        ]);
+
+        var options = {
+    title: 'Rango de Superficie de lotes baldíos en el área urbana',
+        pieHole: 0.4
+     
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart3'));
+        chart.draw(data, options);
+      }
+  
+      function drawChartK() {
+        var data = google.visualization.arrayToDataTable([
+       ['Rango Superficie', 'Participación en superficie'],
+       ['Menor a 0.10 Ha', 16.69],
+       ['De 0.10 Ha a 0.50 Ha', 24.70],
+       ['De 0.50 Ha a 1 Ha', 10.68],
+       ['De 1 a 2 Has', 12.68],
+       ['Mayor a 2 Has', 35.39],
+         
+        ]);
+
+        var options = {
+    title: 'Distribución de superficies en predios sin construcción',
+        pieHole: 0.4
+     
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart4'));
+        chart.draw(data, options);
+      }
+    
+    
+
+      function drawChartL() {
+        var data = google.visualization.arrayToDataTable([
+       ['Tipo de adecuación', 'Has'],
+       ['Adecuación vial',614.18],
+       ['Cambio de densidad',0.4],
+       ['Cambio de uso',2684.09],
+       ['Fraccionamiento',436.83],
+       ['Modificación menor',62.94],
+       ['Plan maestro',3736.20],
+       ['Plan parcial',6502.42],
+       ['Reconocimiento de usos',743.76],   
+         
+        ]);
+
+        var options = { 
+    title: 'Resumen de adecuaciones de la Zonificación Secundaria',
+        pieHole: 0.4
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart5'));
+        chart.draw(data, options);
+      }
+//    marco -->
+  
+      function drawChart1() {
+        var data = google.visualization.arrayToDataTable([
+       ['Tipo de adecuacion', 'Cantidad'],
+       ['Adecuaciones viales', 6],
+       ['Cambios de densidad', 3],
+       ['Fraccionamientos incorporados', 34],
+       ['Modificaciones menores', 12],
+       ['Planes parciales', 6],
+       ['Plan maestro',   3],
+       ['Reconocimiento de uso',  25]
+         
+        ]);
+
+        var options = {
+    
+        title: 'Adecuaciones al PDU2040 (96 fichas, 184 adecuaciones)',
+        pieHole: 0.4
+     
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica1'));
+        chart.draw(data, options);
+      }
+ 
+ 
+//  fin marco  -->
+// Equipamiento -->
+ 
+ 
+  
+  function drawChart11() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Subsistema');
+        data.addColumn('number', 'Cantidad');
+        data.addColumn('number', 'Alumnos');
+        data.addColumn('number', 'Grupos');
+        data.addColumn('number', 'Aulas existentes');
+        data.addColumn('number','Aulas en uso');
+        data.addRows([
+        ['preescolar',  260,  28200,  1317, 1325, 1197],
+        ['primaria',  303,  79037,  3108, 3749, 3116],
+        ['secundaria',  84, 14187,  1091, 1181, 1144],
+        ['educación especial',  75, 5310, 65, 72, 60],
+        ['media superior',  29, 25881,  649,  400,  398],
+        ['capacitación para el trabajo',  10, 6372, 462,  0,  0],
+        ['superior',  73, 43068, 0,   2752, 2685]
+          ]);
+
+        // begin chart.
+        var options = {title:'Resumen Subsistema Educativo 2013-2014'
+             };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.ColumnChart(document.getElementById('Grafica11'));
+        chart.draw(data, options);
+      }
+    
+    function drawChart22() {
+
+        // Create the data table .
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Subsistema');
+        data.addColumn('number', 'Has');
+        data.addRows([
+            ['Educación',   68.76],
+            ['Cultura', 40.72],
+            ['Salud', 2.28],
+            ['Asistencia social', 3.37],
+            ['comercio / abasto', 2.67],
+            ['Comunicaciones / transporte', 4.70],
+            ['Recreación',  437.62],
+            ['Deporte',   23.84],
+            ['Administración Pública',  7.34],
+            ['Servicios urbanos', 356.77]
+
+        ]);
+
+        
+        var options = {title:'Superficie en Has requerida por subsistema'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica22'));
+        chart.draw(data, options);
+      }
+
+
+
+ 
+ 
+ 
+// Fin equipamiento -->   
+    
+ // Movilidad -->
+ 
+
+        
+  
+  function drawChart111() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Tipo');
+        data.addColumn('number', 'Cantidad');
+    
+        data.addRows([
+        ['Caseta de cobro', 2],
+        ['Distribuidor Vial', 14],
+        ['Intersección a semaforizar',  10],
+        ['Paso a desnivel inferior',  7],
+        ['Paso a desnivel superior',  54],
+        ['Puente sobre rio o barranca',   18],
+        ['Puente vehicular',  48]
+        ]);
+
+        // begin chart.
+        var options = {title:'Infraestructura vial existente',
+                    pieHole: 0.4
+                      };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica111'));
+        chart.draw(data, options);
+      }
+    
+    function drawChart222() {
+
+        // Create the data table 
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Medio de transporte');
+        data.addColumn('number', '%');
+        data.addRows([
+              ['Automóvil',   61],
+              ['A pie', 21],      
+              ['Autobús', 15],
+              ['Autobús de personal', 2],
+              ['otro',  1]
+
+        ]);
+
+        
+        var options = {title:'Distribución de medios de transporte'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica222'));
+        chart.draw(data, options);
+      }
+ 
+// fin movilidad -->
+    
+//SOPORTE -->
+
+      function drawChart9() {
+        var data = google.visualization.arrayToDataTable([
+        ['Actividad', 'Millones de pesos'],
+        ['Minería', 484.4],
+        ['Energía', 2822.80],
+        ['Construcción',  15714.90],
+        ['Manufactura',   30276.60],
+        ['Comercio',  17212.50],
+        ['Transporte',  6286.20],
+        ['Servicios',   67740.20],
+         
+        ]);
+
+        var options = {title:'Participación del PIB, municipio'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica9'));
+        chart.draw(data, options);
+      }
+
+      function drawChart10() {
+        var data = google.visualization.arrayToDataTable([
+       ['Tramite', 'Ingresos'],
+        ['Tramites y licencias',  112519077],
+      ['PLAN DIRECTOR', 9551725],
+      ['Fraccionamientos',  876167.81],
+      ['Análisis y seguimiento de directrices de desarrollo urbano',  290796.07],
+      ['Jurídico',  10645170],
+      ['Inspección',  9717714],
+      ['Planeación ambiental y ordenamiento ecológico', 1461197.58],
+         
+        ]);
+
+        var options = {title:'Ingresos por acciones urbanas'
+                      };
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart10'));
+        chart.draw(data, options);
+      }
+
+  
+ // FIN SOPORTE  -->
+//Infraestructura -->
+
+
+
+  function drawChart18() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Cobertura de agua');
+        data.addColumn('number', 'Cantidad');
+    
+        data.addRows([
+            ['Viviendas particulares habitadas con agua dentro de la vivienda', 42453],
+        ['Viviendas particulares habitadas con agua fuera de la vivienda',  4447]
+      
+        ]);
+
+        // begin chart.
+        var options = {title:'Cobertura de agua',
+             bar: { groupWidth: '80%' },
+                 isStacked: true 
+                       };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica18'));
+        chart.draw(data, options);
+      }
+    
+    function drawChart28() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Poblacion');
+        data.addColumn('number', 'valor');
+        data.addRows([
+            ['Viviendas particulares habitadas con drenaje',  222949],
+      ['Viviendas particulares habitadas sin drenaje',  1362]
+      
+
+        ]);
+
+        
+        var options = {title:'Cobertura de drenaje'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica28'));
+        chart.draw(data, options);
+      }
+
+
+
+
+// Fin Infraestructura -->
+// Ambiente -->
+ 
+  function drawChart17() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Año');
+        data.addColumn('number', 'Metros cuadrados por habitante');
+    
+        data.addRows([
+            ['2013',  10.16],
+        ['2014',  10.67],
+      ['2015',  12.32]
+      
+        ]);
+
+        // begin chart.
+        var options = {title:'Superficie de área verde por habitante',
+             bar: { groupWidth: '80%' },
+                 isStacked: true 
+                       };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.BarChart(document.getElementById('Grafica17'));
+        chart.draw(data, options);
+      }
+    
+    function drawChart27() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Área');
+        data.addColumn('number', 'Arboles');
+        data.addRows([
+            ['Colonias',  141],
+      ['Equipamiento',  244],
+      ['Escuelas',  180],
+      ['Parques', 5971],
+      ['Plazas y Plazoletas', 48],
+      ['Vialidades',  170],
+      ['Centro histórico',  170]
+      
+
+        ]);
+
+        
+        var options = {title:'Ubicación de árboles adultos de la ciudad'
+                      };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica27'));
+        chart.draw(data, options);
+      }
+
+
+
+  </script>
+
+<!--                                dispositivos pequeños                      -->
+
+<script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChartz);
+      google.charts.setOnLoadCallback(drawChartMz);
+      google.charts.setOnLoadCallback(drawChartEz);
+      google.charts.setOnLoadCallback(drawChartKz);
+      google.charts.setOnLoadCallback(drawChartLz);
+      google.charts.setOnLoadCallback(drawChart1z);
+      google.charts.setOnLoadCallback(drawChart11z);
+      google.charts.setOnLoadCallback(drawChart22z);
+      google.charts.setOnLoadCallback(drawChart111z);
+      google.charts.setOnLoadCallback(drawChart222z);  
+      google.charts.setOnLoadCallback(drawChart9z);
+      google.charts.setOnLoadCallback(drawChart18z);
+      google.charts.setOnLoadCallback(drawChart28z);
+      google.charts.setOnLoadCallback(drawChart17z);
+      google.charts.setOnLoadCallback(drawChart27z);
+      google.charts.setOnLoadCallback(drawChart10z);
+
+      function drawChartz() {
+        var data = google.visualization.arrayToDataTable([
+         ['Actividad', '% de Personas'],
+       ['TV', 31],
+       ['Música', 28],
+       ['Deporte', 14],
+       ['Cine', 9],
+       ['Conciertos', 7],
+       ['Museos', 4],
+       ['Ferias',3],
+       ['Teatro', 2],
+       ['Biblioteca',2]    
+        ]);
+
+        var options = {
+          title: 'Actividades Preferidas',
+          pieHole: 0.4,
+          
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchartz'));
+        chart.draw(data, options);
+        function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }    
+}
+    
+    
+    
+      function drawChartMz() {
+        var data = google.visualization.arrayToDataTable([
+         ['Actividad', '% de Personas'],
+         ['Bajo', 7797],
+         ['Medio', 13472],
+         ['Alto', 3636],
+           
+        ]);
+
+        var options = {
+          title: 'Grado de Marginación Urbana en Zonas de Atención Prioritaria',
+          pieHole: 0.4
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart1z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+      }
+    
+  //- GRAFICAS PARA ESTRUCTURA-->
+ 
+      function drawChartEz() {
+        var data = google.visualization.arrayToDataTable([
+       ['Rango Superficie', '% '],
+       ['Menor a 1,000 m2', 32.67],
+       ['De 1,000 a 5,000 m2', 44.70],
+       ['De 5,000 a 1 Ha', 12.65],
+       ['De 1 a 2 Has', 5.07],
+       ['Mayor a 2 Has', 4.92],
+         
+        ]);
+
+        var options = {
+    title: 'Rango de Superficie de lotes baldíos en el área urbana',
+        pieHole: 0.4
+     
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart3z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+      }
+  
+      function drawChartKz() {
+        var data = google.visualization.arrayToDataTable([
+       ['Rango Superficie', 'Participación en superficie'],
+       ['Menor a 0.10 Ha', 16.69],
+       ['De 0.10 Ha a 0.50 Ha', 24.70],
+       ['De 0.50 Ha a 1 Ha', 10.68],
+       ['De 1 a 2 Has', 12.68],
+       ['Mayor a 2 Has', 35.39],
+         
+        ]);
+
+        var options = {
+    title: 'Distribución de superficies en predios sin construcción',
+        pieHole: 0.4
+     
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart4z'));
+        chart.draw(data, options);
+     function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+      }
+    
+    
+
+      function drawChartLz() {
+        var data = google.visualization.arrayToDataTable([
+       ['Tipo de adecuación', 'Has'],
+       ['Adecuación vial',614.18],
+       ['Cambio de densidad',0.4],
+       ['Cambio de uso',2684.09],
+       ['Fraccionamiento',436.83],
+       ['Modificación menor',62.94],
+       ['Plan maestro',3736.20],
+       ['Plan parcial',6502.42],
+       ['Reconocimiento de usos',743.76],   
+         
+        ]);
+
+        var options = { 
+    title: 'Resumen de adecuaciones de la Zonificación Secundaria',
+        pieHole: 0.4
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart5z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+      }
+//    marco -->
+  
+      function drawChart1z() {
+        var data = google.visualization.arrayToDataTable([
+       ['Tipo de adecuacion', 'Cantidad'],
+       ['Adecuaciones viales', 6],
+       ['Cambios de densidad', 3],
+       ['Fraccionamientos incorporados', 34],
+       ['Modificaciones menores', 12],
+       ['Planes parciales', 6],
+       ['Plan maestro',   3],
+       ['Reconocimiento de uso',  25]
+         
+        ]);
+
+        var options = {
+    
+        title: 'Adecuaciones al PDU2040 (96 fichas, 184 adecuaciones)',
+        pieHole: 0.4
+     
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica1z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+      }
+ 
+ 
+// fin marco  -->
+// Equipamiento -->
+ 
+ 
+  
+  function drawChart11z() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Subsistema');
+        data.addColumn('number', 'Cantidad');
+        data.addColumn('number', 'Alumnos');
+        data.addColumn('number', 'Grupos');
+        data.addColumn('number', 'Aulas existentes');
+        data.addColumn('number','Aulas en uso');
+        data.addRows([
+        ['preescolar',  260,  28200,  1317, 1325, 1197],
+        ['primaria',  303,  79037,  3108, 3749, 3116],
+        ['secundaria',  84, 14187,  1091, 1181, 1144],
+        ['educación especial',  75, 5310, 65, 72, 60],
+        ['media superior',  29, 25881,  649,  400,  398],
+        ['capacitación para el trabajo',  10, 6372, 462,  0,  0],
+        ['superior',  73, 43068, 0,   2752, 2685]
+          ]);
+
+        // begin chart.
+        var options = {title:'Resumen Subsistema Educativo 2013-2014'
+             };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.ColumnChart(document.getElementById('Grafica11z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+      }
+    
+    function drawChart22z() {
+
+        // Create the data table .
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Subsistema');
+        data.addColumn('number', 'Has');
+        data.addRows([
+            ['Educación',   68.76],
+            ['Cultura', 40.72],
+            ['Salud', 2.28],
+            ['Asistencia social', 3.37],
+            ['comercio / abasto', 2.67],
+            ['Comunicaciones / transporte', 4.70],
+            ['Recreación',  437.62],
+            ['Deporte',   23.84],
+            ['Administración Pública',  7.34],
+            ['Servicios urbanos', 356.77]
+
+        ]);
+
+        
+        var options = {title:'Superficie en Has requerida por subsistema'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica22z'));
+        chart.draw(data, options);
+function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }      
+}
+
+
+
+ 
+ 
+ 
+ //- Fin equipamiento -->   
+    
+// Movilidad -->
+ 
+
+        
+  
+  function drawChart111z() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Tipo');
+        data.addColumn('number', 'Cantidad');
+    
+        data.addRows([
+        ['Caseta de cobro', 2],
+        ['Distribuidor Vial', 14],
+        ['Intersección a semaforizar',  10],
+        ['Paso a desnivel inferior',  7],
+        ['Paso a desnivel superior',  54],
+        ['Puente sobre rio o barranca',   18],
+        ['Puente vehicular',  48]
+        ]);
+
+        // begin chart.
+        var options = {title:'Infraestructura vial existente',
+                    pieHole: 0.4
+                      };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica111z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+      }
+    
+    function drawChart222z() {
+
+        // Create the data table 
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Medio de transporte');
+        data.addColumn('number', '%');
+        data.addRows([
+              ['Automóvil',   61],
+              ['A pie', 21],      
+              ['Autobús', 15],
+              ['Autobús de personal', 2],
+              ['otro',  1]
+
+        ]);
+
+        
+        var options = {title:'Distribución de medios de transporte'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica222z'));
+        chart.draw(data, options);
+   function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }  
+
+ }
+ 
+//fin movilidad -->
+    
+ //SOPORTE -->
+
+      function drawChart9z() {
+        var data = google.visualization.arrayToDataTable([
+        ['Actividad', 'Millones de pesos'],
+        ['Minería', 484.4],
+        ['Energía', 2822.80],
+        ['Construcción',  15714.90],
+        ['Manufactura',   30276.60],
+        ['Comercio',  17212.50],
+        ['Transporte',  6286.20],
+        ['Servicios',   67740.20],
+         
+        ]);
+
+        var options = {title:'Participación del PIB, municipio'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica9z'));
+        chart.draw(data, options);
+function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }      
+
+
+
+}
+
+      function drawChart10z() {
+        var data = google.visualization.arrayToDataTable([
+       ['Tramite', 'Ingresos'],
+        ['Tramites y licencias',  112519077],
+      ['PLAN DIRECTOR', 9551725],
+      ['Fraccionamientos',  876167.81],
+      ['Análisis y seguimiento de directrices de desarrollo urbano',  290796.07],
+      ['Jurídico',  10645170],
+      ['Inspección',  9717714],
+      ['Planeación ambiental y ordenamiento ecológico', 1461197.58],
+         
+        ]);
+
+        var options = {title:'Ingresos por acciones urbanas'
+                      };
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart10z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+      }
+
+  
+// FIN SOPORTE  -->
+//Infraestructura -->
+
+
+
+  function drawChart18z() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Cobertura de agua');
+        data.addColumn('number', 'Cantidad');
+    
+        data.addRows([
+            ['Viviendas particulares habitadas con agua dentro de la vivienda', 42453],
+        ['Viviendas particulares habitadas con agua fuera de la vivienda',  4447]
+      
+        ]);
+
+        // begin chart.
+        var options = {title:'Cobertura de agua',
+             bar: { groupWidth: '80%' },
+                 isStacked: true 
+                       };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica18z'));
+        chart.draw(data, options);
+      function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+      }
+    
+    function drawChart28z() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Poblacion');
+        data.addColumn('number', 'valor');
+        data.addRows([
+            ['Viviendas particulares habitadas con drenaje',  222949],
+      ['Viviendas particulares habitadas sin drenaje',  1362]
+      
+
+        ]);
+
+        
+        var options = {title:'Cobertura de drenaje'
+                       };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica28z'));
+        chart.draw(data, options);
+         function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+
+           
+
+
+ }
+
+
+
+
+// Fin Infraestructura -->
+//Ambiente -->
+ 
+  function drawChart17z() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Año');
+        data.addColumn('number', 'Metros cuadrados por habitante');
+    
+        data.addRows([
+            ['2013',  10.16],
+        ['2014',  10.67],
+      ['2015',  12.32]
+      
+        ]);
+
+        // begin chart.
+        var options = {title:'Superficie de área verde por habitante',
+             bar: { groupWidth: '80%' },
+                 isStacked: true 
+                       };
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.BarChart(document.getElementById('Grafica17z'));
+        chart.draw(data, options);
+               function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+
+    
+
+      }
+    
+    function drawChart27z() {
+
+        // Create the data table for Anthony's pizza.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Área');
+        data.addColumn('number', 'Arboles');
+        data.addRows([
+            ['Colonias',  141],
+      ['Equipamiento',  244],
+      ['Escuelas',  180],
+      ['Parques', 5971],
+      ['Plazas y Plazoletas', 48],
+      ['Vialidades',  170],
+      ['Centro histórico',  170]
+      
+
+        ]);
+
+        
+        var options = {title:'Ubicación de árboles adultos de la ciudad'
+                      };
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica27z'));
+        chart.draw(data, options);
+
+         function resizeHandler () {
+                      chart.draw(data, options);
+                  }
+                  if (window.addEventListener) {
+                      window.addEventListener('resize', resizeHandler, false);
+                  }
+                  else if (window.attachEvent) {
+                      window.attachEvent('onresize', resizeHandler);
+                  }
+
+
+     
+
+      }
+
+    
+
+  </script>
+<!-- TERMINA GRAFICAS  -->
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 pt-3 pb-2">
+    </div>
+    <div class="col-sm-4 pt-3 pb-2 align-items-center">
+       <img src="img/IMPLAN_2017.png" width="270" height="51" alt="IMPLAN">
+    </div> 
+    <div class="col-sm-4 pt-3 pb-2 d-none d-lg-block">
+          <p class="text-right">
+            <a href="#bloque1" data-toggle="collapse" aria-expanded="false" aria-controls="bloque1"><i class="fas fa-phone-volume text-warning"></i></a>       
+            <a href="#bloque2" data-toggle="collapse" aria-expanded="false" aria-controls="bloque2"><i class="fas fa-envelope text-warning"></i></a>
+            <a href="#bloque3" data-toggle="collapse" aria-expanded="false" aria-controls="bloque3"><i class="fas fa-map-marker-alt text-warning"></i></a>
+          </p>
+            <p class="collapse text-right" id="bloque1">(614) 200 48 20</p>
+            <p class="collapse text-right" id="bloque2">implanchihuahua@yahoo.com.mx</p>
+            <p class="collapse text-right" id="bloque3">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
+    </div>  
+    <div class="col-sm-4 pt-3 pb-2 d-lg-none">
+          <p class="text-right">
+            <a href="tel:6142004820"><i class="fas fa-phone-volume text-warning"></i></a>          
+            <a href="#bloque4" data-toggle="collapse" aria-expanded="false" aria-controls="bloque4"><i class="fas fa-envelope text-warning"></i></a>
+            <a href="#bloque5" data-toggle="collapse" aria-expanded="false" aria-controls="bloque5"><i class="fas fa-map-marker-alt text-warning"></i></a>
+          </p>
+            <p class="collapse text-right" id="bloque4">implanchihuahua@yahoo.com.mx</p>
+            <p class="collapse text-right" id="bloque5">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
+    </div>              
+  </div>          
+</div> 
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:rgb(102, 0, 102);">
+  <a class="navbar-brand" href="https://implanchihuahua.gob.mx/"><i class="fas fa-home"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          IMPLAN
+        </a>
+        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown5">
+            <div class="row">
+              <div class="col-sm-4">
+                  <p><a href="https://implanchihuahua.gob.mx/Mision.html">MISIÓN/VISIÓN</a></p>
+              </div>
+              <div class="col-sm-4">
+                <p><a href="https://implanchihuahua.gob.mx/Consejo.html">CONSEJO</a></p>
+              
+              </div>
+              <div class="col-sm-4">
+                  <p><a href="https://implanchihuahua.gob.mx/EquipoTecnico.html">EQUIPO TÉCNICO</a></p>
+              </div>              
+            </div>              
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ENTORNO
+        </a>
+        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="img/entorno.jpg" alt="IMPLAN" class="img-fluid">
+                <h4 class="font-weight-bold">Chihuahua</h4>
+                <p>Conoce tu ciudad</p>
+              </div>
+              <div class="col-sm-4">
+                <p><strong class="sub-menu-heading">ÁMBITO</strong></p>
+                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoRegional">REGIONAL</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoMunicipal">MUNICIPAL</a></p>
+
+              </div>
+              <div class="col-sm-4">
+                <p><strong class="sub-menu-heading">ENTORNO</strong></p>
+                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoEconomico">ECONÓMICO</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoUrbano">URBANO</a></p>
+              </div>
+             
+            </div> 
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PROYECTOS
+        </a>
+        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown2">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="img/proyectos.jpg" alt="IMPLAN" class="img-fluid">
+                <h4 class="font-weight-bold">IMPLAN</h4>
+                <p>Proyectos</p>
+              </div>
+              <div class="col-sm-3">
+                <p><strong class="sub-menu-heading">SOCIALES</strong></p>
+                <p><a href="https://implanchihuahua.gob.mx/Cajita.html">CAJITA</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/ForoFCCUU.html">FORO FCCUU</a></p>                 <p><a href="https://implanchihuahua.gob.mx/ForoCiudades.html">FORO 1.2019</a></p>
+
+              </div>
+              <div class="col-sm-3">
+                <p><strong class="sub-menu-heading">URBANOS</strong></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto1.html">PLAZA DE ARMAS</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto3.html">PEATONALIZACIÓN CALLE MORELOS</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto2.html">AV. VENUSTIANO CARRANZA</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto4.html">PARQUE LERDO</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto5.html">CORREDOR ESCULTÓRICO</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto7.html">PARQUE EL REJÓN</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto8.html">EDIFICIO DEL REAL</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto9.html">CENTRO HISTÓRICO</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto10.html">QUINTA TOUCHE</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/Proyecto11.html">PARQUE EL ENCINO</a></p>
+              </div>
+              <div class="col-sm-3">
+                <p><strong class="sub-menu-heading">CENTRO DE ESTUDIOS</strong></p>
+                <p><a href="https://implanchihuahua.gob.mx/EstudioCE2.html">GUÍA METODOLÓGICA</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/EstudioCE3.html">INDICADORES</a></p>
+               <p><a href="https://implanchihuahua.gob.mx/EstudioCE1.html">MODELOS DE DENSIFICACIÓN</a></p>
+              </div>
+            </div> 
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PDU2040
+        </a>
+        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown3">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="img/PDU.jpg" alt="IMPLAN" class="img-fluid">
+                <h4 class="font-weight-bold">PDU2040</h4>
+              </div>
+              <div class="col-sm-4">
+                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Poblacion">POBLACIÓN</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Soporte">ECONOMÍA</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Marco">MARCO</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Equipamiento">EQUIPAMIENTO</a></p>
+              </div>
+              <div class="col-sm-4">
+                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Movilidad">MOVILIDAD</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Infraestructura">INFRAESTRUCTURA</a></p>
+                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Medio">AMBIENTE</a></p>
+              </div>
+
+            </div> 
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DATOS ABIERTOS
+        </a>
+        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown4">
+            <div class="row">
+              <div class="col-sm-4">
+                <p><a href="https://implanchihuahua.gob.mx/Descargables.html">BUSCAR</a></p>
+              </div>
+              <div class="col-sm-4">
+                <p><a href="https://implanchihuahua.gob.mx/Descargables_EP.html">ESTUDIOS Y PROYECTOS</a></p>
+              </div>
+              <div class="col-sm-4">
+                <p><a href="https://implanchihuahua.gob.mx/Descargables_DA.html">CARTOGRAFÍA</a></p>
+              </div>
+            </div> 
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://implanchihuahua.gob.mx/Licitaciones.html">LICITACIONES</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="https://implanchihuahua.gob.mx/Directorio.html">DIRECTORIO</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="http://ovie.mpiochih.gob.mx">OVIE</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="https://implanchihuahua.gob.mx/Transparencia.html">TRANSPARENCIA</a>
+      </li>                     
+    </ul>
+  </div>
+</nav>
+<!--inicia página -->
+<div class="container">
+        <h1 class="text-center text-warning"><b>¿Qué es el Plan de Desarrollo Urbano PDU 2040?</b></h1>
+        <p class="text-secondary">El Plan Director Urbano es el instrumento que define las directrices hacia el desarrollo sostenible de nuestra ciudad con una proyección hacia el año 2040 considerando la participación ciudadana como principio rector para la construcción de un escenario de futuro o visión de largo plazo. Identificando así los componentes claves para construir el futuro anhelado, planteando la relación de unos con otros y fomentando su evaluación técnica y social para garantizar el cumplimiento de la visión. </p>
+        <p class="text-secondary">El procedimiento mediante el cual se concretó la elaboración del Plan y sus posteriores actualizaciones, se integró de dos componentes fundamentales: por un lado, la participación ciudadana e institucional, en amplios procesos participativos en donde se validó la información recopilada para el Plan y se estableció el escenario de largo plazo, así como los acuerdos sobre las estrategias; por el otro, el proceso técnico, el cual vinculó e integró los resultados del proceso de participación, que adicionalmente enriquece el instrumento a través de la investigación e involucramiento de expertos nacionales e internacionales en los ejes estratégicos que condicionan el desarrollo de la ciudad como son el urbanismo, la economía, el medio ambiente y la movilidad entre otros. </p>
+        <p class="text-secondary">De esta forma, Chihuahua definió su instrumento rector de desarrollo urbano sostenible y atiende de manera efectiva al adecuado crecimiento territorial, preservando sus recursos ambientales y garantizando el desarrollo armónico de nuestra ciudad y sus habitantes.</p>
+
+  <div id="Poblacion"></div>
+  <h3 class="text-center"><b>TEMAS ESTRATÉGICOS</b></h3>
+  <div class="row m-3">
+      <div class="col-sm-3">
+        <img src="img/PDU2040/poblacion.png" alt="Población" class="img">
+      </div>
+      <div class="col-sm-9">
+         <h2><b>Población, Desarrollo Social y Cultura Urbana</b></h2>
+      </div>
+  </div>   
+ 
+          <p class="text-secondary">La ciudad es mayormente el resultado de sus expresiones, por tanto, la dinámica poblacional sigue siendo un tema central para la actualización del Plan de Desarrollo Urbano, tanto en su demografía, su desarrollo social como en sus aspectos culturales.</p>
+          <p class="text-secondary">El crecimiento poblacional ha tenido una importante recuperación respecto al quinquenio inmediato anterior lo cual se atribuye a factores de bienestar y desarrollo económico que generan inmigración a Chihuahua como una ciudad atractiva.</p>
+          <p class="text-secondary">Por otro lado la ciudad, en su ámbito urbano, sigue concentrando el mayor porcentaje de la población del municipio, lo que benefició al aumento de la densidad de población en poco más de un punto respecto a la densidad registrada en 2010, de tal forma que se puede afirmar una mejoría en el aprovechamiento del suelo al interior de la mancha urbana, que representa un avance importante ante el cambio del esquema de crecimiento disperso.</p>
+          <p class="text-secondary">Sin más, le alentamos a consultar a continuación ambas secciones del diagnóstico y estrategias, de los cuales se proporcionan los capítulos en su totalidad, en versión descargable.</p>
+          <hr>
+          <h2 class="text-center"><b>Diagnóstico</b></h2>
+          <div class="d-none d-lg-block">
+              <div class="pt-4">
+                  <p><b>Desarrollo Cultural</b></p>
+                  <div id="donutchart" style="border: 2px solid #ccc; width: 900px; height: 500px"></div>      
+              </div>
+              <div class="pt-4">
+                  <p><b>Desarrollo Social. </b><span><small>Fuente: CONEVAL 2015, con referencia al Censo General de Población y Vivienda 2010.</small></span></p>   
+                  <div id="donutchart1" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>  
+              </div>
+          </div>
+          <div class="d-lg-none">
+              <div class="pt-4">
+                  <p><b>Desarrollo Cultural</b></p>
+                  <div id="donutchartz" style="border: 2px solid #ccc;"></div>      
+              </div>
+              <div class="pt-4">
+                  <p><b>Desarrollo Social. </b><span><small>Fuente: CONEVAL 2015, con referencia al Censo General de Población y Vivienda 2010.</small></span></p>   
+                  <div id="donutchart1z" style="border: 2px solid #ccc;"></div>  
+              </div>
+          </div>
+          <div class="pt-4">
+              <p><b>Demografía. Habitantes por hectárea</b></p>
+              <img src="img/Demografia.gif" class="img-thumbnail mx-lg-1" alt="Habitantes por héctarea"> 
+          </div>
+          <hr>
+          <h2 class="text-center"><b>Estrategia</b></h2>
+          <p class="text-secondary">Las estrategias desarrolladas en relación a aspectos sociales, buscan el generar las condiciones para asegurar el bienestar común de la población, para lo cual es necesario un compromiso colectivo de civilidad en los distintos sectores de la población, esto bajo un esquema de libertad dentro del margen de la legalidad.</p>
+          <p class="text-secondary"><b>Barrios Tradicionales.</b> La estrategia para los barrios tradicionales consiste en el desarrollo equilibrado y sustentable de estas zonas a través de implementar un modelo de gestión adecuado a su complejidad, que asegure su formalización, operación y seguimiento, así como el empoderamiento social para el control de acciones urbanas en estas zonas.</p>
+          <p class="text-secondary"><b>Polígonos de Concentración Urbana.</b> Son una herramienta del Gobierno Federal, para controlar la expansión de la mancha urbana y enfocar los esfuerzos públicos y privados tendientes a consolidar la ciudad. La presente adecuación a los PCU se enfoca en la nueva política de vivienda impulsada mediante el Programa Nacional de Vivienda 2014-2018.</p>
+          <hr>
+          <h2 class="text-center"><b>Archivos Descargables</b></h2>
+
+          <ul>
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/POBLACION/2.1 Estructura Socioeconomica.pdf" title="KB" target="_blank">Estructura Socioeconómica</a></li>
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/POBLACION/PMSF.pdf" title="MB" target="_blank">Programa Maestro San Felipe</a></li>
+              <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/POBLACION/1.3 Vision Metropolitana.pdf" title="MB" target="_blank">Visión Metropolitana</a></li>
+          </ul>
+</div>  
+<hr>
+<div id="Soporte"></div>
+<div class="container">
+    <div class="row m-3">
+          <div class="col-sm-3">
+             <img src="img/PDU2040/soporteEconomia.png"  alt="Población" class="img">
+          </div>
+          <div class="col-sm-9">
+              <h2><b>Soporte Urbano para la Economía</b></h2>
+          </div>
+    </div>
+    <p class="text-secondary">En cuanto al sector económico se refiere, Chihuahua como municipio ocupa el 2do lugar, aportando el 35% del total en el estado; se considera un municipio medianamente diversificado es decir, existe un balance en las actividades económicas, con una fuerte presencia de empresas industriales y constructoras, pero el sector terciario es el de mayor peso, principalmente por el sector gubernamental, el comercio, transporte y los servicios relacionados con la industria.</p>
+    <p class="text-secondary">De acuerdo al Censo Económico 2014, El municipio cuenta con una Producción Bruta Total de 123'027,910,000 pesos anuales, y con un promedio de 9 personas ocupadas por Unidad Económica.</p>
+    <hr>
+    <h2 class="text-center"><b>Diagnóstico</b></h2>
+    <div class="pt-4">    
+        <div class="d-none d-lg-block" id="Grafica9" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>   
+        <div class="d-lg-none" id="Grafica9z" style="border: 2px solid #ccc;"></div>   
+    </div>
+    <hr>
+    <h2 class="text-center"><b>Estrategia</b></h2>
+    <p class="text-secondary"><b>Polígono de Concentración Urbana, Zona Metropolitana.</b> Para lograr un correcto y equilibrado desarrollo de la Zona Metropolitana de Chihuahua se plantea:</p>
+    <ul>
+        <li>Equilibrar territorialmente usos en la zona conurbada.</li>
+        <li>Planear estrategia de movilidad para facilitar comunicación de zonas habitacionales.</li>
+        <li>Lugares de trabajo, de estudio y comercio.</li>
+        <li>Fortalecer y ordenar corredores metropolitanos de comercios y servicios.</li>
+        <li>Proponer nuevos núcleos de equipamientos metropolitanos y regionales.</li>
+        <li>Diseñar un sistema de movilidad metropolitana basada en el transporte y en la movilidad alternativa (sendas metropolitanas).</li>
+        <li>Acciones para impulsar una estrategia de usos mixtos, densificación y ciudad compacta.</li>
+    </ul>
+    <hr>
+    <h2 class="text-center"><b>Archivos Descargables</b></h2>
+    <ul>
+      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/SOPORTE ECONOMIA/2.1.3 Soporte para la Economia.pdf" title="MB" target="_blank">Soporte Urbano para la Economía</a></li>
+      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/SOPORTE ECONOMIA/4.8 Aportaciones a la estrategia de gestion y adimistracion del desarrollo.pdf" title="MB" target="_blank">Aportes a la Estrategia de Gestión y Admón. del Desarrollo</a></li>      
+    </ul>
+</div>
+<hr>
+<div id="Estructura"></div>
+ <div class="container">
+    <div class="row m-3">
+          <div class="col-sm-3">
+             <img src="img/PDU2040/estructuraUrbana.png"  alt="Población">
+          </div>
+          <div class="col-sm-9">
+              <h2><b>Estructura Urbana, Suelo y Vivienda</b></h2>
+          </div>
+    </div>
+
+    <p class="text-secondary">El desarrollo de la ciudad se da en respuesta a numerosos factores entre los que se incluyen los elementos físicos, como infraestructura, relieve, cuerpos de agua, etc. así como socioeconómicos. Ambos aspectos se encuentran interrelacionados y los cambios en uno modifican al otro, es de tal forma que la ciudad ha atravesado por etapas de desarrollo muy marcadas. </p>
+    <p class="text-secondary">El patrón de ocupación que sigue la ciudad de Chihuahua es básicamente horizontal, con un gran consumo de suelo. No obstante, en los últimos tres años ha comenzado una tendencia de crecimiento vertical que se ve reflejada en la construcción de edificios de uso mixto con uso habitacional, comercio y servicios. Es importante puntualizar que este modelo de desarrollo va dirigido a un mercado de nivel de renta alto, lo que representa menos del 8% de la población. </p>
+    <p class="text-secondary">Sin más, le alentamos a consultar a continuación ambas secciones del diagnóstico y estrategias, de los cuales se proporcionan los capítulos en su totalidad, en versión descargable.</p>
+    <hr>
+    <h2 class="text-center"><b>Diagnóstico</b></h2>
+        
+        <div class="pt-4 d-none d-lg-block"><div id="donutchart3" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div></div>
+        <div class="pt-4 d-none d-lg-block"> <div id="donutchart4" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div></div>
+        <div class="pt-4 d-none d-lg-block"><div id="donutchart5" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div></div>
+        <div class="pt-4 d-lg-none"><div id="donutchart3z" style="border: 2px solid #ccc;"></div></div>
+        <div class="pt-4 d-lg-none"> <div id="donutchart4z" style="border: 2px solid #ccc;"></div></div>
+        <div class="pt-4 d-lg-none"><div id="donutchart5z" style="border: 2px solid #ccc;"></div></div>
+    <hr>
+    <h2 class="text-center"><b>Estrategia</b></h2>
+    <p class="text-secondary"><b>Territorio y Estructura Urbana.</b> Considerando lo expuesto en el diagnóstico de la presente actualización, se plantea necesario realizar las modificaciones necesarias respecto a usos de suelo, estructura vial establecida, normatividad, condicionantes de uso de suelo y estrategia general de Plan, respecto a las dinámicas económicas y sociales prevalecientes que condicionan la ocupación del suelo.</p>
+    <p class="text-secondary"><b>CD.</b> Se consideran nuevos centros distritales en la zona de las Tres Presas, la bifurcación de los ejes carreteros regionales de vía libre y vía de cuota a Ciudad Juárez, y el entorno del aeropuerto, en la confluencia de la futura Av. Tabalaopa con el Blvd. Juan Pablo II.</p>
+    <p class="text-secondary"><b>ZEID.</b> Zonas Especiales de integración al Desarrollo; se integra ZEID Norte.</p>
+    <p class="text-secondary"><b>PAC.</b> Polígonos de Actuación Concentrada; La Haciendita y Zona Aeropuerto.</p>
+    <p style="text-align:justify;"><b>PCU.</b> Polígonos de Concentración Urbana; son una herramienta del Gobierno Federal, para controlar la expansión de la mancha urbana y enfocar los esfuerzos públicos y privados tendientes a consolidar la ciudad. La presente adecuación a los PCU se enfoca en la nueva política de vivienda impulsada mediante el Programa Nacional de vivienda 2014-2018.</p>
+    <hr>
+    <h2 class="text-center"><b>Archivos Descargables</b></h2>
+    <ul>
+            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/Diagnostico_Estructura.pdf" title="MB" target="_blank">Estructura Urbana</a></li>
+            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040-DG-213.pdf" title="MB" target="_blank">Aportaciones a la Estrategia Territorial</a></li>
+            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/ESTRUCTURA URBANA/Poligono de Actuacion Concentrada_La Haciendita.pdf" title="MB" target="_blank">Polígono de Actuación Concentrada "La Haciendita" </a></li>
+            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/ESTRUCTURA URBANA/Poligonos de Concenrtacion Urbana_Vision Zona Aeropuerto.pdf" title="MB" target="_blank">Polígono de Actuación "Visión Zona Aeropuerto" </a></li>
+            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/ESTRUCTURA URBANA/Zona Especial de Integracion al Desarrollo_ZEID Norte.pdf" title="MB" target="_blank">Zona Especial de Integración al Desarrollo "ZEID Norte"</a></li>
+
+    </ul>
+</div>
+<hr>
+<div id="Medio"></div>
+<div class="container">
+    <div class="row m-3">
+          <div class="col-sm-3">
+             <img src="img/PDU2040/medioAmbiente.png"  alt="Población">
+          </div>
+          <div class="col-sm-9">
+              <h2><b>Medio Ambiente Natural</b></h2>
+          </div>
+    </div>
+    <p class="text-secondary">El respeto al medio ambiente y los recursos naturales constituye una estrategia permanente en la planificación urbana integral. La necesidad de regular, ordenar, y facilitar la vida de las poblaciones está intrínsecamente ligada a la necesidad de conocer sistemáticamente las interacciones que mantienen las actividades humanas con su medio biótico, así como los fenómenos urbanos que lo afectan.</p>
+    <p class="text-secondary">La ciudad de Chihuahua cuenta con elementos naturales de alto valor ambiental, considerando su sistema hídrico y zonas cerriles que conforman medios ecológicos con diversidad de flora y fauna y condiciones paisajísticas de gran riqueza.</p>
+    <p class="text-secondary">El desarrollo de la ciudad se ve influenciada por las condiciones del ambiente encontradas en su entorno. Cabe mencionar que al hablar de ambiente se incluye tanto aquel natural como artificial. Dichos elementos tienen un efecto directo sobre las condiciones de vida de la población.</p>
+    <p class="text-secondary">Por tales motivos el conocimiento de las condiciones actuales de los elementos relacionados es necesario para alcanzar un entendimiento de la manera en que se puede influenciar y encausar el desarrollo que la ciudad, es así que a continuación se presenta el diagnóstico y las estrategias desarrolladas.</p>
+    <hr>
+    <h2 class="w3-center"><b>Diagnóstico</b></h2>
+    <div class="pt-4">
+       <div class="d-none d-lg-block" id="Grafica17" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>
+       <div class="d-lg-none" id="Grafica17z" style="border: 2px solid #ccc;"></div>
+    </div>
+    <div class="pt-4">
+      <div class="d-none d-lg-block" id="Grafica27" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>  
+      <div class="d-lg-none" id="Grafica27z" style="border: 2px solid #ccc;"></div>        
+    </div>
+    <hr>
+    <h2 class="w3-center"><b>Estrategia</b></h2>
+    <p class="text-secondary"><b>Integración Urbana.</b> Ambiental a través de los Cuerpos de Agua y el Espacio Público. Los cuerpos de agua serán fundamentales para crear los espacios armónicos entre el entorno urbano y el medio ambiente, en este sentido el Plan Parcial de Desarrollo Sustentable Tres Presas establece políticas de prevención, mantenimiento, limpieza y vigilancia para evitar impactos negativos en el área de aplicación del plan y recuperar el ecosistema local a partir de la regeneración del valor hídrico y ambiental de las presas y ríos.</p>
+    <p class="text-secondary"><b>Plan de Acción Climática Municipal (PACMUN).</b> Tiene por objetivo general: Identificar, impulsar y coordinar acciones que en el municipio de Chihuahua, coadyuven en la disminución de riesgos ambientales, económicos y sociales generados y/o exacerbados por los efectos del cambio climático; buscando el bienestar de la población actual y de las generaciones futuras.</p>
+    <p class="text-secondary"><b>Ordenamiento Territorial con Criterios de Prevención y Mitigación de Zonas de Riesgo Ambiental.</b> El ordenamiento territorial y urbano tiene entre sus bases el Atlas de Riesgos del Municipio de Chihuahua 2014, con el objetivo de procurar la integridad de la comunidad, su patrimonio e infraestructura pública, este documento contribuye a la cultura local dado que permite un conocimiento más responsable de la geografía municipal y permite el diseño y la operación de políticas y estrategias más eficaces en materia de protección civil y seguridad pública.</p>
+    <hr>
+    <h2 class="text-center"><b>Archivos Descargables</b></h2>
+    <ul>
+          <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MEDIO AMBIENTE/2.5 Medio Ambiente y Recursos Naturales.pdf" title="Recursos" target="_blank">Medio Ambiente y Recursos Naturales </a></li>
+          <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MEDIO AMBIENTE/2.7 Riesgo y Vulnerabilidad.pdf" title="Riesgo" target="_blank">Riesgo y Vulnerabilidad</a> </li>
+          <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MEDIO AMBIENTE/4.7 Aportaciones a la estrategia de medio ambiente y recursos naturales.pdf" title="Estrategia" target="_blank">Aportaciones a la estrategia de Medio Ambiente y Recursos Naturales</a> </li>
+          <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MEDIO AMBIENTE/4.10 Aportaciones a la Estrategia de Riesgos y Vulnerabilidad.pdf" target="_blank">Aportaciones a la Estrategia de Riesgo y Vulnerabilidad </a></li>
+          <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MEDIO AMBIENTE/PACMUN CHIHUAHUA_2016.pdf" title="Plan de Acción Climática Municipal" target="PACMUN">Plan de Acción Climática Municipal</a></li>
+    </ul>
+</div>
+<hr>
+<div id="Infraestructura"></div>
+<div class="container">
+    <div class="row m-3">
+          <div class="col-sm-3">
+             <img src="img/PDU2040/infraesructuraUrbana.png"  alt="Población">
+          </div>
+          <div class="col-sm-9">
+              <h2><b>Infraestructura Urbana</b></h2>
+          </div>
+    </div>
+    <p class="text-secondary">La infraestructura abarca una serie de instalaciones relacionadas con energía eléctrica, agua potable, saneamiento, drenaje, entre otros. Aspectos todos ellos relevantes en la satisfacción de las necesidades de la población.</p>
+    <p class="text-secondary">El objetivo funcional de la infraestructura urbana trata sobre obtener los máximos beneficios que permitan dar movilidad y calidad de vida, generando un territorio más competitivo. Es por esto que se relaciona con la dotación de servicios para el desarrollo de las actividades en la ciudad y las condiciones de vida de la población.</p>
+    <p class="text-secondary">La cobertura general de la infraestructura de la ciudad se considera aceptable, no obstante existen puntos críticos como el caso del Centro Histórico donde las redes debido a su antigüedad son obsoletas, para incrementar el volumen de servicio lo que va en contra de las políticas de desarrollo y redensificación promovidas por el PDU 2040. Es necesario establecer un programa de estrategias y acciones de modernización de la red hidrosanitaria en este importante sector.</p>
+    <p class="text-secondary">Por otro lado, existen zonas de la ciudad, principalmente de uso habitacional, que aún no cuentan con abastecimiento de agua y cobertura de drenaje sanitario. Asimismo, el modelo extendido, poco denso y periférico dado en los últimos años genera altos costos tanto para la ciudadanía como para el municipio. Por un lado, la provisión de servicios básicos por parte del gobierno se vuelve más costosa, problema aunado a la debilidad financiera de las recaudaciones locales, se traduce en desigualdades en la calidad y oportunidad con la que el local provee bienes públicos a los ciudadanos.</p>
+    <p class="text-secondary">Sin más preámbulo a continuación se presenta el análisis sintetizado con respecto a la infraestructura, así como las estrategias desarrolladas a fin de dar respuesta las problemáticas y oportunidades de mejora identificadas.</p>
+    <hr>
+    <h2 class="text-center"><b>Diagnóstico</b></h2>
+    <div class="pt-4">
+      <div class="d-none d-lg-block" id="Grafica18" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div> 
+      <div class="d-lg-none" id="Grafica18z" style="border: 2px solid #ccc;"></div>           
+    </div>
+    <div class="pt-4">
+      <div class="d-none d-lg-block" id="Grafica28" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>  
+      <div class="d-lg-none" id="Grafica28z" style="border: 2px solid #ccc;"></div>  
+    </div>
+    <hr>
+    <h2 class="text-center"><b>Estrategia</b></h2>
+    <p class="text-secondary"><b>Agua potable y alcantarillado.</b> De acuerdo a los objetivos planteados en el Plan Hídrico Estatal para fortalecer el abastecimiento del agua y el acceso a los servicios de agua potable, alcantarillado y saneamiento se describen las siguientes estrategias: incrementar la cobertura de los servicios de agua potable y alcantarillado y se establece mejorar las eficiencias de los servicios de agua en los municipios y reducir el consumo público urbano a través de varias acciones contenidas en el documento.</p>
+    <p class="text-secondary"><b>Consolidación de los Sistemas de Infraestructura de Servicios.</b> Su consolidación debe ser congruente con la estructura urbana, para asimismo mejorar el funcionamiento de las redes de distribución de los servicios de energía eléctrica agua potable, drenaje sanitario y pluvial.</p>
+    <p class="text-secondary"><b>Implementación de Tecnologías Alternativas en la Infraestructura.</b> Actualmente existen oportunidades más factibles para la implementación de la infraestructura sustentable, es decir introducción de tecnologías alternativas, aprovechando el potencial de recursos naturales como la energía solar y eólica, así como la producción de energía a través de fuentes alternativas como los desechos. El Fideicomiso para el Ahorro de Energía Eléctrica promueve e incide en el uso eficiente de energía eléctrica, a través de proyectos orientados al sector productivo mediante el otorgamiento de financiamiento, para la modernización de sus instalaciones, desarrollo y aplicación de nuevas tecnologías de eficiencia energética.</p>
+    <p class="text-secondary"><b>Infraestructura vial.</b> La ciudad de Chihuahua presenta significativos avances en materia de infraestructura vial. A la fecha cuenta con 15 distribuidores viales, 28 puentes vehiculares, 335 km de vías primarias, 15 pares viales, 68 km de circuito interior y 94 km de libramientos que dan soporte al funcionamiento de la ciudad. Estas obras interconectan los puntos de producción y consumo de la región, permitiendo realizar actividades productivas, de servicios, de distracción y turísticas.</p>
+    <hr>
+    <h2 class="text-center"><b>Archivos Descargables</b></h2>
+    <ul>
+        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/INFRA/2.6 Infraestructura Urbana.pdf" title="Urbana" target="_blank">Infraestructura Urbana </a></li>
+        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/INFRA/4.9  Aportaciones a la Estrategia de Infraestructura.pdf" title="Estrategia" target="_blank">Aportaciones a la Estrategia de Infraestructura</a></li>
+    </ul>
+</div>
+<hr>
+<div id="Equipamiento"></div>
+<div class="container">
+    <div class="row m-3">
+          <div class="col-sm-3">
+             <img src="img/PDU2040/equipamiento.png"  alt="Población">
+          </div>
+          <div class="col-sm-9">
+              <h2><b>Equipamiento y Espacio Público</b></h2>
+          </div>
+    </div>
+    <p class="text-secondary">De forma paralela al suelo, la infraestructura y la vivienda, el equipamiento es uno de los componentes urbanos primordiales, por su gran aportación para el desarrollo social y económico.</p>
+    <p class="text-secondary">El Equipamiento Urbano se refiere a aquellos espacios y edificios dedicados a ofrecer los servicios requeridos por la sociedad. Estos pueden ser tanto públicos como privados y abarcan aspectos variados como es el sector salud, educación, comercio, etc.</p>
+    <p class="text-secondary">El objetivo particular de la presente actualización en este rubro es analizar las condicionantes actuales para dotación y consolidación del equipamiento urbano de acuerdo a condiciones físicas, de población y sociales en zonas desprovistas y la dinámica sociodemográfica que condiciona la temporalidad para su consolidación en áreas de reserva.</p>
+    <p class="text-secondary">Por otro lado la consolidación de equipamiento de jerarquía regional se hace necesaria para la adecuada competitividad considerando el esquema metropolitano de convivencia funcional, social y económico previsto.</p>
+    <p class="text-secondary">La sustentabilidad social de las ciudades debe reforzarse mediante la construcción de relaciones significativas entre las personas y los lugares que habitan. La existencia de ciudades competitivas, prósperas, justas, seguras y sustentables depende de la acción articulada de sus ciudadanos y de las autoridades que las gestionan.</p>
+    <hr>
+    <h2 class="text-center"><b>Diagnóstico</b></h2>
+    <div class="pt-4">
+      <div class="d-none d-lg-block" id="Grafica11" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div> 
+      <div class="d-lg-none" id="Grafica11z" style="border: 2px solid #ccc;"></div> 
+    </div>
+    <div class="pt-4">
+      <div class="d-none d-lg-block" id="Grafica22" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>
+      <div class="d-lg-none" id="Grafica22z" style="border: 2px solid #ccc; "></div>            
+    </div>
+    <hr>
+    <h2 class="text-center"><b>Estrategia</b></h2>
+    <p class="text-secondary"><b>Consolidación del Sistema de Equipamiento.</b> El requerimiento total de suelo para la dotación de los servicios demandados será de 9'480,825 m2, equivalente a 948.08 has, las cuales requerirán una ubicación específica en espacios vecinales, y relativa en servicios a nivel centro de población, condición que requerirá la previsión de reserva en las etapas programáticas del Plan.</p>
+    <hr>
+    <h2 class="text-center"><b>Archivos Descargables</b></h2>
+    <ul>
+        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/EQUIPA/2.4 Equipamieto Urbano.pdf" title="Equipamiento" target="_blank">Equipamiento Urbano</a></li>
+        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/EQUIPA/4.6 Aportaciones a la Estrategia de Equipamieto.pdf" title="Estrategia" target="_blank">Aportaciones a la Estrategia de Equipamiento Urbano</a></li>
+    </ul>
+</div>
+<hr>
+<div id="Movilidad"></div>
+<div class="container">
+    <div class="row m-3 pt-4">
+          <div class="col-sm-3">
+             <img src="img/PDU2040/movilidad.png"  alt="Población">
+          </div>
+          <div class="col-sm-9">
+              <h2><b>Movilidad</b></h2>
+          </div>
+    </div>
+    <p class="text-secondary">La movilidad urbana constituye uno de los temas de creciente y progresiva relevancia tanto para el funcionamiento del sistema urbano como para el desenvolvimiento de la vida económica y social. Su objetivo es mejorar la accesibilidad y la conectividad desde las periferias hacia el centro y viceversa, y también promover la regulación del uso del espacio público a través de la implementación de movilidad alterna no motorizada, pues es un recurso fundamental para la reestructuración de la ciudad y sus modos de vida.</p>
+    <p class="text-secondary">El crecimiento urbano es consecuencia de la constante búsqueda de desarrollo y prosperidad, sin embargo la expansión territorial conlleva un desarrollo urbano de baja densidad con alta dependencia del automóvil, lo que provoca mayores costos sociales y ambientales, pérdida de biodiversidad en las áreas urbanizadas, emisión de gases de efecto invernadero y de contaminantes, accidentes, congestión y ruido.</p>
+    <p class="text-secondary">Al 2015 el reto sigue siendo, consolidar una ciudad sustentable que garantice el bienestar, mejore la calidad de vida, la competitividad, la movilidad, el transporte y el medio ambiente; es decir, una ciudad más compacta, conectada, integrada e incluyente, pensada y planeada para la gente y no para el automóvil.</p>
+    <hr>
+    <h2 class="text-center"><b>Diagnóstico</b></h2>
+    <div>
+      <div class="d-none d-lg-block" id="Grafica111" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>
+      <div class="d-lg-none" id="Grafica111z" style="border: 2px solid #ccc;"></div>          
+    </div>
+    <div class="pt-4">
+        <div class="d-none d-lg-block" id="Grafica222" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div> 
+        <div class="d-lg-none" id="Grafica222z" style="border: 2px solid #ccc;"></div>           
+    </div>
+    <hr>
+    <h2 class="text-center"><b>Estrategia</b></h2>
+    <p class="text-secondary"><b>Movilidad intraurbana y regional.</b> Se propone un anillo periurbano enfocado a satisfacer la demanda de flujo regional que es de paso por la ciudad. Dichos flujos circulan actualmente al interior de la mancha urbana de Chihuahua sobre todo en la zona surponiente y con la propuesta se espera un mejoramiento considerable del servicio en vialidades interiores. Dicho anillo será de accesibilidad restringida con integración únicamente a las vialidades de acceso regional.</p>
+    <p class="text-secondary"><b>Movilidad Alternativa.</b> Como resultado de los trabajos de análisis de la situación actual de la ciudad, densidad poblacional, zonas identificadas como de atención prioritaria (ZAP), DENUES, sistema BRT, corredores de movilidad, análisis de propuestas en diversos talleres especializados en la movilidad alternativa no motorizada llevados a cabo como CICLO CIUDADES Y ITDP.</p>
+    <p class="text-secondary"><b>Acciones para mejorar el servicio del SITP.</b> Para mejorar y elevar la calidad de servicio, así como para vigilar el cumplimiento de la operación del mismo, la autoridad también debe fortalecerse institucionalmente, mediante la aplicación de tecnologías, contratación y capacitación de personal especializado, utilización de manuales de operación y marco jurídico.</p>
+    <hr>
+    <h2 class="text-center"><b>Archivos Descargables</b></h2>
+    <ul>
+      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MOVILIDAD/2.3 Estructura de Movilidad.pdf" title="Estructura" target="_blank">Estructura de Movilidad</a></li>
+      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MOVILIDAD/4.5 Aportaciones a la Estrategia de Movilidad.pdf" title="Estrategia" target="_blank">Aportaciones a la Estrategia de Movilidad</a></li>
+    </ul>
+</div>
+<hr>
+<div id="Marco"></div>
+<div class="container">
+    <div class="row m-3">
+          <div class="col-sm-3">
+             <img src="img/PDU2040/marcoLegal.png"  alt="Población">
+          </div>
+          <div class="col-sm-9">
+              <h2><b>Marco Normativo e Institucional</b></h2>
+          </div>
+    </div>
+    <p class="text-secondary">El Plan de Desarrollo Urbano del Centro de Población Chihuahua Visión 2040 es ilustrativo de una comunidad que trabaja en definir su futuro y en generar una realidad más propicia para su progreso fortaleciendo valores, innovando sus esquemas productivos, fomentando un modelo diferente de desarrollo urbano a fin de manejar de la mejor forma posible sus posibilidades y recursos.</p>
+    <p class="text-secondary">La normatividad mexicana contempla desde los niveles federales el derecho universal para la población mexicana de tener acceso un medio ambiente adecuado para su desarrollo y bienestar.</p>
+    <p class="text-secondary">Los elementos contemplados para encaminar el desarrollo urbano hacia condiciones que permitan una mejor calidad de vida para la ciudadanía incluyen Leyes, Códigos, Reglamentos, y Planes, como el presente, mismos que habrán de ser acatados por todos aquellos envueltos en la toma de decisiones que involucren a la ciudad.</p>
+    <p class="text-secondary">A continuación se presenta la normatividad existente y se hace mención de las oportunidades existentes para fortalecer los instrumentos que conduzcan a los cambios requeridos.</p>
+    <hr>
+    <h2 class="text-center"><b>Diagnóstico</b></h2>
+    <div class="pt-4">
+       <div class="d-none d-lg-block" id="Grafica1" style="border: 2px solid #ccc;width: 900px; height: 500px;"></div>  
+       <div class="d-lg-none" id="Grafica1z" style="border: 2px solid #ccc;"></div>                                
+    </div>    
+    <hr>
+    <h2 class="text-center"><b>Estrategia</b></h2>
+    <p class="text-secondary">El Municipio de Chihuahua, a través del presente Plan identifica como necesario el generar los instrumentos adecuados para incidir en la participación ciudadana responsable, para esto se habrá de fortalecer el acceso a la información, así como un mecanismo que permita el monitoreo de los avances realizados en los diferentes aspectos pertinentes a la ciudad y la calidad de vida de la población.</p>
+    <p class="text-secondary">Es así que los invitamos a consultar la totalidad del capítulo disponible en el apartado de elementos descargables.</p>
+    <hr>
+    <h2 class="text-center"><b>Archivos Descargables</b></h2>
+    <ul>
+        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MARCO NORMATIVO/1.1 Justificacion.pdf" title="Justificación" target="_blank">Justificación</a></li>
+        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/MARCO NORMATIVO/1.2 Antecedentes.pdf" title="Antecedentes" target="_blank">Antecedentes</a></li>
+    </ul>
+</div>
+<!-- tercer Parallax -->
+<hr>
+<h3 class="text-center"><b>ARCHIVOS DESCARGABLES PDU 2040</b></h3>
+
+<div class="container">
+  <div class="row m-3">
+    <div class="col-sm-3">
+                    <p class="w3-center" style="font-weight: bold">Quinta Actualización 2016. Publicación en P.O. No. 76 el 21 de Septiembre 2016, Acuerdo No.99</p>
+                    <p><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/PDU2040-2016-Quinta Actualizacion.pdf" title="PDU2040" target="_blank">Documento</a></p>
+                    <p><a href="https://correo.stj.gob.mx/public/downloadfile.aspx?f=KO3bpP6%2bS7xDNLSlFbTdOIuqvcFG%2fvynPQncxW4hq6S7U4nSGAnpV%2ffp2B8%2b8PRIwuMYOhg4Vm8%3d" title="PDU2040" target="_blank">Descargar versi&oacuten peri&oacutedico oficial</a> - Parte I</p>  
+          <p><a href="https://correo.stj.gob.mx/public/downloadfile.aspx?f=GaRuQ%2f1Tt%2bTCVBp38gmqcbpWwe9fqUkH4lChoh3dUepIdk%2by5nsID3VAJF1bhblaekYXfMQz2IM%3d" title="PDU2040" target="_blank">Descargar versi&oacuten peri&oacutedico oficial</a> - Parte II</p>
+          <p><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/CARTA%20SINTESIS.pdf" title="Carta Sintesis" target="_blank">Carta S&iacute;ntesis</a></p>
+          
+                    <p>Anexo Cartográfico:</p>
+                    <ul>                      
+                        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Cartografico/PDU2040-2016-ET-201 - Zonificacion Primaria.pdf" title="Zonificacion" target="_blank">Zonificación Primaria</a></li>
+                        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Cartografico/PDU2040-2016-ET-202-A - Adecuaciones a Zonificacion Secundaria.pdf" title="Adecuaciones" target="_blank">Adecuaciones a Zonificación Secundaria</a></li>
+                        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Cartografico/PDU2040-2016-ET-202-B - Zonificacion Secundaria.pdf" title="Zonificacion" target="_blank">Zonificación Secundaria</a></li>
+                        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Cartografico/PDU2040-2016-ET-701 - Estructura Vial.pdf" title="Estructura" target="_blank">Estructura Vial</a></li>
+                        <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Cartografico/PDU2040-ET-702-2016 - Infraestructura Vial.pdf" title="Infraestructura" target="_blank">Infraestructura Vial</a></li></ul>                         
+                        <p><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Secciones Viales/PDU2040-2016 - Anexo Secciones Viales.pdf" title="Anexo" target="_blank">Anexo Secciones Viales</a></p> 
+                        <p>Anexo Documental:</p>                           
+                        <ul><li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Documental/PM San Felipe/PROGRAMA MAESTRO SAN FELIPE.pdf" title="Plan" target="_blank">Plan Maestro San Felipe</a></li>
+                            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Documental/PM Sacramento/PM RIO SACRAMENTO.pdf" title="Rio" target="_blank">Plan Maestro Río Sacramento</a></li>
+                            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Documental/PAC Haciendita/PAC LA HACIENDITA.pdf" title="La haciendita" target="_blank">Polígono de Actuación La Haciendita</a></li>
+                            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Documental/PAC Aeropuerto/PAC PLAN VISION AEROPUERTO.pdf" title="Vision" target="_blank">Polígono de Actuación Plan Visión Aeropuerto</a></li>
+                            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2016/Anexo Documental/ZEID Norte/PAC ZEID NORTE.pdf" title="ZEID" target="_blank">Zona Especial de Integración al Desarrollo Norte</a></li>
+                        </ul>
+    </div>  
+    <div class="col-sm-3">
+                        
+                                  <p class="w3-center" style="font-weight: bold">Cuarta Actualización 2013. Publicación en P.O. Anexo 80 del 5 Octubre 2013</p>
+                              <p><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2013/Documento/PDU2040-2013 - Cuarta Actualizacion.pdf" title="Archivo de 21.4 MB" target="_blank">Documento</a></p>
+                              <p>Anexo Cartográfico:</p>
+                              <ul>                        
+                                  <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2013/Anexo Cartografico/PDU2040_2013-ET-202-A - Adecuaciones a Zonificacion Secundaria.pdf" title="Archivo de 15.4 MB" target="_blank">Adecuaciones Zonificación Secundaria</a></li>
+                                  <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2013/Anexo Cartografico/PDU2040_2013-ET-701 - Estructura Vial.pdf" title="Archivo de 7.62 MB" target="_blank">Estructura Vial</a></li>
+                                  <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2013/Anexo Cartografico/PDU2040_2013-ET-201 - Zonificacion Primaria.pdf" title="Archivo de 5.79 MB" target="_blank">Zonificación Primaria</a> </li>
+                                  <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2013/Anexo Cartografico/PDU2040_2013-ET-202-B - Zonificacion Secundaria.pdf" title="Archivo  de 17.0 MB" target="_blank">Zonificación Secundaria</a></li>
+                              </ul>
+                                  <p>Anexo Secciones Viales:</p>
+                                <ul>
+                                  <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2013/Anexo Secciones Viales/PDU2040_2013 - Anexo Secciones Viales.pdf" title="Archivo de 6.10 MB" target="_blank"> Anexos Secciones Viales</a></li>
+                                </ul> 
+      </div>
+      <div class="col-sm-3">
+                                        <p class="w3-center" style="font-weight: bold">Adecuaciones 2010. Publicación en P.O. Anexo 103 del 25 Diciembre 2010</p>
+                                    <ul>
+                                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2010/Documento/PDU2040_2010 Ajustes tecnicos a Zonificacion Secundaria.pdf" title="Archivo de 17.8 MB" target="_blank">Documento</a></li> 
+                                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2010/Anexo Cartografico/PDU2040_2010-ET-202-B - Zonificacion Secundaria.pdf" title="Archivo  de 17.8 MB" target="_blank">Zonificación Secundaria</a></li>                 
+                                    </ul>
+      </div>
+
+    <div class="col-sm-3">
+
+
+                      <p class="w3-center" style="font-weight: bold">Tercera Actualización 2009. Publicación en P.O. Anexo 99 del 12 Diciembre 2009 PDU 2040</p>
+                <p>Documento:</p>
+                  <ul>
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-00 Indice general.pdf" title="Indice" target="_blank">Índice</a></li>
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-01 Antecedentes.pdf" title="Antecedentes" target="_blank">Antecedentes</a></li> 
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-02 Diagnostico.pdf" title="Diagnostico" target="_blank">Diagnóstico</a></li>
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-03 Vision.pdf" title="Vision" target="_blank">Visión</a></li>
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-04 Propuesta de desarrollo urbano.pdf" title="Propuesta de DU" target="_blank">Propuesta de Desarrollo Urbano</a></li>
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-05 Estrategia de gestion.pdf" title="Estrategia" target="_blank">Estrategia de Gestión</a></li>
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-06 Instrumentos de desarrollo urbano.pdf" title="Instrumento" target="_blank">Instrumentos de Desarrollo Urbano</a></li>
+                      <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Documento/PDU2040_2009-07 Bibliografia Creditos Glosario.pdf" title="Blibliografia" target="_blank">Bibliografía, Créditos y Glosario</a></li>
+                  </ul>
+                  <p>Anexo Cartográfico</p>
+                  <ul>
+                      <li>Diagnóstico:
+                          <ul>
+                            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Anexo Cartografico/Diagnostico/1 Poblacion, desarrollo social y cultura urbana/PDU2040_2009-DG-101-DensidaddePoblacion.pdf" title="Densidad" target="_blank">Densidad de Población</a></li>
+                            <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Anexo Cartografico/Diagnostico/1 Poblacion, desarrollo social y cultura urbana/PDU2040_2009-DG-111-ZonasdeAtencionPrioritaria.pdf" title="Zonas" target="_blank">Zonas de Atención Prioritaria</a></li>
+                          </ul></li>
+                  </ul>
+                  <ul>
+                      <li>Estrategia:
+                                <ul>
+                                    <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Anexo Cartografico/Estrategia/PDU2040_2009-ET-721 - Transporte Publico Urbano.pdf" title="Transporte" target="_blank">Transporte Público Urbano</a></li>
+                                    <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Anexo Cartografico/Estrategia/PDU2040_2009-ET-711 - Transporte No Motorizado.pdf" title="Transporte" target="_blank">Transporte No Motorizado</a></li>
+                                    <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Anexo Cartografico/Estrategia/PDU2040_2009-ET-702 - Infraestructura Vial.pdf" title="Vial" target="_blank">Infraestructura Vial</a></li>
+                                    <li><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Anexo Cartografico/Estrategia/PDU2040_2009-ET-601 - Macroproyectos de Jerarquia Urbana.pdf" title="Urbana" target="_blank">Macroproyectos de Jerarquía Urbana</a></li>
+                                </ul></li>
+                  </ul>
+                    <p><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/PDU2040/pdf/PDU2040_2009/Anexo Secciones Viales/PDU2040_2009 - Anexo Secciones Viales.pdf" title="Viales" target="_blank">Anexo Secciones Viales</a></p>
+                    <p>Estudios de Soporte:</p>
+                <ul>
+                <li><a href="https://drive.google.com/file/d/0B2RuzL-mO3KULXZNYTg1NkljZ1U/view?usp=sharing" title="Planeacion" target="_blank">Proceso de Planeación Participativa</a></li>
+                    <li><a href="https://drive.google.com/file/d/0B2RuzL-mO3KUNmNuUnBORnlUVFk/view?usp=sharing" title="Encuesta" target="_blank">Encuesta sobre la Dinámica Social</a></li>
+                    <li><a href="https://drive.google.com/file/d/0B2RuzL-mO3KUWFJoSG5FZHpIaHM/view?usp=sharing" title="Espacio Urbano" target="_blank">Estudio del Espacio Urbano</a></li>
+                    <li><a href="https://drive.google.com/file/d/0B2RuzL-mO3KUcXoyblhUU0Q3cEE/view?usp=sharing" title="Estudios Ambientales" target="_blank">Estudios Ambientales</a></li>
+                    <li><a href="https://drive.google.com/file/d/0B2RuzL-mO3KUMVY4NWk5NzdKNW8/view?usp=sharing" title="Movilidad" target="_blank">Plan Sectorial de Movilidad Urbana Sustentable</a></li>
+              </ul>
+    </div>    
+  </div> 
+</div>
+<!--foot -->
+<blockquote class="blockquote mb-0" style="background-color:rgb(102, 0, 102);">
+    <div class="row">
+      <div class="col-sm-3 pt-3 pt-5">
+        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
+      </div>
+      <div class="col-sm-3 pt-3 pt-5">
+        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
+        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
+        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
+
+      </div>
+      <div class="col-sm-3 pt-5">
+        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
+        <p class="text-center">
+          <a href="https://facebook.com/implanchihuahua" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
+          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>         
+          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
+          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
+        </p>       
+      </div>
+      <div class="col-sm-3 pt-5">
+        <img src="img/premioOX.png" alt="premioOX">
+        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
+      </div>        
+    </div>
+      <div class="clearfix bg-secondary p-2">
+        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
+        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
+      </div>
+</blockquote>
+
+<!-- script -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80309318-1');
+</script>
+
+<!-- fin -->
+  </body>
+</html> 
