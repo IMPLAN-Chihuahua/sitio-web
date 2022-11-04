@@ -2,6 +2,42 @@
 
 function navbar() {
     return `
+    <div class="container-fluid">
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- -->
+        </div>
+        <div class="col-sm-4 text-right d-lg-block d-none">
+          <script
+            async
+            src="https://cse.google.com/cse.js?cx=014259653855378612527:y7exrn7ypkq"
+          ></script>
+          <div class="gcse-search"></div>
+        </div>
+        <div class="col-sm-2 text-right">
+          <a
+            href="https://www.facebook.com/Implan-Chihuahua-108606468095094"
+            target="_blank"
+            ><span style="font-size: 32px; color: rgb(251, 174, 65)"
+              ><i class="fab fa-facebook-square"></i></span
+          ></a>
+          <!--<a href="https://twitter.com/IMPLANChih?s=08" target="_blank"><span style="font-size: 32px; color: rgb(251, 174, 65);"><i class="fab fa-twitter"></i></span></a>-->
+          <a href="https://www.instagram.com/implanchihuahua/" target="_blank"
+            ><span style="font-size: 32px; color: rgb(251, 174, 65)"
+              ><i class="fab fa-instagram"></i></span
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg"
+            target="_blank"
+            ><span style="font-size: 32px; color: rgb(251, 174, 65)"
+              ><i class="fab fa-youtube"></i></span
+          ></a>
+        </div>
+      </div>
+    </div>
+
+
 <div class="sticky-top navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</button>
 <a class="navbar-brand" href="https://implanchihuahua.org/">
@@ -281,7 +317,7 @@ function navbar() {
 }
 
 function footer() {
-    
+
     return `
     <blockquote class="blockquote mb-0" style="background-color:rgb(251, 174, 65);">
     <div class="row ml-0 mr-0">
