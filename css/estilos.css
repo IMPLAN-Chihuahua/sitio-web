@@ -23,6 +23,7 @@ body {
   background: #ffffff;
   font-family: "Oswald", sans-serif;
 }
+
 /* Make the image fully responsive */
 
 .carousel-inner img {
@@ -90,11 +91,11 @@ a.trans:active {
   border-color: #aca1a2;
 }
 
-.navbar-light .navbar-nav > li > a {
+.navbar-light .navbar-nav>li>a {
   color: #fff;
 }
 
-.navbar-light .navbar-nav > .dropdown > a .caret {
+.navbar-light .navbar-nav>.dropdown>a .caret {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
@@ -112,12 +113,12 @@ a.trans:active {
   width: 100%;
 }
 
-.megamenu > div > li > ul {
+.megamenu>div>li>ul {
   padding: 0;
   margin: 0;
 }
 
-.megamenu > div > li > ul > li {
+.megamenu>div>li>ul>li {
   list-style: none;
 }
 
@@ -130,7 +131,7 @@ a.trans:active {
   outline: 1px solid #000;
 }
 
-.megamenu > div > li > ul > li > a {
+.megamenu>div>li>ul>li>a {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -140,21 +141,21 @@ a.trans:active {
   white-space: normal;
 }
 
-.megamenu > div > li > ul > li > a:hover,
-.megamenu > div > li > ul > li > a:focus {
+.megamenu>div>li>ul>li>a:hover,
+.megamenu>div>li>ul>li>a:focus {
   text-decoration: none;
   color: #262626;
   background-color: #f5f5f5;
 }
 
-.megamenu.disabled > a,
-.megamenu.disabled > a:hover,
-.megamenu.disabled > a:focus {
+.megamenu.disabled>a,
+.megamenu.disabled>a:hover,
+.megamenu.disabled>a:focus {
   color: #999999;
 }
 
-.megamenu.disabled > a:hover,
-.megamenu.disabled > a:focus {
+.megamenu.disabled>a:hover,
+.megamenu.disabled>a:focus {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
@@ -172,19 +173,24 @@ a.trans:active {
     margin-left: 0;
     margin-right: 0;
   }
-  .megamenu > li {
+
+  .megamenu>li {
     margin-bottom: 30px;
   }
-  .megamenu > li:last-child {
+
+  .megamenu>li:last-child {
     margin-bottom: 0;
   }
+
   .megamenu.dropdown-header {
     padding: 3px 15px !important;
   }
+
   .navbar-nav .open .dropdown-menu .dropdown-header {
     color: #fff;
   }
 }
+
 /* animacion */
 
 h4 {
@@ -197,11 +203,13 @@ h4 {
     margin-left: 100%;
     width: 300%;
   }
+
   to {
     margin-left: 0%;
     width: 100%;
   }
 }
+
 /* Botones de entradas de estilos registro.*/
 
 .button-container {
@@ -229,6 +237,7 @@ h4 {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn-registro {
   position: absolute;
   height: 50px;
@@ -238,6 +247,7 @@ h4 {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn-verMas {
   position: absolute;
   height: 50px;
@@ -247,6 +257,7 @@ h4 {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn-conoce {
   position: absolute;
   height: 50px;
@@ -256,6 +267,7 @@ h4 {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn-verMas-min {
   position: absolute;
   height: 30px;
@@ -265,6 +277,7 @@ h4 {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn-conoce-min {
   position: absolute;
   height: 30px;
@@ -274,6 +287,7 @@ h4 {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn-regMas-min {
   position: absolute;
   height: 30px;
@@ -283,6 +297,7 @@ h4 {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn-programa-min {
   position: absolute;
   height: 30px;
