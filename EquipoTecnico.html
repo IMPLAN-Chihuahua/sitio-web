@@ -11,337 +11,134 @@
   <link rel="stylesheet" href="css/b4megamenu.css">
   <link rel="stylesheet" href="css/b5megamenu.css">  
   <link rel="shortcut icon" href="img/implan.ico">  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <style>
-    body {
-      background: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-   /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}    
-</style>
-<style>
-a.trans:link {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:visited {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:hover {
-    color: lightgray;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:active {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-</style>    
+  <link
+    href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/parallax.css" />
+  
+  <script type="text/javascript" src="./components/commons.js"></script>
+  
 </head>
 <body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 pt-3 pb-2">
-    </div>
-    <div class="col-sm-4 pt-3 pb-2 align-items-center">
-       <img src="img/IMPLAN_2017.png" width="270" height="51" alt="IMPLAN">
-    </div> 
-    <div class="col-sm-4 pt-3 pb-2 d-none d-lg-block">
-          <p class="text-right">
-            <a href="#bloque1" data-toggle="collapse" aria-expanded="false" aria-controls="bloque1"><i class="fas fa-phone-volume text-warning"></i></a>       
-            <a href="#bloque2" data-toggle="collapse" aria-expanded="false" aria-controls="bloque2"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque3" data-toggle="collapse" aria-expanded="false" aria-controls="bloque3"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque1">(614) 200 48 20</p>
-            <p class="collapse text-right" id="bloque2">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque3">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>  
-    <div class="col-sm-4 pt-3 pb-2 d-lg-none">
-          <p class="text-right">
-            <a href="tel:6142004820"><i class="fas fa-phone-volume text-warning"></i></a>          
-            <a href="#bloque4" data-toggle="collapse" aria-expanded="false" aria-controls="bloque4"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque5" data-toggle="collapse" aria-expanded="false" aria-controls="bloque5"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque4">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque5">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>              
-  </div>          
-</div> 
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:rgb(102, 0, 102);">
-  <a class="navbar-brand" href="https://implanchihuahua.gob.mx/"><i class="fas fa-home"></i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          IMPLAN
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown5">
-            <div class="row">
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/Mision.html">MISIÓN/VISIÓN</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Consejo.html">CONSEJO</a></p>
-              
-              </div>
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/EquipoTecnico.html">EQUIPO TÉCNICO</a></p>
-              </div>              
-            </div>              
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ENTORNO
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/entorno.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">Chihuahua</h4>
-                <p>Conoce tu ciudad</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ÁMBITO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoRegional">REGIONAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoMunicipal">MUNICIPAL</a></p>
+  <script>
+    document.write(navbar());
+  </script>
+    <div id="parallax-world-of-ugg">
 
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ENTORNO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoEconomico">ECONÓMICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoUrbano">URBANO</a></p>
-              </div>
-             
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PROYECTOS
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown2">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="img/proyectos.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">IMPLAN</h4>
-                <p>Proyectos</p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">SOCIALES</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Cajita.html">CAJITA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/ForoFCCUU.html">FORO FCCUU</a></p>                 <p><a href="https://implanchihuahua.gob.mx/ForoCiudades.html">FORO 1.2019</a></p>
+        <section>
+            <div class="title">
+                <h3>Instituto de Planeación Integral del Municipio de Chihuahua</h3>
+                <h1>IMPLAN Chihuahua</h1>
+            </div>
+        </section>
 
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">URBANOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto1.html">PLAZA DE ARMAS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto3.html">PEATONALIZACIÓN CALLE MORELOS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto2.html">AV. VENUSTIANO CARRANZA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto4.html">PARQUE LERDO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto5.html">CORREDOR ESCULTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto7.html">PARQUE EL REJÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto8.html">EDIFICIO DEL REAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto9.html">CENTRO HISTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto10.html">QUINTA TOUCHE</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto11.html">PARQUE EL ENCINO</a></p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">CENTRO DE ESTUDIOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE2.html">GUÍA METODOLÓGICA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE3.html">INDICADORES</a></p>
-               <p><a href="https://implanchihuahua.gob.mx/EstudioCE1.html">MODELOS DE DENSIFICACIÓN</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PDU2040
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown3">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/PDU.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">PDU2040</h4>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Poblacion">POBLACIÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Soporte">ECONOMÍA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Marco">MARCO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Equipamiento">EQUIPAMIENTO</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Movilidad">MOVILIDAD</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Infraestructura">INFRAESTRUCTURA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Medio">AMBIENTE</a></p>
-              </div>
+        <!--     <section>
+            <div class="parallax-one">
+                <h2>Centro de Estudios Estratégicos</h2>
+            </div>
+        </section>
 
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          DATOS ABIERTOS
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown4">
-            <div class="row">
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables.html">BUSCAR</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_EP.html">ESTUDIOS Y PROYECTOS</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_DA.html">CARTOGRAFÍA</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Licitaciones.html">LICITACIONES</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Directorio.html">DIRECTORIO</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="http://ovie.mpiochih.gob.mx">OVIE</a>
-      </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Transparencia.html">TRANSPARENCIA</a>
-      </li>                     
-    </ul>
-  </div>
-</nav>
-<!--inicia página -->
-<div id="foto" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#foto" data-slide-to="0" class="active"></li>
-    <li data-target="#foto" data-slide-to="1"></li>
-    <li data-target="#foto" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="img-fluid" src="img/imagen-1.jpg" alt="IMPLAN" width="1100" height="500">
-      <div class="carousel-caption">
-        <h3 class="display-3 d-none d-lg-block" style="font-family: 'Open Sans', sans-serif;">IMPLAN</h3>
-        <p class="display-4 d-none d-lg-block" style="font-family: 'Open Sans', sans-serif;">Por la evolución de Chihuahua</p>
-        <h3 class="d-lg-none" style="font-family: 'Open Sans', sans-serif;"><small>IMPLAN</small></h3>
-        <p class="d-lg-none" style="font-family: 'Open Sans', sans-serif;"><small>Por la evolución de Chihuahua</small></p>        
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid" src="img/imagen-4.jpg" alt="IMPLAN" width="1100" height="500">
-      <div class="carousel-caption">
-        <h3 class="display-3 d-none d-lg-block" style="font-family: 'Open Sans', sans-serif;">CHIHUAHUA</h3>
-        <p class="display-4 d-none d-lg-block" style="font-family: 'Open Sans', sans-serif;">Una ciudad en desarrollo</p>
-        <h3 class="d-lg-none" style="font-family: 'Open Sans', sans-serif;"><small>SIG</small></h3>
-        <p class="d-lg-none" style="font-family: 'Open Sans', sans-serif;"><small>Una ciudad en desarrollo</small></p>        
-      </div>   
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid" src="img/imagen-6.jpg" alt="IMPLAN" width="1100" height="500">
-      <div class="carousel-caption">
-        <h3 class="display-3 d-none d-lg-block" style="font-family: 'Open Sans', sans-serif;">TRANSPARENCIA</h3>
-        <p class="display-4 d-none d-lg-block" style="font-family: 'Open Sans', sans-serif;">Actuar para transformar</p>
-        <h3 class="d-lg-none" style="font-family: 'Open Sans', sans-serif;"><small>TRANSPARENCIA</small></h3>
-        <p class="d-lg-none" style="font-family: 'Open Sans', sans-serif;"><small>Actuar para transformar</small></p>     
-      </div>   
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#foto" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#foto" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div> 
-<div class="container">
-  <div class="row">
-    <div class="col pt-4">
-      <h2 class="display-4 text-warning">Centro de Estudios Estratégicos</h2> 
-      <hr>   
-      <p class="text-secondary" style="font-size: 120%;">Coordinación encargada de la elaboración y desarrollo de análisis y estudios como principales insumos para la creación de planes y programas de ámbito urbano y regional. Estos estudios funcionan como un sistema de medición, diagnóstico para la implementación estratégica del municipio de Chihuahua en temas urbanos, sociales, económicos, patrimoniales, ambientales, etc. que dan sustento al adecuado control de la planeación a futuro del municipio en todos sus niveles y sectores.</p> 
-      <p class="text-secondary" style="font-size: 120%;">El Centro de Estudios Estratégicos (CEE) coordina y busca la participación activa de distintos actores, dependencias gubernamentales, sociedad civil, así como de la ciudadanía en general, creando un ambiente de colaboración entre todos para que los análisis científicos sean incluyentes y concluyan en propuestas eficientes de los temas que son de real interés prioritario al municipio de Chihuahua y sus habitantes.</p>
-      <h2 class="pt-2 display-4 text-warning">Planeación Integral</h2> 
-      <hr>   
-      <p class="text-secondary" style="font-size: 120%;">Coordinación donde se analiza y define el marco estratégico de la planeación y el ordenamiento territorial, urbano y rural, estableciendo la oportuna vinculación con la participación social y con visión integral en base a la formulación de las necesidades puntuales y generales en materia de desarrollo territorial concretando la visión colectiva de sostenibilidad.</p>
-      <p class="text-secondary" style="font-size: 120%;">Desarrolla planes y programas parciales, sectoriales, municipales y regionales con visión de corto, mediano y largo plazo con la participación comprometida de los actores locales involucrados, a través del análisis, formulación de dictámenes urbanos, así como la gestión y consultoría para la elaboración de estudios y proyectos para el desarrollo municipal, con el principio fundamental de mejorar la calidad de vida para los habitantes del Municipio.</p> 
-      <h2 class="pt-2 display-4 text-warning">Geomática</h2> 
-      <hr>   
-      <p class="text-secondary" style="font-size: 120%;">Coordinación encargada de gestionar, compilar, procesar, analizar y colaborar con otros productores de datos geoespaciales del municipio, para la conformación y actualización de la base de datos geográfica del Municipio de Chihuahua; aporta recomendaciones para el establecimiento de normas y reglamentos que ayuden a mantener su vigencia y operación, para contribuir en la elaboración de políticas relacionadas con la planeación urbana y ordenamiento territorial.</p>  
-      <p class="text-secondary" style="font-size: 120%;">Geomática permanentemente actualiza las capas de información geográfica, como actividad clave para el análisis, diseño y producción cartográfica de alta calidad; mediante el análisis geoestadístico y territorial se visualizan escenarios para la construcción y medición de indicadores de desarrollo, como apoyo en la toma de decisiones de los estudios del instituto, y otras instancias del Municipio que así lo requieran.</p>
-      <h2 class="pt-2 display-4 text-warning">Participación Ciudadana</h2> 
-      <hr>   
-      <p class="text-secondary" style="font-size: 120%;">Coordinación donde se llevan a cabo los mecanismos de control social y de integración colectiva, para fortalecer los lazos de confianza entre la comunidad y las instituciones, mediante el análisis de las necesidades de la población creando canales de participación ciudadana para oír su voz e incidir en desarrollo de proyectos que mejoran la convivencia en nuestro entorno, la calidad de vida, la igualdad de derechos de toda la ciudadanía y de su progreso.</p>
-      <p class="text-secondary" style="font-size: 120%;">Participación Ciudadana aplica técnicas participativas tales como Pedagogía Urbana, desarrolla actividades de manera incluyente y representativa de los diferentes grupos de la sociedad civil tales como: niños, jóvenes, profesionistas y público en general con interés de participar en la construcción y conocimiento acerca de su ciudad.</p>
-      <h2 class="pt-2 display-4 text-warning">Administrativo y Vinculación</h2> 
-      <hr>   
-      <p class="text-secondary" style="font-size: 120%;">Coordinación encargada de proyectar, organizar, administrar y optimizar los recursos financieros del IMPLAN, para la realización de las diferentes operaciones que permitan el normal desarrollo de las actividades, así como mantener una eficiente comunicación y difusión de la labor interna con todas las áreas municipales, estatales, federales y organizaciones no gubernamentales nacionales e internacionales con las que el instituto interactúa así como hacia la ciudadanía en lo general; realiza desde el adecuado manejo financiero interno para el óptimo funcionamiento de la institución hasta la intensa comunicación de ideas, programas, iniciativas y demás trabajos para fomentar la participación activa de nuestra comunidad.</p> 
-      <p class="text-secondary" style="font-size: 120%;">Administración y vinculación controla los recursos humanos, materiales y financieros a través del cumplimiento de la programación y los presupuestos definidos para los estudios y programas elaborados por el Instituto y difundirlos hacia la comunidad procurando siempre la evaluación y retroalimentación de los mismos con el eje principal de la política pública de planeación urbana y territorial.</p>
-       <h2 class="pt-2 display-4 text-warning">Normatividad y Transparencia</h2> 
-      <hr>   
-      <p class="text-secondary" style="font-size: 120%;">Coordinación que asesora al Instituto en cualquier aspecto legal, relacionado con la operación y administración de los estudios y acciones urbanas de planeación que se generen desde el punto de vista normativo, verificando el adecuado funcionamiento del marco legal que rige al Instituto, apoyando el desarrollo y cumplimiento de trabajos en base a las disposiciones legales que inciden en los aspectos técnicos y administrativos de la planeación integral, la transparencia y la rendición de cuentas.</p> 
-      <p class="text-secondary" style="font-size: 120%;">Normatividad mantiene actualizado el marco jurídico del Instituto mediante la revisión de leyes, reglamentos y demás ordenamientos vigentes y propone las reformas correspondientes, coordina y da seguimiento a las Sesiones Ordinarias y Extraordinarias de la Comisión Ejecutiva del Instituto, así como de las Sesiones Ordinarias y Técnicas con el Consejo Consultivo, responde a los requerimientos y solicitudes de la Ley General de Transparencia y Acceso a la Información Pública.</p>                     
-    </div>
-  </div>
-</div>
+        <section>
+            <div class="block">
+                <p><span class="first-character sc">C</span>oordinación encargada de la elaboración y desarrollo de análisis y estudios como principales insumos para la creación de planes y programas de ámbito urbano y regional. Estos estudios funcionan
+                    como un sistema de medición, diagnóstico para la implementación estratégica del municipio de Chihuahua en temas urbanos, sociales, económicos, patrimoniales, ambientales, etc. que dan sustento al adecuado control de la planeación a
+                    futuro del municipio en todos sus niveles y sectores.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">El Centro de Estudios Estratégicos (CEE) coordina y busca la participación activa de distintos actores, dependencias gubernamentales, sociedad civil, así como de la ciudadanía en general, creando un ambiente de colaboración entre todos
+                    para que los análisis científicos sean incluyentes y concluyan en propuestas eficientes de los temas que son de real interés prioritario al municipio de Chihuahua y sus habitantes.</p>
+            </div>
+        </section>-->
 
+        <section>
+            <div class="parallax-two">
+                <h2>Planeación Integral</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character ny">C</span>oordinación donde se analiza y define el marco estratégico de la planeación y el ordenamiento territorial, urbano y rural, estableciendo la oportuna vinculación con la participación social y con
+                    visión integral en base a la formulación de las necesidades puntuales y generales en materia de desarrollo territorial concretando la visión colectiva de sostenibilidad.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">Desarrolla planes y programas parciales, sectoriales, municipales y regionales con visión de corto, mediano y largo plazo con la participación comprometida de los actores locales involucrados, a través del análisis, formulación de dictámenes
+                    urbanos, así como la gestión y consultoría para la elaboración de estudios y proyectos para el desarrollo municipal, con el principio fundamental de mejorar la calidad de vida para los habitantes del Municipio.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="parallax-three">
+                <h2>Geomática</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character atw">C</span>oordinación encargada de gestionar, compilar, procesar, analizar y colaborar con otros productores de datos geoespaciales del municipio, para la conformación y actualización de la base de datos
+                    geográfica del Municipio de Chihuahua; aporta recomendaciones para el establecimiento de normas y reglamentos que ayuden a mantener su vigencia y operación, para contribuir en la elaboración de políticas relacionadas con la planeación
+                    urbana y ordenamiento territorial.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">Geomática permanentemente actualiza las capas de información geográfica, como actividad clave para el análisis, diseño y producción cartográfica de alta calidad; mediante el análisis geoestadístico y territorial se visualizan escenarios
+                    para la construcción y medición de indicadores de desarrollo, como apoyo en la toma de decisiones de los estudios del instituto, y otras instancias del Municipio que así lo requieran.</p>
+            </div>
+        </section>
+        <!--  <section>
+            <div class="parallax-four">
+                <h2>Participación Ciudadana</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character sc">C</span>oordinación donde se llevan a cabo los mecanismos de control social y de integración colectiva, para fortalecer los lazos de confianza entre la comunidad y las instituciones, mediante el análisis
+                    de las necesidades de la población creando canales de participación ciudadana para oír su voz e incidir en desarrollo de proyectos que mejoran la convivencia en nuestro entorno, la calidad de vida, la igualdad de derechos de toda la
+                    ciudadanía y de su progreso.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">Participación Ciudadana aplica técnicas participativas tales como Pedagogía Urbana, desarrolla actividades de manera incluyente y representativa de los diferentes grupos de la sociedad civil tales como: niños, jóvenes, profesionistas y
+                    público en general con interés de participar en la construcción y conocimiento acerca de su ciudad.</p>
+            </div>
+        </section> -->
+        <section>
+            <div class="parallax-five">
+                <h2>Coordinación Administrativa</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character ny">C</span>oordinación encargada de proyectar, organizar, administrar y optimizar los recursos financieros del IMPLAN, para la realización de las diferentes operaciones que permitan el normal desarrollo de
+                    las actividades, así como mantener una eficiente comunicación y difusión de la labor interna con todas las áreas municipales, estatales, federales y organizaciones no gubernamentales nacionales e internacionales con las que el instituto
+                    interactúa así como hacia la ciudadanía en lo general; realiza desde el adecuado manejo financiero interno para el óptimo funcionamiento de la institución hasta la intensa comunicación de ideas, programas, iniciativas y demás trabajos
+                    para fomentar la participación activa de nuestra comunidad.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">Administración y vinculación controla los recursos humanos, materiales y financieros a través del cumplimiento de la programación y los presupuestos definidos para los estudios y programas elaborados por el Instituto y difundirlos hacia
+                    la comunidad procurando siempre la evaluación y retroalimentación de los mismos con el eje principal de la política pública de planeación urbana y territorial.</p>
+            </div>
+        </section>
+        <section>
+            <div class="parallax-six">
+                <h2>Normatividad y Transparencia</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="block">
+                <p><span class="first-character atw">C</span>oordinación que asesora al Instituto en cualquier aspecto legal, relacionado con la operación y administración de los estudios y acciones urbanas de planeación que se generen desde el punto de
+                    vista normativo, verificando el adecuado funcionamiento del marco legal que rige al Instituto, apoyando el desarrollo y cumplimiento de trabajos en base a las disposiciones legales que inciden en los aspectos técnicos y administrativos
+                    de la planeación integral, la transparencia y la rendición de cuentas.</p>
+                <p class="line-break margin-top-10"></p>
+                <p class="margin-top-10">Normatividad mantiene actualizado el marco jurídico del Instituto mediante la revisión de leyes, reglamentos y demás ordenamientos vigentes y propone las reformas correspondientes, coordina y da seguimiento a las Sesiones Ordinarias y
+                    Extraordinarias de la Comisión Ejecutiva del Instituto, así como de las Sesiones Ordinarias y Técnicas con el Consejo Consultivo, responde a los requerimientos y solicitudes de la Ley General de Transparencia y Acceso a la Información
+                    Pública.
+                </p>
+            </div>
+        </section>
+    </div>
 <!--foot -->
-<blockquote class="blockquote mb-0" style="background-color:rgb(102, 0, 102);">
-    <div class="row">
-      <div class="col-sm-3 pt-3 pt-5">
-        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
-      </div>
-      <div class="col-sm-3 pt-3 pt-5">
-        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
-        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
-        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
-
-      </div>
-      <div class="col-sm-3 pt-5">
-        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
-        <p class="text-center">
-          <a href="https://facebook.com/implanchihuahua" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
-          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>         
-          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
-          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
-        </p>       
-      </div>
-      <div class="col-sm-3 pt-5">
-        <img src="img/premioOX.png" alt="premioOX">
-        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
-      </div>        
-    </div>
-      <div class="clearfix bg-secondary p-2">
-        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
-        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
-      </div>
-</blockquote>
-
-<!-- script -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <script>
+      document.write(footer());
+    </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
 <script>
