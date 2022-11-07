@@ -57,14 +57,14 @@ function navbar() {
                     </li>
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/Consejo.html" target="_self">CONSEJO</a>
+                            <li><a href="Consejo.html" target="_self">CONSEJO</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
                     </li>
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/EquipoTecnico.html" target="_self">EQUIPO TÉCNICO</a>
+                            <li><a href="EquipoTecnico.html" target="_self">EQUIPO TÉCNICO</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
