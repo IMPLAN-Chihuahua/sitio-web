@@ -142,7 +142,7 @@ function navbar() {
                     <li class="col-md-3 dropdown-item bg-light">
                         <ul>
                             <li class="dropdown-header">URBANOS</li>
-                            <li><a href="https://implanchihuahua.org/Proyecto7.html" target="_self">PARQUE EL REJÓN</a>
+                            <li><a href="https://implanchihuahua.org/ParqueRejon.html" target="_self">PARQUE EL REJÓN</a>
                             </li>
                             <li><a href="https://implanchihuahua.org/Proyecto8.html" target="_self">EDIFICIO DEL REAL</a>
                             </li>
