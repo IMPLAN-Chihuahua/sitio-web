@@ -1,5 +1,5 @@
-@import url(https://web.archive.org/web/20211022034930cs_/https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-@import url(https://web.archive.org/web/20211022034930cs_/https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 /* Override UGG site */
 
 #main {
@@ -141,7 +141,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://web.archive.org/web/20211022034930im_/https://implanchihuahua.org/img/Bole.JPG);
+    background-image: url(/img/Bole.JPG);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -156,7 +156,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://web.archive.org/web/20211022034930im_/https://implanchihuahua.org/img/imagen-3.jpg);
+    background-image: url(/img/imagen-3.jpg);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -171,7 +171,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://web.archive.org/web/20211022034930im_/https://implanchihuahua.org/img/geomatica.jpg);
+    background-image: url(/img/geomatica.jpg);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -186,7 +186,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://web.archive.org/web/20211022034930im_/https://implanchihuahua.org/img/imagen-6.jpg);
+    background-image: url(/img/imagen-6.jpg);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -201,7 +201,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://web.archive.org/web/20211022034930im_/https://implanchihuahua.org/img/imagen-9.jpg);
+    background-image: url(/img/imagen-9.jpg);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
@@ -216,7 +216,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://web.archive.org/web/20211022034930im_/https://implanchihuahua.org/img/imagen-1.jpg);
+    background-image: url(/img/imagen-1.jpg);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
