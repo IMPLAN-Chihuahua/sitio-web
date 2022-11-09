@@ -1,7 +1,7 @@
 
 
 function navbar() {
-    return `
+  return `
     <div class="container-fluid bg-terrain">
     <br />
     <div class="row">
@@ -180,7 +180,7 @@ function navbar() {
                             </li>
                   <li>
                     <a
-                      href="Proyecto4.html"
+                      href="ParqueLerdo.html"
                       target="_self"
                       >PARQUE LERDO</a
                     >
@@ -565,7 +565,7 @@ function navbar() {
 }
 
 function footer() {
-    return `
+  return `
     <footer class="blockquote mb-0" style="background-color: rgb(251, 174, 65)">
     <div class="row ml-0 mr-0">
       <div class="col-sm-3 pt-5">
