@@ -40,7 +40,7 @@ function navbar() {
 
 <div class="sticky-top navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</button>
-<a class="navbar-brand" href="https://implanchihuahua.org/">
+<a class="navbar-brand" href="/">
     <img src="img/IMPLAN05.png" height="40" alt="IMPLAN Chihuahua">
 </a>
 <div class="navbar-collapse collapse">
@@ -267,7 +267,7 @@ function navbar() {
             <a class="nav-link" href="https://implanchihuahua.org/Licitaciones.html" target="_self">LICITACIONES</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="https://implanchihuahua.org/Directorio.html" target="_self">DIRECTORIO</a>
+            <a class="nav-link" href="Directorio.html" target="_self">DIRECTORIO</a>
         </li>
         <li class="dropdown menu-large nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">RENDICIÓN DE CUENTAS</a>
             <ul class="dropdown-menu megamenu">
@@ -289,7 +289,7 @@ function navbar() {
                     </li>
                     <li class="col-md-4 dropdown-item bg-light">
                         <ul>
-                            <li><a href="/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf" target="_self">Cumplimiento a resolución ICHITAIP/RR-566/2021</a>
+                            <li><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf" target="_self">Cumplimiento a resolución ICHITAIP/RR-566/2021</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
