@@ -312,7 +312,12 @@ h4 {
   background-color: rgba(0,0,0,0.5) !important;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.5);
+.carousel-control-next, .carousel-control-prev {
+  transition: 0.3s linear;
+  padding: 20px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: rgba(0,0,0,0.2);
   padding: 20px;
 }
