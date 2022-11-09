@@ -229,7 +229,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="https://implanchihuahua.org/Proyecto9.html"
+                      href="https://implanchihuahua.org/CentroHistorico.html"
                       target="_self"
                       >CENTRO HISTÓRICO</a
                     >
