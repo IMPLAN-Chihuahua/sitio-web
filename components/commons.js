@@ -2,7 +2,7 @@
 
 function navbar() {
     return `
-    <div class="container-fluid">
+    <div class="container-fluid tezzt">
       <br />
       <div class="row">
         <div class="col-sm-6">
@@ -113,7 +113,7 @@ function navbar() {
                             <li class="dropdown-header">SOCIALES</li>
                             <li><a href="https://implanchihuahua.org/Cajita.html">CAJITA</a>
                             </li>
-                            <li class="disabled"><a href="https://implanchihuahua.org/ForoFCCUU.html">FORO FCCUU</a>
+                            <li class="disabled"><a href="ForoFCCUU.html">FORO FCCUU</a>
                             </li>
                             <li><a href="https://implanchihuahua.org/ForoCiudades.html">FORO 1.2019</a>
                             </li>
@@ -282,14 +282,14 @@ function navbar() {
                     </li>
                     <li class="col-md-4 dropdown-item bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/CuentaPublica.html" target="_self">CUENTA PÚBLICA</a>
+                            <li><a href="/CuentaPublica.html" target="_self">CUENTA PÚBLICA</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
                     </li>
                     <li class="col-md-4 dropdown-item bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf" target="_self">Cumplimiento a resolución ICHITAIP/RR-566/2021</a>
+                            <li><a href="/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf" target="_self">Cumplimiento a resolución ICHITAIP/RR-566/2021</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
