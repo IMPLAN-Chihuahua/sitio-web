@@ -71,7 +71,7 @@ function navbar() {
                     </li>
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/Practicantes.html" target="_self">RESIDENCIAS PROFESIONALES</a>
+                            <li><a href="/Practicantes.html" target="_self">RESIDENCIAS PROFESIONALES</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
@@ -85,9 +85,9 @@ function navbar() {
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
                             <li class="dropdown-header">ÁMBITO</li>
-                            <li><a href="https://implanchihuahua.org/Entorno.html#AmbitoRegional" target="_self">REGIONAL</a>
+                            <li><a href="/Entorno.html#AmbitoRegional" target="_self">REGIONAL</a>
                             </li>
-                            <li class="disabled"><a href="https://implanchihuahua.org/Entorno.html#AmbitoMunicipal" target="_self">MUNICIPAL</a>
+                            <li class="disabled"><a href="/Entorno.html#AmbitoMunicipal" target="_self">MUNICIPAL</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
@@ -95,9 +95,9 @@ function navbar() {
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
                             <li class="dropdown-header">ENTORNO</li>
-                            <li><a href="https://implanchihuahua.org/Entorno.html#AmbitoEconomico" target="_self">ECONÓMICO</a>
+                            <li><a href="/Entorno.html#AmbitoEconomico" target="_self">ECONÓMICO</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Entorno.html#AmbitoUrbano" target="_self">URBANO</a>
+                            <li><a href="/Entorno.html#AmbitoUrbano" target="_self">URBANO</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
@@ -111,13 +111,13 @@ function navbar() {
                     <li class="col-md-3 dropdown-item bg-light">
                         <ul>
                             <li class="dropdown-header">SOCIALES</li>
-                            <li><a href="https://implanchihuahua.org/Cajita.html">CAJITA</a>
+                            <li><a href="/Cajita.html">CAJITA</a>
                             </li>
                             <li class="disabled"><a href="ForoFCCUU.html">FORO FCCUU</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/ForoCiudades.html">FORO 1.2019</a>
+                            <li><a href="ForoCiudades.html">FORO 1.2019</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/ForoFCCUU2020.html"> FORO DE CIUDADES 2020</a>
+                            <li><a href="/ForoFCCUU2020.html"> FORO DE CIUDADES 2020</a>
                             </li>
 
                             <li class="divider"></li>
@@ -126,15 +126,15 @@ function navbar() {
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
                             <li class="dropdown-header">URBANOS</li>
-                            <li><a href="https://implanchihuahua.org/Proyecto1.html" target="_self">PLAZA DE ARMAS</a>
+                            <li><a href="/Proyecto1.html" target="_self">PLAZA DE ARMAS</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto3.html" target="_self">PEATONALIZACIÓN CALLE MORELOS</a>
+                            <li><a href="/Proyecto3.html" target="_self">PEATONALIZACIÓN CALLE MORELOS</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto2.html" target="_self">AV. VENUSTIANO CARRANZA</a>
+                            <li><a href="/Proyecto2.html" target="_self">AV. VENUSTIANO CARRANZA</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto4.html" target="_self">PARQUE LERDO</a>
+                            <li><a href="/Proyecto4.html" target="_self">PARQUE LERDO</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto5.html" target="_self">CORREDOR ESCULTÓRICO</a>
+                            <li><a href="/Proyecto5.html" target="_self">CORREDOR ESCULTÓRICO</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
@@ -142,15 +142,15 @@ function navbar() {
                     <li class="col-md-3 dropdown-item bg-light">
                         <ul>
                             <li class="dropdown-header">URBANOS</li>
-                            <li><a href="https://implanchihuahua.org/Proyecto7.html" target="_self">PARQUE EL REJÓN</a>
+                            <li><a href="/Proyecto7.html" target="_self">PARQUE EL REJÓN</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto8.html" target="_self">EDIFICIO DEL REAL</a>
+                            <li><a href="/Proyecto8.html" target="_self">EDIFICIO DEL REAL</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto9.html" target="_self">CENTRO HISTÓRICO</a>
+                            <li><a href="/Proyecto9.html" target="_self">CENTRO HISTÓRICO</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto10.html" target="_self">QUINTA TOUCHE</a>
+                            <li><a href="/Proyecto10.html" target="_self">QUINTA TOUCHE</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/Proyecto11.html" target="_self">PARQUE EL ENCINO</a>
+                            <li><a href="/Proyecto11.html" target="_self">PARQUE EL ENCINO</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
@@ -158,30 +158,30 @@ function navbar() {
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
                             <li class="dropdown-header">CENTRO DE ESTUDIOS</li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE2.html">GUÍA METODOLÓGICA</a>
+                            <li><a href="/EstudioCE2.html">GUÍA METODOLÓGICA</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE3.html">INDICADORES</a>
+                            <li><a href="/EstudioCE3.html">INDICADORES</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE1.html" target="_self">MODELOS DE DENSIFICACIÓN</a>
+                            <li><a href="/EstudioCE1.html" target="_self">MODELOS DE DENSIFICACIÓN</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE7.html" target="_self">COSTO CIUDAD</a>
+                            <li><a href="/EstudioCE7.html" target="_self">COSTO CIUDAD</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE8.html" target="_self">APROVECHAMIENTO PARA LA REFORMA ENERGÉTICA</a>
+                            <li><a href="/EstudioCE8.html" target="_self">APROVECHAMIENTO PARA LA REFORMA ENERGÉTICA</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE4.html" target="_self">ESTADO DEL ARTE EN MATERIA DEL AGUA</a>
+                            <li><a href="/EstudioCE4.html" target="_self">ESTADO DEL ARTE EN MATERIA DEL AGUA</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE10.html" target="_self">VALORACIÓN DE SERVICIOS AMBIENTALES ANVA Y PE</a>
+                            <li><a href="/EstudioCE10.html" target="_self">VALORACIÓN DE SERVICIOS AMBIENTALES ANVA Y PE</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE11.html" target="_self">COSTO CIUDAD, Aproximación a los costos de la infraestructura</a>
+                            <li><a href="/EstudioCE11.html" target="_self">COSTO CIUDAD, Aproximación a los costos de la infraestructura</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE5.html" target="_self">ESTUDIO ZONAS DE VALOR AMBIENTAL</a>
+                            <li><a href="/EstudioCE5.html" target="_self">ESTUDIO ZONAS DE VALOR AMBIENTAL</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE9.html" target="_self">INCENTIVOS URBANOS</a>
+                            <li><a href="/EstudioCE9.html" target="_self">INCENTIVOS URBANOS</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE12.html" target="_self">ACTUALIZACIÓN DEL MACROMODELO</a>
+                            <li><a href="/EstudioCE12.html" target="_self">ACTUALIZACIÓN DEL MACROMODELO</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/EstudioCE13.html" target="_self">PSAMUS</a></li> 
-                            <li><a href="https://implanchihuahua.org/EstudioCE14.html" target="_self">ESTUDIO DE MERCADO DE VIVIENDA</a></li>                                                                      
+                            <li><a href="/EstudioCE13.html" target="_self">PSAMUS</a></li> 
+                            <li><a href="/EstudioCE14.html" target="_self">ESTUDIO DE MERCADO DE VIVIENDA</a></li>                                                                      
                             <li class="divider"></li>
                         </ul>
                     </li>
@@ -241,21 +241,21 @@ function navbar() {
                 <div class="row">
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/Descargables.html" target="_self">BUSCAR</a>
+                            <li><a href="/Descargables.html" target="_self">BUSCAR</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
                     </li>
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/Descargables_EP.html" target="_self">PLANES Y PROGRAMAS</a>
+                            <li><a href="/Descargables_EP.html" target="_self">PLANES Y PROGRAMAS</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
                     </li>
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
-                            <li><a href="https://implanchihuahua.org/Descargables_DA.html" target="_self">CARTOGRAFÍA</a>
+                            <li><a href="/Descargables_DA.html" target="_self">CARTOGRAFÍA</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
@@ -264,7 +264,7 @@ function navbar() {
             </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="https://implanchihuahua.org/Licitaciones.html" target="_self">LICITACIONES</a>
+            <a class="nav-link" href="/Licitaciones.html" target="_self">LICITACIONES</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="Directorio.html" target="_self">DIRECTORIO</a>
@@ -308,7 +308,7 @@ function navbar() {
         </li>                             
     
         <li class="nav-item">
-            <a class="nav-link" href="https://implanchihuahua.org/Dictamenes.html" target="_self">DICTÁMENES </a>
+            <a class="nav-link" href="/Dictamenes.html" target="_self">DICTÁMENES </a>
         </li>   
     </ul>
 </div>
@@ -326,7 +326,7 @@ function footer() {
         </div>
         <div class="col-sm-3 pt-5">
             <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
-            <p class="text-center"><a href="https://implanchihuahua.org/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
+            <p class="text-center"><a href="/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
             <p class="text-center"><a href="https://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
         </div>
         <div class="col-sm-3 pt-5">
@@ -345,7 +345,7 @@ function footer() {
     </div>
     <div class="clearfix bg-secondary p-2">
         <span class="float-left text-white"><small>C. Victoria No. 14, 6° Piso, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 8:30 a 16:00 horas de lunes a viernes. (614) 2004820.</small></span>
-        <a class="trans" href="https://implanchihuahua.org/IMPLAN-Datos/pdf/AVISO-INTEGRAL-19072022.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad Integral   </small></span></a><br><a class="trans" href="https://implanchihuahua.org/IMPLAN-Datos/pdf/AVISO-SIMPLIFICADO-19072022.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad Simplificado</small></span></a>
+        <a class="trans" href="/IMPLAN-Datos/pdf/AVISO-INTEGRAL-19072022.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad Integral   </small></span></a><br><a class="trans" href="/IMPLAN-Datos/pdf/AVISO-SIMPLIFICADO-19072022.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad Simplificado</small></span></a>
     </div>
 </blockquote>
     `;
