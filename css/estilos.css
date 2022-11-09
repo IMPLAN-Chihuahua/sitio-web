@@ -21,7 +21,6 @@
 
 body {
   background: #ffffff;
-  font-family: "Oswald", sans-serif;
 }
 
 /* Make the image fully responsive */
@@ -306,4 +305,14 @@ h4 {
   right: 5%;
   border-radius: 30px;
   cursor: pointer;
+}
+
+/* Make components more accessible */
+.carousel-caption {
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
 }
