@@ -228,7 +228,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="Proyecto11.html"
+                      href="ParqueEncino.html"
                       target="_self"
                       >PARQUE EL ENCINO</a
                     >
