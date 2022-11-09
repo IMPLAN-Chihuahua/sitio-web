@@ -172,27 +172,12 @@ function navbar() {
               <li class="col-md-3 dropdown-item bg-light">
                 <ul>
                   <li class="dropdown-header">URBANOS</li>
-                  <li>
-                    <a
-                      href="Proyecto1.html"
-                      target="_self"
-                      >PLAZA DE ARMAS</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="Proyecto3.html"
-                      target="_self"
-                      >PEATONALIZACIÓN CALLE MORELOS</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="Proyecto2.html"
-                      target="_self"
-                      >AV. VENUSTIANO CARRANZA</a
-                    >
-                  </li>
+                            <li><a href="/PlazaDeArmas.html" target="_self">PLAZA DE ARMAS</a>
+                            </li>
+                            <li><a href="/CalleMorelos.html" target="_self">PEATONALIZACIÓN CALLE MORELOS</a>
+                            </li>
+                            <li><a href="/VenustianoCarranza.html" target="_self">AV. VENUSTIANO CARRANZA</a>
+                            </li>
                   <li>
                     <a
                       href="Proyecto4.html"
