@@ -4,9 +4,10 @@
 }
 
 .parrafo {
-    font-family: 'Arial', sans-serif;
+    font-weight: 400;
 }
 
-nav, footer {
+nav,
+footer {
     font-family: "Oswald", sans-serif;
 }
