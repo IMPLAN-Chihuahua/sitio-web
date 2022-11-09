@@ -1,522 +1,348 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>IMPLAN │ Chihuahua</title>
+  <meta charset="UTF-8">
+  <title>IMPLAN │ Chihuahua</title>
   <meta name="author" content="IMPLAN" />
-  <meta name="keywords" content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
+  <meta name="keywords"
+    content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/b4megamenu.css">
-  <link rel="stylesheet" href="css/b5megamenu.css">  
-  <link rel="shortcut icon" href="img/implan.ico">  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <style>
-    body {
-      background: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="img/implan.ico">
+
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <script type="text/javascript" src="./components/commons.js"></script>
+  <link rel="stylesheet" href="./css/directorio.css">
+
+  <title>Directorio</title>
+</head>
+
+<body>
+  <script>
+    const elementos = [
+      {
+        nombre: 'Rafael Acosta Arzaga',
+        imagen: '1-Rafa.png',
+        dpto: 'Mantenimiento y mensajería',
+        correo: '',
+        titulos: [],
+        cedula: ''
+      },
+      {
+        nombre: 'M.A.C. Ramón Antonio Armendáriz Aguirre',
+        imagen: '2-Ramon.png',
+        dpto: 'Planes y programas',
+        correo: 'ramon.armendariz@implanchihuahua.org',
+        titulos: ['Maestro en Administración de la Construcción, por el Instituto Tecnológico de la Construcción.', 'Arquitecto, por el Instituto Superior de Ciencia y Tecnología de La Laguna.', 'Licenciado en Humanidades, por la Universidad Autónoma de Zacatecas.'],
+        cedulas: ['Cédula profesional 5131568', 'Cédula profesional 742673', 'Cédula profesional 2053424']
+      },
+      {
+        nombre: 'Arq. Isabel Castañeda Perea',
+        imagen: '3-Isabel.png',
+        dpto: 'Planes y programas',
+        correo: 'isabel.castaneda@implanchihuahua.org',
+        titulos: ['Arquitecto, por el Instituto Superior de Arquitectura y Diseño (ISAD)'],
+        cedulas: ['Cédula profesional en trámite']
+      },
+      {
+        nombre: 'Arq. Ana Gabriela Cervantes García',
+        imagen: '4-Gaby.png',
+        dpto: 'Planes y programas ',
+        correo: 'isabel.castaneda@implanchihuahua.org',
+        titulos: ['Arquitecto, por el Instituto Superior de Arquitectura y Diseño (ISAD)'],
+        cedulas: ['Cédula profesional 11770560']
+      },
+      {
+        nombre: 'C. Juana Contreras Hinojosa',
+        imagen: '5-Juanis.png',
+        dpto: 'Servicios internos',
+        correo: 'juana.contreras@implanchihuahua.org',
+        titulos: [''],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Ing. Samuel Cordero López',
+        imagen: '6-Samuel.png',
+        dpto: 'Geomática',
+        correo: 'samuel.cordero@implanchihuahua.org',
+        titulos: ['Maestro en Agronegocios, por la Universidad Autónoma de Chihuahua (UACH)', 'Ingeniero en Ecología, por la Universidad Autónoma de Chihuahua (UACH)'],
+        cedulas: ['', 'Cédula profesional 7903772'],
+      },
+      {
+        nombre: 'Ing. Luis Carlos Cruz Castillo',
+        imagen: '7-Luis.png',
+        dpto: 'Tecnologías de la Información y Comunicación',
+        correo: 'luis.cruz@implanchihuahua.org',
+        titulos: ['Ingeniería en Sistemas Computacionales (I.S.C.) por el Instituto Tecnológico de Chihuahua II'],
+        cedulas: ['Cédula profesional en trámite'],
+      },
+      {
+        nombre: 'Lic. Remigio Córdova Álvarez',
+        imagen: '8-Remi.png',
+        dpto: 'Normatividad y transparencia',
+        correo: 'remigio.cordova@implanchihuahua.org',
+        titulos: ['Perito en Grafoscopía y Documentoscopía, por el Colegio Integral Jurídico Pericial'],
+        cedulas: ['Cédula profesional 7051013'],
+      },
+      {
+        nombre: 'Tec. Diana Domínguez Vargas',
+        imagen: '9-Diana.png',
+        dpto: 'Administración',
+        correo: 'diana.dominguez@implanchihuahua.org',
+        titulos: ['Técnico, por el Colegio Nacional de Educación Profesional Técnica (CONALEP)'],
+        cedulas: ['Cédula profesional 7903772'],
+      },
+      {
+        nombre: 'Lic. Tania Edith Escobedo Mingura',
+        imagen: '10-Tania.png',
+        dpto: 'Vinculación y Difusión',
+        correo: 'tania.escobedo@implanchihuahua.org',
+        titulos: ['Licenciada en Ciencias de la Información, por la Universidad Autónoma de Chihuahua'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Arq. Javier Eduardo Estrada Lechuga',
+        imagen: '11-Javier.png',
+        dpto: 'Planes y programas',
+        correo: 'javier.estrada@implanchihuahua.org',
+        titulos: ['Arquitecto, por el Instituto Superior de Arquitectura y Diseño (ISAD)'],
+        cedulas: ['Cédula profesional 7719821'],
+      },
+      {
+        nombre: 'Ing. Alberto Fierro Reynoso',
+        imagen: '12-Beto.png',
+        dpto: 'Planes y programas',
+        correo: 'beto.fierro@implanchihuahua.org',
+        titulos: ['Ingeniero en Desarrollo Territorial (IDT), por la Universidad Autónoma de Chihuahua (UACH)'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Lic. Guillermo Hernández Rodríguez',
+        imagen: '13-Guillermo.png',
+        dpto: 'Planes y programas',
+        correo: 'guillermo.hernandez@implanchihuahua.org',
+        titulos: ['Licenciado en Ciencias de la Información, por la Universidad Autónoma de Chihuahua (UACH)'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Lic. Alberto Hernández Segura',
+        imagen: '14-Alberto.png',
+        dpto: 'Vinculación y Difusión',
+        correo: 'alberto.hernandez@implanchihuahua.org',
+        titulos: ['Licenciado en Diseño Gráfico Industrial por la Universidad de Durango'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Dr. Carlos R. Hernández Velasco',
+        imagen: '15-CarlosR.png',
+        dpto: 'Dirección',
+        correo: 'carlos.hernandez@implanchihuahua.org',
+        titulos: ['Doctor en Estudios Urbanos (PhD in Urban Studies)) por la Universidad de Glasgow en Escocia', 'Maestro en Arquitectura (M. Arch) por la Universidad McGill en Monteral, Canadá; Especializado en vivienda en países en desarrollo', 'Arquitecto, por la Universidad Autónoma de Aguascalientes, México'],
+        cedulas: ['', '', 'Cédula profesional 2283497']
+      },
+      {
+        nombre: 'L.S.C.A Martha Verónica Lugo Alarcón',
+        imagen: '16-Vero.png',
+        dpto: 'Coordinadora Administrativa',
+        correo: 'veronica.lugo@implanchihuahua.org',
+        titulos: ['Licenciada en Sistemas de Computación Administrativa, por la Universidad Autónoma de Chihuahua (UACH)'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Ing. Joel Arturo López Quintana',
+        imagen: '17-Joel.png',
+        dpto: 'Geomática',
+        correo: 'joel.lopez@implanchihuahua.org',
+        titulos: ['Ingeniero en Desarrollo Territorial (IDT), por la Universidad Autónoma de Chihuahua'],
+        cedulas: ['Cédula profesional en trámite'],
+      },
+      {
+        nombre: 'C. Gloria López Muñoz',
+        imagen: '18-Gloria.png',
+        dpto: 'Recepción',
+        correo: 'gloria.lopez@implanchihuahua.org',
+        titulos: [''],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Arq. María Artemisa Macías Herrera',
+        imagen: '19-Micha.png',
+        dpto: 'Geomática',
+        correo: 'artemisa.macias@implanchihuahua.org',
+        titulos: ['Arquitecta, por el Instituto Tecnológico de Chihuahua II con especialidad en Arquitectura Regional Sustentable'],
+        cedulas: ['Cédula profesional 10209969'],
+      },
+      {
+        nombre: 'M.I.C. RocÍo Guadalupe Martínez Bibiano',
+        imagen: '20-Rocio.png',
+        dpto: 'Tecnologías de la Información y Comunicación',
+        correo: 'rocio.martinez@implanchihuahua.org',
+        titulos: ['Maestra en Dirección e Ingeniería de Sitios Web, por la Universidad Internacional de La Rioja en España', 'Maestra en Ingeniería en Computación (M.I.C.) por la Universidad Autónoma de Chihuahua (UACH)', 'Ingeniería en Sistemas Computacionales (I.S.C.) por el Instituto Tecnológico de Chihuahua II'],
+        cedulas: ['', 'Cédula profesional 9816225', 'Cédula profesional 3958321'],
+      },
+      {
+        nombre: 'I.S.C. Carlos Alberto Martínez mar',
+        imagen: '21-Charlie.png',
+        dpto: 'Geomática',
+        correo: 'carlos.matinez@implanchihuahua.org',
+        titulos: ['Máster a título propio en Sistemas de Información Geográfica con ArcGIS, por la Universidad Católica de San Antonio (UCAM)', 'Ingeniería en Sistemas Computacionales (ISC), por el Instituto Tecnológico de Chihuahua II'],
+        cedulas: ['', 'Cédula profesional 4232560'],
+      },
+      {
+        nombre: 'Lic. Leoncio Elmer Ornelas Olivas',
+        imagen: '22-Elmer.png',
+        dpto: 'Geomática',
+        correo: 'elmer.ornelas@implanchihuahua.org',
+        titulos: ['Lic. en Geoinformática, por la Universidad Autónoma de Ciudad Juárez (UACJ)'],
+        cedulas: ['Cédula profesional 8383939'],
+      },
+      {
+        nombre: 'Dr. José Antonio Pérez Sánchez',
+        imagen: '23-Jantonio.png',
+        dpto: 'Subdirección',
+        correo: 'jantonio.perez@implanchihuahua.org',
+        titulos: ['Doctor en Ingeniería, por la Universidad Autónoma de Chihuahua / Centro de Investigación Científica y de Educación Superior de Ensenada, B.C.', 'Maestro en Ingeniería, por la Universidad Autónoma de Chihuahua', 'Ingeniero Civil, por el Instituto Tecnológico de Pachuca'],
+        cedulas: ['Cédula profesional 11720459', 'Cédula profesional 3923904', 'Cédula profesional 2913099'],
+      },
+      {
+        nombre: 'Ing. Jemima Abigail Plascencia Quezada',
+        imagen: '24-Jemi.png',
+        dpto: 'Geomática',
+        correo: 'jemima.plascencia@implanchihuahua.org',
+        titulos: ['Ingeniero en Desarrollo Territorial (IDT), por la Universidad Autónoma de Chihuahua (UACH)'],
+        cedulas: ['Cédula profesional 9844636'],
+      },
+      {
+        nombre: 'M.P.D.U. Alma Denisse Quintana Chávez',
+        imagen: '25-Denisse.png',
+        dpto: 'Planes y programas',
+        correo: 'denisse.quintana@implanchihuahua.org',
+        titulos: ['Maestría en Planificación y Desarrollo Urbano (MPDU), por la Universidad Autónoma de Ciudad Juárez (UACJ)', 'Arquitecta, por el Instituto Superior de Arquitectura y Diseño (ISAD)'],
+        cedulas: ['', 'Cédula profesional 7217615'],
+      },
+      {
+        nombre: 'C.P. Martha Gricel Robles Hernández',
+        imagen: '26-Gris.png',
+        dpto: 'Administrativo',
+        correo: 'gricel.robles@implanchihuahua.org',
+        titulos: ['Contador Público, por la Universidad Autónoma de Chihuahua (UACH)'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Lic. Raúl Antonio Sifuentes Torres',
+        imagen: '27-Raul.png',
+        dpto: 'Normatividad y Transparencia',
+        correo: 'raul.sifuentes@implanchihuahua.org',
+        titulos: ['Licenciado en Derecho, por la Universidad Autónoma de Chihuahua (UACH)'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Tec. Mayra Yarlet Trejo Cervantes',
+        imagen: '28-Mayra.png',
+        dpto: 'Administración',
+        correo: 'mayra.trejo@implanchihuahua.org',
+        titulos: ['Técnico, por el Colegio Nacional de Educación Profesional Técnica (CONALEP)'],
+        cedulas: ['Cédula profesional 7529996'],
+      },
+      {
+        nombre: 'Arq. Jessica Elizabeth Urquidi Gallegos',
+        imagen: '29-Eli.png',
+        dpto: 'Planes y programas',
+        correo: 'jessica.urquidi@implanchihuahua.org',
+        titulos: ['Arquitecta, por el Instituto Tecnológico de Chihuahua II'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Ing. Miguel Ángel Valdez Rodarte',
+        imagen: '30-Mike.png',
+        dpto: 'Tecnologías de la Información y Comunicación',
+        correo: 'miguel.valdez@implanchihuahua.org',
+        titulos: ['Ingeniería en Sistemas Computacionales (I.S.C.) por el Instituto Tecnológico de Chihuahua II'],
+        cedulas: ['Cédula profesional en trámite'],
+      },
+      {
+        nombre: 'Ing. Humberto Velderrain Armendariz',
+        imagen: '31-Humberto.png',
+        dpto: 'Planes y programas',
+        correo: 'humberto.velderrain@implanchihuahua.org',
+        titulos: ['Ingeniero en Ecología, por la Universidad Autónoma de Chihuahua'],
+        cedulas: [''],
+      },
+      {
+        nombre: 'Lic. Alejandro Villa Leyva',
+        imagen: '32-Alex.png',
+        dpto: 'Normatividad y Transparencia',
+        correo: 'alejandro.villa@implanchihuahua.org',
+        titulos: ['Licenciado en Derecho, por la Universidad de Estudios Avanzados (UNEA)'],
+        cedulas: [''],
+      }
+    ]
+
+    function findTitulos(titulos, cedulas) {
+      let html = '';
+      for (let i = 0; i < titulos.length; i++) {
+        html += `<ul><em>${titulos[i]}</em><br/>${cedulas[i]}</ul>`;
+      }
+      return html;
     }
 
-   /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
+    function findCorreo(correo, imagen, nombres) {
+      let html = ''
+      let nombre = nombres.trim().split(/\s+/)
+      if (correo.length != 0) {
+        html =
+          '<a href="mailto: ' + correo + '" class="contacto">' +
+          '<img title="Da clic para ponerte en contacto con ' + nombre[1] + ' " src="../img/Imagenes-Elementos/' + imagen + '" alt=""/>' +
+          '</a>'
+      } else {
+        html =
+          '<img src="../img/Imagenes-Elementos/' + imagen + '" alt=""/>'
+      }
+      return html;
+    }
+  </script>
+  <script>
+    document.write(navbar());
+  </script>
 
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}    
-</style>  
-<style>
-a.trans:link {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:visited {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:hover {
-    color: lightgray;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:active {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-</style> 
-<style>
-a.transi:link {
-    color: #008B8B;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.transi:visited {
-    color: #008B8B;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.transi:hover {
-    color: lightgray;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.transi:active {
-    color: #008B8B;
-    background-color: transparent;
-    text-decoration: none;
-}
-</style>  
-</head>
-<body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 pt-3 pb-2">
-    </div>
-    <div class="col-sm-4 pt-3 pb-2 align-items-center">
-       <img src="img/IMPLAN_2017.png" width="270" height="51" alt="IMPLAN">
-    </div> 
-    <div class="col-sm-4 pt-3 pb-2 d-none d-lg-block">
-          <p class="text-right">
-            <a href="#bloque1" data-toggle="collapse" aria-expanded="false" aria-controls="bloque1"><i class="fas fa-phone-volume text-warning"></i></a>       
-            <a href="#bloque2" data-toggle="collapse" aria-expanded="false" aria-controls="bloque2"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque3" data-toggle="collapse" aria-expanded="false" aria-controls="bloque3"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque1">(614) 200 48 20</p>
-            <p class="collapse text-right" id="bloque2">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque3">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>  
-    <div class="col-sm-4 pt-3 pb-2 d-lg-none">
-          <p class="text-right">
-            <a href="tel:6142004820"><i class="fas fa-phone-volume text-warning"></i></a>          
-            <a href="#bloque4" data-toggle="collapse" aria-expanded="false" aria-controls="bloque4"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque5" data-toggle="collapse" aria-expanded="false" aria-controls="bloque5"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque4">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque5">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>              
-  </div>          
-</div> 
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:rgb(102, 0, 102);">
-  <a class="navbar-brand" href="https://implanchihuahua.gob.mx/"><i class="fas fa-home"></i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          IMPLAN
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown5">
-            <div class="row">
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/Mision.html">MISIÓN/VISIÓN</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Consejo.html">CONSEJO</a></p>
-              
-              </div>
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/EquipoTecnico.html">EQUIPO TÉCNICO</a></p>
-              </div>              
-            </div>              
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ENTORNO
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/entorno.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">Chihuahua</h4>
-                <p>Conoce tu ciudad</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ÁMBITO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoRegional">REGIONAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoMunicipal">MUNICIPAL</a></p>
-
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ENTORNO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoEconomico">ECONÓMICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoUrbano">URBANO</a></p>
-              </div>
-             
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PROYECTOS
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown2">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="img/proyectos.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">IMPLAN</h4>
-                <p>Proyectos</p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">SOCIALES</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Cajita.html">CAJITA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/ForoFCCUU.html">FORO FCCUU</a></p>                 <p><a href="https://implanchihuahua.gob.mx/ForoCiudades.html">FORO 1.2019</a></p>
-
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">URBANOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto1.html">PLAZA DE ARMAS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto3.html">PEATONALIZACIÓN CALLE MORELOS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto2.html">AV. VENUSTIANO CARRANZA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto4.html">PARQUE LERDO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto5.html">CORREDOR ESCULTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto7.html">PARQUE EL REJÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto8.html">EDIFICIO DEL REAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto9.html">CENTRO HISTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto10.html">QUINTA TOUCHE</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto11.html">PARQUE EL ENCINO</a></p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">CENTRO DE ESTUDIOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE2.html">GUÍA METODOLÓGICA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE3.html">INDICADORES</a></p>
-               <p><a href="https://implanchihuahua.gob.mx/EstudioCE1.html">MODELOS DE DENSIFICACIÓN</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PDU2040
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown3">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/PDU.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">PDU2040</h4>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Poblacion">POBLACIÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Soporte">ECONOMÍA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Marco">MARCO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Equipamiento">EQUIPAMIENTO</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Movilidad">MOVILIDAD</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Infraestructura">INFRAESTRUCTURA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Medio">AMBIENTE</a></p>
-              </div>
-
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          DATOS ABIERTOS
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown4">
-            <div class="row">
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables.html">BUSCAR</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_EP.html">ESTUDIOS Y PROYECTOS</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_DA.html">CARTOGRAFÍA</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Licitaciones.html">LICITACIONES</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Directorio.html">DIRECTORIO</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="http://ovie.mpiochih.gob.mx">OVIE</a>
-      </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Transparencia.html">TRANSPARENCIA</a>
-      </li>                     
-    </ul>
+  <div class="portada">
+    <img src="./img/portada/DIRECCION.png" />
   </div>
-</nav>
-<!--inicia página -->
-<div class="container" style="font-family: 'Lato', sans-serif;">    
-    <div class="row mt-3 mb-3">
-      <div class="col">
-        <div class="card-columns">
-          <div class="card">
-            <img src="img/fotos/alberto_fierro.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-AlbertoFierro.html"><h5 class="card-title text-center">IDT. Alberto Fierro Reynoso</h5></a>
-              <p class="card-text text-center">Analista Urbano. Planeación Integral</p>
-              <p class="card-text text-center">alberto.fierro@mpiochih.gob.mx</p>              
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="img/fotos/alisha_catalano.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-AlishaCatalano.html"><h5 class="card-title text-center">IE. Alisha Catalano Castillo</h5></a>
-              <p class="card-text text-center">Analista Urbano. Planeación Integral</p>
-              <p class="card-text text-center">alisha.catalano@mpiochih.gob.mx</p>                           
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="img/fotos/artemisa_macias.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-ArtemisaMacias.html"><h5 class="card-title text-center">Arq. Artemisa Macías Herrera</h5></a>
-              <p class="card-text text-center">Analista De Datos Geoespaciales. Geomática</p>              
-              <p class="card-text text-center">artemisa.macias@mpiochih.gob.mx</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="img/fotos/carlos_hernandez.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-CarlosHernandez.html"><h5 class="card-title text-center">Dr. Carlos R. Hernández Velasco</h5></a>
-              <p class="card-text text-center">Director</p>
-              <p class="card-text text-center">carlosr.hernandez@mpiochih.gob.mx</p>              
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="img/fotos/carlos_martinez.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-CarlosMartinez.html"><h5 class="card-title text-center">ISC. Carlos Alberto Martínez Mar</h5></a>
-              <p class="card-text text-center">Coordinador. Geomática</p>
-              <p class="card-text text-center">martinezmar.carlos@mpiochih.gob.mx</p>              
-            </div>
-          </div>
-
-          <!--<div class="card text-white" style="background-color: rgb(193,56,209);">
-            <div class="card-body">
-              <h4 class="card-title">Contacto</h4>
-              <p class="card-title">Teléfono directo (614) 2004820</p>
-              <h5 class="card-title">Extensiones</h5>
-              <p class="card-title">Marque (614) 200-48-00</p>
-              <p class="card-text">Dirección 5711</p>
-              <p class="card-text">Recepción 5712</p>
-              <p class="card-text">Vinculación 5710</p>                            
-              <p class="card-text">Centro de Estudios 5718</p>
-              <p class="card-text">Planeación Integral 5717</p>
-              <p class="card-text">Geomática 5714</p>
-              <p class="card-text">Participación Ciudadana 5719</p>
-              <p class="card-text">Administrativo 5713</p>
-              <p class="card-text">Recursos Humanos 5716</p>
-              <p class="card-text">Sistemas 5721</p>           
-            </div>
-          </div>-->
-
-
-          <div class="card">
-            <img src="img/fotos/denisse_quintana.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-DenisseQuintana.html"><h5 class="card-title text-center">M.P.D.U. Denisse Quintana Chávez</h5></a>
-              <p class="card-text text-center">Coordinadora. Centro de Estudios</p>
-              <p class="card-text text-center">alma.quintana@mpiochih.gob.mx</p>                            
-            </div>
-          </div>
-
-         <div class="card" style="background-color: rgb(0,107,107);">
-            <div class="card-body">
-              <h4 class="card-title">Contacto</h4>
-              <p class="card-title">Teléfono directo (614) 2004820</p>
-              <h5 class="card-title">Extensiones</h5>
-              <p class="card-title">Marque (614) 200-48-00</p>
-              <p class="card-text">Dirección 5711</p>
-              <p class="card-text">Recepción 5712</p>
-              <p class="card-text">Vinculación 5710</p>                            
-              <p class="card-text">Centro de Estudios 5718</p>
-              <p class="card-text">Planeación Integral 5717</p>
-              <p class="card-text">Geomática 5714</p>
-              <p class="card-text">Participación Ciudadana 5719</p>
-              <p class="card-text">Administrativo 5713</p>
-              <p class="card-text">Recursos Humanos 5716</p>
-              <p class="card-text">Sistemas 5721</p>           
-            </div>
-          </div>
-         <div class="card">
-            <img src="img/fotos/gloria_lopez.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="#"><h5 class="card-title text-center">C. Gloria López Muñoz</h5></a>
-              <p class="card-text text-center">Recepción</p>
-              <p class="card-text text-center">gloria.lopezm@mpiochih.gob.mx</p>                            
-            </div>
-          </div>
-         <div class="card">
-            <img src="img/fotos/jemima_plascencia.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-JemimaPlascencia.html"><h5 class="card-title text-center">IDT. Jemima Plascencia Quezada</h5></a>
-              <p class="card-text text-center">Analista De Datos Geoespaciales. Geomática</p>
-              <p class="card-text text-center">jemima.plascencia@mpiochih.gob.mx</p>                            
-            </div>
-          </div> 
-         <div class="card">
-            <img src="img/fotos/juana_contreras.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="#"><h5 class="card-title text-center">C. Juana Contreras Hinojosa</h5></a>
-              <p class="card-text text-center">Intendencia</p>
-              <p class="card-text text-center">juana.contreras@mpiochih.gob.mx</p>                            
-            </div>
-          </div> 
-         <div class="card">
-            <img src="img/fotos/lorena_jaloma.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-LorenaJaloma.html"><h5 class="card-title text-center">Arq. Lorena Jaloma Bañuelos</h5></a>
-              <p class="card-text text-center">Coordinadora. Planeación Integral</p>
-              <p class="card-text text-center">lorena.jaloma@mpiochih.gob.mx</p>                            
-            </div>
-          </div>
-
-         <div class="card">
-            <img src="img/fotos/miguel_noriega.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-MiguelNoriega.html"><h5 class="card-title text-center">C.P. Miguel Noriega Carranza</h5></a>
-              <p class="card-text text-center">Coordinador. Administración</p>
-              <p class="card-text text-center">miguel.noriegac@mpiochih.gob.mx</p>                            
-            </div>
-          </div>
-
-         <div class="card">
-            <img src="img/fotos/paulina_melendez.jpeg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-PaulinaMelendez.html"><h5 class="card-title text-center">Arq. Paulina Meléndez Delgado</h5></a>
-              <p class="card-text text-center">Analista Urbano. Planeación Integral</p>
-              <p class="card-text text-center">paulina.melendez@mpiochih.gob.mx</p>                            
-            </div>
-          </div>
-
-         <!--<div class="card text-white" style="background-color: rgb(0,107,107);">
-            <div class="card-body">
-              <h4 class="card-title">Contacto</h4>
-              <p class="card-title">Teléfono directo (614) 2004820</p>
-              <h5 class="card-title">Extensiones</h5>
-              <p class="card-title">Marque (614) 200-48-00</p>
-              <p class="card-text">Dirección 5711</p>
-              <p class="card-text">Recepción 5712</p>
-              <p class="card-text">Vinculación 5710</p>                            
-              <p class="card-text">Centro de Estudios 5718</p>
-              <p class="card-text">Planeación Integral 5717</p>
-              <p class="card-text">Geomática 5714</p>
-              <p class="card-text">Participación Ciudadana 5719</p>
-              <p class="card-text">Administrativo 5713</p>
-              <p class="card-text">Recursos Humanos 5716</p>
-              <p class="card-text">Sistemas 5721</p>
-            </div>
-          </div>  -->          
-         <div class="card">
-            <img src="img/fotos/monica_payan.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-MonicaPayan.html"><h5 class="card-title text-center">Arq. Mónica Ibeth Payán Fierro</h5></a>
-              <p class="card-text text-center">Arquitecto Proyectista. Centro de Estudios</p>
-              <p class="card-text text-center">monica.payan@mpiochih.gob.mx</p>                            
-            </div>
-          </div> 
-         <div class="card">
-            <img src="img/fotos/raul_sifuentes.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-RaulSifuentes.html"><h5 class="card-title text-center">Lic. Raul Antonio Sifuentes Torres</h5></a>
-              <p class="card-text text-center">Coordinadora. Normatividad</p>
-              <p class="card-text text-center">raul.sifuentes@mpiochih.gob.mx</p>                            
-            </div>
-          </div> 
-         <div class="card">
-            <img src="img/fotos/rocio_fierro.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-RocioFierro.html"><h5 class="card-title text-center">Arq. Rocío Fierro Campos</h5></a>
-              <p class="card-text text-center">Vinculación</p>
-              <p class="card-text text-center">rocio.fierro@mpiochih.gob.mx</p>                            
-            </div>
-          </div>
-         <div class="card">
-            <img src="img/fotos/rocio_martinez.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-RocioMartinez.html"><h5 class="card-title text-center">M.I.C. Rocío Guadalupe Martínez Bibiano</h5></a>
-              <p class="card-text text-center">Sistemas</p>
-              <p class="card-text text-center">rocio.martinez@mpiochih.gob.mx</p>                            
-            </div>
-          </div> 
-         <div class="card">
-            <img src="img/fotos/rodrigo_fernandez.jpeg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-RodrigoFernandez.html"><h5 class="card-title text-center">IDT. Rodrigo Fernández Ordoñez</h5></a>
-              <p class="card-text text-center">Analista Urbano</p>
-              <p class="card-text text-center">rodrigo.fernandez@mpiochih.gob.mx</p>                            
-            </div>
-          </div>
-         <!-- <div class="card">
-            <img src="img/fotos/rogelio_aguirre.jpg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <a class="transi" href="https://implanchihuahua.gob.mx/Directorio-RogelioAguirre.html"><h5 class="card-title text-center">Top. Rogelio Aguirre Fierro</h5></a>
-              <p class="card-text text-center">Analista De Datos Geoespaciales. Geomática</p>
-              <p class="card-text text-center">rogelio.aguirre@mpiochih.gob.mx</p>                            
-            </div>
-          </div> -->                                                                                                                                                    
-        </div>
-      </div>
-    </div>
-</div>
-<!--foot -->
-<blockquote class="blockquote mb-0" style="background-color:rgb(102, 0, 102);">
-    <div class="row">
-      <div class="col-sm-3 pt-3 pt-5">
-        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
-      </div>
-      <div class="col-sm-3 pt-3 pt-5">
-        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
-        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
-        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
-
-      </div>
-      <div class="col-sm-3 pt-5">
-        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
-        <p class="text-center">
-          <a href="https://facebook.com/implanchihuahua" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
-          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>         
-          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
-          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
-        </p>       
-      </div>
-      <div class="col-sm-3 pt-5">
-        <img src="img/premioOX.png" alt="premioOX">
-        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
-      </div>        
-    </div>
-      <div class="clearfix bg-secondary p-2">
-        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
-        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
-      </div>
-</blockquote>
-<!-- script -->
+  <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+    <script>
+      for (i = 0; i < elementos.length; i++) {
+        document.write(
+          '<div class="card d-flex position-relative flex-column .col-1 .col-sm-6 col-md-6 col-lg-6 col-xl-4 border-light">' +
+          '<div class="imgContainer d-flex flex-column">' +
+          '<div>' +
+          findCorreo(elementos[i].correo, elementos[i].imagen, elementos[i].nombre) +
+          '</div>' +
+          '<div class="info-empleado">' +
+          '<p><b>' + elementos[i].nombre + '</b></p>' +
+          '<p>' + elementos[i].dpto + '</p>' +
+          '<p>' + elementos[i].correo + '</p>' +
+          '</div>' +
+          '</div>' +
+          '<div class="content">' +
+          '<p>' + findTitulos(elementos[i].titulos, elementos[i].cedulas, elementos[i].nombre) + '</p>' +
+          '</div>' +
+          '</div>'
+        )
+      }   
+    </script>
+  </div>
+  <script>
+    document.write(footer());
+  </script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+</body>
 
-  gtag('config', 'UA-80309318-1');
-</script>
-
-<!-- fin -->
-  </body>
-</html> 
+</html>

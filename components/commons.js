@@ -2,7 +2,7 @@
 
 function navbar() {
     return `
-    <div class="container-fluid tezzt">
+    <div class="container-fluid bg-terrain">
       <br />
       <div class="row">
         <div class="col-sm-6">
@@ -194,9 +194,9 @@ function navbar() {
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
                             <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                            <li><a href="https://implanchihuahua.org/PDU2040.html#Poblacion" target="_self">POBLACIÓN</a>
+                            <li><a href="PDU2040.html#Poblacion" target="_self">POBLACIÓN</a>
                             </li>
-                            <li class="disabled"><a href="https://implanchihuahua.org/PDU2040.html#Soporte" target="_self">ECONOMÍA</a>
+                            <li class="disabled"><a href="PDU2040.html#Soporte" target="_self">ECONOMÍA</a>
                             </li>
 
                             <li class="divider"></li>
@@ -205,19 +205,9 @@ function navbar() {
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
                             <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                            <li><a href="https://implanchihuahua.org/PDU2040.html#Marco" target="_self">MARCO</a>
+                            <li><a href="PDU2040.html#Marco" target="_self">MARCO</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/PDU2040.html#Equipamiento" target="_self">EQUIPAMIENTO</a>
-                            </li>
-                            <li class="divider"></li>
-                        </ul>
-                    </li>
-                    <li class="col-md-3 dropdown-item  bg-light">
-                        <ul>
-                            <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                            <li><a href="https://implanchihuahua.org/PDU2040.html#Movilidad" target="_self">MOVILIDAD</a>
-                            </li>
-                            <li><a href="https://implanchihuahua.org/PDU2040.html#Infraestructura" target="_self">INFRAESTRUCTURA</a>
+                            <li><a href="PDU2040.html#Equipamiento" target="_self">EQUIPAMIENTO</a>
                             </li>
                             <li class="divider"></li>
                         </ul>
@@ -225,9 +215,19 @@ function navbar() {
                     <li class="col-md-3 dropdown-item  bg-light">
                         <ul>
                             <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                            <li><a href="https://implanchihuahua.org/PDU2040.html#Medio" target="_self">AMBIENTE</a>
+                            <li><a href="PDU2040.html#Movilidad" target="_self">MOVILIDAD</a>
                             </li>
-                            <li><a href="https://implanchihuahua.org/PDU2040.html#Medio" target="_self">ARCHIVOS DESCARGABLES PDU 2040
+                            <li><a href="PDU2040.html#Infraestructura" target="_self">INFRAESTRUCTURA</a>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-3 dropdown-item  bg-light">
+                        <ul>
+                            <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
+                            <li><a href="PDU2040.html#Medio" target="_self">AMBIENTE</a>
+                            </li>
+                            <li><a href="PDU2040.html#Medio" target="_self">ARCHIVOS DESCARGABLES PDU 2040
             </a>
                             </li>
                             <li class="divider"></li>
