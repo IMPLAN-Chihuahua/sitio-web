@@ -193,10 +193,10 @@ a.trans:active {
 
 /* animacion */
 
-h4 {
+/* h4 {
   animation-duration: 3s;
   animation-name: slidein;
-}
+} */
 
 @keyframes slidein {
   from {
