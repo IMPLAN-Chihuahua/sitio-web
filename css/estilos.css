@@ -333,7 +333,6 @@ a.trans:active {
 .container {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-
 }
 
 .container h1,
@@ -343,4 +342,10 @@ a.trans:active {
 .container h5,
 .container h6 {
   text-align: center;
+  color: #F4B04A;
+}
+
+.transx {
+  text-decoration: none;
+  font-weight: bold;
 }
