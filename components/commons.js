@@ -265,14 +265,14 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE8.html"
+                      href="ReformaEnergetica.html"
                       target="_self"
                       >APROVECHAMIENTO PARA LA REFORMA ENERGÉTICA</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE4.html"
+                      href="EstadoDelArteAgua.html"
                       target="_self"
                       >ESTADO DEL ARTE EN MATERIA DEL AGUA</a
                     >
