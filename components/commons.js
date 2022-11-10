@@ -43,7 +43,7 @@ function navbar() {
     >
       ☰
     </button>
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="/">
       <img src="img/IMPLAN05.png" height="40" alt="IMPLAN Chihuahua" />
     </a>
     <div class="navbar-collapse collapse">
