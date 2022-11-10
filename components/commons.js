@@ -315,7 +315,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE13.html"
+                      href="PSAMUS.html"
                       target="_self"
                       >PSAMUS</a
                     >
