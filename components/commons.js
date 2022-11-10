@@ -1,7 +1,7 @@
 
 
 function navbar() {
-    return `
+  return `
     <div class="container-fluid bg-terrain">
     <br />
     <div class="row">
@@ -172,37 +172,22 @@ function navbar() {
               <li class="col-md-3 dropdown-item bg-light">
                 <ul>
                   <li class="dropdown-header">URBANOS</li>
+                            <li><a href="/PlazaDeArmas.html" target="_self">PLAZA DE ARMAS</a>
+                            </li>
+                            <li><a href="/CalleMorelos.html" target="_self">PEATONALIZACIÓN CALLE MORELOS</a>
+                            </li>
+                            <li><a href="/VenustianoCarranza.html" target="_self">AV. VENUSTIANO CARRANZA</a>
+                            </li>
                   <li>
                     <a
-                      href="Proyecto1.html"
-                      target="_self"
-                      >PLAZA DE ARMAS</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="Proyecto3.html"
-                      target="_self"
-                      >PEATONALIZACIÓN CALLE MORELOS</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="Proyecto2.html"
-                      target="_self"
-                      >AV. VENUSTIANO CARRANZA</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="Proyecto4.html"
+                      href="ParqueLerdo.html"
                       target="_self"
                       >PARQUE LERDO</a
                     >
                   </li>
                   <li>
                     <a
-                      href="Proyecto5.html"
+                      href="CorredorEscultorico.html"
                       target="_self"
                       >CORREDOR ESCULTÓRICO</a
                     >
@@ -236,14 +221,14 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="Proyecto10.html"
+                      href="QuintaTouche.html"
                       target="_self"
                       >QUINTA TOUCHE</a
                     >
                   </li>
                   <li>
                     <a
-                      href="Proyecto11.html"
+                      href="ParqueEncino.html"
                       target="_self"
                       >PARQUE EL ENCINO</a
                     >
@@ -255,53 +240,53 @@ function navbar() {
                 <ul>
                   <li class="dropdown-header">CENTRO DE ESTUDIOS</li>
                   <li>
-                    <a href="EstudioCE2.html"
+                    <a href="GuiaMetodologica.html"
                       >GUÍA METODOLÓGICA</a
                     >
                   </li>
                   <li>
-                    <a href="EstudioCE3.html"
+                    <a href="IndicadoresDesarrolloSostenible.html"
                       >INDICADORES</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE1.html"
+                      href="EstudioModelosDensificacion.html"
                       target="_self"
                       >MODELOS DE DENSIFICACIÓN</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE7.html"
+                      href="CostoCiudad.html"
                       target="_self"
                       >COSTO CIUDAD</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE8.html"
+                      href="ReformaEnergetica.html"
                       target="_self"
                       >APROVECHAMIENTO PARA LA REFORMA ENERGÉTICA</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE4.html"
+                      href="EstadoDelArteAgua.html"
                       target="_self"
                       >ESTADO DEL ARTE EN MATERIA DEL AGUA</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE10.html"
+                      href="ValoracionAnva.html"
                       target="_self"
                       >VALORACIÓN DE SERVICIOS AMBIENTALES ANVA Y PE</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE11.html"
+                      href="CostoCiudadAproximacionCostos.html"
                       target="_self"
                       >COSTO CIUDAD, Aproximación a los costos de la
                       infraestructura</a
@@ -309,21 +294,21 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE5.html"
+                      href="EstudiosAmbientales.html"
                       target="_self"
                       >ESTUDIO ZONAS DE VALOR AMBIENTAL</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE9.html"
+                      href="EstudioDefinicionIncentivosUrbanos.html"
                       target="_self"
                       >INCENTIVOS URBANOS</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE12.html"
+                      href="EstudioMultimodal.html"
                       target="_self"
                       >ACTUALIZACIÓN DEL MACROMODELO</a
                     >
@@ -580,7 +565,7 @@ function navbar() {
 }
 
 function footer() {
-    return `
+  return `
     <footer class="blockquote mb-0" style="background-color: rgb(251, 174, 65)">
     <div class="row ml-0 mr-0">
       <div class="col-sm-3 pt-5">

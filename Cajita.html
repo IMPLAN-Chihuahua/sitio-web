@@ -30,677 +30,270 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link
-      rel="shortcut icon"
-      href="img/implan.ico"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="shortcut icon" href="img/implan.ico" />
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/fuentes.css" />
     <script type="text/javascript" src="./components/commons.js"></script>
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-      @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
-      /* Override UGG site */
-
-      #main {
-        width: 100%;
-        padding: 0;
-      }
-
-      .content-asset p {
-        margin: 0 auto;
-      }
-
-      .breadcrumb {
-        display: none;
-      }
-      /* Helpers */
-      /**************************/
-
-      .margin-top-10 {
-        padding-top: 10px;
-      }
-
-      .margin-bot-10 {
-        padding-bottom: 10px;
-      }
-      /* Typography */
-      /**************************/
-
-      #parallax-world-of-ugg h1 {
-        font-family: "Oswald", sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: black;
-        padding: 0;
-        margin: 0;
-      }
-
-      #parallax-world-of-ugg h2 {
-        font-family: "Oswald", sans-serif;
-        font-size: 70px;
-        letter-spacing: 10px;
-        text-align: center;
-        color: #fbae41;
-        font-weight: 400;
-        text-transform: uppercase;
-        z-index: 10;
-        opacity: 0.9;
-      }
-
-      #parallax-world-of-ugg h3 {
-        font-family: "Oswald", sans-serif;
-        font-size: 14px;
-        line-height: 0;
-        font-weight: 400;
-        letter-spacing: 8px;
-        text-transform: uppercase;
-        color: black;
-      }
-
-      #parallax-world-of-ugg p {
-        font-family: "Arial", sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-      }
-
-      .first-character {
-        font-weight: 400;
-        float: left;
-        font-size: 84px;
-        line-height: 64px;
-        padding-top: 4px;
-        padding-right: 8px;
-        padding-left: 3px;
-        font-family: "Source Sans Pro", sans-serif;
-      }
-
-      .sc {
-        color: #3b8595;
-      }
-
-      .ny {
-        color: #3d3c3a;
-      }
-
-      .atw {
-        color: #c48660;
-      }
-      /* Section - Title */
-      /**************************/
-
-      #parallax-world-of-ugg .title {
-        background: white;
-        padding: 60px;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      #parallax-world-of-ugg .title h1 {
-        font-size: 35px;
-        letter-spacing: 8px;
-      }
-      /* Section - Block */
-      /**************************/
-
-      #parallax-world-of-ugg .block {
-        background: white;
-        padding: 60px;
-        width: 1000px;
-        margin: 0 auto;
-        text-align: justify;
-      }
-
-      #parallax-world-of-ugg .block-gray {
-        background: #f2f2f2;
-        padding: 60px;
-      }
-
-      #parallax-world-of-ugg .section-overlay-mask {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        opacity: 0.7;
-      }
-      /* Section - Parallax */
-      /**************************/
-
-      #parallax-world-of-ugg .parallax-one {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: url(img/Bole.JPG);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-      }
-
-      #parallax-world-of-ugg .parallax-two {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: url(img/imagen-3.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-
-      #parallax-world-of-ugg .parallax-three {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: url(img/geomatica.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-
-      #parallax-world-of-ugg .parallax-four {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: url(img/imagen-6.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-
-      #parallax-world-of-ugg .parallax-five {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: url(img/imagen-9.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-
-      #parallax-world-of-ugg .parallax-six {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        background-image: url(img/imagen-1.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-      /* Extras */
-      /**************************/
-
-      #parallax-world-of-ugg .line-break {
-        border-bottom: 1px solid black;
-        width: 150px;
-        margin: 0 auto;
-      }
-      /* Media Queries */
-      /**************************/
-
-      @media screen and (max-width: 959px) and (min-width: 768px) {
-        #parallax-world-of-ugg .block {
-          padding: 40px;
-          width: 620px;
-        }
-      }
-
-      @media screen and (max-width: 767px) {
-        #parallax-world-of-ugg .block {
-          padding: 30px;
-          width: 420px;
-        }
-        #parallax-world-of-ugg h2 {
-          font-size: 30px;
-        }
-        #parallax-world-of-ugg .block {
-          padding: 30px;
-        }
-        #parallax-world-of-ugg .parallax-one,
-        #parallax-world-of-ugg .parallax-two,
-        #parallax-world-of-ugg .parallax-three {
-          padding-top: 100px;
-          padding-bottom: 100px;
-        }
-      }
-
-      @media screen and (max-width: 479px) {
-        #parallax-world-of-ugg .block {
-          padding: 30px 15px;
-          width: 290px;
-        }
-      }
-    </style>
-    <style>
-      body {
-        background: #ffffff;
-        font-family: "Oswald", sans-serif;
-      }
-
-      .navbar-light {
-        color: #fff;
-        background-color: #ccc6c6;
-        border-color: #aca1a2;
-      }
-
-      .navbar-light .navbar-nav > li > a {
-        color: #fff;
-      }
-
-      .navbar-light .navbar-nav > .dropdown > a .caret {
-        border-top-color: #fff;
-        border-bottom-color: #fff;
-      }
-
-      .navbar-light .navbar-brand {
-        color: #fff;
-      }
-
-      .menu-large {
-        position: static !important;
-      }
-
-      .megamenu {
-        padding: 20px 20px;
-        width: 100%;
-      }
-
-      .megamenu > div > li > ul {
-        padding: 0;
-        margin: 0;
-      }
-
-      .megamenu > div > li > ul > li {
-        list-style: none;
-      }
-
-      .megamenu .card {
-        outline: none;
-      }
-
-      .megamenu .card:hover,
-      .megamenu .card:focus {
-        outline: 1px solid #000;
-      }
-
-      .megamenu > div > li > ul > li > a {
-        display: block;
-        padding: 3px 20px;
-        clear: both;
-        font-weight: normal;
-        line-height: 1.428571429;
-        color: #333333;
-        white-space: normal;
-      }
-
-      .megamenu > div > li > ul > li > a:hover,
-      .megamenu > div > li > ul > li > a:focus {
-        text-decoration: none;
-        color: #262626;
-        background-color: #f5f5f5;
-      }
-
-      .megamenu.disabled > a,
-      .megamenu.disabled > a:hover,
-      .megamenu.disabled > a:focus {
-        color: #999999;
-      }
-
-      .megamenu.disabled > a:hover,
-      .megamenu.disabled > a:focus {
-        text-decoration: none;
-        background-color: transparent;
-        background-image: none;
-        filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
-        cursor: not-allowed;
-      }
-
-      .megamenu.dropdown-header {
-        color: #ca4c42;
-        font-size: 18px;
-      }
-
-      @media (max-width: 768px) {
-        .megamenu {
-          margin-left: 0;
-          margin-right: 0;
-        }
-        .megamenu > li {
-          margin-bottom: 30px;
-        }
-        .megamenu > li:last-child {
-          margin-bottom: 0;
-        }
-        .megamenu.dropdown-header {
-          padding: 3px 15px !important;
-        }
-        .navbar-nav .open .dropdown-menu .dropdown-header {
-          color: #fff;
-        }
-      }
-    </style>
   </head>
 
-  <body>    
-    <!--inicia página -->
+  <body>
     <script>
-      document.write(navbar())
+      document.write(navbar());
     </script>
-    <div id="parallax-world-of-ugg">
-      <div class="container">
-        <div class="row">
-          <div class="col pt-3">
-            <h1
-              class="w3-left-align principal"
-            >
-              ¿Qué es Cajita Ordenada?
-            </h1>
-            <p class="parrafo">
-              Conscientes de la importancia de atender la formación de los niños
-              en el tema de ciudad, se diseñó el programa de participación
-              infantil Cajita Ordenada, abriendo un canal de comunicación
-              directa con ellos.
-            </p>
-            <p>
-              Comenzó en el Ciclo escolar 2015-2016 y hasta el momento hemos
-              visitado a 3,981 niños de 31 diferentes escuelas de la ciudad de
-              Chihuahua, desde entonces hasta el día de hoy.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">&nbsp;</div>
-          <div class="col-sm-4 embed-responsive embed-responsive-21by9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-Rkq4NLZGD8?rel=0"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="col-sm-4">&nbsp;</div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-sm-9">
-            <h1
-              class="w3-left-align principal"
-            >
-              Objetivo Principal
-            </h1>
-            <p style="text-align: justify">
-              Promover una Pedagogía Urbana y una Participación Ciudadana
-              infantil.
-            </p>
-            <h1
-              class="w3-left-align principal"
-            >
-              Objetivos secundarios
-            </h1>
 
-            <p style="text-align: justify">
-              Generar en los niños de manera sencilla, el conocimiento básico
-              sobre el complejo sistema que es una ciudad. Lograr la comprensión
-              de que existe un entorno físico creado por el hombre y la
-              existencia de un entorno social que lo moldea, así como un entorno
-              natural en el que se desarrolla.
-            </p>
-            <p style="text-align: justify">
-              Promover la reflexión sobre los elementos urbanos para lograr una
-              experiencia física diferente dentro de su ciudad.
-            </p>
-            <p style="text-align: justify">
-              Enseñarles que existen problemas en la ciudad que son atendidos
-              por especialistas en muchas disciplinas.
-            </p>
-            <p style="text-align: justify">
-              Acercarles el mensaje en el sentido de que concebimos a la niñez
-              como posibilidad y realidad de cambio y que no es necesario
-              esperar «a que sean grandes» para que puedan participar.
-            </p>
-          </div>
-          <div class="col-sm-3 center">
-            <img
-              src="img/Niños.png"
-              alt="cajita"
-              class="img-fluid"
-            />
-          </div>
+    <!--inicia página -->
+    <div class="container">
+      <div class="row">
+        <div class="col pt-3">
+          <h1>Cajita Ordenada</h1>
+          <p class="parrafo">
+            Conscientes de la importancia de atender la formación de los niños
+            en el tema de ciudad, se diseñó el programa de participación
+            infantil Cajita Ordenada, abriendo un canal de comunicación directa
+            con ellos.
+          </p>
+          <p>
+            Comenzó en el Ciclo escolar 2015-2016 y hasta el momento hemos
+            visitado a 3,981 niños de 31 diferentes escuelas de la ciudad de
+            Chihuahua, desde entonces hasta el día de hoy.
+          </p>
         </div>
-        <h1 class="principal">Sustento Legal</h1>
-
-        <div class="row">
-          <div class="col-sm-3">
-            <img
-              src="img/ONU.jpg"
-              alt="ONU"
-              style="width: 250px; height: 280px; padding: 10px 0px 0px 0px"
-              class="img-fluid"
-            />
-            <img
-              src="img/Ciudad.jpg"
-              alt="Niña Recicla"
-              style="width: 250px; height: 280px; padding: 10px 0px 0px 0px"
-              class="img-fluid"
-            />
-            <p class="text-center"><b>Asociación Internacional de </b></p>
-            <p class="text-center"><b>Ciudades Educadoras</b></p>
-          </div>
-          <div class="col-sm-9 pt-3">
-            <p>
-              <b
-                >LA LEY GENERAL DE DERECHOS DE LAS NIÑAS, NIÑOS Y
-                ADOLESCENTES</b
-              >
-            </p>
-            <p style="text-align: justify">
-              ARTÍCULO 2.- Para garantizar la protección de los derechos de
-              niñas, niños y adolescentes, las autoridades realizarán acciones y
-              tomarán medidasde conformidad con los principios establecidos en
-              la presente Ley. Para tal efecto, deberán:
-            </p>
-            <ul>
-              <li>
-                Garantizar un enfoque integral, transversal y con perspectiva de
-                derechos humanos del diseño y la instrumentación de políticas y
-                programas de gobierno.
-              </li>
-              <li>
-                Promover la participación, tomar en cuenta la opinión y
-                considerar los aspectos culturales, éticos, afectuosos,
-                educativos y de salud de niñas, niños y adolescentes, en todos
-                aquellos asuntos de su incumbencia, de acuerdo a su edad,
-                desarrollo intelectual, cognoscitivo y de madurez
-              </li>
-            </ul>
-            <p style="text-align: justify">
-              REGLAMENTO DEL INSTITUTO MUNICIPAL DE PLANEACIÓN URBANA
-            </p>
-            <p style="text-align: justify">OBJETIVO ESPECIFICO</p>
-            <p style="text-align: justify">
-              ART. 7- Fomentar una conciencia colectiva de desarrollo municipal.
-            </p>
-            <p style="text-align: justify">ATRIBUCIONES DEL EQUIPO TÉCNICO</p>
-            <p style="text-align: justify">ART. 8</p>
-            <p style="text-align: justify">
-              <b>VI)</b> Difundir la información que considere necesaria para el
-              cumplimiento de sus fines, por cualquiera de los medios que el
-              propio instituto determine.
-            </p>
-            <p style="text-align: justify">
-              <b>IX)</b> Proponer planes y programas para preservar y restaurar
-              el equilibrio ecológico dentro del municipio de Chihuahua.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-9">
-            <h1 class="principal">
-              Proyectos similares
-            </h1>
-            <p><b>Colectivo Arkitente.</b> España</p>
-            <p>
-              El Proyecto de Participación infantil para Co-diseñar con los
-              niños la plaza Mateo Hernández de Portugalete, España.
-            </p>
-            <p>
-              Nace de una idea del Área de Participación Ciudadana e Innovación
-              Social.
-            </p>
-            <p><b>Colectivo Judgend Architektur Stadts, (JAS).</b> Alemania</p>
-            <p>
-              “La ciudad de hoy es producto de nuestros padres y abuelos, la
-              ciudad de mañana, será producto de nosotros y de los niños. Es por
-              eso que el trabajo debe ir enfocado a eso.”
-            </p>
-          </div>
-          <div class="col-md-3">
-            <img
-              src="img/espana.jpg"
-              alt="Niña Recicla"
-              style="width: 80%; height: 220px; padding: 50px 0px 0px 0px"
-              class="img-fluid"
-            />
-            <img
-              src="img/niños_alemania.jpg"
-              alt="Niña Recicla"
-              style="width: 80%; height: 200px; padding: 50px 0px 0px 0px"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-        <h1 class="principal">
-          Otros proyectos con participación infantil
-        </h1>
-        <div class="row mt-3">
-          <div class="col-sm-3">
-            <img
-              src="img/paraguay.jpg"
-              alt="Niña Recicla"
-              style="width: 80%; height: 200px"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-sm-9 pt-3">
-            <br />
-            <p>
-              “Cuando niños, niñas y adolescentes empiezan a cuestionarse
-              prácticas e ideas que manejamos las personas adultas acerca de
-              cómo funciona el mundo, de qué es lo mejor para todas y todos y de
-              cuáles son los modos de vivir mejor. Este cuestionamiento puede
-              constituirse en un puntapié del cambio.“
-            </p>
-            <p class="text-right"><b>UNICEF. Global infancia Paraguay</b></p>
-          </div>
-        </div>
-        <h1 class="text-center" style="font-family: 'Cabin Sketch', cursive">
-          Estrategia
-        </h1>
-        <p>
-          El equipo del IMPLAN visita a los niños en sus salones de clase,
-          llevándoles el mensaje adaptado según su edad a todos los grados desde
-          1° hasta 6°. Los materiales presentados son:
-        </p>
-        <ul>
-          <li>Video animado introductorio (presentación)</li>
-          <li>Plática ecológica interactiva</li>
-          <li>
-            Maqueta gigante (lona con traza urbana impresa y 33 elementos
-            urbanos manipulables)
-          </li>
-          <li>Video musical con tema ecológico de las 3R’s (cierre)</li>
-        </ul>
-        <h5>Temas abordados:</h5>
-        <ul>
-          <li>
-            El niño y la ciudad:
-            <ul>
-              <li>Equipamiento Urbano</li>
-              <li>Movilidad</li>
-            </ul>
-          </li>
-          <li>
-            El niño y su barrio:
-            <ul>
-              <li>Espacio Público</li>
-              <li>Equipamientos de proximidad</li>
-              <li>Comercio, abasto y servicios</li>
-            </ul>
-          </li>
-          <li>
-            El niño y su comunidad
-            <ul>
-              <li>Salud pública</li>
-              <li>Derecho a la participación</li>
-              <li>Identidad y patrimonio</li>
-            </ul>
-          </li>
-          <li>
-            El niño y su medio ambiente
-            <ul>
-              <li>Manejo de residuos</li>
-              <li>Aplicación de las 3R's</li>
-            </ul>
-          </li>
-          <li>
-            Otros temas:
-            <ul>
-              <li>¿Que hace el IMPLAN?</li>
-              <li>Concepto Planeación Urbana</li>
-              <li>Escalas y Jerarquías</li>
-              <li>Valores como: Orden, responsabilidad</li>
-              <li>Participación ciudadana infantil</li>
-              <li>Las 3R's (Reducir, Reutilizar, Reciclar)</li>
-              <li>Ecología como práctica positiva</li>
-              <li>Entorno e identidad</li>
-              <li>Elementos actuales en mi ciudad</li>
-              <li>Igualdad de género</li>
-            </ul>
-          </li>
-        </ul>
       </div>
+      <div class="row">
+        <div class="col-sm-4">&nbsp;</div>
+        <div class="col-sm-4 embed-responsive embed-responsive-21by9">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-Rkq4NLZGD8?rel=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-sm-4">&nbsp;</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-9">
+          <h2>Objetivo Principal</h2>
+          <p style="text-align: justify">
+            Promover una Pedagogía Urbana y una Participación Ciudadana
+            infantil.
+          </p>
+          <h2>Objetivos secundarios</h2>
+
+          <p style="text-align: justify">
+            Generar en los niños de manera sencilla, el conocimiento básico
+            sobre el complejo sistema que es una ciudad. Lograr la comprensión
+            de que existe un entorno físico creado por el hombre y la existencia
+            de un entorno social que lo moldea, así como un entorno natural en
+            el que se desarrolla.
+          </p>
+          <p style="text-align: justify">
+            Promover la reflexión sobre los elementos urbanos para lograr una
+            experiencia física diferente dentro de su ciudad.
+          </p>
+          <p style="text-align: justify">
+            Enseñarles que existen problemas en la ciudad que son atendidos por
+            especialistas en muchas disciplinas.
+          </p>
+          <p style="text-align: justify">
+            Acercarles el mensaje en el sentido de que concebimos a la niñez
+            como posibilidad y realidad de cambio y que no es necesario esperar
+            «a que sean grandes» para que puedan participar.
+          </p>
+        </div>
+        <div class="col-sm-3 center">
+          <img src="img/Niños.png" alt="cajita" class="img-fluid" />
+        </div>
+      </div>
+      <h2>Sustento Legal</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <img
+            src="img/ONU.jpg"
+            alt="ONU"
+            style="width: 250px; height: 280px; padding: 10px 0px 0px 0px"
+            class="img-fluid"
+          />
+          <img
+            src="img/Ciudad.jpg"
+            alt="Niña Recicla"
+            style="width: 250px; height: 280px; padding: 10px 0px 0px 0px"
+            class="img-fluid"
+          />
+          <p class="text-center"><b>Asociación Internacional de </b></p>
+          <p class="text-center"><b>Ciudades Educadoras</b></p>
+        </div>
+        <div class="col-sm-9 pt-3">
+          <p>
+            <b>LA LEY GENERAL DE DERECHOS DE LAS NIÑAS, NIÑOS Y ADOLESCENTES</b>
+          </p>
+          <p style="text-align: justify">
+            ARTÍCULO 2.- Para garantizar la protección de los derechos de niñas,
+            niños y adolescentes, las autoridades realizarán acciones y tomarán
+            medidasde conformidad con los principios establecidos en la presente
+            Ley. Para tal efecto, deberán:
+          </p>
+          <ul>
+            <li>
+              Garantizar un enfoque integral, transversal y con perspectiva de
+              derechos humanos del diseño y la instrumentación de políticas y
+              programas de gobierno.
+            </li>
+            <li>
+              Promover la participación, tomar en cuenta la opinión y considerar
+              los aspectos culturales, éticos, afectuosos, educativos y de salud
+              de niñas, niños y adolescentes, en todos aquellos asuntos de su
+              incumbencia, de acuerdo a su edad, desarrollo intelectual,
+              cognoscitivo y de madurez
+            </li>
+          </ul>
+          <p style="text-align: justify">
+            REGLAMENTO DEL INSTITUTO MUNICIPAL DE PLANEACIÓN URBANA
+          </p>
+          <p style="text-align: justify">OBJETIVO ESPECIFICO</p>
+          <p style="text-align: justify">
+            ART. 7- Fomentar una conciencia colectiva de desarrollo municipal.
+          </p>
+          <p style="text-align: justify">ATRIBUCIONES DEL EQUIPO TÉCNICO</p>
+          <p style="text-align: justify">ART. 8</p>
+          <p style="text-align: justify">
+            <b>VI)</b> Difundir la información que considere necesaria para el
+            cumplimiento de sus fines, por cualquiera de los medios que el
+            propio instituto determine.
+          </p>
+          <p style="text-align: justify">
+            <b>IX)</b> Proponer planes y programas para preservar y restaurar el
+            equilibrio ecológico dentro del municipio de Chihuahua.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          <h2>Proyectos similares</h2>
+          <p><b>Colectivo Arkitente.</b> España</p>
+          <p>
+            El Proyecto de Participación infantil para Co-diseñar con los niños
+            la plaza Mateo Hernández de Portugalete, España.
+          </p>
+          <p>
+            Nace de una idea del Área de Participación Ciudadana e Innovación
+            Social.
+          </p>
+          <p><b>Colectivo Judgend Architektur Stadts, (JAS).</b> Alemania</p>
+          <p>
+            “La ciudad de hoy es producto de nuestros padres y abuelos, la
+            ciudad de mañana, será producto de nosotros y de los niños. Es por
+            eso que el trabajo debe ir enfocado a eso.”
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="img/espana.jpg"
+            alt="Niña Recicla"
+            style="width: 80%; height: 220px; padding: 50px 0px 0px 0px"
+            class="img-fluid"
+          />
+          <img
+            src="img/niños_alemania.jpg"
+            alt="Niña Recicla"
+            style="width: 80%; height: 200px; padding: 50px 0px 0px 0px"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <h2>Otros proyectos con participación infantil</h2>
+      <div class="row mt-3">
+        <div class="col-sm-3">
+          <img
+            src="img/paraguay.jpg"
+            alt="Niña Recicla"
+            style="width: 80%; height: 200px"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-9 pt-3">
+          <br />
+          <p>
+            “Cuando niños, niñas y adolescentes empiezan a cuestionarse
+            prácticas e ideas que manejamos las personas adultas acerca de cómo
+            funciona el mundo, de qué es lo mejor para todas y todos y de cuáles
+            son los modos de vivir mejor. Este cuestionamiento puede
+            constituirse en un puntapié del cambio.“
+          </p>
+          <p class="text-right"><b>UNICEF. Global infancia Paraguay</b></p>
+        </div>
+      </div>
+      <h3>Estrategia</h3>
+      <p>
+        El equipo del IMPLAN visita a los niños en sus salones de clase,
+        llevándoles el mensaje adaptado según su edad a todos los grados desde
+        1° hasta 6°. Los materiales presentados son:
+      </p>
+      <ul>
+        <li>Video animado introductorio (presentación)</li>
+        <li>Plática ecológica interactiva</li>
+        <li>
+          Maqueta gigante (lona con traza urbana impresa y 33 elementos urbanos
+          manipulables)
+        </li>
+        <li>Video musical con tema ecológico de las 3R’s (cierre)</li>
+      </ul>
+      <h3>Temas abordados:</h3>
+      <ul>
+        <li>
+          El niño y la ciudad:
+          <ul>
+            <li>Equipamiento Urbano</li>
+            <li>Movilidad</li>
+          </ul>
+        </li>
+        <li>
+          El niño y su barrio:
+          <ul>
+            <li>Espacio Público</li>
+            <li>Equipamientos de proximidad</li>
+            <li>Comercio, abasto y servicios</li>
+          </ul>
+        </li>
+        <li>
+          El niño y su comunidad
+          <ul>
+            <li>Salud pública</li>
+            <li>Derecho a la participación</li>
+            <li>Identidad y patrimonio</li>
+          </ul>
+        </li>
+        <li>
+          El niño y su medio ambiente
+          <ul>
+            <li>Manejo de residuos</li>
+            <li>Aplicación de las 3R's</li>
+          </ul>
+        </li>
+        <li>
+          Otros temas:
+          <ul>
+            <li>¿Que hace el IMPLAN?</li>
+            <li>Concepto Planeación Urbana</li>
+            <li>Escalas y Jerarquías</li>
+            <li>Valores como: Orden, responsabilidad</li>
+            <li>Participación ciudadana infantil</li>
+            <li>Las 3R's (Reducir, Reutilizar, Reciclar)</li>
+            <li>Ecología como práctica positiva</li>
+            <li>Entorno e identidad</li>
+            <li>Elementos actuales en mi ciudad</li>
+            <li>Igualdad de género</li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    
+
     <!--foot -->
     <script>
-      document.write(footer())
+      document.write(footer());
     </script>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
