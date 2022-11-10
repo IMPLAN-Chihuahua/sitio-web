@@ -240,18 +240,18 @@ function navbar() {
                 <ul>
                   <li class="dropdown-header">CENTRO DE ESTUDIOS</li>
                   <li>
-                    <a href="EstudioCE2.html"
+                    <a href="GuiaMetodologica.html"
                       >GUÍA METODOLÓGICA</a
                     >
                   </li>
                   <li>
-                    <a href="EstudioCE3.html"
+                    <a href="IndicadoresDesarrolloSostenible.html"
                       >INDICADORES</a
                     >
                   </li>
                   <li>
                     <a
-                      href="EstudioCE1.html"
+                      href="EstudioModelosDensificacion.html"
                       target="_self"
                       >MODELOS DE DENSIFICACIÓN</a
                     >
