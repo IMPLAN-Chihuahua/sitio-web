@@ -294,7 +294,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE5.html"
+                      href="EstudiosAmbientales.html"
                       target="_self"
                       >ESTUDIO ZONAS DE VALOR AMBIENTAL</a
                     >
