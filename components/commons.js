@@ -258,7 +258,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE7.html"
+                      href="CostoCiudad.html"
                       target="_self"
                       >COSTO CIUDAD</a
                     >
