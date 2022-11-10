@@ -279,7 +279,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE10.html"
+                      href="ValoracionAnva.html"
                       target="_self"
                       >VALORACIÓN DE SERVICIOS AMBIENTALES ANVA Y PE</a
                     >
