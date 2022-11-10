@@ -187,7 +187,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="Proyecto5.html"
+                      href="CorredorEscultorico.html"
                       target="_self"
                       >CORREDOR ESCULTÓRICO</a
                     >
