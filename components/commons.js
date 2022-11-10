@@ -43,7 +43,7 @@ function navbar() {
     >
       ☰
     </button>
-    <a class="navbar-brand" href="">
+    <a class="navbar-brand" href="/">
       <img src="img/IMPLAN05.png" height="40" alt="IMPLAN Chihuahua" />
     </a>
     <div class="navbar-collapse collapse">
@@ -518,7 +518,7 @@ function navbar() {
                 <ul>
                   <li>
                     <a
-                      href="IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf"
+                      href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf"
                       target="_self"
                       >Cumplimiento a resolución ICHITAIP/RR-566/2021</a
                     >
