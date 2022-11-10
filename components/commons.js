@@ -286,7 +286,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE11.html"
+                      href="CostoCiudadAproximacionCostos.html"
                       target="_self"
                       >COSTO CIUDAD, Aproximación a los costos de la
                       infraestructura</a
