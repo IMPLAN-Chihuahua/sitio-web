@@ -265,7 +265,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE8.html"
+                      href="ReformaEnergetica.html"
                       target="_self"
                       >APROVECHAMIENTO PARA LA REFORMA ENERGÉTICA</a
                     >
