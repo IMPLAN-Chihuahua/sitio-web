@@ -1,254 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>IMPLAN │ Chihuahua</title>
-  <meta name="author" content="IMPLAN" />
-  <meta name="keywords" content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/b4megamenu.css">
-  <link rel="stylesheet" href="css/b5megamenu.css">  
-  <link rel="shortcut icon" href="img/implan.ico">  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <style>
-    body {
-      background: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>IMPLAN │ Chihuahua</title>
+    <meta name="author" content="IMPLAN" />
+    <meta
+      name="keywords"
+      content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/b4megamenu.css" />
+    <link rel="stylesheet" href="css/b5megamenu.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="img/implan.ico" />
+    <script src="https://kit.fontawesome.com/509388ec50.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity=""
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap"
+      rel="stylesheet"
+    />
 
-   /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-
-    
-</style> 
-<style>
-a.trans:link {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:visited {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:hover {
-    color: lightgray;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:active {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-</style>
-<style>
-a.transi:link {
-    color: #008B8B;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.transi:visited {
-    color: #008B8B;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.transi:hover {
-    color: lightgray;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.transi:active {
-    color: #008B8B;
-    background-color: transparent;
-    text-decoration: none;
-}
-</style>
-</head>
-<body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 pt-3 pb-2">
+    <script type="text/javascript" src="./components/commons.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- -->
+        </div>
+        <div class="col-sm-4 text-right d-lg-block d-none">
+          <script
+            async
+            src="https://cse.google.com/cse.js?cx=014259653855378612527:y7exrn7ypkq"
+          ></script>
+          <div class="gcse-search"></div>
+        </div>
+        <div class="col-sm-2 text-right">
+          <a
+            href="https://www.facebook.com/Implan-Chihuahua-108606468095094"
+            target="_blank"
+            ><span style="font-size: 32px; color: rgb(251, 174, 65)"
+              ><i class="fab fa-facebook-square"></i></span
+          ></a>
+          <!--<a href="https://twitter.com/IMPLANChih?s=08" target="_blank"><span style="font-size: 32px; color: rgb(251, 174, 65);"><i class="fab fa-twitter"></i></span></a>-->
+          <a href="https://www.instagram.com/implanchihuahua/" target="_blank"
+            ><span style="font-size: 32px; color: rgb(251, 174, 65)"
+              ><i class="fab fa-instagram"></i></span
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg"
+            target="_blank"
+            ><span style="font-size: 32px; color: rgb(251, 174, 65)"
+              ><i class="fab fa-youtube"></i></span
+          ></a>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4 pt-3 pb-2 align-items-center">
-       <img src="img/IMPLAN_2017.png" width="270" height="51" alt="IMPLAN">
-    </div> 
-    <div class="col-sm-4 pt-3 pb-2 d-none d-lg-block">
-          <p class="text-right">
-            <a href="#bloque1" data-toggle="collapse" aria-expanded="false" aria-controls="bloque1"><i class="fas fa-phone-volume text-warning"></i></a>       
-            <a href="#bloque2" data-toggle="collapse" aria-expanded="false" aria-controls="bloque2"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque3" data-toggle="collapse" aria-expanded="false" aria-controls="bloque3"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque1">(614) 200 48 20</p>
-            <p class="collapse text-right" id="bloque2">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque3">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>  
-    <div class="col-sm-4 pt-3 pb-2 d-lg-none">
-          <p class="text-right">
-            <a href="tel:6142004820"><i class="fas fa-phone-volume text-warning"></i></a>          
-            <a href="#bloque4" data-toggle="collapse" aria-expanded="false" aria-controls="bloque4"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque5" data-toggle="collapse" aria-expanded="false" aria-controls="bloque5"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque4">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque5">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>              
-  </div>          
-</div> 
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:rgb(102, 0, 102);">
-  <a class="navbar-brand" href="https://implanchihuahua.gob.mx/"><i class="fas fa-home"></i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          IMPLAN
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown5">
-            <div class="row">
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/Mision.html">MISIÓN/VISIÓN</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Consejo.html">CONSEJO</a></p>
-              
-              </div>
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/EquipoTecnico.html">EQUIPO TÉCNICO</a></p>
-              </div>              
-            </div>              
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ENTORNO
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/entorno.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">Chihuahua</h4>
-                <p>Conoce tu ciudad</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ÁMBITO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoRegional">REGIONAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoMunicipal">MUNICIPAL</a></p>
 
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ENTORNO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoEconomico">ECONÓMICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoUrbano">URBANO</a></p>
-              </div>
-             
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PROYECTOS
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown2">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="img/proyectos.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">IMPLAN</h4>
-                <p>Proyectos</p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">SOCIALES</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Cajita.html">CAJITA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/ForoFCCUU.html">FORO FCCUU</a></p>                 <p><a href="https://implanchihuahua.gob.mx/ForoCiudades.html">FORO 1.2019</a></p>
-
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">URBANOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto1.html">PLAZA DE ARMAS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto3.html">PEATONALIZACIÓN CALLE MORELOS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto2.html">AV. VENUSTIANO CARRANZA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto4.html">PARQUE LERDO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto5.html">CORREDOR ESCULTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto7.html">PARQUE EL REJÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto8.html">EDIFICIO DEL REAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto9.html">CENTRO HISTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto10.html">QUINTA TOUCHE</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto11.html">PARQUE EL ENCINO</a></p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">CENTRO DE ESTUDIOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE2.html">GUÍA METODOLÓGICA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE3.html">INDICADORES</a></p>
-               <p><a href="https://implanchihuahua.gob.mx/EstudioCE1.html">MODELOS DE DENSIFICACIÓN</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PDU2040
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown3">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/PDU.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">PDU2040</h4>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Poblacion">POBLACIÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Soporte">ECONOMÍA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Marco">MARCO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Equipamiento">EQUIPAMIENTO</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Movilidad">MOVILIDAD</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Infraestructura">INFRAESTRUCTURA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Medio">AMBIENTE</a></p>
-              </div>
-
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          DATOS ABIERTOS
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown4">
-            <div class="row">
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables.html">BUSCAR</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_EP.html">ESTUDIOS Y PROYECTOS</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_DA.html">CARTOGRAFÍA</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Licitaciones.html">LICITACIONES</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Directorio.html">DIRECTORIO</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="http://ovie.mpiochih.gob.mx">OVIE</a>
-      </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Transparencia.html">TRANSPARENCIA</a>
-      </li>                     
-    </ul>
-  </div>
-</nav>
+    <script>
+      document.write(navbar());
+    </script>
 <!--inicia página -->
 <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center">
   <ul class="navbar-nav">
@@ -289,8 +116,33 @@ a.transi:active {
 </nav>
 <div class="container mt-3">
  <p class="text-secondary"><b>Aviso:</b> El carácter de esta información es de uso público, puede presentar inconsistencias y variaciones temporales. Los usuarios de nuestra información y otros productos de análisis son los únicos responsables de las interpretaciones que se realicen, no existe implicación legal en el uso de la misma para el municipio o para el propio instituto.</p>
-  <p class="text-secondary">No dude en ponerse en contacto con nuestro personal si detecta inconsistencias u omisiones. Realice sus observaciones al correo electrónico implan@mpiochih.gob.mx o al teléfono 200-48-00, ext. 5714.</p>
-        <div class="row bg-light" id="templatemo_catastro">
+  <p class="text-secondary">No dude en ponerse en contacto con nuestro personal si detecta inconsistencias u omisiones. Realice sus observaciones al correo electrónico implan@implanchiuahua.org o al teléfono 200-48-00, ext. 5714.</p>
+  <div class="row bg-light" id="templatemo_catastro">
+    <div class="col-sm-2">
+      <p><img src="img/Img_Des/DA_2.png" width="100%" height="100%"   alt="PDU2040" style="padding:4px;width:100%"></p>
+    </div>
+    <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light"><b>Tema: </b>Datos  catastrales                </li>
+          <li class="list-group-item bg-light"><b>Grupo: </b>Catastro  Urbano</li>
+          <li class="list-group-item bg-light"><b>Objeto  geográfico: </b>Manzana</li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:28 500                </li>
+          <li class="list-group-item bg-light"><strong>Edición:</strong> 2020</li>
+          <li class="list-group-item bg-light"><strong>Proyección:  </strong>Universal Transversa de Mercator</li>
+          <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF  2008                </li>
+          <li class="list-group-item bg-light"><b>Descripción: </b>Mapa de la ciudad de Chihuahua que incluye la traza de manzanas, colonias y áreas verdes, con las etiquetas de calles y nombres de colonias. </li>
+          <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
+
+            <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2016.zip" title="26.1 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="26.1 MB"></a>
+            <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2016.zip" title="18.7 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="18.7 MB"></a>
+            <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2016.zip" title="101.5 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="101.5 MB"></a> 
+            
+            </li>
+        </ul>
+    </div>
+  </div>  
+        <div class="row bg-light" id="templatemo_catastro_2">
           <div class="col-sm-2">
             <p><img src="img/Img_Des/DA_2.png" width="100%" height="100%"   alt="PDU2040" style="padding:4px;width:100%"></p>
           </div>
@@ -307,9 +159,9 @@ a.transi:active {
                 <li class="list-group-item bg-light"><b>Descripción: </b>Extensión  territorial que está constituida por un grupo de viviendas, edificios, predios,  lotes o terrenos de uso habitacional, comercial, industrial o de servicios;  generalmente se puede rodear en su totalidad y está delimitada por calles,  andadores, brechas, veredas, cercas, arroyos, barrancos o límites prediales. </li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2016.zip" title="26.1 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="26.1 MB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2016.zip" title="18.7 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="18.7 MB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2016.zip" title="101.5 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="101.5 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2016.zip" title="26.1 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="26.1 MB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2016.zip" title="18.7 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="18.7 MB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2016.zip" title="101.5 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="101.5 MB"></a> 
                   
                   </li>
               </ul>
@@ -331,9 +183,9 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF  1992</li>
                 <li class="list-group-item"><b>Descripción: </b>Edificación de cualquier tipo, destino y uso, inclusive los equipos e instalaciones adheridas permanentemente al terreno y que forman parte integrante del mismo.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_Construcciones_2007.zip" title="211 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_Construcciones_2007.zip" title="141 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>                 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_Construcciones_2007.zip" title="889 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="dxf"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Construcciones_2007.zip" title="211 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Construcciones_2007.zip" title="141 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>                 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Construcciones_2007.zip" title="889 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="dxf"></a> 
                   </li>
               </ul>
           </div>
@@ -354,9 +206,9 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF  1992</li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Extensión territorial que está constituida por un grupo de viviendas, edificios, predios, lotes o terrenos de uso habitacional, comercial, industrial o de servicios; generalmente se puede rodear en su totalidad y está delimitada por calles, andadores, brechas, veredas, cercas, arroyos, barrancos o límites prediales.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                 <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2007.zip" title="20.9 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2007.zip" title="15 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>                 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2007.zip" title="83.3 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="dxf"></a>                   
+                 <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2007.zip" title="20.9 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2007.zip" title="15 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>                 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2007.zip" title="83.3 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="dxf"></a>                   
                   </li>
               </ul>
           </div>
@@ -377,9 +229,9 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF  1992</li>
                 <li class="list-group-item"><b>Descripción: </b>Unidad mínima de observación que se encuentra ubicado dentro de una localidad urbana, en donde existe la continuidad en las construcciones, cuyo uso y destino predominante puede ser habitacional, industrial, comercial o de servicios públicos, entre otros, y cuenta con infraestructura vial y equipamiento urbano.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                 <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_PredioUrbano_2007.zip" title="112 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_PredioUrbano_2007.zip" title="104 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>                 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_PredioUrbano_2007.zip" title="706 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="dxf"></a> 
+                 <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_PredioUrbano_2007.zip" title="112 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_PredioUrbano_2007.zip" title="104 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>                 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_PredioUrbano_2007.zip" title="706 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="dxf"></a> 
                   
                   </li>
               </ul>
@@ -401,10 +253,10 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF  1992                </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Elemento natural o artificial que  almacena agua. Representa: presas, lagos, lagunas, mares.                </li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CuerposdeAgua_2007.zip" title="210 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="210 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CuerposdeAgua_2007.zip" title="152 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="152 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_CuerposdeAgua_2007.zip" title="84 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="84 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CuerposdeAgua_2007.zip" title="1,269 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="1,269 KB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CuerposdeAgua_2007.zip" title="210 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="210 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CuerposdeAgua_2007.zip" title="152 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="152 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CuerposdeAgua_2007.zip" title="84 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="84 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CuerposdeAgua_2007.zip" title="1,269 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="1,269 KB"></a>                   
                   </li>
               </ul>
           </div>
@@ -426,9 +278,9 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992 </li>
                 <li class="list-group-item"><b>Descripción: </b>Corrientes  de agua continua que van a desembocar en otra corriente o en  los cuerpos de agua.                </li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientedeAgua_2010.zip" title="283 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip" title="178 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientedeAgua_2010.zip" title="2.54 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientedeAgua_2010.zip" title="283 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip" title="178 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientedeAgua_2010.zip" title="2.54 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -449,9 +301,9 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF 1992 </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Corrientes de agua continua que van a desembocar en otra corriente o en los cuerpos de agua.</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientesdeAgua_2007.zip" title="1.87 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip" title="1.64 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientesdeAgua_2007.zip" title="10.8 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientesdeAgua_2007.zip" title="1.87 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip" title="1.64 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientesdeAgua_2007.zip" title="10.8 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -472,9 +324,9 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992 </li>
                 <li class="list-group-item"><b>Descripción: </b>Parte de la vía publica destinada a la circulación de peatones.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_Banquetas_2016.zip" title="37.4 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_Banquetas_2016.zip" title="26.2 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_Banquetas_2016.zip" title="181,416 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Banquetas_2016.zip" title="37.4 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Banquetas_2016.zip" title="26.2 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Banquetas_2016.zip" title="181,416 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -496,9 +348,9 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF 1992 </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Parte de la vía publica destinada a la circulación de peatones.</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CarreterasyCaminos_2007.zip" title="40.5 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CarreterasyCaminos_2007.zip" title="27.2 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CarreterasyCaminos_2007.zip" title="183 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                  
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CarreterasyCaminos_2007.zip" title="40.5 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CarreterasyCaminos_2007.zip" title="27.2 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CarreterasyCaminos_2007.zip" title="183 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                  
                   </li>
               </ul>
           </div>
@@ -519,9 +371,9 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992 </li>
                 <li class="list-group-item"><b>Descripción: </b>Barrera construida por el hombre por el hombre de estructura relativamente mediana utilizada como límite.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CercasyMuros_2007.zip" title="10.8 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CercasyMuros_2007.zip" title="10.5 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CercasyMuros_2007.zip" title="80.1 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CercasyMuros_2007.zip" title="10.8 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CercasyMuros_2007.zip" title="10.5 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CercasyMuros_2007.zip" title="80.1 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -542,9 +394,9 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF 1992 </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Área acondicionada, con carácter permanente, destinado a eventos deportivos, ejercicio o juegos.</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CanchasDeportivas_2007.zip" title="5.93 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CanchasDeportivas_2007.zip" title="3.25 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CanchasDeportivas_2007.zip" title="80.1 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CanchasDeportivas_2007.zip" title="5.93 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CanchasDeportivas_2007.zip" title="3.25 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CanchasDeportivas_2007.zip" title="80.1 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -565,9 +417,9 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992 </li>
                 <li class="list-group-item"><b>Descripción: </b>Área pública con vegetación, equipada con dispositivos recreacionales, dedicada al esparcimiento, decoración y conservación.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_ParquesyJardineras_2007.zip" title="6.01 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_ParquesyJardineras_2007.zip" title="2.96 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_ParquesyJardineras_2007.zip" title="17.4 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ParquesyJardineras_2007.zip" title="6.01 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="283 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_ParquesyJardineras_2007.zip" title="2.96 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_ParquesyJardineras_2007.zip" title="17.4 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -588,10 +440,10 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF  1992                </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Es la  ciudad propiamente dicha, definida desde todos los puntos de vista: geográfico,  ecológico, demográfico, social, económico. Es el área habitada o urbanizada, la  ciudad misma más el área contigua edificada, con usos de suelo de naturaleza no  agrícola y que, partiendo de un núcleo central, presenta continuidad física en  todas direcciones hasta ser interrumpida, en forma notoria, por terrenos de uso  no urbano como bosques, sembradíos o cuerpos de agua. La población que ahí se  localiza es calificada como urbana.                </li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_AreaUrbana_2016.zip" title="454 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaUrbana_2016.zip" title="344 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_AreaUrbana_2016.zip" title="178 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="178 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaUrbana_2016.zip" title="2,63 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.63 MB"></a>                 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_AreaUrbana_2016.zip" title="454 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaUrbana_2016.zip" title="344 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="344 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_AreaUrbana_2016.zip" title="178 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="178 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaUrbana_2016.zip" title="2,63 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.63 MB"></a>                 
                   </li>
               </ul>
           </div>
@@ -613,10 +465,10 @@ a.transi:active {
                 <li class="list-group-item"><b>Datos de publicación: </b>Actualización al Plan de Desarrollo Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo al periódico oficial del Gobierno del Estado No. 76, Chihuahua, Chih., 21 de Septiembre del 2016.</li>
                 <li class="list-group-item"><b>Descripción: </b>Es la  ciudad propiamente dicha, definida desde todos los puntos de vista: geográfico,  ecológico, demográfico, social, económico. Es el área habitada o urbanizada, la  ciudad misma más el área contigua edificada, con usos de suelo de naturaleza no  agrícola y que, partiendo de un núcleo central, presenta continuidad física en  todas direcciones hasta ser interrumpida, en forma notoria, por terrenos de uso  no urbano como bosques, sembradíos o cuerpos de agua. La población que ahí se  localiza es calificada como urbana.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CentrodePoblacion_2016.zip" title="5.89 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.89 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CentrodePoblacion_2016.zip" title="12.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="12.1 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_CentrodePoblacion_2016.zip" title="2.21 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="2.21 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CentrodePoblacion_2016.zip" title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="104 KB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentrodePoblacion_2016.zip" title="5.89 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.89 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CentrodePoblacion_2016.zip" title="12.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="12.1 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentrodePoblacion_2016.zip" title="2.21 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="2.21 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CentrodePoblacion_2016.zip" title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="104 KB"></a>                   
                   </li>
               </ul>
           </div>
@@ -637,7 +489,7 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF  1992                </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Es el  trayecto que tiene como función principal el transporte de personas y bienes;  diseñado con una superficie especialmente preparada para circulación,  diferenciada para peatones de toda condición; así como para cada tipo de  transporte: no motorizado, público y vehicular.                </li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_RedVial_2016.zip" title="22.6 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 kb"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_RedVial_2016.zip" title="22.6 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="454 kb"></a>                   
                   </li>
               </ul>
           </div>
@@ -660,10 +512,10 @@ a.transi:active {
                 </li>
                 <li class="list-group-item"><b>Descripción: </b>Objetos  geográficos que se relacionan con las actividades recreativas y de ocio de las  personas.                </li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_AreaVerde_2016.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaVerde_2016.zip" title="3.55 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="3.55 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_AreaVerde_2016.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaVerde_2016.zip" title="22.59 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="22.59 MB"></a>                  
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_AreaVerde_2016.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaVerde_2016.zip" title="3.55 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="3.55 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_AreaVerde_2016.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaVerde_2016.zip" title="22.59 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="22.59 MB"></a>                  
                   </li>
               </ul>
           </div>
@@ -685,10 +537,10 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF  2008                </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Representación  puntual  de la edificación de las instituciones del sector público y privado que  imparten educación y enseñanza en todos sus niveles: inicial, primario,  secundario, medio superior y superior.                </li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_Escuela_2015.zip" title="547 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="547 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_Escuela_2015.zip" title="366 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="366 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_Escuela_2015.zip" title="78 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="78 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_Escuela_2015.zip" title="2.54 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Escuela_2015.zip" title="547 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="547 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Escuela_2015.zip" title="366 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="366 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_Escuela_2015.zip" title="78 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="78 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Escuela_2015.zip" title="2.54 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="2.54 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -710,9 +562,9 @@ a.transi:active {
                 </li>
                 <li class="list-group-item"><b>Descripción: </b>Los centros de culto son lugares que proporcionan servicios de asistencia religiosa a la población.  Identifican a los distintos centros de diversas religiones que profesan los habitantes en la Ciudad.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CentrosCulto_cgs.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentrosCulto_cgs.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_CentrosdeCulto.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentrosdeCulto.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
             
                   </li>
               </ul>
@@ -735,8 +587,8 @@ a.transi:active {
                 </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Esta integrado por el conjunto de inmuebles que proporcionan a la población la posibilidad de acceso a la recreación intelectual y estética así como a la superación cultural, complementarias al sistema de educación formal (SEDESOL).</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/08019001_UnidadesEconomicas.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/08019001_UnidadesEconomicas.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
             
                   </li>
               </ul>
@@ -759,8 +611,8 @@ a.transi:active {
                 </li>
                 <li class="list-group-item"><b>Descripción: </b>Los hoteles y moteles son los lugares que prestan servicios de alojamiento temporal. Se identifican y muestran los negocios de esta índole que se encuentran distribuidos en la Ciudad.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/08019001_HotelesMoteles_cgs.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_HotelesyMoteles.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/08019001_HotelesMoteles_cgs.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_HotelesyMoteles.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
             
                   </li>
               </ul>
@@ -783,8 +635,8 @@ a.transi:active {
                 </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Incluye a los establecimientos que preparan y sirven comidas. Se identifican y muestran los negocios de esta índole que se encuentran distribuidos en la Ciudad.</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_Restaurantes_cgs.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_Restaurantes.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Restaurantes_cgs.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_Restaurantes.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
             
                   </li>
               </ul>
@@ -806,10 +658,10 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF  2008                </li>
                 <li class="list-group-item"><b>Descripción: </b>El  área que delimita los espacios urbanos, vialidades e inmuebles a partir de los  cuales se originaron los centros de población. Su límite se establece a partir  de eventos históricos, nacionales, regionales o locales.                </li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CentroHistorico_2016.zip" title="2,096 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="2095 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroHistorico_2016.zip" title="13.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="13.1 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_CentroHistorico_2016.zip" title="4 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="4 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroHistorico_2016.zip" title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="104 KB"></a>                  
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentroHistorico_2016.zip" title="2,096 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="2095 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroHistorico_2016.zip" title="13.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="13.1 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentroHistorico_2016.zip" title="4 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="4 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroHistorico_2016.zip" title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="104 KB"></a>                  
                   </li>
               </ul>
           </div>
@@ -830,10 +682,10 @@ a.transi:active {
                 <li class="list-group-item bg-light"><strong>DATUM:</strong> ITRF  2008                </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>El  área que delimita los espacios urbanos, vialidades e inmuebles a partir de los  cuales se originaron los centros de población. Su límite se establece a partir  de eventos históricos, nacionales, regionales o locales.                </li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_CentroUrbano_2016.zip" title="2,096 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="2,096 kb"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroUrbano_2016.zip" title="13.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="13.1 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_CentroUrbano_2016.zip" title="4 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="4 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroUrbano_2016.zip" title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="104 KB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentroUrbano_2016.zip" title="2,096 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="2,096 kb"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroUrbano_2016.zip" title="13.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="13.1 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentroUrbano_2016.zip" title="4 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="4 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroUrbano_2016.zip" title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="104 KB"></a>                   
                   </li>
               </ul>
           </div>
@@ -855,10 +707,10 @@ a.transi:active {
                 <li class="list-group-item"><b>Datos de publicación: </b>Actualización al Plan de Desarrollo Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo al periódico oficial del Gobierno del Estado No. 76, Chihuahua, Chih., 21 de Septiembre del 2016.</li>
                 <li class="list-group-item"><b>Descripción: </b>Espacio delimitado en el que se definen proyectos puntuales de alto impacto para la estructura urbana en general.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_PoligonosdeOrdenamiento_2016.zip" title="10 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="10 kb"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_PoligonosdeOrdenamiento_2016.zip" title="20.9 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="20.9 KB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_PoligonosdeOrdenamiento_2016.zip" title="7 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="7 KB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_PoligonosdeOrdenamiento_2016.zip" title="177 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="177 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_PoligonosdeOrdenamiento_2016.zip" title="10 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="10 kb"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_PoligonosdeOrdenamiento_2016.zip" title="20.9 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="20.9 KB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_PoligonosdeOrdenamiento_2016.zip" title="7 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="7 KB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_PoligonosdeOrdenamiento_2016.zip" title="177 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="177 KB"></a> 
                 </li>
               </ul>
           </div>
@@ -880,10 +732,10 @@ a.transi:active {
                 <li class="list-group-item bg-light"><b>Datos de publicación: </b>Actualización al Plan de Desarrollo Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo al periódico oficial del Gobierno del Estado No. 76, Chihuahua, Chih., 21 de Septiembre del 2016.</li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>Es en la que se determinan los aprovechamientos genéricos, o utilización general del suelo, en las distintas zonas del área objeto de ordenamiento y regulación. Corresponde a los planes regionales de desarrollo urbano y a los planes de desarrollo urbano de centros de población.</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionPrimaria_2016.zip" title="1.29 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="1.29"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_ZonificacionPrimaria_2016.zip" title="3.60 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="3.60 MB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionPrimaria_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="2.16 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_ZonificacionPrimaria_2016.zip" title="31.7 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="31.7 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionPrimaria_2016.zip" title="1.29 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="1.29"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_ZonificacionPrimaria_2016.zip" title="3.60 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="3.60 MB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionPrimaria_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="2.16 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_ZonificacionPrimaria_2016.zip" title="31.7 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="31.7 MB"></a> 
                 </li>
               </ul>
           </div>
@@ -905,8 +757,8 @@ a.transi:active {
                 <li class="list-group-item"><b>Datos de publicación: </b>Actualización al Plan de Desarrollo Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo al periódico oficial del Gobierno del Estado No. 76, Chihuahua, Chih., 21 de Septiembre del 2016, folio real 1258036 ante el Registro Público de la Propiedad y del Notariado del Estado de Chihuahua.</li>
                 <li class="list-group-item"><b>Descripción: </b>La Zonificación Secundaria es donde se determinan los aprovechamientos propuestos o utilización de los diversos usos del suelo al interior del Centro de Población. Corresponde a los planes regionales de desarrollo urbano y a los planes de desarrollo urbano de centros de población. </li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionSecundaria_2016.zip" title="1.29 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="1.29"></a>                   
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionSecundaria_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="2.16 MB"></a><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/xls/PDU2040-2016_Catalogo_de_Usos_de_Suelo.xls" title="Catalogo de Usos de Suelo" target="_blank"><img src="img/xls.jpg" width="20" height="20" alt="2.16 MB"></a><a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/ods/PDU2040-2016_Catalogo_de_Usos_de_Suelo.ods" title="Catalogo de Usos de Suelo" target="_blank"><img src="img/xls.jpg" width="20" height="20" alt="2.16 MB"></a>                  
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionSecundaria_2016.zip" title="1.29 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="1.29"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionSecundaria_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="2.16 MB"></a><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/xls/PDU2040-2016_Catalogo_de_Usos_de_Suelo.xls" title="Catalogo de Usos de Suelo" target="_blank"><img src="img/xls.jpg" width="20" height="20" alt="2.16 MB"></a><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/ods/PDU2040-2016_Catalogo_de_Usos_de_Suelo.ods" title="Catalogo de Usos de Suelo" target="_blank"><img src="img/xls.jpg" width="20" height="20" alt="2.16 MB"></a>                  
                 </li>
               </ul>
           </div>
@@ -928,8 +780,8 @@ a.transi:active {
                 <li class="list-group-item bg-light"><b>Datos de publicación: </b>Datos de publicación: Actualización al Plan de Desarrollo Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo al periódico oficial del Gobierno del Estado No. 76, Chihuahua, Chih., 21 de Septiembre del 2016, folio real 1258036 ante el Registro Público de la Propiedad y del Notariado del Estado de Chihuahua.</li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>La Estructura Vial constituye la vía y todos los soportes que la conforman, identifica la jerarquía de las vialidades regiosnales, primarias y secundarias del Centro de Población Chihuahua, señalando longitud del tramo, sección, número de carriles, y si se propone ciclovía y/o ruta troncal.</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>  
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_EstructuraVial_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="535 KB"></a>                 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_EstructuraVial_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="448 KB"></a></li>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_EstructuraVial_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="535 KB"></a>                 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_EstructuraVial_2016.zip" title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="448 KB"></a></li>
               </ul>
           </div>
         </div>  
@@ -949,9 +801,9 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF  1992                </li>
                 <li class="list-group-item"><b>Descripción: </b>Vía de comunicación terrestre cuya estructura consta de un terraplén y dos rieles paralelos fijados mediante durmientes, para el tránsito de trenes.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_ViaFerrea_2007.zip" title="756 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="37.4 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dwg/080190001_ViaFerrea_2007.zip" title="709 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="26.2 MB"></a>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/dxf/080190001_ViaFerrea_2007.zip" title="4.91 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="181.4 MB"></a>                   
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ViaFerrea_2007.zip" title="756 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="37.4 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_ViaFerrea_2007.zip" title="709 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20" alt="26.2 MB"></a>
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_ViaFerrea_2007.zip" title="4.91 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20" alt="181.4 MB"></a>                   
                   </li>
               </ul>
           </div>
@@ -973,8 +825,8 @@ a.transi:active {
                 </li>
                 <li class="list-group-item bg-light"><b>Descripción: </b>La unidad económica es la unidad de observación que se refiere a la información de las actividades realizada en la industria manufacturera, el comercio, los servicios privados no financieros, servicios financieros y de seguros. También incluye a las viviendas con actividad económica. Excluye unidades económicas con actividades ambulantes o desmontables, transporte colectivo urbano y suburbano, transporte de pasajeros en taxis de sitio y ruleteo (INEGI, DENUE). Estas unidades se presentan agrupadas según el giro de su actividad o todo el conjunto de actividades existentes en la Ciudad.</li>
                 <li class="list-group-item bg-light"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_UnidadesEconomicas_01.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas_01.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_UnidadesEconomicas_01.zip" title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="5.98 MB"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas_01.zip" title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="3.32 MB"></a> 
             
                   </li>
               </ul>
@@ -996,8 +848,8 @@ a.transi:active {
                 <li class="list-group-item"><strong>DATUM:</strong> ITRF  1992</li>
                 <li class="list-group-item"><b>Descripción: </b>Representan la división de la ciudad o centro de población en agrupaciones de manzanas, lotes y calles para usos habitacionales, comerciales e industriales. Incluyen el conjunto de sus sistemas de convivencia, en un área físicamente localizada, considerando dentro de la misma los elementos naturales y las obras materiales que la integran. La denominación de  colonia es el nombre genérico que reciben los barrios en la mayoría de las ciudades mexicanas.</li>
                 <li class="list-group-item"><b>Archivos Descargables: </b>
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/shp/080190001_ColoniasyFraccionamientos_2016.zip" title="734 Kb" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="shp"></a>                
-                  <a href="https://implanchihuahua.gob.mx/IMPLAN-Datos/Descargables/da/kml/080190001_ColoniasyFraccionamientos_2016.zip" title="997 kb" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="kml"></a> 
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ColoniasyFraccionamientos_2016.zip" title="734 Kb" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20" alt="shp"></a>                
+                  <a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_ColoniasyFraccionamientos_2016.zip" title="997 kb" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="kml"></a> 
                   </li>
               </ul>
           </div>
@@ -1005,45 +857,9 @@ a.transi:active {
         <hr>      
     </div>        
 <!--foot -->
-<blockquote class="blockquote mb-0" style="background-color:rgb(102, 0, 102);">
-    <div class="row">
-      <div class="col-sm-3 pt-3 pt-5">
-        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
-      </div>
-      <div class="col-sm-3 pt-3 pt-5">
-        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
-        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
-        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
-      </div>
-      <div class="col-sm-3 pt-5">
-        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
-        <p class="text-center">
-          <a href="https://facebook.com/implanchihuahua" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
-          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>        
-          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
-          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
-        </p>       
-      </div>
-      <div class="col-sm-3 pt-5">
-        <img src="img/premioOX.png" alt="premioOX">
-        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
-      </div>        
-    </div>
-      <div class="clearfix bg-secondary p-2">
-        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
-        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
-      </div>
-</blockquote>
-<!-- SCRIPT FILTRO -->
+<br />
 <script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myList li").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
+  document.write(footer());
 </script>
 <!-- script -->
   <script src="js/jquery-3.3.1.min.js"></script>
