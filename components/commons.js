@@ -308,7 +308,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudioCE12.html"
+                      href="EstudioMultimodal.html"
                       target="_self"
                       >ACTUALIZACIÓN DEL MACROMODELO</a
                     >
