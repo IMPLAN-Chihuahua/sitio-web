@@ -221,7 +221,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="Proyecto10.html"
+                      href="QuintaTouche.html"
                       target="_self"
                       >QUINTA TOUCHE</a
                     >
