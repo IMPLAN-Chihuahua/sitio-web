@@ -1,1229 +1,2719 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>IMPLAN │ Chihuahua</title>
-  <meta name="author" content="IMPLAN" />
-  <meta name="keywords" content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/b4megamenu.css">
-  <link rel="stylesheet" href="css/b5megamenu.css">  
-  <link rel="shortcut icon" href="img/implan.ico">  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <style>
-    body {
-      background: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>IMPLAN │ Chihuahua</title>
+    <meta name="author" content="IMPLAN" />
+    <meta
+      name="keywords"
+      content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion,
+      Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro,
+      Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico,
+      Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua,
+      Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua,
+      Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua,
+      Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica,
+      Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos,
+      Ambito regional de Chihuahua, Ambito Municipal de Chihuahua,
+      Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w"
+    />
+    <script src="https://kit.fontawesome.com/509388ec50.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/implan.ico" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fuentes.css" />
+    <script type="text/javascript" src="./components/commons.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
+      @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
+      /* Override UGG site */
+      #main {
+        width: 100%;
+        padding: 0;
+      }
 
-   /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
+      .content-asset p {
+        margin: 0 auto;
+      }
 
+      .breadcrumb {
+        display: none;
+      }
+      /* Helpers */
+      /**************************/
 
+      .margin-top-10 {
+        padding-top: 10px;
+      }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}    
-</style>
-<style>
-a.trans:link {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:visited {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:hover {
-    color: lightgray;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:active {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-</style>  
-<!-- graficas-->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      .margin-bot-10 {
+        padding-bottom: 10px;
+      }
 
-<script type="text/javascript">
-      google.charts.load('current', {'packages':['table']});
+      .first-character {
+        font-weight: 400;
+        float: left;
+        font-size: 84px;
+        line-height: 64px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      .sc {
+        color: #3b8595;
+      }
+
+      .ny {
+        color: #3d3c3a;
+      }
+
+      .atw {
+        color: #c48660;
+      }
+    </style>
+    <!-- graficas-->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", {
+        packages: ["table"],
+      });
       google.charts.setOnLoadCallback(drawTable);
       google.charts.setOnLoadCallback(drawTable1);
       google.charts.setOnLoadCallback(drawTable2);
-      google.charts.setOnLoadCallback(drawTable3);  
+      google.charts.setOnLoadCallback(drawTable3);
       google.charts.setOnLoadCallback(drawTable4);
       google.charts.setOnLoadCallback(drawTable5);
       google.charts.setOnLoadCallback(drawTable6);
       google.charts.setOnLoadCallback(drawTable7);
-      google.charts.setOnLoadCallback(drawTable8);  
-      google.charts.setOnLoadCallback(drawTable9);  
-      google.charts.setOnLoadCallback(drawTable10);  
-      google.charts.setOnLoadCallback(drawTable11);  
-      google.charts.setOnLoadCallback(drawTable12);  
-      google.charts.setOnLoadCallback(drawTable13);  
-      google.charts.setOnLoadCallback(drawTable14);  
-      google.charts.setOnLoadCallback(drawTable15);  
-      google.charts.setOnLoadCallback(drawTable16);  
-      google.charts.setOnLoadCallback(drawTable17);  
-      google.charts.setOnLoadCallback(drawTable18);  
+      google.charts.setOnLoadCallback(drawTable8);
+      google.charts.setOnLoadCallback(drawTable9);
+      google.charts.setOnLoadCallback(drawTable10);
+      google.charts.setOnLoadCallback(drawTable11);
+      google.charts.setOnLoadCallback(drawTable12);
+      google.charts.setOnLoadCallback(drawTable13);
+      google.charts.setOnLoadCallback(drawTable14);
+      google.charts.setOnLoadCallback(drawTable15);
+      google.charts.setOnLoadCallback(drawTable16);
+      google.charts.setOnLoadCallback(drawTable17);
+      google.charts.setOnLoadCallback(drawTable18);
 
       function drawTable() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Entidad');
-        data.addColumn('number', 'Total de localidades');
-        data.addColumn('number', '1 a 9,999 habitantes');
-        data.addColumn('number', '10,000 a 19,999 habitantes');
-        data.addColumn('number', '20,000 a 49,000 habitantes');
-        data.addColumn('number', '50,000 y más habitantes');
+        data.addColumn("string", "Entidad");
+        data.addColumn("number", "Total de localidades");
+        data.addColumn("number", "1 a 9,999 habitantes");
+        data.addColumn("number", "10,000 a 19,999 habitantes");
+        data.addColumn("number", "20,000 a 49,000 habitantes");
+        data.addColumn("number", "50,000 y más habitantes");
         data.addRows([
-          ['Estado de Chihuahua',  {v: 12141, f: '12,141'}, {v: 12127, f: '12,127'}, 5, 3, 6],
-          ['Localidad Chihuahua (a)',  282, 281, 0, 0, 1],
-          ['Localidad Chihuahua (b)',  302, 301, 0, 0, 1]
-          
+          [
+            "Estado de Chihuahua",
+            {
+              v: 12141,
+              f: "12,141",
+            },
+            {
+              v: 12127,
+              f: "12,127",
+            },
+            5,
+            3,
+            6,
+          ],
+          ["Localidad Chihuahua (a)", 282, 281, 0, 0, 1],
+          ["Localidad Chihuahua (b)", 302, 301, 0, 0, 1],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-    
-    function drawTable1() {
+
+      function drawTable1() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'CONCEPTO');
-        data.addColumn('number', 'INDICADOR 2010');
-        data.addColumn('number', 'PORCENTAJE 2010');
-        data.addColumn('number', 'INDICADOR 2015');
-        data.addColumn('number', 'PORCENTAJE 2015');
+        data.addColumn("string", "CONCEPTO");
+        data.addColumn("number", "INDICADOR 2010");
+        data.addColumn("number", "PORCENTAJE 2010");
+        data.addColumn("number", "INDICADOR 2015");
+        data.addColumn("number", "PORCENTAJE 2015");
 
         data.addRows([
-          ['Población total',  {v: 819543, f: '819,543'}, {v: 100, f: '100%'}, {v:  878062, f: ' 878,062'}, {v: 100, f: '100%'}],
-          ['Hombres',  {v: 399495, f: '399,495'}, {v: 48.75, f: '48.75%'}, {v:  427488, f: ' 427,488'}, {v: 48.68, f: '48.36%'}],
-          ['Mujeres',  {v: 420048, f: '420,048'}, {v: 51.26, f: '51.26%'}, {v: 450574, f: '450,574'}, {v: 51.31, f: '51.63%'}],
-          ['Relación de hombre/mujer (c)',  {v: 95.10, f: '95.10'}, {v: 0, f: '-'}, {v: 94.88, f: '94.88'}, {v: 0, f: '-'}],
-           ['Edad Media (d)',  {v: 28, f: '28'}, {v: 0, f: '-'}, {v: 29, f: '29'}, {v: 0, f: '-'}]
-          
+          [
+            "Población total",
+            {
+              v: 819543,
+              f: "819,543",
+            },
+            {
+              v: 100,
+              f: "100%",
+            },
+            {
+              v: 878062,
+              f: " 878,062",
+            },
+            {
+              v: 100,
+              f: "100%",
+            },
+          ],
+          [
+            "Hombres",
+            {
+              v: 399495,
+              f: "399,495",
+            },
+            {
+              v: 48.75,
+              f: "48.75%",
+            },
+            {
+              v: 427488,
+              f: " 427,488",
+            },
+            {
+              v: 48.68,
+              f: "48.36%",
+            },
+          ],
+          [
+            "Mujeres",
+            {
+              v: 420048,
+              f: "420,048",
+            },
+            {
+              v: 51.26,
+              f: "51.26%",
+            },
+            {
+              v: 450574,
+              f: "450,574",
+            },
+            {
+              v: 51.31,
+              f: "51.63%",
+            },
+          ],
+          [
+            "Relación de hombre/mujer (c)",
+            {
+              v: 95.1,
+              f: "95.10",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 94.88,
+              f: "94.88",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Edad Media (d)",
+            {
+              v: 28,
+              f: "28",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 29,
+              f: "29",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div1'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div1")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-    function drawTable2() {
+
+      function drawTable2() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'CONCEPTO');
-        data.addColumn('number', 'INDICADOR 2010');
-        data.addColumn('number', 'PORCENTAJE 2010');
+        data.addColumn("string", "CONCEPTO");
+        data.addColumn("number", "INDICADOR 2010");
+        data.addColumn("number", "PORCENTAJE 2010");
         data.addRows([
-          ['Promedio de hijos nacidos vivos (e)',  2.06, {v:0,   f: '-'}]
-        
+          [
+            "Promedio de hijos nacidos vivos (e)",
+            2.06,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div2'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div2")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-     function drawTable3() {
+
+      function drawTable3() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'CONCEPTO');
-        data.addColumn('number', 'INDICADOR 2010');
-        data.addColumn('number', 'PORCENTAJE 2010');
-        data.addColumn('number', 'INDICADOR 2015');
-        data.addColumn('number', 'PORCENTAJE 2015');
+        data.addColumn("string", "CONCEPTO");
+        data.addColumn("number", "INDICADOR 2010");
+        data.addColumn("number", "PORCENTAJE 2010");
+        data.addColumn("number", "INDICADOR 2015");
+        data.addColumn("number", "PORCENTAJE 2015");
         data.addRows([
-          ['Hogares con jefatura masculina (f)',  {v:165810, f: '165,810'}, {v:72.50,   f: '72.50%'},178.327
-,{v:67.44, f: '67.44%'}],
-          ['Hogares con jefatura femenina (f)',  {v:62828, f: '62,828'}, {v:27.50,   f: '27.50%'},86.08,{v:32.55, f: '32.55%'}],
-          ['Relación de dependencia (g)',  48, {v:0,   f: '-'},{v:0,   f: '-'},{v:0,   f: '-'}]
-        
+          [
+            "Hogares con jefatura masculina (f)",
+            {
+              v: 165810,
+              f: "165,810",
+            },
+            {
+              v: 72.5,
+              f: "72.50%",
+            },
+            178.327,
+            {
+              v: 67.44,
+              f: "67.44%",
+            },
+          ],
+          [
+            "Hogares con jefatura femenina (f)",
+            {
+              v: 62828,
+              f: "62,828",
+            },
+            {
+              v: 27.5,
+              f: "27.50%",
+            },
+            86.08,
+            {
+              v: 32.55,
+              f: "32.55%",
+            },
+          ],
+          [
+            "Relación de dependencia (g)",
+            48,
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div3'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div3")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-        
-        
-    
-    function drawTable4() {
+
+      function drawTable4() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'CONCEPTO');
-        data.addColumn('number', 'INDICADOR 2010');
-        data.addColumn('number', 'PORCENTAJE 2010');
-        data.addColumn('number', 'INDICADOR 2015');
-        data.addColumn('number', 'PORCENTAJE 2015');
+        data.addColumn("string", "CONCEPTO");
+        data.addColumn("number", "INDICADOR 2010");
+        data.addColumn("number", "PORCENTAJE 2010");
+        data.addColumn("number", "INDICADOR 2015");
+        data.addColumn("number", "PORCENTAJE 2015");
         data.addRows([
-          ['Grado promedio de escolaridad',  {v:10.40, f: '10.40'}, {v:0,   f: '-'},10.87,{v:0, f: '-'}],
-          ['Población de 3 a 14 años que asiste a la escuela',  148175, {v:88.43,   f: '88.43%'},162499,{v:90.14, f: '90.14%'}],
-           ['Población de 3 a 14 años que no asiste a la escuela',  19389, {v:11.57,   f: '11.57%'},17234,{v:9.56, f: '9.56%'}],
-         
-          ['Población de 8 a 14 años que sabe leer y escribir',  97961, {v:97.60,   f: '97.60%'},121477,{v:89.52,   f: '89.52%'}],
-          ['Población de 3 a 5 años que asiste a la escuela',  23894, {v:57.60,   f: '57.60%'},35190,{v:0,   f: '-'}],          
-          ['Población de 8 a 14 años que no sabe leer y escribir',  1041, {v:1,   f: '1.00%'},8134,{v:5.99,   f: '8.99%'}],       
-         ['Población de 15 años y más alfabeta',  573436, {v:97.90,   f: '97.90%'},{v:645518,   f: '645,518'},{v:98.53,   f: '98.53%'}],  
-         ['Población de 15 años y más analfabeta',  7998, {v:1.4,   f: '1.4%'},6485.90,{v:.99,   f: '0.99%'}], 
-         ['Población de 15 años y más sin escolaridad',  12490, {v:2.10,   f: '2.10%'},{v:0,   f: '-'},{v:1.38,   f: '1.38%'}],
-         ['Población de 15 años y más con educación básica incompleta',  153462, {v:26.20,   f: '26.20%'},{v:0,   f: '-'},{v:10.63,   f: '10.63%'}],
-         ['Población de 15 años y más con educación básica completa',  128281, {v:21.9,   f: '21.90%'},{v:0,   f: '-'},{v:89.09,   f: '89.09%'}],
-         ['Población de 15 años y más con educación pos-básica',  288185, {v:49.20,   f: '49.20%'},{v:0,   f: '-'},{v:53.84,   f: '53.84%'}], 
-         ['Población de 18 años y más con al menos un grado aprobado en educación media superior',  110653, {v:20.50,   f: '20.50'},{v:0,   f: '-'},{v:24.29,   f: '24.29%'}],  
-         ['Población de 18 años y más con al menos un grado aprobado en educación media superior',  117748, {v:27,   f: '27.00%'},{v:0,   f: '-'},{v:29.53,   f: '29.53%'}]
+          [
+            "Grado promedio de escolaridad",
+            {
+              v: 10.4,
+              f: "10.40",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            10.87,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Población de 3 a 14 años que asiste a la escuela",
+            148175,
+            {
+              v: 88.43,
+              f: "88.43%",
+            },
+            162499,
+            {
+              v: 90.14,
+              f: "90.14%",
+            },
+          ],
+          [
+            "Población de 3 a 14 años que no asiste a la escuela",
+            19389,
+            {
+              v: 11.57,
+              f: "11.57%",
+            },
+            17234,
+            {
+              v: 9.56,
+              f: "9.56%",
+            },
+          ],
+
+          [
+            "Población de 8 a 14 años que sabe leer y escribir",
+            97961,
+            {
+              v: 97.6,
+              f: "97.60%",
+            },
+            121477,
+            {
+              v: 89.52,
+              f: "89.52%",
+            },
+          ],
+          [
+            "Población de 3 a 5 años que asiste a la escuela",
+            23894,
+            {
+              v: 57.6,
+              f: "57.60%",
+            },
+            35190,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Población de 8 a 14 años que no sabe leer y escribir",
+            1041,
+            {
+              v: 1,
+              f: "1.00%",
+            },
+            8134,
+            {
+              v: 5.99,
+              f: "8.99%",
+            },
+          ],
+          [
+            "Población de 15 años y más alfabeta",
+            573436,
+            {
+              v: 97.9,
+              f: "97.90%",
+            },
+            {
+              v: 645518,
+              f: "645,518",
+            },
+            {
+              v: 98.53,
+              f: "98.53%",
+            },
+          ],
+          [
+            "Población de 15 años y más analfabeta",
+            7998,
+            {
+              v: 1.4,
+              f: "1.4%",
+            },
+            6485.9,
+            {
+              v: 0.99,
+              f: "0.99%",
+            },
+          ],
+          [
+            "Población de 15 años y más sin escolaridad",
+            12490,
+            {
+              v: 2.1,
+              f: "2.10%",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 1.38,
+              f: "1.38%",
+            },
+          ],
+          [
+            "Población de 15 años y más con educación básica incompleta",
+            153462,
+            {
+              v: 26.2,
+              f: "26.20%",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 10.63,
+              f: "10.63%",
+            },
+          ],
+          [
+            "Población de 15 años y más con educación básica completa",
+            128281,
+            {
+              v: 21.9,
+              f: "21.90%",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 89.09,
+              f: "89.09%",
+            },
+          ],
+          [
+            "Población de 15 años y más con educación pos-básica",
+            288185,
+            {
+              v: 49.2,
+              f: "49.20%",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 53.84,
+              f: "53.84%",
+            },
+          ],
+          [
+            "Población de 18 años y más con al menos un grado aprobado en educación media superior",
+            110653,
+            {
+              v: 20.5,
+              f: "20.50",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 24.29,
+              f: "24.29%",
+            },
+          ],
+          [
+            "Población de 18 años y más con al menos un grado aprobado en educación media superior",
+            117748,
+            {
+              v: 27,
+              f: "27.00%",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 29.53,
+              f: "29.53%",
+            },
+          ],
         ]);
 
-        
+        var table = new google.visualization.Table(
+          document.getElementById("table_div4")
+        );
 
-        var table = new google.visualization.Table(document.getElementById('table_div4'));
-
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-     function drawTable5() {
+
+      function drawTable5() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'CONCEPTO');
-        data.addColumn('number', 'INDICADOR 2010');
-        data.addColumn('number', 'PORCENTAJE 2010');
-        data.addColumn('number', 'INDICADOR 2015');
-        data.addColumn('number', 'PORCENTAJE 2015');
+        data.addColumn("string", "CONCEPTO");
+        data.addColumn("number", "INDICADOR 2010");
+        data.addColumn("number", "PORCENTAJE 2010");
+        data.addColumn("number", "INDICADOR 2015");
+        data.addColumn("number", "PORCENTAJE 2015");
         data.addRows([
-        ['Población de 12 años y más',  627926, {v: 76.63, f: '76.63%'}, 701.849, {v: 0, f: '-'}],
-          ['Población económicamente activa (h)', 351995,  {v:42.95,   f: '42.95%'}, 390819, {v: 55.68, f: '55.68%'}],
-          ['Población económicamente inactiva',272989, {v: 33.31, f: '33.31%'}, 310060, {v: 44.18, f: '44.18%'}],
-          ['Población ocupada (i)', 334641,  {v: 95.10,  f: '95.10%'}, 377073, {v: 96.49, f: '96.49%'}],
-          ['Población desocupada', 17354,  {v: 4.90,  f: '4.90%'}, 13717, {v: 3.51, f: '3.51%'}]
-         
-          
+          [
+            "Población de 12 años y más",
+            627926,
+            {
+              v: 76.63,
+              f: "76.63%",
+            },
+            701.849,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Población económicamente activa (h)",
+            351995,
+            {
+              v: 42.95,
+              f: "42.95%",
+            },
+            390819,
+            {
+              v: 55.68,
+              f: "55.68%",
+            },
+          ],
+          [
+            "Población económicamente inactiva",
+            272989,
+            {
+              v: 33.31,
+              f: "33.31%",
+            },
+            310060,
+            {
+              v: 44.18,
+              f: "44.18%",
+            },
+          ],
+          [
+            "Población ocupada (i)",
+            334641,
+            {
+              v: 95.1,
+              f: "95.10%",
+            },
+            377073,
+            {
+              v: 96.49,
+              f: "96.49%",
+            },
+          ],
+          [
+            "Población desocupada",
+            17354,
+            {
+              v: 4.9,
+              f: "4.90%",
+            },
+            13717,
+            {
+              v: 3.51,
+              f: "3.51%",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div5'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div5")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-     function drawTable6() {
+
+      function drawTable6() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'CONCEPTO');
-        data.addColumn('number', 'INDICADOR 2010');
-        data.addColumn('number', 'PORCENTAJE 2010');
-        data.addColumn('number', 'INDICADOR 2015');
-        data.addColumn('number', 'PORCENTAJE 2015');
+        data.addColumn("string", "CONCEPTO");
+        data.addColumn("number", "INDICADOR 2010");
+        data.addColumn("number", "PORCENTAJE 2010");
+        data.addColumn("number", "INDICADOR 2015");
+        data.addColumn("number", "PORCENTAJE 2015");
         data.addRows([
-        ['Población total',  819543, {v: 0, f: '-'}, 878062, {v:0,   f: '-'}],
-          ['Población con derechohabiencia a servicios de salud', 663832,  {v:81,   f: '81.00%'}, 805534, {v: 91.74, f: '91.74%'}],
-          ['Población sin derechohabiencia a servicios de salud',128074, {v: 15.60, f: '15.60%'}, {v: 0, f: '-'}, {v: 0, f: '-'}]
+          [
+            "Población total",
+            819543,
+            {
+              v: 0,
+              f: "-",
+            },
+            878062,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Población con derechohabiencia a servicios de salud",
+            663832,
+            {
+              v: 81,
+              f: "81.00%",
+            },
+            805534,
+            {
+              v: 91.74,
+              f: "91.74%",
+            },
+          ],
+          [
+            "Población sin derechohabiencia a servicios de salud",
+            128074,
+            {
+              v: 15.6,
+              f: "15.60%",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div6'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div6")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-     function drawTable7() {
+
+      function drawTable7() {
         var data = new google.visualization.DataTable();
-      data.addColumn('string', 'CONCEPTO');
-        data.addColumn('number', 'INDICADOR 2010');
-        data.addColumn('number', 'PORCENTAJE 2010');
-        data.addColumn('number', 'INDICADOR 2015');
-        data.addColumn('number', 'PORCENTAJE 2015');
+        data.addColumn("string", "CONCEPTO");
+        data.addColumn("number", "INDICADOR 2010");
+        data.addColumn("number", "PORCENTAJE 2010");
+        data.addColumn("number", "INDICADOR 2015");
+        data.addColumn("number", "PORCENTAJE 2015");
         data.addRows([
-          ['Viviendas particulares habitadas',  237106, {v: 96.40, f: '96.40%'}, 264300, {v:0,   f: '-'}],
-          ['Promedio de ocupantes por vivienda',{v: 3.50, f: '3.50'}, {v: 0, f: '-'}, {v: 0, f: '-'}, {v: 0, f: '-'}],
-          ['Viviendas con piso de tierra (j)',3023, {v: 1.30, f: '1.30%'}, 1318, {v: .49, f: '0.49%'}],
-          ['Viviendas particulares habitadas con todos los servicios (agua, electricidad, drenaje sanitario)',221499
-, {v: 96.90, f: '96.90%'}, {v: 0, f: '-'}, {v: 0, f: '-'}]
+          [
+            "Viviendas particulares habitadas",
+            237106,
+            {
+              v: 96.4,
+              f: "96.40%",
+            },
+            264300,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Promedio de ocupantes por vivienda",
+            {
+              v: 3.5,
+              f: "3.50",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Viviendas con piso de tierra (j)",
+            3023,
+            {
+              v: 1.3,
+              f: "1.30%",
+            },
+            1318,
+            {
+              v: 0.49,
+              f: "0.49%",
+            },
+          ],
+          [
+            "Viviendas particulares habitadas con todos los servicios (agua, electricidad, drenaje sanitario)",
+            221499,
+            {
+              v: 96.9,
+              f: "96.90%",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div7'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div7")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-    function drawTable8() {
+
+      function drawTable8() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Año');
-        data.addColumn('number', 'Hombres');
-        data.addColumn('number', 'Mujeres');
-        data.addColumn('number', 'Total');
-        data.addColumn('number', 'T. Media Anual %');
+        data.addColumn("string", "Año");
+        data.addColumn("number", "Hombres");
+        data.addColumn("number", "Mujeres");
+        data.addColumn("number", "Total");
+        data.addColumn("number", "T. Media Anual %");
         data.addRows([
-          ['1980',  198078, 208752, 406830, {v:4.7,   f: '4.7%'}],
-          ['1990',  258238, 272545, 530783, {v:3,   f: '3.0%'}],
-          ['1995',  305554, 322108, 627662, {v:3.7,   f: '3.7%'}],
-          ['2000',  326247, 345543, 671790, {v:1.6,   f: '1.6%'}],
-          ['2015',  377117, 24087, 153030, {v:0,   f: '-'}]
+          [
+            "1980",
+            198078,
+            208752,
+            406830,
+            {
+              v: 4.7,
+              f: "4.7%",
+            },
+          ],
+          [
+            "1990",
+            258238,
+            272545,
+            530783,
+            {
+              v: 3,
+              f: "3.0%",
+            },
+          ],
+          [
+            "1995",
+            305554,
+            322108,
+            627662,
+            {
+              v: 3.7,
+              f: "3.7%",
+            },
+          ],
+          [
+            "2000",
+            326247,
+            345543,
+            671790,
+            {
+              v: 1.6,
+              f: "1.6%",
+            },
+          ],
+          [
+            "2015",
+            377117,
+            24087,
+            153030,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div8'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div8")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-    function drawTable9() {
+
+      function drawTable9() {
         var data = new google.visualization.DataTable();
-        data.addColumn('number', 'Total sector privado y paraestatal');
-        data.addColumn('number', 'Manufacturas');
-        data.addColumn('number', 'Comercio');
-        data.addColumn('number', 'Servicios');
-        data.addColumn('number', 'Otro');
-        data.addRows([
-          [30.8,  24.8, 33.3, 38.2,37.7]
-          
-        ]);
+        data.addColumn("number", "Total sector privado y paraestatal");
+        data.addColumn("number", "Manufacturas");
+        data.addColumn("number", "Comercio");
+        data.addColumn("number", "Servicios");
+        data.addColumn("number", "Otro");
+        data.addRows([[30.8, 24.8, 33.3, 38.2, 37.7]]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div9'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div9")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '70%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "70%",
+          height: "100%",
+        });
       }
-    
-     function drawTable10() {
-        var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Concepto');
-        data.addColumn('number', '2013 Superficie (Has)');
-        data.addColumn('number', '2016 Superficie (Has)');
-        data.addRows([
-          ['ZONA U',  24364.91, 25119.21],
-          ['Área urbana',  22054.81, 23052.51],
-          ['Granjas y Asentamientos',  2310.10, 2066.70],
-          ['ZONA R',  13931.26, 13154.25],
-          ['Reserva de Crecimiento Urbano',  13931.26, 13154.25],
-          ['ZONA E',  39993.21, 40015.91],
-          ['Preservación Ecológica',  20060.56, 20049.03],
-          
-          ['Área Natural de Valor Ambiental',  19932.65, 19966.89],
-          ['Total', 78289.38,78289.38]
-        ]);
-        var table = new google.visualization.Table(document.getElementById('table_div10'));
 
-        table.draw(data, {showRowNumber: true, width: '70%', height: '100%'});
+      function drawTable10() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Concepto");
+        data.addColumn("number", "2013 Superficie (Has)");
+        data.addColumn("number", "2016 Superficie (Has)");
+        data.addRows([
+          ["ZONA U", 24364.91, 25119.21],
+          ["Área urbana", 22054.81, 23052.51],
+          ["Granjas y Asentamientos", 2310.1, 2066.7],
+          ["ZONA R", 13931.26, 13154.25],
+          ["Reserva de Crecimiento Urbano", 13931.26, 13154.25],
+          ["ZONA E", 39993.21, 40015.91],
+          ["Preservación Ecológica", 20060.56, 20049.03],
+
+          ["Área Natural de Valor Ambiental", 19932.65, 19966.89],
+          ["Total", 78289.38, 78289.38],
+        ]);
+        var table = new google.visualization.Table(
+          document.getElementById("table_div10")
+        );
+
+        table.draw(data, {
+          showRowNumber: true,
+          width: "70%",
+          height: "100%",
+        });
       }
-    
-     function drawTable11() {
+
+      function drawTable11() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Indicador / Año');
-        data.addColumn('number', '1990');
-        data.addColumn('number', '1995');
-        data.addColumn('number', '2000');
-        data.addColumn('number', '2005');
-        data.addColumn('number', '2010');
+        data.addColumn("string", "Indicador / Año");
+        data.addColumn("number", "1990");
+        data.addColumn("number", "1995");
+        data.addColumn("number", "2000");
+        data.addColumn("number", "2005");
+        data.addColumn("number", "2010");
         data.addRows([
-          ['Población total',516153, 613722, 657876, 748518, 809232],
-          ['Incremento poblacional', {v: 0, f: '-'}, 97569, 44154, 90642, 60714],
-          ['Ocupantes en viviendas particulares', 514545, 610514, 651266, 746460, 781588],
-          ['Incremento de ocupantes en viviendas particulares', {v: 0, f: '-'}, 95969, 40752, 95194, 35128],
-          ['Promedio de ocupantes por vivienda particular', 4.41, 4.00, 3.86, 3.64, 3.47],
-          ['Total de viviendas',{v: 0, f: '-'}, {v: 0, f: '-'}, {v: 0, f: '-'},{v: 0, f: '-'}, 288372],
-          ['Total de viviendas habitadas',116723, 151931, 169922, 205369, 234006],
-          ['Viviendas particulares habitadas',116669, 151501, 168646, 205281, 225474],
-          ['Incremento de viviendas particulares habitadas', {v: 0, f: '-'}, 34832, 17145, 36635, 20193],
-          ['Viviendas particulares deshabitadas', {v: 0, f: '-'}, {v: 0, f: '-'},{v: 0, f: '-'},{v: 0, f: '-'}, 43662],
-          ['Demanda de vivienda', {v: 0, f: '-'}, 23992, 10558, 26152, 10123] 
+          ["Población total", 516153, 613722, 657876, 748518, 809232],
+          [
+            "Incremento poblacional",
+            {
+              v: 0,
+              f: "-",
+            },
+            97569,
+            44154,
+            90642,
+            60714,
+          ],
+          [
+            "Ocupantes en viviendas particulares",
+            514545,
+            610514,
+            651266,
+            746460,
+            781588,
+          ],
+          [
+            "Incremento de ocupantes en viviendas particulares",
+            {
+              v: 0,
+              f: "-",
+            },
+            95969,
+            40752,
+            95194,
+            35128,
+          ],
+          [
+            "Promedio de ocupantes por vivienda particular",
+            4.41,
+            4.0,
+            3.86,
+            3.64,
+            3.47,
+          ],
+          [
+            "Total de viviendas",
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            288372,
+          ],
+          [
+            "Total de viviendas habitadas",
+            116723,
+            151931,
+            169922,
+            205369,
+            234006,
+          ],
+          [
+            "Viviendas particulares habitadas",
+            116669,
+            151501,
+            168646,
+            205281,
+            225474,
+          ],
+          [
+            "Incremento de viviendas particulares habitadas",
+            {
+              v: 0,
+              f: "-",
+            },
+            34832,
+            17145,
+            36635,
+            20193,
+          ],
+          [
+            "Viviendas particulares deshabitadas",
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            {
+              v: 0,
+              f: "-",
+            },
+            43662,
+          ],
+          [
+            "Demanda de vivienda",
+            {
+              v: 0,
+              f: "-",
+            },
+            23992,
+            10558,
+            26152,
+            10123,
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div11'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div11")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-    function drawTable12() {
+
+      function drawTable12() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Concepto');
-        data.addColumn('number', 'Indicador 2010');
-        data.addColumn('number', 'Porcentaje 2010');
-       
+        data.addColumn("string", "Concepto");
+        data.addColumn("number", "Indicador 2010");
+        data.addColumn("number", "Porcentaje 2010");
+
         data.addRows([
-          ['Población total',809232, {v: 0, f: '-'}],
-          ['Hombres',394144, {v: 49, f: '49.00%'}],
-          ['Mujeres',415088, {v: 51, f: '51.00%'}],
-          ['Población de 0 a 14 años',205104, {v: 25.35, f: '25.35%'}],
-          ['Población de 15 a 29 años',210830, {v: 26.05, f: '26.05%'}],
-          ['Población de 30 a 59 años',294787, {v: 36.43, f: '36.43%'}],
-          ['Relación de hombre/mujer (k)',294787, {v: 36.43, f: '36.43%'}],
-          ['Edad Media (l)',35, {v: 0, f: '-'}],
+          [
+            "Población total",
+            809232,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Hombres",
+            394144,
+            {
+              v: 49,
+              f: "49.00%",
+            },
+          ],
+          [
+            "Mujeres",
+            415088,
+            {
+              v: 51,
+              f: "51.00%",
+            },
+          ],
+          [
+            "Población de 0 a 14 años",
+            205104,
+            {
+              v: 25.35,
+              f: "25.35%",
+            },
+          ],
+          [
+            "Población de 15 a 29 años",
+            210830,
+            {
+              v: 26.05,
+              f: "26.05%",
+            },
+          ],
+          [
+            "Población de 30 a 59 años",
+            294787,
+            {
+              v: 36.43,
+              f: "36.43%",
+            },
+          ],
+          [
+            "Relación de hombre/mujer (k)",
+            294787,
+            {
+              v: 36.43,
+              f: "36.43%",
+            },
+          ],
+          [
+            "Edad Media (l)",
+            35,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div12'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div12")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    function drawTable13() {
+
+      function drawTable13() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Indicador 2010');
-      
-        data.addRows([
-          ['Promedio de hijos nacidos vivos (m)',  2.53]
-         
-        ]);
+        data.addColumn("string", "Name");
+        data.addColumn("number", "Indicador 2010");
 
-        var table = new google.visualization.Table(document.getElementById('table_div13'));
+        data.addRows([["Promedio de hijos nacidos vivos (m)", 2.53]]);
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        var table = new google.visualization.Table(
+          document.getElementById("table_div13")
+        );
+
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-          function drawTable14() {
+
+      function drawTable14() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Indicador 2010');
-        data.addColumn('number', 'Porcentaje 2010');
+        data.addColumn("string", "Name");
+        data.addColumn("number", "Indicador 2010");
+        data.addColumn("number", "Porcentaje 2010");
         data.addRows([
-          ['Grado promedio de escolaridad',  9.31,{v: 0, f: '-'}],
-          ['Población de 3 a 5 años que asiste a la escuela',  23661,{v: 57.80, f: '57.80%'}],
-          ['Población de 3 a 5 años que no asiste a la escuela',  15767,{v: 38.50, f: '38.50%'}],
-          ['Población de 6 a 11 años que asiste a la escuela',  82942,{v: 97.50, f: '97.50%'}],
-          ['Población de 6 a 11 años que no asiste a la escuela',  1511,{v: 1.80, f: '1.80%'}],
-          ['Población de 12 a 14 años que asiste a la escuela',  39865,{v: 95.70, f: '95.70%'}],
-          ['Población de 12 a 14 años que no asiste a la escuela',  1732,{v: 4.20, f: '4.20%'}],
-          ['Población de 8 a 14 años que sabe leer y escribir',  96782,{v: 97.60, f: '97.60%'}],
-          ['Población de 8 a 14 años que no sabe leer y escribir',  1011,{v: 1, f: '1.00%'}],
-          ['Población de 15 años y más alfabeta',  566188,{v: 97.90, f: '97.90%'}],
-          ['Población de 15 años y más analfabeta',  7601,{v: 1.30, f: '1.30%'}],
-          ['Población de 15 años y más sin escolaridad',  12034,{v: 2.10, f: '2.10%'}],
-          ['Población de 15 años y más con educación básica completa',  126686,{v: 21.90, f: '21.90%'}],
-          ['Población de 15 años y más con educación pos-básica',  287239,{v: 49.70, f: '49.70%'}],
-          ['Población de 18 años y más con al menos un grado aprobado en educación media superior',  110113,{v: 20.60, f: '20.60%'}],
-          ['Población de 25 años y más con al menos un grado aprobado en educación superior',  117595,{v: 27.40, f: '27.40%'}]
-          
+          [
+            "Grado promedio de escolaridad",
+            9.31,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Población de 3 a 5 años que asiste a la escuela",
+            23661,
+            {
+              v: 57.8,
+              f: "57.80%",
+            },
+          ],
+          [
+            "Población de 3 a 5 años que no asiste a la escuela",
+            15767,
+            {
+              v: 38.5,
+              f: "38.50%",
+            },
+          ],
+          [
+            "Población de 6 a 11 años que asiste a la escuela",
+            82942,
+            {
+              v: 97.5,
+              f: "97.50%",
+            },
+          ],
+          [
+            "Población de 6 a 11 años que no asiste a la escuela",
+            1511,
+            {
+              v: 1.8,
+              f: "1.80%",
+            },
+          ],
+          [
+            "Población de 12 a 14 años que asiste a la escuela",
+            39865,
+            {
+              v: 95.7,
+              f: "95.70%",
+            },
+          ],
+          [
+            "Población de 12 a 14 años que no asiste a la escuela",
+            1732,
+            {
+              v: 4.2,
+              f: "4.20%",
+            },
+          ],
+          [
+            "Población de 8 a 14 años que sabe leer y escribir",
+            96782,
+            {
+              v: 97.6,
+              f: "97.60%",
+            },
+          ],
+          [
+            "Población de 8 a 14 años que no sabe leer y escribir",
+            1011,
+            {
+              v: 1,
+              f: "1.00%",
+            },
+          ],
+          [
+            "Población de 15 años y más alfabeta",
+            566188,
+            {
+              v: 97.9,
+              f: "97.90%",
+            },
+          ],
+          [
+            "Población de 15 años y más analfabeta",
+            7601,
+            {
+              v: 1.3,
+              f: "1.30%",
+            },
+          ],
+          [
+            "Población de 15 años y más sin escolaridad",
+            12034,
+            {
+              v: 2.1,
+              f: "2.10%",
+            },
+          ],
+          [
+            "Población de 15 años y más con educación básica completa",
+            126686,
+            {
+              v: 21.9,
+              f: "21.90%",
+            },
+          ],
+          [
+            "Población de 15 años y más con educación pos-básica",
+            287239,
+            {
+              v: 49.7,
+              f: "49.70%",
+            },
+          ],
+          [
+            "Población de 18 años y más con al menos un grado aprobado en educación media superior",
+            110113,
+            {
+              v: 20.6,
+              f: "20.60%",
+            },
+          ],
+          [
+            "Población de 25 años y más con al menos un grado aprobado en educación superior",
+            117595,
+            {
+              v: 27.4,
+              f: "27.40%",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div14'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div14")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-     function drawTable15() {
+
+      function drawTable15() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Indicador 2010');
-       
+        data.addColumn("string", "Name");
+        data.addColumn("number", "Indicador 2010");
+
         data.addRows([
-          ['Hogares con jefatura masculina (p)',  163081],
-          ['Hogares con jefatura femenina (p)',  62276],
-          ['Relación de dependencia (r)', 52]
-          
+          ["Hogares con jefatura masculina (p)", 163081],
+          ["Hogares con jefatura femenina (p)", 62276],
+          ["Relación de dependencia (r)", 52],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div15'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div15")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
-     function drawTable16() {
+
+      function drawTable16() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Indicador 2010');
-        data.addColumn('number', 'Porcentaje 2010');
+        data.addColumn("string", "Name");
+        data.addColumn("number", "Indicador 2010");
+        data.addColumn("number", "Porcentaje 2010");
 
         data.addRows([
-          ['Población de 12 años y más',  627926,{v: 77.60, f: '77.60%'}],
-          ['Población económicamente activa (s)',  347877,{v: 56.10, f: '56.10%'}],
-          ['Población económicamente inactiva',  268969,{v: 43.40, f: '43.40%'}],
-          ['Población ocupada (t)',  330716,{v: 95.10, f: '95.10%'}],
-          ['Población desocupada',  17161,{v: 4.90, f: '4.90%'}],
-          ['Población derechohabiencia a servicios de salud',  656547,{v: 0, f: '-'}],
+          [
+            "Población de 12 años y más",
+            627926,
+            {
+              v: 77.6,
+              f: "77.60%",
+            },
+          ],
+          [
+            "Población económicamente activa (s)",
+            347877,
+            {
+              v: 56.1,
+              f: "56.10%",
+            },
+          ],
+          [
+            "Población económicamente inactiva",
+            268969,
+            {
+              v: 43.4,
+              f: "43.40%",
+            },
+          ],
+          [
+            "Población ocupada (t)",
+            330716,
+            {
+              v: 95.1,
+              f: "95.10%",
+            },
+          ],
+          [
+            "Población desocupada",
+            17161,
+            {
+              v: 4.9,
+              f: "4.90%",
+            },
+          ],
+          [
+            "Población derechohabiencia a servicios de salud",
+            656547,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div16'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div16")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-        function drawTable17() {
+
+      function drawTable17() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Indicador 2010');
-        data.addColumn('number', 'Porcentaje 2010');
+        data.addColumn("string", "Name");
+        data.addColumn("number", "Indicador 2010");
+        data.addColumn("number", "Porcentaje 2010");
 
         data.addRows([
-          ['Población con derechohabiencia a servicios de salud',  656561,{v: 81.10, f: '81.10%'}],
-          ['Población sin derechohabiencia a servicios de salud',  125104,{v: 15.50, f: '15.50%'}]
+          [
+            "Población con derechohabiencia a servicios de salud",
+            656561,
+            {
+              v: 81.1,
+              f: "81.10%",
+            },
+          ],
+          [
+            "Población sin derechohabiencia a servicios de salud",
+            125104,
+            {
+              v: 15.5,
+              f: "15.50%",
+            },
+          ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div17'));
+        var table = new google.visualization.Table(
+          document.getElementById("table_div17")
+        );
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
-      } 
-     function drawTable18() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('number', 'Indicador 2010');
-        data.addColumn('number', 'Porcentaje 2010');
-
-        data.addRows([
-          ['Viviendas particulares habitadas',  656561,{v: 81.10, f: '81.10%'}],
-          ['Viviendas particulares deshabitadas',  4253,{v:0, f: '-'}],
-          ['Promedio de ocupantes por vivienda',  3.28,{v:0, f: '-'}],
-          ['Viviendas con piso de tierra (u)',  2903,{v:1.3, f: '1.30%'}],
-          ['Viviendas particulares habitadas con todos los servicios (agua, electricidad, drenaje sanitario)',  21880,{v:97.10, f: '97.10%'}],
-          ['Viviendas particulares habitadas con todos los servicios (agua, electricidad, drenaje sanitario)',  21880,{v:97.10, f: '97.10%'}]
-        ]);
-
-        var table = new google.visualization.Table(document.getElementById('table_div18'));
-
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
       }
-    
+
+      function drawTable18() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Name");
+        data.addColumn("number", "Indicador 2010");
+        data.addColumn("number", "Porcentaje 2010");
+
+        data.addRows([
+          [
+            "Viviendas particulares habitadas",
+            656561,
+            {
+              v: 81.1,
+              f: "81.10%",
+            },
+          ],
+          [
+            "Viviendas particulares deshabitadas",
+            4253,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Promedio de ocupantes por vivienda",
+            3.28,
+            {
+              v: 0,
+              f: "-",
+            },
+          ],
+          [
+            "Viviendas con piso de tierra (u)",
+            2903,
+            {
+              v: 1.3,
+              f: "1.30%",
+            },
+          ],
+          [
+            "Viviendas particulares habitadas con todos los servicios (agua, electricidad, drenaje sanitario)",
+            21880,
+            {
+              v: 97.1,
+              f: "97.10%",
+            },
+          ],
+          [
+            "Viviendas particulares habitadas con todos los servicios (agua, electricidad, drenaje sanitario)",
+            21880,
+            {
+              v: 97.1,
+              f: "97.10%",
+            },
+          ],
+        ]);
+
+        var table = new google.visualization.Table(
+          document.getElementById("table_div18")
+        );
+
+        table.draw(data, {
+          showRowNumber: true,
+          width: "100%",
+          height: "100%",
+        });
+      }
     </script>
-<!-- fin graficas -->  
-</head>
-<body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 pt-3 pb-2">
+    <!-- fin graficas -->
+    <script src="components/commons.js"></script>
+  </head>
+
+  <body>
+    <script>
+      document.write(navbar());
+    </script>
+
+    <!--inicia página -->
+    <div style="width: 100%">
+      <div class="row" style="margin: 5px 0px">
+        <div class="col-sm-6 col-lg-3">
+          <a href="#AmbitoRegional"
+            ><img
+              src="img/A_Regional.jpg"
+              alt="REGIONAL"
+              class="mx-auto d-block img-fluid img-thumbnail"
+          /></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a href="#AmbitoMunicipal"
+            ><img
+              src="img/A_Mpal.JPG"
+              alt="Municipal"
+              class="mx-auto d-block img-fluid img-thumbnail"
+          /></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a href="#AmbitoUrbano"
+            ><img
+              src="img/A_Urbano.jpg"
+              alt="Urbano"
+              class="mx-auto d-block img-fluid img-thumbnail"
+          /></a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <a href="#AmbitoEconomico"
+            ><img
+              src="img/A_Eco.JPG"
+              alt="Urbano"
+              class="mx-auto d-block img-fluid img-thumbnail"
+          /></a>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4 pt-3 pb-2 align-items-center">
-       <img src="img/IMPLAN_2017.png" width="270" height="51" alt="IMPLAN">
-    </div> 
-    <div class="col-sm-4 pt-3 pb-2 d-none d-lg-block">
-          <p class="text-right">
-            <a href="#bloque1" data-toggle="collapse" aria-expanded="false" aria-controls="bloque1"><i class="fas fa-phone-volume text-warning"></i></a>       
-            <a href="#bloque2" data-toggle="collapse" aria-expanded="false" aria-controls="bloque2"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque3" data-toggle="collapse" aria-expanded="false" aria-controls="bloque3"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque1">(614) 200 48 20</p>
-            <p class="collapse text-right" id="bloque2">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque3">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>  
-    <div class="col-sm-4 pt-3 pb-2 d-lg-none">
-          <p class="text-right">
-            <a href="tel:6142004820"><i class="fas fa-phone-volume text-warning"></i></a>          
-            <a href="#bloque4" data-toggle="collapse" aria-expanded="false" aria-controls="bloque4"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque5" data-toggle="collapse" aria-expanded="false" aria-controls="bloque5"><i class="fas fa-map-marker-alt text-warning"></i></a>
-          </p>
-            <p class="collapse text-right" id="bloque4">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque5">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>              
-  </div>          
-</div> 
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:rgb(102, 0, 102);">
-  <a class="navbar-brand" href="https://implanchihuahua.gob.mx/"><i class="fas fa-home"></i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          IMPLAN
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown5">
-            <div class="row">
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/Mision.html">MISIÓN/VISIÓN</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Consejo.html">CONSEJO</a></p>
-              
-              </div>
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/EquipoTecnico.html">EQUIPO TÉCNICO</a></p>
-              </div>              
-            </div>              
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ENTORNO
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/entorno.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">Chihuahua</h4>
-                <p>Conoce tu ciudad</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ÁMBITO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoRegional">REGIONAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoMunicipal">MUNICIPAL</a></p>
+    <div id="parallax-world-of-ugg">
+      <div class="container">
+        <div id="AmbitoRegional"></div>
+        <div class="row pt-3">
+          <div class="col">
+            <h2><b>Ámbito Regional</b></h2>
+            <p style="text-align: justify">
+              El Estado de Chihuahua representa el 12.6% de la superficie del
+              pa&iacute;s. Al norte colinda con los Estados Unidos de
+              Am&eacute;rica; al este colinda con los Estados Unidos de
+              Am&eacute;rica, Coahuila y Durango; al sur con Durango y Sinaloa;
+              al oeste con los Estados Unidos de Am&eacute;rica, Sinaloa y
+              Sonora.
+            </p>
+            <p style="text-align: justify">
+              El Estado de Chihuahua (08) está dividido en 67 municipios de
+              acuerdo a la Divisi&oacute;n Geoestad&iacute;stica del SNIEG
+              establecida por el INEGI.
+            </p>
 
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ENTORNO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoEconomico">ECONÓMICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoUrbano">URBANO</a></p>
-              </div>
-             
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PROYECTOS
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown2">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="img/proyectos.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">IMPLAN</h4>
-                <p>Proyectos</p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">SOCIALES</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Cajita.html">CAJITA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/ForoFCCUU.html">FORO FCCUU</a></p>                 <p><a href="https://implanchihuahua.gob.mx/ForoCiudades.html">FORO 1.2019</a></p>
+            <p style="text-align: justify">
+              En esta clasificaci&oacute;n el municipio de Chihuahua (019) tiene
+              como su cabecera a la ciudad de Chihuahua. La distribuci&oacute;n
+              demogr&aacute;fica muestra que el 21.7% de la poblaci&oacute;n
+              total del estado se ubica en el municipio de Chihuahua,
+              situ&aacute;ndolo como uno de los dos m&aacute;s poblados de la
+              entidad; a su vez el 97.2% de la poblaci&oacute;n municipal se
+              asienta en la ciudad y el 2.8% en 303 localidades rurales, de las
+              cuales el 90.40% tienen menos de 100 habitantes y se encuentran
+              dispersas en el territorio.
+            </p>
 
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">URBANOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto1.html">PLAZA DE ARMAS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto3.html">PEATONALIZACIÓN CALLE MORELOS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto2.html">AV. VENUSTIANO CARRANZA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto4.html">PARQUE LERDO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto5.html">CORREDOR ESCULTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto7.html">PARQUE EL REJÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto8.html">EDIFICIO DEL REAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto9.html">CENTRO HISTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto10.html">QUINTA TOUCHE</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto11.html">PARQUE EL ENCINO</a></p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">CENTRO DE ESTUDIOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE2.html">GUÍA METODOLÓGICA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE3.html">INDICADORES</a></p>
-               <p><a href="https://implanchihuahua.gob.mx/EstudioCE1.html">MODELOS DE DENSIFICACIÓN</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PDU2040
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown3">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/PDU.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">PDU2040</h4>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Poblacion">POBLACIÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Soporte">ECONOMÍA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Marco">MARCO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Equipamiento">EQUIPAMIENTO</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Movilidad">MOVILIDAD</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Infraestructura">INFRAESTRUCTURA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Medio">AMBIENTE</a></p>
-              </div>
+            <p style="text-align: justify">
+              Localidades por municipio seg&uacute;n tama&ntilde;o de la
+              localidad:
+            </p>
 
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          DATOS ABIERTOS
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown4">
-            <div class="row">
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables.html">BUSCAR</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_EP.html">ESTUDIOS Y PROYECTOS</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_DA.html">CARTOGRAFÍA</a></p>
-              </div>
-            </div> 
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Licitaciones.html">LICITACIONES</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Directorio.html">DIRECTORIO</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="http://ovie.mpiochih.gob.mx">OVIE</a>
-      </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Transparencia.html">TRANSPARENCIA</a>
-      </li>                     
-    </ul>
-  </div>
-</nav>
-<!--inicia página -->
-  <div class="row p-3">
-    <div class="col-sm-3">
-      <a href="#AmbitoRegional"><img src="img/A_Regional.jpg" alt="REGIONAL" class="mx-auto d-block img-fluid img-thumbnail"></a> 
-    </div>
-    <div class="col-sm-3">
-      <a href="#AmbitoMunicipal"><img src="img/A_Mpal.jpg" alt="Municipal" class="mx-auto d-block img-fluid img-thumbnail"></a>   
-    </div> 
-    <div class="col-sm-3">
-      <a href="#AmbitoUrbano"><img src="img/A_Urbano.jpg" alt="Urbano" class="mx-auto d-block img-fluid img-thumbnail"></a>       
-    </div>  
-    <div class="col-sm-3">
-      <a href="#AmbitoEconomico"><img src="img/A_Eco.jpg" alt="Urbano" class="mx-auto d-block img-fluid img-thumbnail"></a>       
-    </div>     
-  </div>
+            <div id="table_div"></div>
+            <span style="font-size: 9px"
+              >Fuente de la informaci&oacute;n: a. Anuario Estad&iacute;stico de
+              Chihuahua edici&oacute;n 2007, INEGI. b. Censo General de
+              Poblaci&oacute;n 2010, INEGI.</span
+            >
 
-<div class="container">
-  <div id="AmbitoRegional"></div>
-  <div class="row pt-3">
-    <div class="col">
-        <h2><b>Ámbito Regional</b></h2>
-        <p style="text-align:justify;">El Estado de Chihuahua representa el 12.6% de la superficie del pa&iacute;s. Al norte  colinda con los Estados Unidos de Am&eacute;rica; al este  colinda con los Estados Unidos de Am&eacute;rica, Coahuila y Durango; al sur  con Durango y Sinaloa; al oeste  con los Estados Unidos de Am&eacute;rica, Sinaloa y Sonora.</p>
-        <p style="text-align:justify;">El Estado de Chihuahua (08) está  dividido en 67 municipios de acuerdo a la Divisi&oacute;n Geoestad&iacute;stica del SNIEG establecida por el INEGI.</p>
+            <p style="text-align: justify">
+              El Programa Nacional de Desarrollo Urbano y Ordenaci&oacute;n del
+              Territorio 2007-2012 establece la metodolog&iacute;a para
+              estructurar el inventario de suelo en las Ciudades que conforman
+              el Sistema Urbano Nacional (SUN) siendo 121 ciudades mayores a
+              50,000 habitantes. La ZM-CUU<sub>1</sub> se integra por los
+              Municipios de Aldama, Aquiles Serd&aacute;n y Chihuahua.
+            </p>
 
-        <p style="text-align:justify;">En esta clasificaci&oacute;n el municipio  de Chihuahua (019) tiene como su cabecera a la ciudad  de Chihuahua. La distribuci&oacute;n demogr&aacute;fica muestra que el 21.7% de la poblaci&oacute;n total del estado  se ubica en el municipio  de Chihuahua, situ&aacute;ndolo como uno de los dos m&aacute;s poblados de la entidad; a su vez el 97.2% de la poblaci&oacute;n municipal se asienta en la ciudad y el 2.8% en 303 localidades rurales, de las cuales el 90.40% tienen menos de 100 habitantes y se encuentran dispersas en el territorio.</p>
+            <p style="text-align: justify">
+              La poblaci&oacute;n en el a&ntilde;o 2000 en la ZM-CUU<sub>1</sub>
+              era de 646,495 habitantes y una tasa de crecimiento medio anual
+              del 2.4 %, ocupando una superficie de 18,091 km<sup>2</sup> con
+              una DMU<sub>2</sub> de 71.0.
+            </p>
 
-        <p style="text-align:justify;">Localidades por municipio  seg&uacute;n tama&ntilde;o de la localidad:</p>
+            <p style="text-align: justify">
+              Para el a&ntilde;o 2010 la poblaci&oacute;n aument&oacute; a
+              852,533 habitantes con una tasa de crecimiento medio anual de 1.67
+              % en el per&iacute;odo 2005-2010, con una DMU<sub>2</sub> de
+              33.35.
+            </p>
 
-        <div id="table_div"></div>
-        <span style="font-size:9px">Fuente de la informaci&oacute;n: a. Anuario Estad&iacute;stico de Chihuahua edici&oacute;n 2007, INEGI. b. Censo General de Poblaci&oacute;n 2010, INEGI.</span>
-          
-         
-          
-        <p style="text-align:justify;">El Programa Nacional de Desarrollo Urbano y Ordenaci&oacute;n del Territorio 2007-2012 establece la metodolog&iacute;a para estructurar el inventario de suelo en las Ciudades que conforman el Sistema Urbano Nacional (SUN) siendo 121 ciudades mayores a 50,000 habitantes. La ZM-CUU<sub>1</sub> se integra por los Municipios de Aldama, Aquiles Serd&aacute;n y Chihuahua.</p>
-
-        <p style="text-align:justify;">La poblaci&oacute;n en el a&ntilde;o 2000 en la ZM-CUU<sub>1</sub> era de 646,495 habitantes y una tasa de crecimiento medio anual del 2.4 %, ocupando una superficie de 18,091 km<sup>2</sup> con una DMU<sub>2</sub> de 71.0.</p>
-
-        <p style="text-align:justify;">Para el a&ntilde;o 2010 la poblaci&oacute;n aument&oacute; a 852,533 habitantes con una tasa de crecimiento medio anual de 1.67 % en el per&iacute;odo 2005-2010, con una DMU<sub>2</sub> de 33.35.</p>
-
-        <p style="text-align:justify;">Siendo parte del Sistema Urbano Nacional, La ciudad de Chihuahua es un polo de desarrollo relevante, por encontrarse en la confluencia de ejes carreteros de nivel nacional e internacional:</p>
-        <ul>
-          <li>Agroindustrial (Ju&aacute;rez-Zacatecas)</li>
-          <li>Comercial (Ju&aacute;rez - México, D.F.)</li>
-          <li>Comercial (Topolobampo - Dallas, TX)</li>
-        </ul>
-        <span style="font-size:9px">Notas: 1. ZM-CUU &ndash; Zona Metropolitana de Chihuahua. 2. DMU &ndash; Densidad Media Urbana.</span>
-        <div>
-          <iframe height="480px" width="100%" src="https://www.arcgis.com/apps/View/index.html?appid=d68f4b32366b4068b860cfd1ed3400c0"></iframe> 
-
-        </div>      
+            <p style="text-align: justify">
+              Siendo parte del Sistema Urbano Nacional, La ciudad de Chihuahua
+              es un polo de desarrollo relevante, por encontrarse en la
+              confluencia de ejes carreteros de nivel nacional e internacional:
+            </p>
+            <ul>
+              <li>Agroindustrial (Ju&aacute;rez-Zacatecas)</li>
+              <li>Comercial (Ju&aacute;rez - México, D.F.)</li>
+              <li>Comercial (Topolobampo - Dallas, TX)</li>
+            </ul>
+            <span style="font-size: 9px"
+              >Notas: 1. ZM-CUU &ndash; Zona Metropolitana de Chihuahua. 2. DMU
+              &ndash; Densidad Media Urbana.</span
+            >
+            <div class="embed-container">
+              <iframe
+                width="1100"
+                height="700"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                title="DDET-IMPLAN"
+                src="https://geoportal.implanchihuahua.org/sigmun/apps/webappviewer/index.html?id=09d2f235e0104c14b787b39ab8aecac4"
+              ></iframe>
+            </div>
           </div>
         </div>
-<hr>
-  <div id="AmbitoMunicipal"></div>
-  <div class="row pt-3">
-    <div class="col">
-        <h2><b>Ámbito Municipal</b></h2>
-        <p style="font-size:9px; text-align:right">Fuente de la informaci&oacute;n: Prontuario de Informaci&oacute;n geogr&aacute;fica municipal de los Estados Unidos Mexicanos, INEGI. Censo General de Población y Vivienda 2010.</p>
-        <p style="text-align:justify;"><strong>Ubicaci&oacute;n</strong>. La extensi&oacute;n territorial del Municipio de Chihuahua es de 9.219km&sup2;, se ubica en el centro del Estado, su extensi&oacute;n territorial constituye el 3.73% de la superficie estatal. El municipio colinda al norte  con los municipios de Ahumada y Aldama; al este  con los municipios de Aldama, Aquiles Serd&aacute;n y Rosales; al sur  con los municipios de Rosales, Satev&oacute;, Santa Isabel y Riva Palacio; al oeste  con los municipios de Riva Palacio, Namiquipa y Buenaventura.</p>
 
-        <p style="text-align:justify;"><strong>Fisiograf&iacute;a</strong>. Provincias. Sierras y llanuras del norte (62.7%) y Sierra Madre Occidental (37.3%). La ciudad de Chihuahua  se asienta en un valle con pendientes de hasta el 5%, cuenta con barreras naturales al oriente (Sierra Nombre de Dios) y al poniente (Sierra El Mogote y Sierra Azul), consider&aacute;ndose zonas no urbanizables ya que cuentan con pendientes superiores al 20%.</p>
+        <hr />
+        <div id="AmbitoMunicipal"></div>
+        <div class="row pt-3">
+          <div class="col">
+            <h2><b>Ámbito Municipal</b></h2>
+            <p style="font-size: 9px; text-align: right">
+              Fuente de la informaci&oacute;n: Prontuario de Informaci&oacute;n
+              geogr&aacute;fica municipal de los Estados Unidos Mexicanos,
+              INEGI. Censo General de Población y Vivienda 2010.
+            </p>
+            <p style="text-align: justify">
+              <strong>Ubicaci&oacute;n</strong>. La extensi&oacute;n territorial
+              del Municipio de Chihuahua es de 9.219km&sup2;, se ubica en el
+              centro del Estado, su extensi&oacute;n territorial constituye el
+              3.73% de la superficie estatal. El municipio colinda al norte con
+              los municipios de Ahumada y Aldama; al este con los municipios de
+              Aldama, Aquiles Serd&aacute;n y Rosales; al sur con los municipios
+              de Rosales, Satev&oacute;, Santa Isabel y Riva Palacio; al oeste
+              con los municipios de Riva Palacio, Namiquipa y Buenaventura.
+            </p>
 
-        <p style="text-align:justify;">Subprovincia. Del Bols&oacute;n de Mapim&iacute; (62.5%), sierras y llanuras del norte (24.6%), sierras y llanuras de Durango (12.8%) y sierras plegadas del norte (0.1%).</p>
+            <p style="text-align: justify">
+              <strong>Fisiograf&iacute;a</strong>. Provincias. Sierras y
+              llanuras del norte (62.7%) y Sierra Madre Occidental (37.3%). La
+              ciudad de Chihuahua se asienta en un valle con pendientes de hasta
+              el 5%, cuenta con barreras naturales al oriente (Sierra Nombre de
+              Dios) y al poniente (Sierra El Mogote y Sierra Azul),
+              consider&aacute;ndose zonas no urbanizables ya que cuentan con
+              pendientes superiores al 20%.
+            </p>
 
-        <p style="text-align:justify;">Sistema de topoformas. Bajada t&iacute;pica (30.5%), sierra alta con mesetas (29.1%), sierra escarpada (8.8%), llanura aluvial salina (5.6%), llanura aluvial (4.6%), valle de laderas tendidas con lomer&iacute;o (4.3%), llanura aluvial de piso rocoso o cementado (4.3%), lomer&iacute;o escarpado con llanuras (4.0%), lomer&iacute;o con mesetas (1.6%), sierra plegada (1.5%), sierra alta con lomer&iacute;o (1.3%), lomer&iacute;o ramificado (1.3%), lomer&iacute;o escarpado (1.2%), llanura aluvial inundable y salina (0.9%), lomer&iacute;o t&iacute;pico (0.4%), meseta con ca&ntilde;adas (0.4%) y llanura aluvial con lomer&iacute;o (0.2%).</p>
+            <p style="text-align: justify">
+              Subprovincia. Del Bols&oacute;n de Mapim&iacute; (62.5%), sierras
+              y llanuras del norte (24.6%), sierras y llanuras de Durango
+              (12.8%) y sierras plegadas del norte (0.1%).
+            </p>
 
-        <p style="text-align:justify;"><strong>Clima.</strong> Semiseco templado (37.4%), seco templado (35.0%), muy seco templado (16.4%), seco semic&aacute;lido (4.1%), templado subh&uacute;medo con lluvias en verano, de humedad media (3.3%), semifr&iacute;o subh&uacute;medo con lluvias en verano, de humedad media (2.9%) y semiseco semifr&iacute;o (0.9%).</p>
+            <p style="text-align: justify">
+              Sistema de topoformas. Bajada t&iacute;pica (30.5%), sierra alta
+              con mesetas (29.1%), sierra escarpada (8.8%), llanura aluvial
+              salina (5.6%), llanura aluvial (4.6%), valle de laderas tendidas
+              con lomer&iacute;o (4.3%), llanura aluvial de piso rocoso o
+              cementado (4.3%), lomer&iacute;o escarpado con llanuras (4.0%),
+              lomer&iacute;o con mesetas (1.6%), sierra plegada (1.5%), sierra
+              alta con lomer&iacute;o (1.3%), lomer&iacute;o ramificado (1.3%),
+              lomer&iacute;o escarpado (1.2%), llanura aluvial inundable y
+              salina (0.9%), lomer&iacute;o t&iacute;pico (0.4%), meseta con
+              ca&ntilde;adas (0.4%) y llanura aluvial con lomer&iacute;o (0.2%).
+            </p>
 
-        <p style="text-align:justify;">El clima generalizado en esta regi&oacute;n es el BS (semiseco con lluvias en verano y escasas a lo largo del a&ntilde;o) aunque se distinguen tres subtipos que forman las siguientes subregiones:</p>
+            <p style="text-align: justify">
+              <strong>Clima.</strong> Semiseco templado (37.4%), seco templado
+              (35.0%), muy seco templado (16.4%), seco semic&aacute;lido (4.1%),
+              templado subh&uacute;medo con lluvias en verano, de humedad media
+              (3.3%), semifr&iacute;o subh&uacute;medo con lluvias en verano, de
+              humedad media (2.9%) y semiseco semifr&iacute;o (0.9%).
+            </p>
 
-        <ul>
-          <li>Subregi&oacute;n Sierra de Majalca BS1 k&quot;w semifr&iacute;o semiseco, lluvias en verano; % de precipitaci&oacute;n invernal entre 5 y 10.2.</li>
-          <li>Subregi&oacute;n Valle Central BS hw (w) semic&aacute;lido seco con lluvias en verano, % de precipitaci&oacute;n invernal menor de 5 e invierno fresco.</li>
-          <li>Subregi&oacute;n Des&eacute;rtica BW kw muy seco templado, lluvias en verano, % de precipitaci&oacute;n invernal entre 5 y 10.2 con verano c&aacute;lido.</li>
-        </ul>
+            <p style="text-align: justify">
+              El clima generalizado en esta regi&oacute;n es el BS (semiseco con
+              lluvias en verano y escasas a lo largo del a&ntilde;o) aunque se
+              distinguen tres subtipos que forman las siguientes subregiones:
+            </p>
 
-        <p style="text-align:justify;">El clima de la ciudad (Estaci&oacute;n Chihuahua 08-018) es semi&aacute;rido extremoso. La temperatura media anual es de 18.4&ordm; C con media m&aacute;xima de 26.8&ordm; C y media m&iacute;nima de 18.5&ordm;C.</p>
-
-        <p style="text-align:justify;">El viento dominante anual proviene del norte, durante los ocho meses restantes, prevalece en la direcci&oacute;n sur.</p>
-
-        <p style="text-align:justify;">La lluvia en nuestro clima frecuentemente es de car&aacute;cter torrencial, provocando siniestros e inundaciones debido a las deficiencias del drenaje pluvial. Asimismo, los escurrimientos pluviales no son aprovechados de manera eficaz para recargar los mantos fre&aacute;ticos.</p>
-
-        <p style="text-align:justify;">Las serran&iacute;as e hidrolog&iacute;a superficial pueden ser utilizadas como un elemento articulador, ya sea como sistema de parques naturales, o inclusive como medio para desarrollar y ramificar la movilidad peatonal o ciclista.</p>
-
-        <p style="text-align:justify;">Existe un grado considerable en la falta de preservaci&oacute;n y desaprovechamiento del espacio natural debido a las tendencias de urbanizaci&oacute;n.</p>
-
-        <p style="text-align:justify;">El medio natural sufre la p&eacute;rdida de superficie por invasiones urbanas, as&iacute; como la construcci&oacute;n de elementos de infraestructura de comunicaci&oacute;n &ndash;antenas-, y la progresiva expansi&oacute;n de la ciuda</p>
-
-        <p style="text-align:justify;">Rango de temperatura. El rango de temperatura fluct&uacute;a entre 10 y 20&deg; C. Rango de precipitaci&oacute;n. El rango de precipitaci&oacute;n pluvial fluct&uacute;a entre 200 y 600 mm.</p>
-
-        <p style="text-align:justify;"><strong>Geolog&iacute;a.</strong> Periodo. Terciario (45.3%), Cuaternario (34.4%), Ne&oacute;geno (12.1%), No aplicable (4.0%), Cret&aacute;cico (0.9%) y Pale&oacute;geno (0.4%).</p>
-
-        <p style="text-align:justify;"><u>Roca</u>. &Iacute;gnea extrusiva: riolita-toba &aacute;cida (43.0%), basalto (4.8%), andesita (0.5%) y toba &aacute;cida (0.3%).</p>
-
-        <p style="text-align:justify;"><u>Suelo</u>: aluvial (28.6%).</p>
-
-        <p style="text-align:justify;"><u>Sedimentaria</u>: conglomerado (17.8%), caliza (0.8%), arenisca-conglomerado (0.8%), arenisca (0.2%) y caliza-lutita (0.1%).</p>
-
-        <p style="text-align:justify;">&Iacute;gnea intrusiva: monzonita (0.2%).</p>
-
-        <p style="text-align:justify;">Los rasgos geol&oacute;gicos son estables, nos encontramos en una regi&oacute;n s&iacute;smica, firmemente enclavada en el centro de una extensa meseta, bordeada por los dos sistemas orogr&aacute;ficos de la regi&oacute;n norte del continente.</p>
-
-        <p style="text-align:justify;"><strong>Edafolog&iacute;a.</strong> Suelo dominante. Leptosol (36.7%), Phaeozem (18.3%), Luvisol (12.2%), Calcisol (6.7%), Cambisol (5.8%), Regosol (5.0%), Solonetz (4.1%), Fluvisol (2.6%), Chernozem (2.1%), Vertisol (1.1%), Kasta&ntilde;ozem (1.1%), Durisol (0.9%) y Solonchak (0.5%)</p>
-
-        <p style="text-align:justify;"><strong>Hidrograf&iacute;a.</strong> Regi&oacute;n hidrol&oacute;gica. Cuencas Cerradas del Norte (Casas Grandes) (54.5%) y Bravo Conchos (45.5%).</p>
-
-        <p style="text-align:justify;">Cuenca. A. El Carrizo y otros (52.8%), R. Conchos &ndash; P. El Granero (32.5%), R. San Pedro (13.0%), R. del Carmen (1.2%) y L. de Bustillos y de los Mexicanos (0.5%)</p>
-
-        <p style="text-align:justify;">Subcuenca. L. Encinillas (30.2%), L. del Cuervo (21.0%), Sacramento (12.6%), R. Chuv&iacute;scar (9.4%), R. Santa Isabel (9.3%), A. Bachimba (6.8%), P. chihuahua (3.7%), P. Francisco I. Madero (3.7%), L. del Diablo (1.4%), R. del Carmen (1.1%), L. Bustillos (0.5%), R. Santa clara (0.2%) y L. Tarabillas (0.1%).</p>
-
-        <p style="text-align:justify;">Corrientes y cuerpos de agua. La Ciudad cuenta con dos r&iacute;os principales, el R&iacute;o Chuv&iacute;scar que atraviesa la ciudad de Poniente a Oriente, el R&iacute;o Sacramento que corre de Norte a Sur y 24 arroyos que cruzan transversalmente la ciudad. Al Surponiente de la Ciudad se encuentran tres presas, la presa Chihuahua y la presa Chuv&iacute;scar que son alimentadas por el R&iacute;o Chuv&iacute;scar principalmente; y la presa Rej&oacute;n que es alimentada por el arroyo San Pedro principalmente.</p>
-
-        <p style="text-align:justify;">La ciudad se abastece de tres acu&iacute;feros (Chihuahua-Sacramento, Tabalaopa-Aldama y el S&aacute;uz-Encinillas) que se encuentran sobre explotados.</p>
-
-        <p style="text-align:justify;">Parte de la zona sur de la ciudad se alimenta de los ojos Chuv&iacute;scar y Aeropuerto. La recarga de los acu&iacute;feros se da principalmente en las zonas serranas y su contexto natural. Esta sobre explotaci&oacute;n se da por la gran cantidad de pozos con gastos de extracci&oacute;n mayores a la recarga, provocando un abatimiento que obliga a que la extracci&oacute;n del agua sea cada vez a mayor profundidad.</p>
-
-
-        <p style="text-align:justify;"><strong>Uso del suelo.</strong> Agricultura (8.6%), zona urbana (2.6%) y no aplicable (0.2%).</p>
-        <p style="text-align:justify;"><strong>Vegetación.</strong> Pastizal (41.1%), matorral (25.3%), bosque (19.8%), mezquital (1.0%), área sin vegetación (0.7%) y otro (0.4%).</p>
-        <p style="text-align:justify;"><strong>Uso potencial de la tierra:</strong></p>
-        <p style="text-align:justify;"><strong>Agrícola.</strong> Para la agricultura mecanizada continua (32.1%). Para la agricultura de tracción animal continua (1.5%). No apta para la agricultura (66.4%). </p>
-        <p style="text-align:justify;"><strong>Pecuario.</strong> Para el desarrollo de praderas cultivadas (32.1%). Para el aprovechamiento de la vegetación de pastizal (14.7%). Para el aprovechamiento de la vegetación natural diferente del pastizal (4.2%). Para el aprovechamiento de la vegetación natural únicamente por el ganado caprino (47.8%). No apta para uso pecuario (1.2%).</p>
-        <p style="text-align:justify;"><strong>Zona urbana.</strong> La zona urbana está creciendo sobre roca sedimentaria del Neógeno y del Cuaternario, roca ígnea del Terciario y suelo del Cuaternario, en llanura aluvial de piso rocoso o cementado, lomerío escarpado con llanuras, sierra escarpada, bajada típica y llanura aluvial; sobre áreas originalmente ocupadas por suelos denominados Luvisol, Cambisol, Leptosol, Chernozem y Fluvisol; tiene clima seco templado, seco semicálido y semiseco templado, y está creciendo sobre terrenos previamente ocupados por agricultura y matorrales. </p>
-        <p style="text-align:justify;"><strong>Demografía:</strong></p>
-        <ul>
-          <li>El Municipio de Chihuahua se ubica en el centro del Estado, su extensión territorial constituye el 3.73% de la superficie estatal.</li>
-          <li>La población total del Municipio representa el 24.1% del Estado de Chihuahua.</li>
-          <li>El Municipio está compuesto por una localidad urbana y 303 rurales en 9,219.33 km2.</li>
-          <li>Población total en el Municipio: 819,543 hab.</li>
-          <li>La densidad de población es de 97.8 hab/km2.</li>
-          <li>La población total en el Municipio de Chihuahua al 2010 se constituye en 399,495 hombres y 420,048 mujeres.</li>
-          <li>El 98.7% de la población municipal se asienta en el área urbana.</li>
-          <li>El 1.3% de la población restante se ubica en 303 comunidades rurales.</li>
-          <li>Sus cabeceras seccionales son el Sauz, El Charco, Ciénega de Ortíz, Rancho Soto y Colonia Guadalupe.</li>
-        </ul>
-        <p style="text-align:justify;"><strong>Indicadores demográficos del Municipio de Chihuahua:</strong></p>
-        <p style="font-size:9px; text-align:right"> Fuente de la información:  INEGI, Censo General de Población 2010. Tabulados de la Encuesta Intercensal 2015.</p>
-        <p><u>Población:</u></p>
-         <div id="table_div1"></div>
-        <span style="font-size:9px; text-align:right"> c.   Número de hombres entre el número de mujeres por cien, d. La mitad de la población tiene 29 años o menos.</span>
-         <p><u>Natalidad y fecundidad:</u></p>
-         <div id="table_div2"></div>
-         <span style="font-size:9px">e. Con respecto a la población femenina de 12 años y más de edad. Comprende sólo a las mujeres que especificaron el total de hijos nacidos vivos. </span>
-         <p><u>Hogares:</u></p>
-         <div id="table_div3"></div>
-         <span style="font-size:9px; text-align:right">f. Porcentaje con respecto al total de hogares. g. Muestra el número de personas de cada cien, en edades "dependientes" (menores de 15 y mayores de 64 años), respecto a las personas en edades "económicamente productivas" (15 a 64 años) en una población.</span>
-         <p><u>Educación:</u></p>
-         <div id="table_div4"></div>
-         <p><u>Economía:</u> </p>
-         <div id="table_div5"></div>
-         <span style="font-size:9px; text-align:right">h. Personas de 12 años y más que trabajaron; tenían trabajo pero no trabajaron o; buscaron trabajo en la semana de referencia. i.  Personas de 12 años y más que trabajaron o que no trabajaron pero sí tenían trabajo en la semana de referencia.</span>
-         <p><u>Salud:</u> </p>
-          <div id="table_div6"></div>
-          <p><u>Viviendas y Urbanización</u></p>
-          <div id="table_div7"></div>
-          <span style="font-size:9px; text-align:right">j. De cada 100 viviendas, una tiene piso de tierra.</span>
-          <p><strong>Desarrollo Urbano y Ordenación del Territorio</strong></p>
-          <p style="font-size:9px; text-align:right"> Fuente de la información:  INEGI. Prontuario de Información geográfica municipal de los Estados Unidos Mexicanos. CONAPO, Dirección General de Estudios Sociodemográficos y Prospectiva, Proyecciones de la población 2010-2030. </p>
-        <p style="text-align:justify;">Se define como Zona Metropolitana al conjunto de dos o más municipios donde
-        se localiza una ciudad de 50 mil o más habitantes, cuya área urbana, funciones y
-        actividades rebasan el límite del municipio que originalmente la contenía, incorporando como parte de sí misma o de su área de influencia directa a municipios vecinos, predominantemente urbanos, con los que mantiene un alto grado de integración socioeconómica. A si pues se conforma la Zona Metropolitana de Chihuahua (020) que se integra con los Municipios de Aldama, Aquiles Serdán y Chihuahua, siendo la Ciudad de Chihuahua núcleo de esta zona.</p>
-          
-          <p style="text-align:justify;">De acuerdo a las siguientes cifras de las 59 zonas metropolitanas de México el Sistema Urbano Nacional (<strong>SUN</strong>):</p>
-          <ul>
-            <li>Se integra por 367 municipios</li>
-            <li>Las habitan 63.8 millones de habitantes
             <ul>
-                <li>Lo que representa el 56.8% de la población total del país.</li>
-                <li>1 de cada 2 mexicanos habita una de las 55 zonas metropolitanas.</li>
-                <li>En ellas se genera aproximadamente el 75% del PIB.</li>
-                <li>Presentan una tasa de crecimiento media anual del 1.6%.</li>
-            </ul></li>
-            <li>Ocupan una superficie de 171,816.80 km<sup>2</sup>.</li>
-          </ul>
-          <p style="text-align:justify;">La población en el año 2000 en la Zona Metropolitana de Chihuahua (<strong>ZM-CUU</strong>) era de 646,495 habitantes, la tasa de crecimiento medio anual del 2.4 %, ocupando una superficie de 18,093.7 km2 con una DMU de 65.9 (65.9 hab/ha). </p>
-          <p style="text-align:justify;">Para el año 2010 la población aumento a 852,533 habitantes, con una tasa de crecimiento medio anual de 1.67 % en el período 2005-2010, con una DMU (hab/ha) de 33.35.</p>
-          <div>
-            <iframe height="480px" width="100%" src="https://www.arcgis.com/apps/View/index.html?appid=e5e0473fdfbf44438d56100b44d7ab95"></iframe> 
-         </div>        
-    </div>
-  </div>
-  <hr>
-  <div id="AmbitoUrbano"></div>
-  <div class="row">
-    <div class="col pt-3">
-      <h2><b>Ámbito Urbano</b></h2>
-      <p><strong>Centro de Población</strong></p>
-      <p>El Centro de Población se define con la delimitación de su fundo legal que tiene una superficie total de 78,289.38 hectáreas, de las cuáles en la actualidad (2016) 25,119.21 hectáreas  le corresponden al área urbana de acuerdo al historial de planes de desarrollo urbano aprobados. 
-      </p>
-      <p>Es importante mencionar que existe una superficie adicional considerada para el crecimiento futuro de la Ciudad, mediante la elaboración de Planes Parciales o iniciativas que se encuentran en proceso de protocolización.</p>
-      <p><strong>Zonificación Primaria</strong></p>
-      <p>En términos de planeación urbana el Centro de Población se subdivide en lo que se denomina zonificación primaria, la cual presenta el esquema global del aprovechamiento territorial, asignando posibilidades y características a los usos factibles en los tres distintos tipos de zonas que la distinguen, la zona U ya urbanizada; la zona R que es reserva por urbanizarse; y la zona E que es la de preservación ecológica, donde la finalidad es la salvaguarda de las condiciones naturales de valor ambiental.</p>
-      <p><u>Superficies de la Zonificación Primaria del Centro de Población Chihuahua:</u> </p>
+              <li>
+                Subregi&oacute;n Sierra de Majalca BS1 k&quot;w semifr&iacute;o
+                semiseco, lluvias en verano; % de precipitaci&oacute;n invernal
+                entre 5 y 10.2.
+              </li>
+              <li>
+                Subregi&oacute;n Valle Central BS hw (w) semic&aacute;lido seco
+                con lluvias en verano, % de precipitaci&oacute;n invernal menor
+                de 5 e invierno fresco.
+              </li>
+              <li>
+                Subregi&oacute;n Des&eacute;rtica BW kw muy seco templado,
+                lluvias en verano, % de precipitaci&oacute;n invernal entre 5 y
+                10.2 con verano c&aacute;lido.
+              </li>
+            </ul>
+
+            <p style="text-align: justify">
+              El clima de la ciudad (Estaci&oacute;n Chihuahua 08-018) es
+              semi&aacute;rido extremoso. La temperatura media anual es de
+              18.4&ordm; C con media m&aacute;xima de 26.8&ordm; C y media
+              m&iacute;nima de 18.5&ordm;C.
+            </p>
+
+            <p style="text-align: justify">
+              El viento dominante anual proviene del norte, durante los ocho
+              meses restantes, prevalece en la direcci&oacute;n sur.
+            </p>
+
+            <p style="text-align: justify">
+              La lluvia en nuestro clima frecuentemente es de car&aacute;cter
+              torrencial, provocando siniestros e inundaciones debido a las
+              deficiencias del drenaje pluvial. Asimismo, los escurrimientos
+              pluviales no son aprovechados de manera eficaz para recargar los
+              mantos fre&aacute;ticos.
+            </p>
+
+            <p style="text-align: justify">
+              Las serran&iacute;as e hidrolog&iacute;a superficial pueden ser
+              utilizadas como un elemento articulador, ya sea como sistema de
+              parques naturales, o inclusive como medio para desarrollar y
+              ramificar la movilidad peatonal o ciclista.
+            </p>
+
+            <p style="text-align: justify">
+              Existe un grado considerable en la falta de preservaci&oacute;n y
+              desaprovechamiento del espacio natural debido a las tendencias de
+              urbanizaci&oacute;n.
+            </p>
+
+            <p style="text-align: justify">
+              El medio natural sufre la p&eacute;rdida de superficie por
+              invasiones urbanas, as&iacute; como la construcci&oacute;n de
+              elementos de infraestructura de comunicaci&oacute;n
+              &ndash;antenas-, y la progresiva expansi&oacute;n de la ciuda
+            </p>
+
+            <p style="text-align: justify">
+              Rango de temperatura. El rango de temperatura fluct&uacute;a entre
+              10 y 20&deg; C. Rango de precipitaci&oacute;n. El rango de
+              precipitaci&oacute;n pluvial fluct&uacute;a entre 200 y 600 mm.
+            </p>
+
+            <p style="text-align: justify">
+              <strong>Geolog&iacute;a.</strong> Periodo. Terciario (45.3%),
+              Cuaternario (34.4%), Ne&oacute;geno (12.1%), No aplicable (4.0%),
+              Cret&aacute;cico (0.9%) y Pale&oacute;geno (0.4%).
+            </p>
+
+            <p style="text-align: justify">
+              <u>Roca</u>. &Iacute;gnea extrusiva: riolita-toba &aacute;cida
+              (43.0%), basalto (4.8%), andesita (0.5%) y toba &aacute;cida
+              (0.3%).
+            </p>
+
+            <p style="text-align: justify"><u>Suelo</u>: aluvial (28.6%).</p>
+
+            <p style="text-align: justify">
+              <u>Sedimentaria</u>: conglomerado (17.8%), caliza (0.8%),
+              arenisca-conglomerado (0.8%), arenisca (0.2%) y caliza-lutita
+              (0.1%).
+            </p>
+
+            <p style="text-align: justify">
+              &Iacute;gnea intrusiva: monzonita (0.2%).
+            </p>
+
+            <p style="text-align: justify">
+              Los rasgos geol&oacute;gicos son estables, nos encontramos en una
+              regi&oacute;n s&iacute;smica, firmemente enclavada en el centro de
+              una extensa meseta, bordeada por los dos sistemas
+              orogr&aacute;ficos de la regi&oacute;n norte del continente.
+            </p>
+
+            <p style="text-align: justify">
+              <strong>Edafolog&iacute;a.</strong> Suelo dominante. Leptosol
+              (36.7%), Phaeozem (18.3%), Luvisol (12.2%), Calcisol (6.7%),
+              Cambisol (5.8%), Regosol (5.0%), Solonetz (4.1%), Fluvisol (2.6%),
+              Chernozem (2.1%), Vertisol (1.1%), Kasta&ntilde;ozem (1.1%),
+              Durisol (0.9%) y Solonchak (0.5%)
+            </p>
+
+            <p style="text-align: justify">
+              <strong>Hidrograf&iacute;a.</strong> Regi&oacute;n
+              hidrol&oacute;gica. Cuencas Cerradas del Norte (Casas Grandes)
+              (54.5%) y Bravo Conchos (45.5%).
+            </p>
+
+            <p style="text-align: justify">
+              Cuenca. A. El Carrizo y otros (52.8%), R. Conchos &ndash; P. El
+              Granero (32.5%), R. San Pedro (13.0%), R. del Carmen (1.2%) y L.
+              de Bustillos y de los Mexicanos (0.5%)
+            </p>
+
+            <p style="text-align: justify">
+              Subcuenca. L. Encinillas (30.2%), L. del Cuervo (21.0%),
+              Sacramento (12.6%), R. Chuv&iacute;scar (9.4%), R. Santa Isabel
+              (9.3%), A. Bachimba (6.8%), P. chihuahua (3.7%), P. Francisco I.
+              Madero (3.7%), L. del Diablo (1.4%), R. del Carmen (1.1%), L.
+              Bustillos (0.5%), R. Santa clara (0.2%) y L. Tarabillas (0.1%).
+            </p>
+
+            <p style="text-align: justify">
+              Corrientes y cuerpos de agua. La Ciudad cuenta con dos r&iacute;os
+              principales, el R&iacute;o Chuv&iacute;scar que atraviesa la
+              ciudad de Poniente a Oriente, el R&iacute;o Sacramento que corre
+              de Norte a Sur y 24 arroyos que cruzan transversalmente la ciudad.
+              Al Surponiente de la Ciudad se encuentran tres presas, la presa
+              Chihuahua y la presa Chuv&iacute;scar que son alimentadas por el
+              R&iacute;o Chuv&iacute;scar principalmente; y la presa
+              Rej&oacute;n que es alimentada por el arroyo San Pedro
+              principalmente.
+            </p>
+
+            <p style="text-align: justify">
+              La ciudad se abastece de tres acu&iacute;feros
+              (Chihuahua-Sacramento, Tabalaopa-Aldama y el
+              S&aacute;uz-Encinillas) que se encuentran sobre explotados.
+            </p>
+
+            <p style="text-align: justify">
+              Parte de la zona sur de la ciudad se alimenta de los ojos
+              Chuv&iacute;scar y Aeropuerto. La recarga de los acu&iacute;feros
+              se da principalmente en las zonas serranas y su contexto natural.
+              Esta sobre explotaci&oacute;n se da por la gran cantidad de pozos
+              con gastos de extracci&oacute;n mayores a la recarga, provocando
+              un abatimiento que obliga a que la extracci&oacute;n del agua sea
+              cada vez a mayor profundidad.
+            </p>
+
+            <p style="text-align: justify">
+              <strong>Uso del suelo.</strong> Agricultura (8.6%), zona urbana
+              (2.6%) y no aplicable (0.2%).
+            </p>
+            <p style="text-align: justify">
+              <strong>Vegetación.</strong> Pastizal (41.1%), matorral (25.3%),
+              bosque (19.8%), mezquital (1.0%), área sin vegetación (0.7%) y
+              otro (0.4%).
+            </p>
+            <p style="text-align: justify">
+              <strong>Uso potencial de la tierra:</strong>
+            </p>
+            <p style="text-align: justify">
+              <strong>Agrícola.</strong> Para la agricultura mecanizada continua
+              (32.1%). Para la agricultura de tracción animal continua (1.5%).
+              No apta para la agricultura (66.4%).
+            </p>
+            <p style="text-align: justify">
+              <strong>Pecuario.</strong> Para el desarrollo de praderas
+              cultivadas (32.1%). Para el aprovechamiento de la vegetación de
+              pastizal (14.7%). Para el aprovechamiento de la vegetación natural
+              diferente del pastizal (4.2%). Para el aprovechamiento de la
+              vegetación natural únicamente por el ganado caprino (47.8%). No
+              apta para uso pecuario (1.2%).
+            </p>
+            <p style="text-align: justify">
+              <strong>Zona urbana.</strong> La zona urbana está creciendo sobre
+              roca sedimentaria del Neógeno y del Cuaternario, roca ígnea del
+              Terciario y suelo del Cuaternario, en llanura aluvial de piso
+              rocoso o cementado, lomerío escarpado con llanuras, sierra
+              escarpada, bajada típica y llanura aluvial; sobre áreas
+              originalmente ocupadas por suelos denominados Luvisol, Cambisol,
+              Leptosol, Chernozem y Fluvisol; tiene clima seco templado, seco
+              semicálido y semiseco templado, y está creciendo sobre terrenos
+              previamente ocupados por agricultura y matorrales.
+            </p>
+            <p style="text-align: justify"><strong>Demografía:</strong></p>
+            <ul>
+              <li>
+                El Municipio de Chihuahua se ubica en el centro del Estado, su
+                extensión territorial constituye el 3.73% de la superficie
+                estatal.
+              </li>
+              <li>
+                La población total del Municipio representa el 24.1% del Estado
+                de Chihuahua.
+              </li>
+              <li>
+                El Municipio está compuesto por una localidad urbana y 303
+                rurales en 9,219.33 km2.
+              </li>
+              <li>Población total en el Municipio: 819,543 hab.</li>
+              <li>La densidad de población es de 97.8 hab/km2.</li>
+              <li>
+                La población total en el Municipio de Chihuahua al 2010 se
+                constituye en 399,495 hombres y 420,048 mujeres.
+              </li>
+              <li>
+                El 98.7% de la población municipal se asienta en el área urbana.
+              </li>
+              <li>
+                El 1.3% de la población restante se ubica en 303 comunidades
+                rurales.
+              </li>
+              <li>
+                Sus cabeceras seccionales son el Sauz, El Charco, Ciénega de
+                Ortíz, Rancho Soto y Colonia Guadalupe.
+              </li>
+            </ul>
+            <p style="text-align: justify">
+              <strong
+                >Indicadores demográficos del Municipio de Chihuahua:</strong
+              >
+            </p>
+            <p style="font-size: 9px; text-align: right">
+              Fuente de la información: INEGI, Censo General de Población 2010.
+              Tabulados de la Encuesta Intercensal 2015.
+            </p>
+            <p><u>Población:</u></p>
+            <div id="table_div1"></div>
+            <span style="font-size: 9px; text-align: right">
+              c. Número de hombres entre el número de mujeres por cien, d. La
+              mitad de la población tiene 29 años o menos.</span
+            >
+            <p><u>Natalidad y fecundidad:</u></p>
+            <div id="table_div2"></div>
+            <span style="font-size: 9px"
+              >e. Con respecto a la población femenina de 12 años y más de edad.
+              Comprende sólo a las mujeres que especificaron el total de hijos
+              nacidos vivos.
+            </span>
+            <p><u>Hogares:</u></p>
+            <div id="table_div3"></div>
+            <span style="font-size: 9px; text-align: right"
+              >f. Porcentaje con respecto al total de hogares. g. Muestra el
+              número de personas de cada cien, en edades "dependientes" (menores
+              de 15 y mayores de 64 años), respecto a las personas en edades
+              "económicamente productivas" (15 a 64 años) en una
+              población.</span
+            >
+            <p><u>Educación:</u></p>
+            <div id="table_div4"></div>
+            <p><u>Economía:</u></p>
+            <div id="table_div5"></div>
+            <span style="font-size: 9px; text-align: right"
+              >h. Personas de 12 años y más que trabajaron; tenían trabajo pero
+              no trabajaron o; buscaron trabajo en la semana de referencia. i.
+              Personas de 12 años y más que trabajaron o que no trabajaron pero
+              sí tenían trabajo en la semana de referencia.</span
+            >
+            <p><u>Salud:</u></p>
+            <div id="table_div6"></div>
+            <p><u>Viviendas y Urbanización</u></p>
+            <div id="table_div7"></div>
+            <span style="font-size: 9px; text-align: right"
+              >j. De cada 100 viviendas, una tiene piso de tierra.</span
+            >
+            <p>
+              <strong>Desarrollo Urbano y Ordenación del Territorio</strong>
+            </p>
+            <p style="font-size: 9px; text-align: right">
+              Fuente de la información: INEGI. Prontuario de Información
+              geográfica municipal de los Estados Unidos Mexicanos. CONAPO,
+              Dirección General de Estudios Sociodemográficos y Prospectiva,
+              Proyecciones de la población 2010-2030.
+            </p>
+            <p style="text-align: justify">
+              Se define como Zona Metropolitana al conjunto de dos o más
+              municipios donde se localiza una ciudad de 50 mil o más
+              habitantes, cuya área urbana, funciones y actividades rebasan el
+              límite del municipio que originalmente la contenía, incorporando
+              como parte de sí misma o de su área de influencia directa a
+              municipios vecinos, predominantemente urbanos, con los que
+              mantiene un alto grado de integración socioeconómica. A si pues se
+              conforma la Zona Metropolitana de Chihuahua (020) que se integra
+              con los Municipios de Aldama, Aquiles Serdán y Chihuahua, siendo
+              la Ciudad de Chihuahua núcleo de esta zona.
+            </p>
+
+            <p style="text-align: justify">
+              De acuerdo a las siguientes cifras de las 59 zonas metropolitanas
+              de México el Sistema Urbano Nacional (<strong>SUN</strong>):
+            </p>
+            <ul>
+              <li>Se integra por 367 municipios</li>
+              <li>
+                Las habitan 63.8 millones de habitantes
+                <ul>
+                  <li>
+                    Lo que representa el 56.8% de la población total del país.
+                  </li>
+                  <li>
+                    1 de cada 2 mexicanos habita una de las 55 zonas
+                    metropolitanas.
+                  </li>
+                  <li>En ellas se genera aproximadamente el 75% del PIB.</li>
+                  <li>
+                    Presentan una tasa de crecimiento media anual del 1.6%.
+                  </li>
+                </ul>
+              </li>
+              <li>Ocupan una superficie de 171,816.80 km<sup>2</sup>.</li>
+            </ul>
+            <p style="text-align: justify">
+              La población en el año 2000 en la Zona Metropolitana de Chihuahua
+              (<strong>ZM-CUU</strong>) era de 646,495 habitantes, la tasa de
+              crecimiento medio anual del 2.4 %, ocupando una superficie de
+              18,093.7 km2 con una DMU de 65.9 (65.9 hab/ha).
+            </p>
+            <p style="text-align: justify">
+              Para el año 2010 la población aumento a 852,533 habitantes, con
+              una tasa de crecimiento medio anual de 1.67 % en el período
+              2005-2010, con una DMU (hab/ha) de 33.35.
+            </p>
+            <div class="embed-container">
+              <iframe
+                width="1100"
+                height="700"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                title="Ámbito Municipal"
+                src="https://geoportal.implanchihuahua.org/sigmun/apps/webappviewer/index.html?id=09d2f235e0104c14b787b39ab8aecac4"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div id="AmbitoUrbano"></div>
+        <div class="row">
+          <div class="col pt-3">
+            <h2><b>Ámbito Urbano</b></h2>
+            <p><strong>Centro de Población</strong></p>
+            <p>
+              El Centro de Población se define con la delimitación de su fundo
+              legal que tiene una superficie total de 78,289.38 hectáreas, de
+              las cuáles en la actualidad (2016) 25,119.21 hectáreas le
+              corresponden al área urbana de acuerdo al historial de planes de
+              desarrollo urbano aprobados.
+            </p>
+            <p>
+              Es importante mencionar que existe una superficie adicional
+              considerada para el crecimiento futuro de la Ciudad, mediante la
+              elaboración de Planes Parciales o iniciativas que se encuentran en
+              proceso de protocolización.
+            </p>
+            <p><strong>Zonificación Primaria</strong></p>
+            <p>
+              En términos de planeación urbana el Centro de Población se
+              subdivide en lo que se denomina zonificación primaria, la cual
+              presenta el esquema global del aprovechamiento territorial,
+              asignando posibilidades y características a los usos factibles en
+              los tres distintos tipos de zonas que la distinguen, la zona U ya
+              urbanizada; la zona R que es reserva por urbanizarse; y la zona E
+              que es la de preservación ecológica, donde la finalidad es la
+              salvaguarda de las condiciones naturales de valor ambiental.
+            </p>
+            <p>
+              <u
+                >Superficies de la Zonificación Primaria del Centro de Población
+                Chihuahua:</u
+              >
+            </p>
             <div id="table_div10"></div>
-        
-        <p><strong>Crecimiento poblacional</strong></p>
-        <p>La ciudad de Chihuahua ha mostrado un acelerado crecimiento demográfico que se ha traducido en un rápido proceso de urbanización. En tres décadas y media la población casi se triplicó, pasando de 277,099 habitantes a 748518 en el 2005.</p>
-        <p>Sin embargo el crecimiento poblacional en los últimos años muestra una tendencia hacia la estabilización, el cual se refleja en la disminución de la tasa de crecimiento poblacional que ha pasado de 5.5% en 1970 a 1.6 en el año 2005. La población de la Ciudad pasa por un proceso de transición demográfica al que contribuye el descenso de la fecundidad, el aumento de la esperanza de vida y la reducción de la tasa de crecimiento natural de la población<sub>2</sub>.</p>
-        <p>Durante la última década, llegando al 2012 el área urbana alcanza una cobertura de 23,601 has., con una población de 809,232 habitantes (CGPV2010)<sub>1</sub>, que representan el 98.7% de los habitantes del Municipio.</p>
-        <p>Su carácter de ciudad capital y su impulso en el desarrollo económico e industrial, ha generado una migración de las poblaciones rurales hacia esta urbe ubicada en el centro del Estado, este proceso migratorio ha incidido en el crecimiento de la población, la diversificación de las actividades económicas, la ocupación de mayores superficies del suelo y la dinámica constante de crecimiento de la Ciudad, que se ha manifestado en una modificación sustancial del entorno original, y que como resultante ha impactado los procesos naturales del ecosistema en que se asienta la Ciudad<sub>3</sub>.</p>
-        <p><u>Datos de población y vivienda:</u></p>
-        <div id="table_div11"></div>
-        <p style="font-size:9px; text-align:right">Fuente de la información: elaboración IMPLAN con datos del portal del INEGI, Censos y Conteos de Vivienda.</p>
-        
-        <p><u>Proyecciones de población y vivienda de la Ciudad de Chihuahua:</u></p>
-        <div class="table-responsive">
-          <table class="table table-striped table-bordered table-hover table-condensed small">
-          <tr>
-            <th>Indicador</th>
-            <th>2000</th>
-            <th>2005</th>
-            <th>2010</th>
-            <th>2012</th>
-            <th>2015</th>
-            <th>2020</th>
-            <th>2025</th>
-            <th>2030</th>
-            <th>2035</th>
-            <th>2040</th>
-          </tr>
-          <tr>
-            <td>Población</td>
-            <td>657,876</td>
-            <td>748,518</td>
-            <td>809,232</td>
-            <td>834,642</td>
-            <td>866,031</td>
-            <td>911,109</td>
-            <td>948,706</td>
-            <td>977,517</td>
-            <td>1,006,849</td>
-            <td>1,037,061</td>
 
+            <p><strong>Crecimiento poblacional</strong></p>
+            <p>
+              La ciudad de Chihuahua ha mostrado un acelerado crecimiento
+              demográfico que se ha traducido en un rápido proceso de
+              urbanización. En tres décadas y media la población casi se
+              triplicó, pasando de 277,099 habitantes a 748518 en el 2005.
+            </p>
+            <p>
+              Sin embargo el crecimiento poblacional en los últimos años muestra
+              una tendencia hacia la estabilización, el cual se refleja en la
+              disminución de la tasa de crecimiento poblacional que ha pasado de
+              5.5% en 1970 a 1.6 en el año 2005. La población de la Ciudad pasa
+              por un proceso de transición demográfica al que contribuye el
+              descenso de la fecundidad, el aumento de la esperanza de vida y la
+              reducción de la tasa de crecimiento natural de la
+              población<sub>2</sub>.
+            </p>
+            <p>
+              Durante la última década, llegando al 2012 el área urbana alcanza
+              una cobertura de 23,601 has., con una población de 809,232
+              habitantes (CGPV2010)<sub>1</sub>, que representan el 98.7% de los
+              habitantes del Municipio.
+            </p>
+            <p>
+              Su carácter de ciudad capital y su impulso en el desarrollo
+              económico e industrial, ha generado una migración de las
+              poblaciones rurales hacia esta urbe ubicada en el centro del
+              Estado, este proceso migratorio ha incidido en el crecimiento de
+              la población, la diversificación de las actividades económicas, la
+              ocupación de mayores superficies del suelo y la dinámica constante
+              de crecimiento de la Ciudad, que se ha manifestado en una
+              modificación sustancial del entorno original, y que como
+              resultante ha impactado los procesos naturales del ecosistema en
+              que se asienta la Ciudad<sub>3</sub>.
+            </p>
+            <p><u>Datos de población y vivienda:</u></p>
+            <div id="table_div11"></div>
+            <p style="font-size: 9px; text-align: right">
+              Fuente de la información: elaboración IMPLAN con datos del portal
+              del INEGI, Censos y Conteos de Vivienda.
+            </p>
 
-          </tr>
-          <tr>
-            <td>Tasa Media de Crecimiento</td>
-            <td>1.37</td>
-            <td>2.62</td>
-            <td>1.64</td>
-            <td>1.56</td>
-            <td>1.27</td>
-            <td>1.02</td>
-            <td>0.81</td>
-            <td>0.60</td>
-            <td>0.60</td>
-            <td>0.60</td>
+            <p>
+              <u
+                >Proyecciones de población y vivienda de la Ciudad de
+                Chihuahua:</u
+              >
+            </p>
+            <div class="table-responsive">
+              <table
+                class="table table-striped table-bordered table-hover table-condensed small"
+              >
+                <tr>
+                  <th>Indicador</th>
+                  <th>2000</th>
+                  <th>2005</th>
+                  <th>2010</th>
+                  <th>2012</th>
+                  <th>2015</th>
+                  <th>2020</th>
+                  <th>2025</th>
+                  <th>2030</th>
+                  <th>2035</th>
+                  <th>2040</th>
+                </tr>
+                <tr>
+                  <td>Población</td>
+                  <td>657,876</td>
+                  <td>748,518</td>
+                  <td>809,232</td>
+                  <td>834,642</td>
+                  <td>866,031</td>
+                  <td>911,109</td>
+                  <td>948,706</td>
+                  <td>977,517</td>
+                  <td>1,006,849</td>
+                  <td>1,037,061</td>
+                </tr>
+                <tr>
+                  <td>Tasa Media de Crecimiento</td>
+                  <td>1.37</td>
+                  <td>2.62</td>
+                  <td>1.64</td>
+                  <td>1.56</td>
+                  <td>1.27</td>
+                  <td>1.02</td>
+                  <td>0.81</td>
+                  <td>0.60</td>
+                  <td>0.60</td>
+                  <td>0.60</td>
+                </tr>
+                <tr>
+                  <td>Incremento Poblacional</td>
+                  <td></td>
+                  <td>90,642</td>
+                  <td>60,714</td>
+                  <td>25,410</td>
+                  <td>56,799</td>
+                  <td>45,078</td>
+                  <td>37,597</td>
+                  <td>28,811</td>
+                  <td>29,332</td>
+                  <td>30,212</td>
+                </tr>
+                <tr>
+                  <td>Demanda de Vivienda</td>
+                  <td></td>
+                  <td>23,853</td>
+                  <td>17,847</td>
+                  <td>7,473</td>
+                  <td>17,807</td>
+                  <td>14,741</td>
+                  <td>12,816</td>
+                  <td>10,287</td>
+                  <td>11,530</td>
+                  <td>12,817</td>
+                </tr>
+                <tr>
+                  <td>Rezago de Vivienda</td>
+                  <td></td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                  <td>1,950</td>
+                </tr>
+                <tr>
+                  <td>Demanda Efectiva de Vivienda</td>
+                  <td></td>
+                  <td>25,803</td>
+                  <td>19,797</td>
+                  <td>9,423</td>
+                  <td>19,757</td>
+                  <td>16,691</td>
+                  <td>14,766</td>
+                  <td>12,237</td>
+                  <td>13,480</td>
+                  <td>14,767</td>
+                </tr>
+                <tr>
+                  <td>Demanda Efectiva de Vivienda</td>
+                  <td></td>
+                  <td>3.8</td>
+                  <td>3.4</td>
+                  <td>3.4</td>
+                  <td>3.2</td>
+                  <td>3.1</td>
+                  <td>2.9</td>
+                  <td>2.8</td>
+                  <td>2.5</td>
+                  <td>2.4</td>
+                </tr>
+              </table>
+            </div>
+            <p style="font-size: 9px; text-align: right">
+              Fuente de la información: elaboración IMPLAN con datos del portal
+              del INEGI, Censos y Conteos de Vivienda.
+            </p>
+            <p><strong>Crecimiento Urbano</strong></p>
+            <p>
+              El Crecimiento del área urbana ha sido acelerado a partir de la
+              década de los noventa. Durante el período de 1980 a 1995 el ritmo
+              de expansión fue del 48%. De la misma forma de 1980 al 2005 la
+              superficie urbana creció más del doble, es decir paso de 8489 has.
+              a 19,024 has.
+            </p>
+            <p><u>Superficie del área urbana en la Ciudad de Chihuahua:</u></p>
+            <div class="table-responsive">
+              <table
+                class="table table-striped table-bordered table-hover table-condensed small"
+              >
+                <tr>
+                  <th>Año</th>
+                  <th>Población Total</th>
+                  <th>Tasa de Crecimiento Poblacional</th>
+                  <th>Superficie Urbana (has)</th>
+                  <th>Superficie Urbana (km2)</th>
+                  <th>Densidad de Población (Hab/Ha)</th>
+                </tr>
+                <tr>
+                  <td>1960</td>
+                  <td>150,430</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>1970</td>
+                  <td>257,027</td>
+                  <td>5.50</td>
+                  <td>3,815.78</td>
+                  <td>38.16</td>
+                  <td>67.36</td>
+                </tr>
+                <tr>
+                  <td>1980</td>
+                  <td>385,603</td>
+                  <td>3.90</td>
+                  <td>8,489.16</td>
+                  <td>84.89</td>
+                  <td>45.42</td>
+                </tr>
+                <tr>
+                  <td>1990</td>
+                  <td>516,153</td>
+                  <td>3.00</td>
+                  <td>15,097.91</td>
+                  <td>150.98</td>
+                  <td>34.19</td>
+                </tr>
+                <tr>
+                  <td>1995</td>
+                  <td>613,722</td>
+                  <td>3.00</td>
+                  <td>16,515.04</td>
+                  <td>165.15</td>
+                  <td>37.16</td>
+                </tr>
+                <tr>
+                  <td>2000</td>
+                  <td>657,876</td>
+                  <td>1.60</td>
+                  <td>18,055.04</td>
+                  <td>180.55</td>
+                  <td>36.44</td>
+                </tr>
+                <tr>
+                  <td>2005</td>
+                  <td>748,518</td>
+                  <td>2.62</td>
+                  <td>19,024.07</td>
+                  <td>190.24</td>
+                  <td>39.35</td>
+                </tr>
+                <tr>
+                  <td>2010</td>
+                  <td>809,232</td>
+                  <td>1.64</td>
+                  <td>24,367.22</td>
+                  <td>243.67</td>
+                  <td>33.21</td>
+                </tr>
+              </table>
+            </div>
 
-          </tr>
-          <tr>
-            <td>Incremento Poblacional</td>
-            <td></td>
-            <td>90,642</td>
-            <td>60,714</td>
-            <td>25,410</td>
-            <td>56,799</td>
-            <td>45,078</td>
-            <td>37,597</td>
-            <td>28,811</td>
-            <td>29,332</td>
-            <td>30,212</td>
-          </tr>
-          <tr>
-            <td>Demanda de Vivienda</td>
-            <td></td>
-            <td>23,853</td>
-            <td>17,847</td>
-            <td>7,473</td>
-            <td>17,807</td>
-            <td>14,741</td>
-            <td>12,816</td>
-            <td>10,287</td>
-            <td>11,530</td>
-            <td>12,817</td>   
-          </tr>
-          <tr>
-            <td>Rezago de Vivienda</td>
-            <td></td>
-            <td>1,950</td>
-            <td>1,950</td>
-            <td>1,950</td>
-            <td>1,950</td>
-            <td>1,950</td>
-            <td>1,950</td>
-            <td>1,950</td>
-            <td>1,950</td>
-            <td>1,950</td>
+            <p style="font-size: 9px; text-align: right">
+              Fuente de la información: Censos de Población y Vivienda 1980,
+              1990, 2000, 2010. Conteos de Población y Vivienda 1995, 2005.
+              Sistema de Información Geográfica IMPLAN.
+            </p>
+            <div>
+              <iframe
+                width="100%"
+                height="640px"
+                src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=e2a47f6b29704668ab2bdc4450caee50"
+              ></iframe>
+            </div>
 
-          </tr>
-          <tr>
-            <td>Demanda Efectiva de Vivienda</td>
-            <td></td>
-            <td>25,803</td>
-            <td>19,797</td>
-            <td>9,423</td>
-            <td>19,757</td>
-            <td>16,691</td>
-            <td>14,766</td>
-            <td>12,237</td>
-            <td>13,480</td>
-            <td>14,767</td>
+            <p>
+              <strong
+                >Indicadores demográficos de la Ciudad de Chihuahua</strong
+              >
+            </p>
+            <p style="font-size: 9px; text-align: right">
+              Fuente: INEGI, Censo General de Población 2010, SCINCE 2010.
+            </p>
 
-          </tr>
-          <tr>
-            <td>Demanda Efectiva de Vivienda</td>
-            <td></td>
-            <td>3.8</td>
-            <td>3.4</td>
-            <td>3.4</td>
-            <td>3.2</td>
-            <td>3.1</td>
-            <td>2.9</td>
-            <td>2.8</td>
-            <td>2.5</td>
-            <td>2.4</td>
+            <p><u>Población:</u></p>
+            <div id="table_div12"></div>
+            <span style="font-size: 9px; text-align: right"
+              >k. Número de hombres entre el número de mujeres por cien. l. La
+              mitad de la población tiene 28 años o menos.</span
+            >
+            <p><u>Natalidad y fecundidad:</u></p>
+            <div id="table_div13"></div>
+            <span style="font-size: 9px; text-align: right"
+              >m. Con respecto a la población femenina de 12 años y más de edad.
+              Comprende sólo a las mujeres que especificaron el total de hijos
+              nacidos vivos.</span
+            >
 
-          </tr>
-          </table>
-    </div>  
-   <p style="font-size:9px; text-align:right">Fuente de la información: elaboración IMPLAN con datos del portal del INEGI, Censos y Conteos de Vivienda.</p>      
-    <p><strong>Crecimiento Urbano</strong></p>
-      <p>El Crecimiento del área urbana ha sido acelerado a partir de la década de los noventa. Durante el período de 1980 a 1995 el ritmo de expansión fue del 48%. De la misma forma de 1980 al 2005 la superficie urbana creció más del doble, es decir paso de 8489 has. a 19,024 has.</p>
-      <p><u>Superficie del área urbana en la Ciudad de Chihuahua:</u></p>
-       <div class="table-responsive">
-
-        <table class="table table-striped table-bordered table-hover table-condensed small">
-        <tr>
-          <th>Año</th>
-          <th>Población Total</th>
-          <th>Tasa de Crecimiento Poblacional</th>
-          <th>Superficie Urbana (has)</th>
-          <th>Superficie Urbana (km2)</th>
-          <th>Densidad de Población (Hab/Ha)</th>    
-        </tr>
-        <tr>
-          <td>1960</td>
-          <td>150,430</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td>1970</td>
-          <td>257,027</td>
-          <td>5.50</td>
-          <td>3,815.78</td>
-          <td>38.16</td>
-          <td>67.36</td>
-
-        </tr>
-        <tr>
-          <td>1980</td>
-          <td>385,603</td>
-          <td>3.90</td>
-          <td>8,489.16</td>
-          <td>84.89</td>
-          <td>45.42</td>
-
-        </tr>
-        <tr>
-          <td>1990</td>
-          <td>516,153</td>
-          <td>3.00</td>
-          <td>15,097.91</td>
-          <td>150.98</td>
-          <td>34.19</td>
-
-        </tr>
-        <tr>
-          <td>1995</td>
-          <td>613,722</td>
-          <td>3.00</td>
-          <td>16,515.04</td>
-          <td>165.15</td>
-          <td>37.16</td>
-
-        </tr>
-        <tr>
-          <td>2000</td>
-          <td>657,876</td>
-          <td>1.60</td>
-          <td>18,055.04</td>
-          <td>180.55</td>
-          <td>36.44</td>
-
-        </tr>
-        <tr>
-          <td>2005</td>
-          <td>748,518</td>
-          <td>2.62</td>
-          <td>19,024.07</td>
-          <td>190.24</td>
-          <td>39.35</td>
-
-        </tr>
-        <tr>
-          <td>2010</td>
-          <td>809,232</td>
-          <td>1.64</td>
-          <td>24,367.22</td>
-          <td>243.67</td>
-          <td>33.21</td>
-
-        </tr>
-        </table>
-      </div>     
-      
-      <p style="font-size:9px; text-align:right">Fuente de la información: Censos de Población y Vivienda 1980, 1990, 2000, 2010. Conteos de Población y Vivienda 1995, 2005. Sistema de Información Geográfica IMPLAN.</p>
-      
-      <!--aqui -->
-      <div>
-          <iframe width="100%" height="640px" src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=e2a47f6b29704668ab2bdc4450caee50"></iframe>
-      </div>      
-      
-      <p><strong>Indicadores demográficos de la Ciudad de Chihuahua</strong></p>
-      <p style="font-size:9px; text-align:right">Fuente: INEGI, Censo General de Población 2010, SCINCE 2010.</p>
-
-      <p><u>Población:</u></p>
-      <div id="table_div12"></div>
-      <span style="font-size:9px; text-align:right">k. Número de hombres entre el número de mujeres por cien. l.  La mitad de la población tiene 28 años o menos.</span>
-      <p><u>Natalidad y fecundidad:</u></p>
-      <div id="table_div13"></div>
-      <span style="font-size:9px; text-align:right">m. Con respecto a la población femenina de 12 años y más de edad. Comprende sólo a las mujeres que especificaron el total de hijos nacidos vivos.</span>
-      
-      <p><u>Hogares:</u></p>
-      <div id="table_div15"></div>
-      <span style="font-size:9px; text-align:right">p.Porcentaje con respecto al total de hogares. r. Muestra el número de personas de cada cien, en edades "dependientes" (menores de 15 y mayores de 64 años), respecto a las personas en edades "económicamente productivas" (15 a 64 años) en una población).</span>
-      <p><u>Educación:</u></p>
-      <div id="table_div14"></div>
-      <p><u>Economía:</u></p>
-      <div id="table_div16"></div>
-      <span style="font-size:9px; text-align:right">s.Personas de 12 años y más que trabajaron; tenían trabajo pero no trabajaron o; buscaron trabajo en la semana de referencia. t.Personas de 12 años y más que trabajaron o que no trabajaron pero sí tenían trabajo en la semana de referencia.</span>
-      <p><u>Salud:</u></p>
-      <div id="table_div17"></div>
-      <p><u>Viviendas y Urbanización:</u></p>
-      <div id="table_div18"></div>
-      <span style="font-size:9px; text-align:right">u. De cada 100 viviendas, una tiene piso de tierra.</span>
-
-    <hr>
-      
-      <span style="font-size:9px; text-align:right">Notas: 1. CGPV2010 – Censo General de Población y Vivienda 2010. 2. Estudio del Espacio Urbano en Chihuahua, Chihuahua, 2006. 3. Plan de Desarrollo Urbano 2040, 2009.</span>           
-    </div>
-  </div>
-  <div id="AmbitoEconomico"></div>
-  <div class="row">
-      <div class="col pt-3">
-          <h2><b>Ámbito Económico</b></h2>
-          <p style="text-align:justify;"><strong>Estructura del sector Industrial</strong> (Industria manufacturera de exportación)</p>
-          <p style="text-align:justify;">Involucra a las organizaciones, industrias y actores de sector productivo que tienen presencia en la ciudad, así como la importancia que tienen para la economía de la ciudad.</p>
-          <p>La tipología industrial presenta diferentes modalidades:</p>
-          <ul>
-            <li>Zonas industriales antiguas
+            <p><u>Hogares:</u></p>
+            <div id="table_div15"></div>
+            <span style="font-size: 9px; text-align: right"
+              >p.Porcentaje con respecto al total de hogares. r. Muestra el
+              número de personas de cada cien, en edades "dependientes" (menores
+              de 15 y mayores de 64 años), respecto a las personas en edades
+              "económicamente productivas" (15 a 64 años) en una
+              población).</span
+            >
+            <p><u>Educación:</u></p>
+            <div id="table_div14"></div>
+            <p><u>Economía:</u></p>
+            <div id="table_div16"></div>
+            <span style="font-size: 9px; text-align: right"
+              >s.Personas de 12 años y más que trabajaron; tenían trabajo pero
+              no trabajaron o; buscaron trabajo en la semana de referencia.
+              t.Personas de 12 años y más que trabajaron o que no trabajaron
+              pero sí tenían trabajo en la semana de referencia.</span
+            >
+            <p><u>Salud:</u></p>
+            <div id="table_div17"></div>
+            <p><u>Viviendas y Urbanización:</u></p>
+            <div id="table_div18"></div>
+            <span style="font-size: 9px; text-align: right"
+              >u. De cada 100 viviendas, una tiene piso de tierra.</span
+            >
+            <hr />
+            <span style="font-size: 9px; text-align: right"
+              >Notas: 1. CGPV2010 - Censo General de Población y Vivienda 2010.
+              2. Estudio del Espacio Urbano en Chihuahua, Chihuahua, 2006. 3.
+              Plan de Desarrollo Urbano 2040, 2009.</span
+            >
+          </div>
+        </div>
+        <div id="AmbitoEconomico"></div>
+        <div class="row">
+          <div class="col pt-3">
+            <h2><b>Ámbito Económico</b></h2>
+            <p style="text-align: justify">
+              <strong>Estructura del sector Industrial</strong> (Industria
+              manufacturera de exportación)
+            </p>
+            <p style="text-align: justify">
+              Involucra a las organizaciones, industrias y actores de sector
+              productivo que tienen presencia en la ciudad, así como la
+              importancia que tienen para la economía de la ciudad.
+            </p>
+            <p>La tipología industrial presenta diferentes modalidades:</p>
             <ul>
-              <li>Nombre de Dios</li>
-                <li>Fundidora Avalos</li>
-            </ul></li>
-            <li>Parques industriales (década de los años 80 predominantemente maquilador)
-              <ul>
-                    <li>Complejo Industrial Chihuahua</li>
+              <li>
+                Zonas industriales antiguas
+                <ul>
+                  <li>Nombre de Dios</li>
+                  <li>Fundidora Avalos</li>
+                </ul>
+              </li>
+              <li>
+                Parques industriales (década de los años 80 predominantemente
+                maquilador)
+                <ul>
+                  <li>Complejo Industrial Chihuahua</li>
                   <li>Complejo Industrial Américas</li>
                   <li>Complejo Industrial Saucito</li>
                   <li>Complejo Industrial IMPULSO</li>
-              </ul></li>
-            <li>Usos industriales dispersos, de generación más reciente, tendiendo a buscar su ubicación cercana a las salidas de la ciudad
-              <ul>
+                </ul>
+              </li>
+              <li>
+                Usos industriales dispersos, de generación más reciente,
+                tendiendo a buscar su ubicación cercana a las salidas de la
+                ciudad
+                <ul>
                   <li>Salida a Juárez: Motorola, Coca-Cola</li>
                   <li>Salida a Delicias: Vitromex</li>
                   <li>Salida a Cuauhtémoc: Empacadora</li>
-              </ul></li>
-           </ul>
-            <p style="text-align:justify;">Asimismo, parques industriales de tamaño pequeño y mediano (SUPRA, INTERMEX, IMPULSO) que promueven espacios en número limitado. La promoción del desarrollo industrial recae en la Promotora de la Industria Chihuahuense, organismo público descentralizado de la Secretaría de Desarrollo Industrial creado en 1980.</p>
-            <p>Actualmente la Promotora de la Industria tiene los siguientes objetivos básicos:</p>
-             <ul  class="body">
-                <li>Crear zonas y parques industriales en el Estado de Chihuahua</li>
-                <li>Elaborar los programas de desarrollo, los proyectos de los planes maestros de desarrollo, así como los manuales e instructivos de control de uso del suelo y medio ambiente en las zonas y parques industriales que al efecto sean creados</li>
-                <li>Realizar las obras de infraestructura, urbanización, notificación y las demás que requiera el asentamiento de industrias, de acuerdo con los programas, planes y manuales a que se refiere la fracción anterior</li>
-                <li>Promover la participación de empresarios para establecer industrias en las zonas y parques industriales</li>
-             </ul>
-          <p>Como efecto encontramos que 1,837 has. de superficie de la ciudad se destina actualmente a uso industrial.</p>
-            
-            
-            <p style="font-size:9px; text-align:right">Fuente de la información. CIES con base en datos del INEGI. X, XI, XII Censo General de Población y Vivienda 1980, 1990 y 2000, conteo de Población y Vivienda 1995. INEGI. Tabulados de la Encuesta Intercensal 2015. </p>
-           <!-- <div id="table_div8"></div>-->
-            <p style="text-align:justify;">Se ha dado una disminución del porcentaje (28.90% al 7.27%) de la población ocupada en la industria maquiladora en un periodo de 18 años (1988 – 2005).</p>
-            <p style="text-align:justify;">En 1989, el 14.38 % de la superficie de la mancha urbana se dedicada a la industria, pasando en 1994 al 30.20% y cambiando la tendencia hacia la baja para el 2006, en donde sólo el 8.96% se dedica al uso de suelo Industrial.</p>
-            <p style="text-align:justify;">La ciudad ha generado usos complementarios a la industria los cuales se han conformado naturalmente y con poca planeación. Como ejemplo podemos mencionar los siguientes:</p>
+                </ul>
+              </li>
+            </ul>
+            <p style="text-align: justify">
+              Asimismo, parques industriales de tamaño pequeño y mediano (SUPRA,
+              INTERMEX, IMPULSO) que promueven espacios en número limitado. La
+              promoción del desarrollo industrial recae en la Promotora de la
+              Industria Chihuahuense, organismo público descentralizado de la
+              Secretaría de Desarrollo Industrial creado en 1980.
+            </p>
+            <p>
+              Actualmente la Promotora de la Industria tiene los siguientes
+              objetivos básicos:
+            </p>
+            <ul class="body">
+              <li>
+                Crear zonas y parques industriales en el Estado de Chihuahua
+              </li>
+              <li>
+                Elaborar los programas de desarrollo, los proyectos de los
+                planes maestros de desarrollo, así como los manuales e
+                instructivos de control de uso del suelo y medio ambiente en las
+                zonas y parques industriales que al efecto sean creados
+              </li>
+              <li>
+                Realizar las obras de infraestructura, urbanización,
+                notificación y las demás que requiera el asentamiento de
+                industrias, de acuerdo con los programas, planes y manuales a
+                que se refiere la fracción anterior
+              </li>
+              <li>
+                Promover la participación de empresarios para establecer
+                industrias en las zonas y parques industriales
+              </li>
+            </ul>
+            <p>
+              Como efecto encontramos que 1,837 has. de superficie de la ciudad
+              se destina actualmente a uso industrial.
+            </p>
+
+            <p style="font-size: 9px; text-align: right">
+              Fuente de la información. CIES con base en datos del INEGI. X, XI,
+              XII Censo General de Población y Vivienda 1980, 1990 y 2000,
+              conteo de Población y Vivienda 1995. INEGI. Tabulados de la
+              Encuesta Intercensal 2015.
+            </p>
+            <p style="text-align: justify">
+              Se ha dado una disminución del porcentaje (28.90% al 7.27%) de la
+              población ocupada en la industria maquiladora en un periodo de 18
+              años (1988 - 2005).
+            </p>
+            <p style="text-align: justify">
+              En 1989, el 14.38 % de la superficie de la mancha urbana se
+              dedicada a la industria, pasando en 1994 al 30.20% y cambiando la
+              tendencia hacia la baja para el 2006, en donde sólo el 8.96% se
+              dedica al uso de suelo Industrial.
+            </p>
+            <p style="text-align: justify">
+              La ciudad ha generado usos complementarios a la industria los
+              cuales se han conformado naturalmente y con poca planeación. Como
+              ejemplo podemos mencionar los siguientes:
+            </p>
             <ul class="body">
               <li>Corredor comercial Carr. a Juárez</li>
-              <li>Fraccionamientos habitacionales de alta densidad tales como Chihuahua 2000, Villas del Real y Alamedas en la zona norte, Colinas del Sol al Poniente</li>
-              <li>Se mantiene esa tendencia al conformar usos habitacionales y corredores urbanos planeados en la zona de Tabalaopa – Concordia con expectativas de población para 220 mil habitantes, lo que implica amplias coberturas de empleo dónde el sector industrial tendrá una importante participación</li>
+              <li>
+                Fraccionamientos habitacionales de alta densidad tales como
+                Chihuahua 2000, Villas del Real y Alamedas en la zona norte,
+                Colinas del Sol al Poniente
+              </li>
+              <li>
+                Se mantiene esa tendencia al conformar usos habitacionales y
+                corredores urbanos planeados en la zona de Tabalaopa – Concordia
+                con expectativas de población para 220 mil habitantes, lo que
+                implica amplias coberturas de empleo dónde el sector industrial
+                tendrá una importante participación
+              </li>
             </ul>
             <p><strong>Estructura del Empleo</strong></p>
-            <p style="text-align:justify;">Representa las condiciones  generales del empleo en Chihuahua, disponibilidad, nivel de ingreso, necesidades de las empresas en cuanto a nivel de estudios, género, edades.</p>
-            <p style="text-align:justify;">Los resultados del índice de densidad de empleo señalan una concentración de éste en el centro y subcentro de la ciudad, que además disminuye en función de la distancia a estos lugares. Sin embargo, las plantas de la industria maquiladora escapan a este patrón, las cuales concentran un número alto de empleos en áreas relativamente pequeñas y alejadas del centro.</p>
-            <p style="text-align:justify;">El empleo de comercio y servicios tiene la mayor densidad en el centro histórico y a lo largo de las principales vialidades que cruzan la ciudad de norte a sur y de poniente a oriente.</p>
-            <p style="text-align:justify;">Hacia el norte existe una zona de la ciudad que tiene la misma densidad de empleos de comercio y servicios que las áreas más densas del centro histórico, lo cual es una muestra el proceso de descentralización del empleo terciario que se encuentra en curso y que en un futuro generará la formación de un centro principal en esa dirección.</p>
-            <p style="text-align:justify;">De la misma manera los nuevos desarrollos comerciales que se localizan hacia el oriente han incrementado la densidad de empleo de este sector.</p>
-            <p style="text-align:justify;">En el resto de la ciudad la densidad de empleos es muy baja producto de localizar zonas habitacionales principalmente.</p>
-            <p style="text-align:justify;">Por su parte el empleo manufacturero no tiene un patrón de localización central ya que se localiza hacia los extremos de la ciudad sobre las principales arterias que comunican la ciudad de sur a norte con el fin de dar accesibilidad a la entrada de insumos y la salida de productos terminados que se dirigen al mercado de Estados Unidos. Las densidades más altas se localizan en el Parque Industrial Américas (348 a 421 empleos por hectárea), Parque Industrial Chihuahua (178 a 279 empleos por hectárea).</p>
-            <p style="text-align:justify;">De acuerdo a la conformación de las nuevas zonas industriales en la ciudad, se establece el criterio de que el empleo actual maquilador genera un indicador de 39.2 empleos/ha tomando en consideración los empleados y superficie de terreno por planta existente lo cual obedece a la optimización y automatización de procesos industriales lo cual explica el decremento de densidad.</p>
-            <p style="text-align:justify;">La ocupación de la industria en la ciudad tiende a conformar parques industriales con posibilidad para la instalación de industria de tipo diverso de bajo impacto debido a la fuerte normatividad vigente encaminada a mitigar los impactos y riesgos posibles a la población habitante colindante. Dicha tipología incrementa las posibilidades de convivencia de la industria con usos potencialmente complementarios tales como comercio y servicios, equipamiento y el habitacional.</p>
-            <p><strong>Estructura del sector comercial y de servicios</strong></p>
-            <p style="text-align:justify;">Involucra a las organizaciones, empresas y actores de sector comercial y de servicios que tienen presencia en la ciudad, así como la importancia que tienen ara la economía de la ciudad.</p>
-            <p style="text-align:justify;">De acuerdo a la información de los Censos Económicos 1989 de INEGI, la población ocupada en la ciudad de Chihuahua en los sectores de comercio y servicios es de 35.9% de la población económicamente activa, lo cual representa al sector económico de mayor presencia en la ciudad.</p>
-            <p style="text-align:justify;">De acuerdo a la información de los Censos Económicos 2004 de INEGI, la población ocupada en la ciudad de Chihuahua en los sectores de comercio y servicios es de 55.9% de la población económicamente activa, lo cual representa al sector económico de mayor presencia en la ciudad.</p>
-            <p style="text-align:justify;">La estructura del sector procura conformarse a lo largo de los corredores urbanos de la ciudad garantizando condiciones óptimas de accesibilidad y presencia ante la gran cantidad de personas que transitan sobre las avenidas principales.</p>
-            <p>Entre los principales corredores urbanos con éste carácter podemos mencionar: av. de la Juventud , av. Universidad, av.  Tecnológico, Blvd. Ortiz Mena y av. Teófilo Borunda.</p>
-            <p style="text-align:justify;">La conformación de zonas comerciales no ha sido desarrollada y existen pocos ejemplos en la ciudad generalmente asociados a una o varias tiendas departamentales: Plaza del Sol, Plaza Universidad, Plaza Vallarta, etc. y su implantación y enfoque comercial obedece a la accesibilidad a través de un corredor urbano y el estrato socioeconómico del sector en que se ubica.</p>
-            <p style="text-align:justify;">La tendencia actual disminuye el tamaño del lote comercial y no depende de una gran tienda departamental para su conformación, plazas comerciales de tamaño pequeño y mediano comienzan a desarrollarse en varios puntos de la ciudad, sin embargo mantienen una dependencia muy fuerte hacia las grandes vialidades que les dan acceso, descuidando la cobertura sobre zonas interiores de la mancha urbana las cuales son densamente pobladas.</p>
-            <p style="text-align:justify;">Es necesario conformar elementos concentradores de actividad que complementen las opciones comerciales con usos de servicios y equipamiento urbano.</p>
+            <p style="text-align: justify">
+              Representa las condiciones generales del empleo en Chihuahua,
+              disponibilidad, nivel de ingreso, necesidades de las empresas en
+              cuanto a nivel de estudios, género, edades.
+            </p>
+            <p style="text-align: justify">
+              Los resultados del índice de densidad de empleo señalan una
+              concentración de éste en el centro y subcentro de la ciudad, que
+              además disminuye en función de la distancia a estos lugares. Sin
+              embargo, las plantas de la industria maquiladora escapan a este
+              patrón, las cuales concentran un número alto de empleos en áreas
+              relativamente pequeñas y alejadas del centro.
+            </p>
+            <p style="text-align: justify">
+              El empleo de comercio y servicios tiene la mayor densidad en el
+              centro histórico y a lo largo de las principales vialidades que
+              cruzan la ciudad de norte a sur y de poniente a oriente.
+            </p>
+            <p style="text-align: justify">
+              Hacia el norte existe una zona de la ciudad que tiene la misma
+              densidad de empleos de comercio y servicios que las áreas más
+              densas del centro histórico, lo cual es una muestra el proceso de
+              descentralización del empleo terciario que se encuentra en curso y
+              que en un futuro generará la formación de un centro principal en
+              esa dirección.
+            </p>
+            <p style="text-align: justify">
+              De la misma manera los nuevos desarrollos comerciales que se
+              localizan hacia el oriente han incrementado la densidad de empleo
+              de este sector.
+            </p>
+            <p style="text-align: justify">
+              En el resto de la ciudad la densidad de empleos es muy baja
+              producto de localizar zonas habitacionales principalmente.
+            </p>
+            <p style="text-align: justify">
+              Por su parte el empleo manufacturero no tiene un patrón de
+              localización central ya que se localiza hacia los extremos de la
+              ciudad sobre las principales arterias que comunican la ciudad de
+              sur a norte con el fin de dar accesibilidad a la entrada de
+              insumos y la salida de productos terminados que se dirigen al
+              mercado de Estados Unidos. Las densidades más altas se localizan
+              en el Parque Industrial Américas (348 a 421 empleos por hectárea),
+              Parque Industrial Chihuahua (178 a 279 empleos por hectárea).
+            </p>
+            <p style="text-align: justify">
+              De acuerdo a la conformación de las nuevas zonas industriales en
+              la ciudad, se establece el criterio de que el empleo actual
+              maquilador genera un indicador de 39.2 empleos/ha tomando en
+              consideración los empleados y superficie de terreno por planta
+              existente lo cual obedece a la optimización y automatización de
+              procesos industriales lo cual explica el decremento de densidad.
+            </p>
+            <p style="text-align: justify">
+              La ocupación de la industria en la ciudad tiende a conformar
+              parques industriales con posibilidad para la instalación de
+              industria de tipo diverso de bajo impacto debido a la fuerte
+              normatividad vigente encaminada a mitigar los impactos y riesgos
+              posibles a la población habitante colindante. Dicha tipología
+              incrementa las posibilidades de convivencia de la industria con
+              usos potencialmente complementarios tales como comercio y
+              servicios, equipamiento y el habitacional.
+            </p>
+            <p>
+              <strong>Estructura del sector comercial y de servicios</strong>
+            </p>
+            <p style="text-align: justify">
+              Involucra a las organizaciones, empresas y actores de sector
+              comercial y de servicios que tienen presencia en la ciudad, así
+              como la importancia que tienen ara la economía de la ciudad.
+            </p>
+            <p style="text-align: justify">
+              De acuerdo a la información de los Censos Económicos 1989 de
+              INEGI, la población ocupada en la ciudad de Chihuahua en los
+              sectores de comercio y servicios es de 35.9% de la población
+              económicamente activa, lo cual representa al sector económico de
+              mayor presencia en la ciudad.
+            </p>
+            <p style="text-align: justify">
+              De acuerdo a la información de los Censos Económicos 2004 de
+              INEGI, la población ocupada en la ciudad de Chihuahua en los
+              sectores de comercio y servicios es de 55.9% de la población
+              económicamente activa, lo cual representa al sector económico de
+              mayor presencia en la ciudad.
+            </p>
+            <p style="text-align: justify">
+              La estructura del sector procura conformarse a lo largo de los
+              corredores urbanos de la ciudad garantizando condiciones óptimas
+              de accesibilidad y presencia ante la gran cantidad de personas que
+              transitan sobre las avenidas principales.
+            </p>
+            <p>
+              Entre los principales corredores urbanos con éste carácter podemos
+              mencionar: av. de la Juventud , av. Universidad, av. Tecnológico,
+              Blvd. Ortiz Mena y av. Teófilo Borunda.
+            </p>
+            <p style="text-align: justify">
+              La conformación de zonas comerciales no ha sido desarrollada y
+              existen pocos ejemplos en la ciudad generalmente asociados a una o
+              varias tiendas departamentales: Plaza del Sol, Plaza Universidad,
+              Plaza Vallarta, etc. y su implantación y enfoque comercial obedece
+              a la accesibilidad a través de un corredor urbano y el estrato
+              socioeconómico del sector en que se ubica.
+            </p>
+            <p style="text-align: justify">
+              La tendencia actual disminuye el tamaño del lote comercial y no
+              depende de una gran tienda departamental para su conformación,
+              plazas comerciales de tamaño pequeño y mediano comienzan a
+              desarrollarse en varios puntos de la ciudad, sin embargo mantienen
+              una dependencia muy fuerte hacia las grandes vialidades que les
+              dan acceso, descuidando la cobertura sobre zonas interiores de la
+              mancha urbana las cuales son densamente pobladas.
+            </p>
+            <p style="text-align: justify">
+              Es necesario conformar elementos concentradores de actividad que
+              complementen las opciones comerciales con usos de servicios y
+              equipamiento urbano.
+            </p>
             <!--<p style="text-align:justify;">Participación porcentual del personal ocupado en el municipio según actividad en el 2013:</p>
-            <p style="font-size:9px; text-align:right">Fuente de la información. INEGI. Censo Ecónomico 2014. </p>
-            <div id="table_div9"></div> -->
-            <p style="text-align:justify;">En cuanto al sector económico se refiere, Chihuahua como municipio ocupa el 2do lugar, aportando el 35% del total en el estado; se considera un municipio medianamente diversificado es decir, existe un balance en las actividades económicas, con una fuerte presencia de empresas industriales y constructoras, pero el sector terciario es el de mayor peso, principalmente por el sector gubernamental, el comercio, transporte y los servicios relacionados con la industria.</p>
-            <p style="text-align:justify;">Del total de establecimientos en el estado (97 044), Chihuahua cuenta con el 28.7% de estos. </p>
-            <p style="text-align:justify;">De acuerdo al Censo Económico 2014, El municipio cuenta con una Producción Bruta Total de 123'027,910,000 pesos anuales, y con un promedio de 9 personas ocupadas por Unidad Económica.</p>
+          <p style="font-size:9px; text-align:right">Fuente de la información. INEGI. Censo Ecónomico 2014. </p>
+          <div id="table_div9"></div> -->
+            <p style="text-align: justify">
+              En cuanto al sector económico se refiere, Chihuahua como municipio
+              ocupa el 2do lugar, aportando el 35% del total en el estado; se
+              considera un municipio medianamente diversificado es decir, existe
+              un balance en las actividades económicas, con una fuerte presencia
+              de empresas industriales y constructoras, pero el sector terciario
+              es el de mayor peso, principalmente por el sector gubernamental,
+              el comercio, transporte y los servicios relacionados con la
+              industria.
+            </p>
+            <p style="text-align: justify">
+              Del total de establecimientos en el estado (97 044), Chihuahua
+              cuenta con el 28.7% de estos.
+            </p>
+            <p style="text-align: justify">
+              De acuerdo al Censo Económico 2014, El municipio cuenta con una
+              Producción Bruta Total de 123'027,910,000 pesos anuales, y con un
+              promedio de 9 personas ocupadas por Unidad Económica.
+            </p>
             <div>
-                <iframe width="100%" height="640px" src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=3431f33e8c054f738c24311968e42490"></iframe>
-
-            </div>       
-      </div>  
-  </div>
-</div>
-
-<!--foot -->
-<blockquote class="blockquote mb-0" style="background-color:rgb(102, 0, 102);">
-    <div class="row">
-      <div class="col-sm-3 pt-3 pt-5">
-        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
+              <iframe
+                width="100%"
+                height="640px"
+                src="https://www.arcgis.com/apps/PublicInformation/index.html?appid=3431f33e8c054f738c24311968e42490"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-3 pt-3 pt-5">
-        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
-        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
-        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
-
-      </div>
-      <div class="col-sm-3 pt-5">
-        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
-        <p class="text-center">
-          <a href="https://facebook.com/implanchihuahua" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
-          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>         
-          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
-          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
-        </p>       
-      </div>
-      <div class="col-sm-3 pt-5">
-        <img src="img/premioOX.png" alt="premioOX">
-        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
-      </div>        
     </div>
-      <div class="clearfix bg-secondary p-2">
-        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
-        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
-      </div>
-</blockquote>
+    <!--foot -->
+    <script>
+      document.write(footer());
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<!-- script -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-80309318-1');
-</script>
-
-<!-- fin -->
+      gtag("config", "UA-80309318-1");
+    </script>
   </body>
-</html> 
+</html>

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.principal {
+    background: #ffffff;
+    font-family: "Oswald", sans-serif;
+}
+
+.parrafo {
+    font-weight: 400;
+}
+
+nav,
+footer {
+    font-family: "Oswald", sans-serif;
+}

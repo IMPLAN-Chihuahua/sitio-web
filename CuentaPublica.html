@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IMPLAN │ Chihuahua</title>
+    <meta name="author" content="IMPLAN" />
+    <meta name="keywords"
+        content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&amp;display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/implan.ico">
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/fuentes.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./components/commons.js"></script>
+</head>
+
+<body>
+    <!--inicia página -->
+    <script>
+        document.write(navbar());
+    </script>
+    <div class="container" style="font-family:'Source Sans Pro', sans-serif;">
+        <div class="row m-3">
+            <div class="col">
+                <h1 class="text-center text-warning"><strong>Cuenta Pública</strong></h1>
+                <hr>
+                <div class="row mt-3">
+                    <div class="col">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                    role="tab" aria-controls="nav-home" aria-selected="true">2020</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <h2>Buscar formato</h2>
+                                <p>Teclea el número o nombre de formato:</p>
+                                <input class="form-control" id="myInput" type="text"
+                                    placeholder="Balance Presupuestario ..">
+                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre del Formato</th>
+                                            <th>Número de Reporte</th>
+                                            <th>Reporte</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="myTable">
+                                        <tr>
+                                            <td>Analitíco del Ejercicio del Presupuesto de Egresos (Clasificación
+                                                Administriva por Dependencia)</td>
+                                            <td>16</td>
+                                            <td><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/CuentaPublica/Reporte16.pdf"
+                                                    target="_blank">Descargar</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Analitíco del Ejercicio del Presupuesto de Egresos (Clasificación
+                                                Económica por Tipo de Gasto)</td>
+                                            <td>19</td>
+                                            <td><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/CuentaPublica/Reporte19.pdf"
+                                                    target="_blank">Descargar</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Analitíco del Ejercicio del Presupuesto de Egresos (Clasificación por
+                                                Objeto del Gasto - Capítulo y Concepto)</td>
+                                            <td>20</td>
+                                            <td><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/CuentaPublica/Reporte20.pdf"
+                                                    target="_blank">Descargar</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Analitíco del Ejercicio del Presupuesto de Egresos (Clasificación
+                                                Funcional Finalidad y Función)</td>
+                                            <td>21</td>
+                                            <td><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/CuentaPublica/Reporte21.pdf"
+                                                    target="_blank">Descargar</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Balance Presupuestario </td>
+                                            <td>39</td>
+                                            <td><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/CuentaPublica/Reporte39.pdf"
+                                                    target="_blank">Descargar</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#myInput2").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable2 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#myInput3").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable3 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#myInput4").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable4 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+    <hr>
+    <!--foot -->
+    <script>
+        document.write(footer());
+    </script>
+    <!-- script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-80309318-1');
+    </script>
+
+    <!-- fin -->
+</body>
+
+</html>

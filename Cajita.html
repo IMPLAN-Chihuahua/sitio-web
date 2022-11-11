@@ -1,439 +1,314 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>IMPLAN │ Chihuahua</title>
-  <meta name="author" content="IMPLAN" />
-  <meta name="keywords" content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/b4megamenu.css">
-  <link rel="stylesheet" href="css/b5megamenu.css">  
-  <link rel="shortcut icon" href="img/implan.ico">  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IMPLAN │ Chihuahua</title>
+    <meta name="author" content="IMPLAN" />
+    <meta
+      name="keywords"
+      content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion,
+      Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro,
+      Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana,
+      Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos,
+      IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua,
+      Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua,
+      Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica,
+      Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos,
+      Ambito regional de Chihuahua, Ambito Municipal de Chihuahua,
+      Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w"
+    />
+    <script src="https://kit.fontawesome.com/509388ec50.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="img/implan.ico" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/fuentes.css" />
+    <script type="text/javascript" src="./components/commons.js"></script>
+  </head>
 
-  <style>
-    body {
-      background: #FFFFFF;
-      font-family: 'Montserrat', sans-serif;
-    }
+  <body>
+    <script>
+      document.write(navbar());
+    </script>
 
-   /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-
-
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}   
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto;
-    width: 50%;
-} 
-</style> 
-<style>
-a.trans:link {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:visited {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:hover {
-    color: lightgray;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.trans:active {
-    color: #FFFFFF;
-    background-color: transparent;
-    text-decoration: none;
-}
-</style>   
-</head>
-<body>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4 pt-3 pb-2">
-    </div>
-    <div class="col-sm-4 pt-3 pb-2 align-items-center">
-       <img src="img/IMPLAN_2017.png" width="270" height="51" alt="IMPLAN">
-    </div> 
-    <div class="col-sm-4 pt-3 pb-2 d-none d-lg-block">
-          <p class="text-right">
-            <a href="#bloque1" data-toggle="collapse" aria-expanded="false" aria-controls="bloque1"><i class="fas fa-phone-volume text-warning"></i></a>       
-            <a href="#bloque2" data-toggle="collapse" aria-expanded="false" aria-controls="bloque2"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque3" data-toggle="collapse" aria-expanded="false" aria-controls="bloque3"><i class="fas fa-map-marker-alt text-warning"></i></a>
+    <!--inicia página -->
+    <div class="container">
+      <div class="row">
+        <div class="col pt-3">
+          <h1>Cajita Ordenada</h1>
+          <p class="parrafo">
+            Conscientes de la importancia de atender la formación de los niños
+            en el tema de ciudad, se diseñó el programa de participación
+            infantil Cajita Ordenada, abriendo un canal de comunicación directa
+            con ellos.
           </p>
-            <p class="collapse text-right" id="bloque1">(614) 200 48 20</p>
-            <p class="collapse text-right" id="bloque2">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque3">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>  
-    <div class="col-sm-4 pt-3 pb-2 d-lg-none">
-          <p class="text-right">
-            <a href="tel:6142004820"><i class="fas fa-phone-volume text-warning"></i></a>          
-            <a href="#bloque4" data-toggle="collapse" aria-expanded="false" aria-controls="bloque4"><i class="fas fa-envelope text-warning"></i></a>
-            <a href="#bloque5" data-toggle="collapse" aria-expanded="false" aria-controls="bloque5"><i class="fas fa-map-marker-alt text-warning"></i></a>
+          <p>
+            Comenzó en el Ciclo escolar 2015-2016 y hasta el momento hemos
+            visitado a 3,981 niños de 31 diferentes escuelas de la ciudad de
+            Chihuahua, desde entonces hasta el día de hoy.
           </p>
-            <p class="collapse text-right" id="bloque4">implanchihuahua@yahoo.com.mx</p>
-            <p class="collapse text-right" id="bloque5">Morelos No.109 Col. Centro, Chihuahua, Chih.</p>
-    </div>              
-  </div>          
-</div> 
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color:rgb(102, 0, 102);">
-  <a class="navbar-brand" href="https://implanchihuahua.gob.mx/"><i class="fas fa-home"></i></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          IMPLAN
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown5">
-            <div class="row">
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Mision.html">MISIÓN/VISIÓN</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Consejo.html">CONSEJO</a></p>
-              </div>
-              <div class="col-sm-4">
-                  <p><a href="https://implanchihuahua.gob.mx/EquipoTecnico.html">EQUIPO TÉCNICO</a></p>
-              </div>              
-            </div> 
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ENTORNO
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/entorno.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">Chihuahua</h4>
-                <p>Conoce tu ciudad</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ÁMBITO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoRegional">REGIONAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoMunicipal">MUNICIPAL</a></p>
-
-              </div>
-              <div class="col-sm-4">
-                <p><strong class="sub-menu-heading">ENTORNO</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoEconomico">ECONÓMICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Entorno.html#AmbitoUrbano">URBANO</a></p>
-              </div>
-             
-            </div> 
+      </div>
+      <div class="row">
+        <div class="col-sm-4">&nbsp;</div>
+        <div class="col-sm-4 embed-responsive embed-responsive-21by9">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-Rkq4NLZGD8?rel=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PROYECTOS
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown2">
-            <div class="row">
-              <div class="col-md-3">
-                <img src="img/proyectos.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">IMPLAN</h4>
-                <p>Proyectos</p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">SOCIALES</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Cajita.html">CAJITA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/ForoFCCUU.html">FORO FCCUU</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/ForoCiudades.html">FORO 1.2019</a></p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">URBANOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto1.html">PLAZA DE ARMAS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto3.html">PEATONALIZACIÓN CALLE MORELOS</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto2.html">AV. VENUSTIANO CARRANZA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto4.html">PARQUE LERDO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto5.html">CORREDOR ESCULTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto7.html">PARQUE EL REJÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto8.html">EDIFICIO DEL REAL</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto9.html">CENTRO HISTÓRICO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto10.html">QUINTA TOUCHE</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/Proyecto11.html">PARQUE EL ENCINO</a></p>
-              </div>
-              <div class="col-sm-3">
-                <p><strong class="sub-menu-heading">CENTRO DE ESTUDIOS</strong></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE2.html">GUÍA METODOLÓGICA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE3.html">INDICADORES</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/EstudioCE1.html">MODELOS DE DENSIFICACIÓN</a></p>
-              </div>
-            </div> 
+        <div class="col-sm-4">&nbsp;</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-9">
+          <h2>Objetivo Principal</h2>
+          <p style="text-align: justify">
+            Promover una Pedagogía Urbana y una Participación Ciudadana
+            infantil.
+          </p>
+          <h2>Objetivos secundarios</h2>
+
+          <p style="text-align: justify">
+            Generar en los niños de manera sencilla, el conocimiento básico
+            sobre el complejo sistema que es una ciudad. Lograr la comprensión
+            de que existe un entorno físico creado por el hombre y la existencia
+            de un entorno social que lo moldea, así como un entorno natural en
+            el que se desarrolla.
+          </p>
+          <p style="text-align: justify">
+            Promover la reflexión sobre los elementos urbanos para lograr una
+            experiencia física diferente dentro de su ciudad.
+          </p>
+          <p style="text-align: justify">
+            Enseñarles que existen problemas en la ciudad que son atendidos por
+            especialistas en muchas disciplinas.
+          </p>
+          <p style="text-align: justify">
+            Acercarles el mensaje en el sentido de que concebimos a la niñez
+            como posibilidad y realidad de cambio y que no es necesario esperar
+            «a que sean grandes» para que puedan participar.
+          </p>
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PDU2040
-        </a>
-        <div class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown3">
-            <div class="row">
-              <div class="col-sm-4">
-                <img src="img/PDU.jpg" alt="IMPLAN" class="img-fluid">
-                <h4 class="font-weight-bold">PDU2040</h4>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Poblacion">POBLACIÓN</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Soporte">ECONOMÍA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Marco">MARCO</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Equipamiento">EQUIPAMIENTO</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Movilidad">MOVILIDAD</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Infraestructura">INFRAESTRUCTURA</a></p>
-                <p><a href="https://implanchihuahua.gob.mx/PDU2040.html#Medio">AMBIENTE</a></p>
-              </div>
-
-            </div> 
+        <div class="col-sm-3 center">
+          <img src="img/Niños.png" alt="cajita" class="img-fluid" />
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          DATOS ABIERTOS
-        </a>
-        <div class="dropdown-menu mega-men" aria-labelledby="navbarDropdown4">
-            <div class="row">
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables.html">BUSCAR</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_EP.html">ESTUDIOS Y PROYECTOS</a></p>
-              </div>
-              <div class="col-sm-4">
-                <p><a href="https://implanchihuahua.gob.mx/Descargables_DA.html">CARTOGRAFÍA</a></p>
-              </div>
-            </div> 
+      </div>
+      <h2>Sustento Legal</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <img
+            src="img/ONU.jpg"
+            alt="ONU"
+            style="width: 250px; height: 280px; padding: 10px 0px 0px 0px"
+            class="img-fluid"
+          />
+          <img
+            src="img/Ciudad.jpg"
+            alt="Niña Recicla"
+            style="width: 250px; height: 280px; padding: 10px 0px 0px 0px"
+            class="img-fluid"
+          />
+          <p class="text-center"><b>Asociación Internacional de </b></p>
+          <p class="text-center"><b>Ciudades Educadoras</b></p>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Licitaciones.html">LICITACIONES</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Directorio.html">DIRECTORIO</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="http://ovie.mpiochih.gob.mx">OVIE</a>
-      </li>  
-      <li class="nav-item">
-        <a class="nav-link" href="https://implanchihuahua.gob.mx/Transparencia.html">TRANSPARENCIA</a>
-      </li>                     
-    </ul>
-  </div>
-</nav>
-<!--inicia página -->
-<div class="container">
-  <div class="row">
-    <div class="col pt-3">
-       <h1 class="w3-left-align" style="font-family: 'Cabin Sketch', cursive;">¿Qué es Cajita Ordenada?</h1>
-        <p style="text-align:justify;">Conscientes de la importancia de atender la formación de los niños en el tema de ciudad, se diseñó el programa de participación infantil Cajita Ordenada, abriendo un canal de comunicación directa con ellos.</p>
-        <p>Comenzó en el Ciclo escolar 2015-2016 y  hasta el momento hemos visitado a 3,981  niños de 31 diferentes escuelas de la ciudad de Chihuahua,  desde entonces hasta el día de hoy.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      &nbsp;
-    </div>
-    <div class="col-sm-4 embed-responsive embed-responsive-21by9">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/-Rkq4NLZGD8?rel=0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="col-sm-4">
-      &nbsp;
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col-sm-9">
-            <h1 class="w3-left-align" style="font-family: 'Cabin Sketch', cursive;">Objetivo Principal</h1>
-            <p style="text-align:justify;">Promover una Pedagogía Urbana y una Participación Ciudadana infantil.</p>
-            <h1 class="w3-left-align" style="font-family: 'Cabin Sketch', cursive;">Objetivos secundarios</h1>
-
-            <p style="text-align:justify;">Generar en los niños de manera sencilla, el conocimiento básico sobre el complejo sistema que es una ciudad. Lograr la comprensión de que existe un entorno físico creado por el hombre y la existencia de un entorno social que lo moldea, así como un entorno natural en el que se desarrolla.</p>
-            <p style="text-align:justify;">Promover la reflexión sobre los elementos urbanos para lograr una experiencia física diferente dentro de su ciudad.</p>
-            <p style="text-align:justify;">Enseñarles que existen problemas en la ciudad que son atendidos por especialistas en muchas disciplinas. 
-</p>
-            <p style="text-align:justify;">Acercarles el mensaje en el sentido de que concebimos a la niñez como posibilidad y realidad de cambio y que no es necesario esperar «a que sean grandes»  para que puedan participar.</p>        
-    </div>
-    <div class="col-sm-3 center">
-        <img src="img/Niños.png" alt="cajita" class="img-fluid">        
-    </div>
-  </div>
-  <h1 style="font-family: 'Cabin Sketch', cursive;">Sustento Legal</h1>
- 
-  <div class="row">
-    <div class="col-sm-3">
-      <img src="img/ONU.jpg" alt="Niña Recicla" style="width:250px;  height: 280px; padding: 10px 0px 0px 0px;" class="img-fluid"> 
-      <img src="img/Ciudad.jpg" alt="Niña Recicla" style="width:250px;  height: 280px; padding: 10px 0px 0px 0px;" class="img-fluid">
-      <p class="text-center"><b>Asociación Internacional de </b></p>
-      <p class="text-center"><b>Ciudades Educadoras</b></p>           
-    </div>
-    <div class="col-sm-9 pt-3">
-          <p><b>LA LEY GENERAL DE DERECHOS DE LAS NIÑAS, NIÑOS Y ADOLESCENTES</b></p>
-           <p style="text-align:justify;">ARTÍCULO 2.- Para garantizar la protección de los derechos de niñas, niños y adolescentes, las autoridades realizarán acciones y tomarán medidasde conformidad con los principios establecidos en la presente Ley. Para tal efecto, deberán:</p>
-           <ul>
-             <li>Garantizar un enfoque integral, transversal y con perspectiva de derechos humanos del diseño y la instrumentación de políticas y programas de gobierno.</li>           
-             <li>Promover la participación, tomar en cuenta la opinión y considerar los aspectos culturales, éticos, afectuosos, educativos y de salud de niñas, niños y adolescentes, en todos aquellos asuntos de su incumbencia, de acuerdo a su edad, desarrollo intelectual, cognoscitivo y de madurez</li>
-           </ul>
-           <p style="text-align:justify;">REGLAMENTO DEL INSTITUTO MUNICIPAL DE PLANEACIÓN URBANA</p>
-           <p style="text-align:justify;">OBJETIVO ESPECIFICO</p>
-           <p style="text-align:justify;">ART. 7- Fomentar una conciencia colectiva de desarrollo municipal.</p>
-           <p style="text-align:justify;">ATRIBUCIONES DEL EQUIPO TÉCNICO</p>
-           <p style="text-align:justify;">ART. 8</p>
-           <p style="text-align:justify;"><b>VI)</b> Difundir la información que considere necesaria para el cumplimiento de sus fines, por cualquiera de los medios que el propio instituto determine.</p>
-           <p style="text-align:justify;"><b>IX)</b> Proponer planes y programas para preservar y restaurar el equilibrio 
-                ecológico dentro del municipio de Chihuahua.</p>      
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-9">
-        <h1 style="font-family: 'Cabin Sketch', cursive;">Proyectos similares</h1>
-         <p><b>Colectivo Arkitente.</b> España</p>
-         <p>El Proyecto de Participación infantil para Co-diseñar con los niños la plaza Mateo Hernández de Portugalete, España.</p>
-         <p>Nace de una idea del Área de Participación Ciudadana e Innovación Social.</p>
-         <p><b>Colectivo Judgend Architektur Stadts, (JAS).</b> Alemania</p>
-         <p>“La ciudad  de  hoy  es  producto  de  nuestros  padres  y  abuelos,  la  ciudad  de  mañana,   será producto de nosotros y de los niños. Es por eso que el trabajo debe ir enfocado a eso.”</p>      
-    </div>
-    <div class="col-md-3">
-        <img src="img/espana.jpg" alt="Niña Recicla" style="width:80%;  height: 220px; padding: 50px 0px 0px 0px;" class="img-fluid">
-        <img src="img/niños_alemania.jpg" alt="Niña Recicla" style="width:80%;  height: 200px; padding: 50px 0px 0px 0px;" class="img-fluid">      
-    </div>
-  </div>
-   <h1 style="font-family: 'Cabin Sketch', cursive;">Otros proyectos con participación infantil</h1>
-  <div class="row mt-3">
-    <div class="col-sm-3">
-      <img src="img/paraguay.jpg" alt="Niña Recicla" style="width:80%;  height: 200px;" class="img-fluid">      
-    </div>
-    <div class="col-sm-9 pt-3">
-      <br>
-      <p>“Cuando niños, niñas y adolescentes empiezan a cuestionarse prácticas e ideas que manejamos las personas adultas acerca de cómo funciona el mundo, de qué es lo mejor para todas y todos y de cuáles son los modos de vivir mejor. Este cuestionamiento puede constituirse en un puntapié del cambio.“ </p>
-       <p class="text-right"><b>UNICEF. Global infancia Paraguay</b></p>      
-    </div>
-  </div> 
-  <h1 class="text-center" style="font-family: 'Cabin Sketch', cursive;">Estrategia</h1> 
-  <p>El equipo del IMPLAN visita a los niños en sus salones de clase, llevándoles el mensaje adaptado según su edad a todos los grados desde 1° hasta 6°. Los materiales presentados son:</p>
-       <ul>
-         <li>Video animado introductorio (presentación)</li>
-         <li>Plática ecológica interactiva</li>
-         <li>Maqueta gigante (lona con traza urbana impresa y 33 elementos urbanos manipulables)</li>
-         <li>Video musical con tema ecológico de las 3R’s (cierre)</li>
-       </ul>
-       <h5>Temas abordados:</h5>
-       <ul>
-          <li>El niño y la ciudad:
-              <ul>
-                <li>Equipamiento Urbano</li>
-                <li>Movilidad</li>
-              </ul>
-
-          </li>
-          <li>El niño y su barrio:
-            <ul>
-              <li>Espacio Público</li>
-              <li>Equipamientos de proximidad</li>
-              <li>Comercio, abasto y servicios</li>
-            </ul>
-          </li>
-          <li>El niño y su comunidad
-            <ul>
-              <li>Salud pública</li>
-              <li>Derecho a la participación</li>
-              <li>Identidad y patrimonio</li>
-            </ul>
-          </li> 
-          <li>El niño y su medio ambiente
-            <ul>
-              <li>Manejo de residuos</li>
-              <li>Aplicación de las 3R´s</li>
-            </ul>
-          </li>
-          <li>Otros temas:
-            <ul>
-              <li>¿Que hace el IMPLAN?</li>
-              <li>Concepto Planeación Urbana</li>
-              <li>Escalas y Jerarquías</li>
-              <li>Valores como: Orden, responsabilidad</li>
-              <li>Participación ciudadana infantil</li>
-              <li>Las 3R´s (Reducir, Reutilizar,  Reciclar)</li>
-              <li>Ecología como práctica positiva</li>
-              <li>Entorno e identidad</li>
-              <li>Elementos actuales en mi ciudad</li>
-              <li>Igualdad de género</li>
-            </ul>
-          </li>
-       </ul>
-
-  </div>
-<!--  <div class="jumbotron mb-0">
-      <div class="container">
-        <p class="text-center">Si estás interesado en que visitemos tu escuela, comunícate con nosotros, oficina de Extensión y Difusión teléfono (614) 200 48 00, extensión 5719</p>
+        <div class="col-sm-9 pt-3">
+          <p>
+            <b>LA LEY GENERAL DE DERECHOS DE LAS NIÑAS, NIÑOS Y ADOLESCENTES</b>
+          </p>
+          <p style="text-align: justify">
+            ARTÍCULO 2.- Para garantizar la protección de los derechos de niñas,
+            niños y adolescentes, las autoridades realizarán acciones y tomarán
+            medidasde conformidad con los principios establecidos en la presente
+            Ley. Para tal efecto, deberán:
+          </p>
+          <ul>
+            <li>
+              Garantizar un enfoque integral, transversal y con perspectiva de
+              derechos humanos del diseño y la instrumentación de políticas y
+              programas de gobierno.
+            </li>
+            <li>
+              Promover la participación, tomar en cuenta la opinión y considerar
+              los aspectos culturales, éticos, afectuosos, educativos y de salud
+              de niñas, niños y adolescentes, en todos aquellos asuntos de su
+              incumbencia, de acuerdo a su edad, desarrollo intelectual,
+              cognoscitivo y de madurez
+            </li>
+          </ul>
+          <p style="text-align: justify">
+            REGLAMENTO DEL INSTITUTO MUNICIPAL DE PLANEACIÓN URBANA
+          </p>
+          <p style="text-align: justify">OBJETIVO ESPECIFICO</p>
+          <p style="text-align: justify">
+            ART. 7- Fomentar una conciencia colectiva de desarrollo municipal.
+          </p>
+          <p style="text-align: justify">ATRIBUCIONES DEL EQUIPO TÉCNICO</p>
+          <p style="text-align: justify">ART. 8</p>
+          <p style="text-align: justify">
+            <b>VI)</b> Difundir la información que considere necesaria para el
+            cumplimiento de sus fines, por cualquiera de los medios que el
+            propio instituto determine.
+          </p>
+          <p style="text-align: justify">
+            <b>IX)</b> Proponer planes y programas para preservar y restaurar el
+            equilibrio ecológico dentro del municipio de Chihuahua.
+          </p>
+        </div>
       </div>
-  </div> --> 
-<!--foot -->
-<blockquote class="blockquote mb-0" style="background-color:rgb(102, 0, 102);">
-    <div class="row">
-      <div class="col-sm-3 pt-3 pt-5">
-        <img src="img/IMPLAN_B.png" alt="Municipio Chihuahua" width="145" height="125">
+      <div class="row">
+        <div class="col-sm-9">
+          <h2>Proyectos similares</h2>
+          <p><b>Colectivo Arkitente.</b> España</p>
+          <p>
+            El Proyecto de Participación infantil para Co-diseñar con los niños
+            la plaza Mateo Hernández de Portugalete, España.
+          </p>
+          <p>
+            Nace de una idea del Área de Participación Ciudadana e Innovación
+            Social.
+          </p>
+          <p><b>Colectivo Judgend Architektur Stadts, (JAS).</b> Alemania</p>
+          <p>
+            “La ciudad de hoy es producto de nuestros padres y abuelos, la
+            ciudad de mañana, será producto de nosotros y de los niños. Es por
+            eso que el trabajo debe ir enfocado a eso.”
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="img/espana.jpg"
+            alt="Niña Recicla"
+            style="width: 80%; height: 220px; padding: 50px 0px 0px 0px"
+            class="img-fluid"
+          />
+          <img
+            src="img/niños_alemania.jpg"
+            alt="Niña Recicla"
+            style="width: 80%; height: 200px; padding: 50px 0px 0px 0px"
+            class="img-fluid"
+          />
+        </div>
       </div>
-      <div class="col-sm-3 pt-3 pt-5">
-        <p class="text-center"><a href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa" class="trans" target="_blank">Trámites municipales</a></p>
-        <p class="text-center"><a href="https://implanchihuahua.gob.mx/PreguntasFrecuentes.html" class="trans">Preguntas Frecuentes</a></p>
-        <p class="text-center"><a href="http://mailserver.mpiochih.gob.mx/owa" class="trans" target="_blank">WebMail</a></p>
-
+      <h2>Otros proyectos con participación infantil</h2>
+      <div class="row mt-3">
+        <div class="col-sm-3">
+          <img
+            src="img/paraguay.jpg"
+            alt="Niña Recicla"
+            style="width: 80%; height: 200px"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-9 pt-3">
+          <br />
+          <p>
+            “Cuando niños, niñas y adolescentes empiezan a cuestionarse
+            prácticas e ideas que manejamos las personas adultas acerca de cómo
+            funciona el mundo, de qué es lo mejor para todas y todos y de cuáles
+            son los modos de vivir mejor. Este cuestionamiento puede
+            constituirse en un puntapié del cambio.“
+          </p>
+          <p class="text-right"><b>UNICEF. Global infancia Paraguay</b></p>
+        </div>
       </div>
-      <div class="col-sm-3 pt-5">
-        <h5 class="text-center text-white">Síguenos en redes sociales</h5>
-        <p class="text-center">
-          <a href="https://facebook.com/implanchihuahua" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-facebook"></i></span></a>
-          <a href="https://twitter.com/IMPLANChih?s=08" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-twitter"></i></span></a>         
-          <a href="https://www.instagram.com/implanchihuahua/" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-instagram"></i></span></a>
-          <a href="https://www.youtube.com/channel/UCOVGOuYfPdbttVLNz0yjGSg" class="trans" target="_blank"><span class="text-white" style="font-size: 40px;"><i class="fab fa-youtube"></i></span></a>          
-        </p>       
-      </div>
-      <div class="col-sm-3 pt-5">
-        <img src="img/premioOX.png" alt="premioOX">
-        <p class="text-white text-center"><a href="http://www.editorialox.com/" class="trans" target="_blank" ><small>Web premiada con el Premio Internacional OX</small></a></p>
-      </div>        
+      <h3>Estrategia</h3>
+      <p>
+        El equipo del IMPLAN visita a los niños en sus salones de clase,
+        llevándoles el mensaje adaptado según su edad a todos los grados desde
+        1° hasta 6°. Los materiales presentados son:
+      </p>
+      <ul>
+        <li>Video animado introductorio (presentación)</li>
+        <li>Plática ecológica interactiva</li>
+        <li>
+          Maqueta gigante (lona con traza urbana impresa y 33 elementos urbanos
+          manipulables)
+        </li>
+        <li>Video musical con tema ecológico de las 3R’s (cierre)</li>
+      </ul>
+      <h3>Temas abordados:</h3>
+      <ul>
+        <li>
+          El niño y la ciudad:
+          <ul>
+            <li>Equipamiento Urbano</li>
+            <li>Movilidad</li>
+          </ul>
+        </li>
+        <li>
+          El niño y su barrio:
+          <ul>
+            <li>Espacio Público</li>
+            <li>Equipamientos de proximidad</li>
+            <li>Comercio, abasto y servicios</li>
+          </ul>
+        </li>
+        <li>
+          El niño y su comunidad
+          <ul>
+            <li>Salud pública</li>
+            <li>Derecho a la participación</li>
+            <li>Identidad y patrimonio</li>
+          </ul>
+        </li>
+        <li>
+          El niño y su medio ambiente
+          <ul>
+            <li>Manejo de residuos</li>
+            <li>Aplicación de las 3R's</li>
+          </ul>
+        </li>
+        <li>
+          Otros temas:
+          <ul>
+            <li>¿Que hace el IMPLAN?</li>
+            <li>Concepto Planeación Urbana</li>
+            <li>Escalas y Jerarquías</li>
+            <li>Valores como: Orden, responsabilidad</li>
+            <li>Participación ciudadana infantil</li>
+            <li>Las 3R's (Reducir, Reutilizar, Reciclar)</li>
+            <li>Ecología como práctica positiva</li>
+            <li>Entorno e identidad</li>
+            <li>Elementos actuales en mi ciudad</li>
+            <li>Igualdad de género</li>
+          </ul>
+        </li>
+      </ul>
     </div>
-      <div class="clearfix bg-dark p-2">
-        <span class="float-left text-white"><small>C. Morelos No. 109, Col. Centro. C.P. 31000   Chihuahua, Chih. México.   Horario de 9:00 a 15:00 horas de lunes a viernes. (614) 2004820.</small></span>
-        <a class="trans" href="https://implanchihuahua.gob.mx/IMPLAN-Datos/pdf/AvisodePrivacidadIntegralPublico.pdf" target="_blank"><span class="float-right text-white"><small>Aviso de Privacidad</small></span></a>
-      </div>
-</blockquote>
-<!-- script -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-80309318-1');
-</script>
+    <!--foot -->
+    <script>
+      document.write(footer());
+    </script>
 
-<!-- fin -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-80309318-1");
+    </script>
+    <!-- fin -->
   </body>
-</html> 
+</html>
