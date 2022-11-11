@@ -49,12 +49,6 @@ a.trans1:visited {
   text-decoration: none;
 }
 
-a.trans1:hover {
-  color: lightgray;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 a.trans1:active {
   color: #606062;
   background-color: transparent;
