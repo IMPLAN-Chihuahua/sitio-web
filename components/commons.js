@@ -74,6 +74,14 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
+              <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li>
+                    <a href="Practicantes.html" target="_self">RESIDENCIAS PROFESIONALES</a>
+                  </li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
             </div>
           </ul>
         </li>
