@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+/* imagen con texto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 /* Override UGG site */
 
 #main {
@@ -40,15 +42,10 @@
 }
 
 #parallax-world-of-ugg h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 70px;
-    letter-spacing: 10px;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-size: 20px;
+    color: black;
     z-index: 10;
-    opacity: .9;
+    font-family: 'Roboto', sans-serif;
 }
 
 #parallax-world-of-ugg h3 {
@@ -122,116 +119,13 @@
     padding: 60px;
 }
 
-#parallax-world-of-ugg .section-overlay-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.70;
-}
+.practi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-/* Section - Parallax */
-/**************************/
-
-#parallax-world-of-ugg .parallax-one {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(/img/Bole.JPG);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-#parallax-world-of-ugg .parallax-two {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(/img/imagen-3.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#parallax-world-of-ugg .parallax-three {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(/img/geomatica.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#parallax-world-of-ugg .parallax-four {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(/img/imagen-6.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#parallax-world-of-ugg .parallax-five {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(/img/imagen-9.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#parallax-world-of-ugg .parallax-six {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(/img/imagen-1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-/* Extras */
-/**************************/
-
-#parallax-world-of-ugg .line-break {
-    border-bottom: 1px solid black;
-    width: 150px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 /* Media Queries */
