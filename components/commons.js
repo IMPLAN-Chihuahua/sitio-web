@@ -401,7 +401,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="PDU2040.html#Medio"
+                      href="PDU2040.html#descargables"
                       target="_self"
                       >ARCHIVOS DESCARGABLES PDU 2040
                     </a>
