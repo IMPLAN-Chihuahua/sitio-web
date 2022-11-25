@@ -23,7 +23,6 @@
 body {
   background: #ffffff;
 }
-
 /* Make the image fully responsive */
 
 .carousel-inner img {
@@ -343,3 +342,8 @@ a.trans:active {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* aviso privacidad
+#aviso{
+  font-size: 1.2rem;
+}*/
