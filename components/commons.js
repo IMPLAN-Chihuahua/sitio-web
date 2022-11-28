@@ -507,7 +507,7 @@ function navbar() {
                 <ul>
                   <li>
                     <a
-                      href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf"
+                      href="https://implanchihuahua.org/IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf"
                       target="_self"
                       >Cumplimiento a resolución ICHITAIP/RR-566/2021</a
                     >

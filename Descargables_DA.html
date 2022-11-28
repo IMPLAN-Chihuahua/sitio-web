@@ -1,2388 +1,1544 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>IMPLAN │ Chihuahua</title>
-    <meta name="author" content="IMPLAN" />
-    <meta
-      name="keywords"
-      content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w"
-    />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
-      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/b4megamenu.css" />
-    <link rel="stylesheet" href="css/b5megamenu.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <script src="https://kit.fontawesome.com/509388ec50.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity=""
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="img/implan.ico" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="css/fuentes.css" />
-    <script type="text/javascript" src="./components/commons.js"></script>
-  </head>
-  <body>
-    <script>
-      document.write(navbar());
-    </script>
-    <!--inicia página -->
-    <div class="container mt-3">
-      <p class="text-secondary">
-        <b>Aviso:</b> El carácter de esta información es de uso público, puede
-        presentar inconsistencias y variaciones temporales. Los usuarios de
-        nuestra información y otros productos de análisis son los únicos
-        responsables de las interpretaciones que se realicen, no existe
-        implicación legal en el uso de la misma para el municipio o para el
-        propio instituto.
-      </p>
-      <p class="text-secondary">
-        No dude en ponerse en contacto con nuestro personal si detecta
-        inconsistencias u omisiones. Realice sus observaciones al correo
-        electrónico implan@implanchiuahua.org o al teléfono 200-48-00, ext.
-        5714.
-      </p>
-      <div class="row bg-light" id="templatemo_catastro">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA.jpg"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Datos catastrales
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Catastro Urbano
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Manzana
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:28 500</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2020
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 2008
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Mapa de la ciudad de Chihuahua que incluye la
-              traza de manzanas, colonias y áreas verdes, con las etiquetas de
-              calles y nombres de colonias.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
 
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2016.zip"
-                title="26.1 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="26.1 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2016.zip"
-                title="18.7 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="18.7 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2016.zip"
-                title="101.5 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="101.5 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_catastro_2">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_2.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Datos catastrales
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Catastro Urbano
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Manzana
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Extensión territorial que está constituida por
-              un grupo de viviendas, edificios, predios, lotes o terrenos de uso
-              habitacional, comercial, industrial o de servicios; generalmente
-              se puede rodear en su totalidad y está delimitada por calles,
-              andadores, brechas, veredas, cercas, arroyos, barrancos o límites
-              prediales.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
+<head>
+  <meta charset="UTF-8" />
+  <title>IMPLAN │ Chihuahua</title>
+  <meta name="author" content="IMPLAN" />
+  <meta name="keywords"
+    content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/b4megamenu.css" />
+  <link rel="stylesheet" href="css/b5megamenu.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script src="https://kit.fontawesome.com/509388ec50.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+    crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/implan.ico" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/fuentes.css" />
+  <script type="text/javascript" src="./components/commons.js"></script>
+</head>
 
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2016.zip"
-                title="26.1 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="26.1 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2016.zip"
-                title="18.7 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="18.7 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2016.zip"
-                title="101.5 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="101.5 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <script>
+    document.write(navbar());
+  </script>
+  <!--inicia página -->
+  <div class="container mt-3">
+    <p class="text-secondary">
+      <b>Aviso:</b> El carácter de esta información es de uso público, puede
+      presentar inconsistencias y variaciones temporales. Los usuarios de
+      nuestra información y otros productos de análisis son los únicos
+      responsables de las interpretaciones que se realicen, no existe
+      implicación legal en el uso de la misma para el municipio o para el
+      propio instituto.
+    </p>
+    <p class="text-secondary">
+      No dude en ponerse en contacto con nuestro personal si detecta
+      inconsistencias u omisiones. Realice sus observaciones al correo
+      electrónico implan@implanchiuahua.org o al teléfono 200-48-00, ext.
+      5714.
+    </p>
+    <div class="row bg-light" id="templatemo_catastro">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA.jpg" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
       </div>
-      <div class="row" id="templatemo_Construcciones">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_2_1.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Datos Catastrales</li>
-            <li class="list-group-item"><b>Grupo: </b>Catastro Urbano</li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Construcciones
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2007</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Edificación de cualquier tipo, destino y uso,
-              inclusive los equipos e instalaciones adheridas permanentemente al
-              terreno y que forman parte integrante del mismo.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Construcciones_2007.zip"
-                title="211 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="454 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Construcciones_2007.zip"
-                title="141 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="344 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Construcciones_2007.zip"
-                title="889 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="dxf"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_Manzanas">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_2_2.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Datos Catastrales
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Catastro Urbano
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Manzanas
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2007
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Extensión territorial que está constituida por
-              un grupo de viviendas, edificios, predios, lotes o terrenos de uso
-              habitacional, comercial, industrial o de servicios; generalmente
-              se puede rodear en su totalidad y está delimitada por calles,
-              andadores, brechas, veredas, cercas, arroyos, barrancos o límites
-              prediales.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2007.zip"
-                title="20.9 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="454 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2007.zip"
-                title="15 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="344 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2007.zip"
-                title="83.3 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="dxf"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_Predio">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_2_3.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Datos Catastrales</li>
-            <li class="list-group-item"><b>Grupo: </b>Catastro Urbano</li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Predio Urbano
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2007</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Unidad mínima de observación que se encuentra
-              ubicado dentro de una localidad urbana, en donde existe la
-              continuidad en las construcciones, cuyo uso y destino predominante
-              puede ser habitacional, industrial, comercial o de servicios
-              públicos, entre otros, y cuenta con infraestructura vial y
-              equipamiento urbano.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_PredioUrbano_2007.zip"
-                title="112 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="454 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_PredioUrbano_2007.zip"
-                title="104 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="344 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_PredioUrbano_2007.zip"
-                title="706 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="dxf"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_agua">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_5.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light"><b>Tema: </b>Hidrografía</li>
-            <li class="list-group-item bg-light"><b>Grupo: </b>Hidrografía</li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Cuerpos de Agua
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2007
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Elemento natural o artificial que almacena
-              agua. Representa: presas, lagos, lagunas, mares.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CuerposdeAgua_2007.zip"
-                title="210 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="210 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CuerposdeAgua_2007.zip"
-                title="152 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="152 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CuerposdeAgua_2007.zip"
-                title="84 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="84 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CuerposdeAgua_2007.zip"
-                title="1,269 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="1,269 KB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_agua2">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_8.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Hidrografía</li>
-            <li class="list-group-item"><b>Grupo: </b>Hidrografía</li>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Datos catastrales
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Catastro Urbano
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Manzana
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:28 500</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2020
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 2008
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Mapa de la ciudad de Chihuahua que incluye la
+            traza de manzanas, colonias y áreas verdes, con las etiquetas de
+            calles y nombres de colonias.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
 
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Corriente de Agua
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2010</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Corrientes de agua continua que van a
-              desembocar en otra corriente o en los cuerpos de agua.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientedeAgua_2010.zip"
-                title="283 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="283 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip"
-                title="178 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientedeAgua_2010.zip"
-                title="2.54 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2016.zip"
+              title="26.1 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="26.1 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2016.zip"
+              title="18.7 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="18.7 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2016.zip"
+              title="101.5 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="101.5 MB" /></a>
+          </li>
+        </ul>
       </div>
-      <div class="row bg-light" id="templatemo_agua3">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_8_1.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light"><b>Tema: </b>Hidrografía</li>
-            <li class="list-group-item bg-light"><b>Grupo: </b>Hidrografía</li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Corriente de Agua
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2007
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Corrientes de agua continua que van a
-              desembocar en otra corriente o en los cuerpos de agua.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientesdeAgua_2007.zip"
-                title="1.87 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="283 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip"
-                title="1.64 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientesdeAgua_2007.zip"
-                title="10.8 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_Banquetas">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_8_2.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Rasgos Planimétricos</li>
-            <li class="list-group-item"><b>Grupo: </b>Rasgos Culturales</li>
-            <li class="list-group-item"><b>Objeto geográfico: </b>Banquetas</li>
-            <li class="list-group-item"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Parte de la vía publica destinada a la
-              circulación de peatones.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Banquetas_2016.zip"
-                title="37.4 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="283 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Banquetas_2016.zip"
-                title="26.2 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Banquetas_2016.zip"
-                title="181,416 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-      <div class="row bg-light" id="templatemo_Carreteras">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_8_3.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Rasgos Planimétricos
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Rasgos Culturales
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Carreteras y Caminos
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2007
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Parte de la vía publica destinada a la
-              circulación de peatones.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CarreterasyCaminos_2007.zip"
-                title="40.5 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="283 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CarreterasyCaminos_2007.zip"
-                title="27.2 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CarreterasyCaminos_2007.zip"
-                title="183 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_Cercas">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_8_4.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Rasgos Planimétricos</li>
-            <li class="list-group-item"><b>Grupo: </b>Rasgos Culturales</li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Cercas y Muros
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2007</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Barrera construida por el hombre por el hombre
-              de estructura relativamente mediana utilizada como límite.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CercasyMuros_2007.zip"
-                title="10.8 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="283 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CercasyMuros_2007.zip"
-                title="10.5 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CercasyMuros_2007.zip"
-                title="80.1 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_Canchas">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_8_5.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Rasgos Planimétricos
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Rasgos Culturales
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Canchas Deportivas
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2007
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Área acondicionada, con carácter permanente,
-              destinado a eventos deportivos, ejercicio o juegos.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CanchasDeportivas_2007.zip"
-                title="5.93 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="283 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CanchasDeportivas_2007.zip"
-                title="3.25 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CanchasDeportivas_2007.zip"
-                title="80.1 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_Jardines">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_8_6.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Rasgos Planimétricos</li>
-            <li class="list-group-item"><b>Grupo: </b>Rasgos Culturales</li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Andadores, Parques y Jardineras
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2007</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Área pública con vegetación, equipada con
-              dispositivos recreacionales, dedicada al esparcimiento, decoración
-              y conservación.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ParquesyJardineras_2007.zip"
-                title="6.01 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="283 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_ParquesyJardineras_2007.zip"
-                title="2.96 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_ParquesyJardineras_2007.zip"
-                title="17.4 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_marco">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_1.jpg"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Unidades Administrativas
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Marco Político Administrativo
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Localidad (Área Urbana)
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Es la ciudad propiamente dicha, definida desde
-              todos los puntos de vista: geográfico, ecológico, demográfico,
-              social, económico. Es el área habitada o urbanizada, la ciudad
-              misma más el área contigua edificada, con usos de suelo de
-              naturaleza no agrícola y que, partiendo de un núcleo central,
-              presenta continuidad física en todas direcciones hasta ser
-              interrumpida, en forma notoria, por terrenos de uso no urbano como
-              bosques, sembradíos o cuerpos de agua. La población que ahí se
-              localiza es calificada como urbana.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_AreaUrbana_2016.zip"
-                title="454 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="454 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaUrbana_2016.zip"
-                title="344 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="344 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_AreaUrbana_2016.zip"
-                title="178 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="178 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaUrbana_2016.zip"
-                title="2,63 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.63 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_13.jpg"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <b>Tema: </b>Unidades Administrativas
-            </li>
-            <li class="list-group-item">
-              <b>Grupo: </b>Marco Político Administrativo
-            </li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Centro de Población Chihuahua
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-              (UTM) Zona 13N
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
-              Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
-              al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
-              Chih., 21 de Septiembre del 2016.
-            </li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Es la ciudad propiamente dicha, definida desde
-              todos los puntos de vista: geográfico, ecológico, demográfico,
-              social, económico. Es el área habitada o urbanizada, la ciudad
-              misma más el área contigua edificada, con usos de suelo de
-              naturaleza no agrícola y que, partiendo de un núcleo central,
-              presenta continuidad física en todas direcciones hasta ser
-              interrumpida, en forma notoria, por terrenos de uso no urbano como
-              bosques, sembradíos o cuerpos de agua. La población que ahí se
-              localiza es calificada como urbana.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentrodePoblacion_2016.zip"
-                title="5.89 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="5.89 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CentrodePoblacion_2016.zip"
-                title="12.1 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="12.1 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentrodePoblacion_2016.zip"
-                title="2.21 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.21 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CentrodePoblacion_2016.zip"
-                title="104 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="104 KB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_vias">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_6.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li><b>Tema: </b>Vías de Comunicación</li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Vías Urbanas y Rurales
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Red Vial
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b> Línea</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Es el trayecto que tiene como función
-              principal el transporte de personas y bienes; diseñado con una
-              superficie especialmente preparada para circulación, diferenciada
-              para peatones de toda condición; así como para cada tipo de
-              transporte: no motorizado, público y vehicular.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_RedVial_2016.zip"
-                title="22.6 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="454 kb"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_equipo">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_4.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Equipamiento Urbano</li>
-            <li class="list-group-item"><b>Grupo: </b>Recreación</li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Área Verde
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 2008</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Objetos geográficos que se relacionan con las
-              actividades recreativas y de ocio de las personas.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_AreaVerde_2016.zip"
-                title="5.98 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="5.98 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaVerde_2016.zip"
-                title="3.55 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.55 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_AreaVerde_2016.zip"
-                title="3.32 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.32 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaVerde_2016.zip"
-                title="22.59 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="22.59 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row bg-light" id="templatemo_educacion">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_7.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Equipamiento Urbano
-            </li>
-            <li class="list-group-item bg-light"><b>Grupo: </b>Educación</li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Escuela
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b> Punto</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2015
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 2008
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Representación puntual de la edificación de
-              las instituciones del sector público y privado que imparten
-              educación y enseñanza en todos sus niveles: inicial, primario,
-              secundario, medio superior y superior.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Escuela_2015.zip"
-                title="547 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="547 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_Escuela_2015.zip"
-                title="366 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="366 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_Escuela_2015.zip"
-                title="78 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="78 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_Escuela_2015.zip"
-                title="2.54 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.54 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_equipo_18">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_16.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Equipamiento Urbano</li>
-            <li class="list-group-item">
-              <b>Grupo: </b>: Asociaciones y Organizaciones
-            </li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Centros de culto
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Punto</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> WGS84</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Los centros de culto son lugares que
-              proporcionan servicios de asistencia religiosa a la población.
-              Identifican a los distintos centros de diversas religiones que
-              profesan los habitantes en la Ciudad.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentrosCulto_cgs.zip"
-                title="5.98 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="5.98 MB"
-              /></a>
-
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentrosdeCulto.zip"
-                title="3.32 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.32 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_equipo_19">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_17.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Equipamiento Urbano
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>: Educación y Cultura
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Teatros Museos Bibliotecas
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Punto</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> WGS84
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Esta integrado por el conjunto de inmuebles
-              que proporcionan a la población la posibilidad de acceso a la
-              recreación intelectual y estética así como a la superación
-              cultural, complementarias al sistema de educación formal
-              (SEDESOL).
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/08019001_UnidadesEconomicas.zip"
-                title="5.98 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="5.98 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas.zip"
-                title="3.32 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.32 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_equipo_20">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_18.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Equipamiento Urbano</li>
-            <li class="list-group-item">
-              <b>Grupo: </b>: Hospedaje y Alimentación
-            </li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Hoteles y Moteles
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Punto</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> WGS84</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Los hoteles y moteles son los lugares que
-              prestan servicios de alojamiento temporal. Se identifican y
-              muestran los negocios de esta índole que se encuentran
-              distribuidos en la Ciudad.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/08019001_HotelesMoteles_cgs.zip"
-                title="5.98 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="5.98 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_HotelesyMoteles.zip"
-                title="3.32 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.32 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_equipo_21">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_19.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Equipamiento Urbano
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>: Hospedaje y Alimentación
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Restaurantes
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Punto</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> WGS84
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Incluye a los establecimientos que preparan y
-              sirven comidas. Se identifican y muestran los negocios de esta
-              índole que se encuentran distribuidos en la Ciudad.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_Restaurantes_cgs.zip"
-                title="5.98 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="5.98 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_Restaurantes.zip"
-                title="3.32 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.32 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_centro">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_9.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <b>Tema: </b>Planificación Territorial
-            </li>
-            <li class="list-group-item">
-              <b>Grupo: </b>Planeación del Centro de Población
-            </li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Centro Histórico
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 2008</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>El área que delimita los espacios urbanos,
-              vialidades e inmuebles a partir de los cuales se originaron los
-              centros de población. Su límite se establece a partir de eventos
-              históricos, nacionales, regionales o locales.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentroHistorico_2016.zip"
-                title="2,096 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2095 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroHistorico_2016.zip"
-                title="13.1 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="13.1 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentroHistorico_2016.zip"
-                title="4 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="4 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroHistorico_2016.zip"
-                title="104 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="104 KB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_centroUrbano">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_10.jpg"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Planificación Territorial
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Planeación del Centro de Población
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Centro Urbano
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 2008
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>El área que delimita los espacios urbanos,
-              vialidades e inmuebles a partir de los cuales se originaron los
-              centros de población. Su límite se establece a partir de eventos
-              históricos, nacionales, regionales o locales.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_CentroUrbano_2016.zip"
-                title="2,096 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2,096 kb"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroUrbano_2016.zip"
-                title="13.1 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="13.1 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_CentroUrbano_2016.zip"
-                title="4 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="4 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroUrbano_2016.zip"
-                title="104 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="104 KB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_ordenamiento">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_11.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <b>Tema: </b>Planificación Territorial
-            </li>
-            <li class="list-group-item">
-              <b>Grupo: </b>Planeación del Centro de Población
-            </li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Polígono de Ordenamiento
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-              (UTM) Zona 13N
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
-              Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
-              al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
-              Chih., 21 de Septiembre del 2016.
-            </li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Espacio delimitado en el que se definen
-              proyectos puntuales de alto impacto para la estructura urbana en
-              general.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_PoligonosdeOrdenamiento_2016.zip"
-                title="10 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="10 kb"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_PoligonosdeOrdenamiento_2016.zip"
-                title="20.9 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="20.9 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_PoligonosdeOrdenamiento_2016.zip"
-                title="7 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="7 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_PoligonosdeOrdenamiento_2016.zip"
-                title="177 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="177 KB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_zonificacion">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_12.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Planificación Territorial
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Planeación del Centro de Población
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Zonificación Primaria 2016
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-              (UTM) Zona 13N
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 1992
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
-              Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
-              al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
-              Chih., 21 de Septiembre del 2016.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>Es en la que se determinan los
-              aprovechamientos genéricos, o utilización general del suelo, en
-              las distintas zonas del área objeto de ordenamiento y regulación.
-              Corresponde a los planes regionales de desarrollo urbano y a los
-              planes de desarrollo urbano de centros de población.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionPrimaria_2016.zip"
-                title="1.29 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="1.29"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_ZonificacionPrimaria_2016.zip"
-                title="3.60 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.60 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionPrimaria_2016.zip"
-                title="2.16 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.16 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_ZonificacionPrimaria_2016.zip"
-                title="31.7 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="31.7 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_PDU2040">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_14.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <b>Tema: </b>Planificación Territorial
-            </li>
-            <li class="list-group-item">
-              <b>Grupo: </b>Planeación del Centro de Población
-            </li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Zonificación Secundaria 2016
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-              (UTM) Zona 13N
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
-              Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
-              al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
-              Chih., 21 de Septiembre del 2016, folio real 1258036 ante el
-              Registro Público de la Propiedad y del Notariado del Estado de
-              Chihuahua.
-            </li>
-            <li class="list-group-item">
-              <b>Descripción: </b>La Zonificación Secundaria es donde se
-              determinan los aprovechamientos propuestos o utilización de los
-              diversos usos del suelo al interior del Centro de Población.
-              Corresponde a los planes regionales de desarrollo urbano y a los
-              planes de desarrollo urbano de centros de población.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionSecundaria_2016.zip"
-                title="1.29 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="1.29"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionSecundaria_2016.zip"
-                title="2.16 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="2.16 MB" /></a
-              ><a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/xls/PDU2040-2016_Catalogo_de_Usos_de_Suelo.xls"
-                title="Catalogo de Usos de Suelo"
-                target="_blank"
-                ><img
-                  src="img/xls.jpg"
-                  width="20"
-                  height="20"
-                  alt="2.16 MB" /></a
-              ><a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/ods/PDU2040-2016_Catalogo_de_Usos_de_Suelo.ods"
-                title="Catalogo de Usos de Suelo"
-                target="_blank"
-                ><img src="img/xls.jpg" width="20" height="20" alt="2.16 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_vial">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_15.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Planificación Territorial
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>Planeación del Centro de Población
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Estructura Vial 2016
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-              (UTM) Zona 13N
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> ITRF 2008
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Datos de publicación: </b>Datos de publicación: Actualización
-              al Plan de Desarrollo Urbano del Centro de Población Chihuahua
-              (PDU2040), folleto anexo al periódico oficial del Gobierno del
-              Estado No. 76, Chihuahua, Chih., 21 de Septiembre del 2016, folio
-              real 1258036 ante el Registro Público de la Propiedad y del
-              Notariado del Estado de Chihuahua.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>La Estructura Vial constituye la vía y todos
-              los soportes que la conforman, identifica la jerarquía de las
-              vialidades regiosnales, primarias y secundarias del Centro de
-              Población Chihuahua, señalando longitud del tramo, sección, número
-              de carriles, y si se propone ciclovía y/o ruta troncal.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_EstructuraVial_2016.zip"
-                title="2.16 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="535 KB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_EstructuraVial_2016.zip"
-                title="2.16 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="448 KB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_urbano">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_10.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Transporte</li>
-            <li class="list-group-item">
-              <b>Grupo: </b>Transporte Ferroviario
-            </li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Vía Férrea
-            </li>
-            <li class="list-group-item"><b>Geometría:</b> Línea</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2007</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-              (UTM) Zona 13N
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Vía de comunicación terrestre cuya estructura
-              consta de un terraplén y dos rieles paralelos fijados mediante
-              durmientes, para el tránsito de trenes.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ViaFerrea_2007.zip"
-                title="756 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="37.4 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dwg/080190001_ViaFerrea_2007.zip"
-                title="709 KB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dwg_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="26.2 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/dxf/080190001_ViaFerrea_2007.zip"
-                title="4.91 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/dxf_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="181.4 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row bg-light" id="templatemo_MarcoGeoestadistico">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_20.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-light">
-              <b>Tema: </b>Marco Geoestadístico
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Grupo: </b>: Unidades Económicas
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Objeto geográfico: </b>Unidades Económicas: Agencias de Viaje,
-              Artesanías, Bares, Cantinas, Flores, Joyas, Librerías, Parques ,
-              Acuáticos Balnearios, Recreación, Información Turística,
-              Aeropuerto, Transporte Foráneo, Transporte Turístico
-            </li>
-            <li class="list-group-item bg-light"><b>Geometría:</b>Punto</li>
-            <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item bg-light">
-              <strong>Edición:</strong> 2016
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
-            </li>
-            <li class="list-group-item bg-light">
-              <strong>DATUM:</strong> WGS84
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Descripción: </b>La unidad económica es la unidad de
-              observación que se refiere a la información de las actividades
-              realizada en la industria manufacturera, el comercio, los
-              servicios privados no financieros, servicios financieros y de
-              seguros. También incluye a las viviendas con actividad económica.
-              Excluye unidades económicas con actividades ambulantes o
-              desmontables, transporte colectivo urbano y suburbano, transporte
-              de pasajeros en taxis de sitio y ruleteo (INEGI, DENUE). Estas
-              unidades se presentan agrupadas según el giro de su actividad o
-              todo el conjunto de actividades existentes en la Ciudad.
-            </li>
-            <li class="list-group-item bg-light">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_UnidadesEconomicas_01.zip"
-                title="5.98 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="5.98 MB"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas_01.zip"
-                title="3.32 MB"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="3.32 MB"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row" id="templatemo_NombresGeograficos">
-        <div class="col-sm-2">
-          <p>
-            <img
-              src="img/Img_Des/DA_21.png"
-              width="100%"
-              height="100%"
-              alt="PDU2040"
-              style="padding: 4px; width: 100%"
-            />
-          </p>
-        </div>
-        <div class="col-sm-10">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Tema: </b>Nombres Geograficos</li>
-            <li class="list-group-item"><b>Grupo: </b>Nombres y Direcciones</li>
-            <li class="list-group-item">
-              <b>Objeto geográfico: </b>Colonias y Fraccionamientos
-            </li>
-            <li class="list-group-item"><b>Geometría:</b>Polígono</li>
-            <li class="list-group-item"><b>Escala: </b>1:1 000</li>
-            <li class="list-group-item"><strong>Edición:</strong> 2016</li>
-            <li class="list-group-item">
-              <strong>Proyección: </strong>Universal Transversa de Mercator
-            </li>
-            <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
-            <li class="list-group-item">
-              <b>Descripción: </b>Representan la división de la ciudad o centro
-              de población en agrupaciones de manzanas, lotes y calles para usos
-              habitacionales, comerciales e industriales. Incluyen el conjunto
-              de sus sistemas de convivencia, en un área físicamente localizada,
-              considerando dentro de la misma los elementos naturales y las
-              obras materiales que la integran. La denominación de colonia es el
-              nombre genérico que reciben los barrios en la mayoría de las
-              ciudades mexicanas.
-            </li>
-            <li class="list-group-item">
-              <b>Archivos Descargables: </b>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/shp/080190001_ColoniasyFraccionamientos_2016.zip"
-                title="734 Kb"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/shp_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="shp"
-              /></a>
-              <a
-                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/Descargables/da/kml/080190001_ColoniasyFraccionamientos_2016.zip"
-                title="997 kb"
-                target="_blank"
-                ><img
-                  src="img/Img_Des/kml_90x37.png"
-                  width="47"
-                  height="20"
-                  alt="kml"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <hr />
     </div>
-    <!--foot -->
-    <script>
-      document.write(footer());
-    </script>
-    <!-- script -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-80309318-1");
-    </script>
-    <!-- fin -->
-  </body>
+    <div class="row bg-light" id="templatemo_catastro_2">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_2.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Datos catastrales
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Catastro Urbano
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Manzana
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Extensión territorial que está constituida por
+            un grupo de viviendas, edificios, predios, lotes o terrenos de uso
+            habitacional, comercial, industrial o de servicios; generalmente
+            se puede rodear en su totalidad y está delimitada por calles,
+            andadores, brechas, veredas, cercas, arroyos, barrancos o límites
+            prediales.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2016.zip"
+              title="26.1 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="26.1 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2016.zip"
+              title="18.7 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="18.7 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2016.zip"
+              title="101.5 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="101.5 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_Construcciones">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_2_1.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Datos Catastrales</li>
+          <li class="list-group-item"><b>Grupo: </b>Catastro Urbano</li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Construcciones
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2007</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Edificación de cualquier tipo, destino y uso,
+            inclusive los equipos e instalaciones adheridas permanentemente al
+            terreno y que forman parte integrante del mismo.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_Construcciones_2007.zip"
+              title="211 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="454 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_Construcciones_2007.zip"
+              title="141 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="344 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_Construcciones_2007.zip"
+              title="889 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="dxf" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_Manzanas">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_2_2.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Datos Catastrales
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Catastro Urbano
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Manzanas
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2007
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Extensión territorial que está constituida por
+            un grupo de viviendas, edificios, predios, lotes o terrenos de uso
+            habitacional, comercial, industrial o de servicios; generalmente
+            se puede rodear en su totalidad y está delimitada por calles,
+            andadores, brechas, veredas, cercas, arroyos, barrancos o límites
+            prediales.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_Manzanas_2007.zip"
+              title="20.9 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="454 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_Manzanas_2007.zip"
+              title="15 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="344 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_Manzanas_2007.zip"
+              title="83.3 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="dxf" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_Predio">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_2_3.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Datos Catastrales</li>
+          <li class="list-group-item"><b>Grupo: </b>Catastro Urbano</li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Predio Urbano
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2007</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Unidad mínima de observación que se encuentra
+            ubicado dentro de una localidad urbana, en donde existe la
+            continuidad en las construcciones, cuyo uso y destino predominante
+            puede ser habitacional, industrial, comercial o de servicios
+            públicos, entre otros, y cuenta con infraestructura vial y
+            equipamiento urbano.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_PredioUrbano_2007.zip"
+              title="112 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="454 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_PredioUrbano_2007.zip"
+              title="104 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="344 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_PredioUrbano_2007.zip"
+              title="706 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="dxf" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_agua">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_5.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light"><b>Tema: </b>Hidrografía</li>
+          <li class="list-group-item bg-light"><b>Grupo: </b>Hidrografía</li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Cuerpos de Agua
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2007
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Elemento natural o artificial que almacena
+            agua. Representa: presas, lagos, lagunas, mares.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CuerposdeAgua_2007.zip"
+              title="210 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="210 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CuerposdeAgua_2007.zip"
+              title="152 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="152 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_CuerposdeAgua_2007.zip"
+              title="84 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="84 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CuerposdeAgua_2007.zip"
+              title="1,269 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="1,269 KB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_agua2">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_8.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Hidrografía</li>
+          <li class="list-group-item"><b>Grupo: </b>Hidrografía</li>
+
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Corriente de Agua
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2010</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Corrientes de agua continua que van a
+            desembocar en otra corriente o en los cuerpos de agua.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientedeAgua_2010.zip"
+              title="283 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="283 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip"
+              title="178 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientedeAgua_2010.zip"
+              title="2.54 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_agua3">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_8_1.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light"><b>Tema: </b>Hidrografía</li>
+          <li class="list-group-item bg-light"><b>Grupo: </b>Hidrografía</li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Corriente de Agua
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2007
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Corrientes de agua continua que van a
+            desembocar en otra corriente o en los cuerpos de agua.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CorrientesdeAgua_2007.zip"
+              title="1.87 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="283 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CorrientesdeAgua_2010.zip"
+              title="1.64 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CorrientesdeAgua_2007.zip"
+              title="10.8 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_Banquetas">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_8_2.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Rasgos Planimétricos</li>
+          <li class="list-group-item"><b>Grupo: </b>Rasgos Culturales</li>
+          <li class="list-group-item"><b>Objeto geográfico: </b>Banquetas</li>
+          <li class="list-group-item"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Parte de la vía publica destinada a la
+            circulación de peatones.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_Banquetas_2016.zip"
+              title="37.4 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="283 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_Banquetas_2016.zip"
+              title="26.2 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_Banquetas_2016.zip"
+              title="181,416 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="row bg-light" id="templatemo_Carreteras">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_8_3.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Rasgos Planimétricos
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Rasgos Culturales
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Carreteras y Caminos
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2007
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Parte de la vía publica destinada a la
+            circulación de peatones.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CarreterasyCaminos_2007.zip"
+              title="40.5 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="283 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CarreterasyCaminos_2007.zip"
+              title="27.2 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CarreterasyCaminos_2007.zip"
+              title="183 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_Cercas">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_8_4.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Rasgos Planimétricos</li>
+          <li class="list-group-item"><b>Grupo: </b>Rasgos Culturales</li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Cercas y Muros
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2007</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Barrera construida por el hombre por el hombre
+            de estructura relativamente mediana utilizada como límite.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CercasyMuros_2007.zip"
+              title="10.8 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="283 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CercasyMuros_2007.zip"
+              title="10.5 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CercasyMuros_2007.zip"
+              title="80.1 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_Canchas">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_8_5.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Rasgos Planimétricos
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Rasgos Culturales
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Canchas Deportivas
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2007
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Área acondicionada, con carácter permanente,
+            destinado a eventos deportivos, ejercicio o juegos.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CanchasDeportivas_2007.zip"
+              title="5.93 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="283 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CanchasDeportivas_2007.zip"
+              title="3.25 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CanchasDeportivas_2007.zip"
+              title="80.1 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_Jardines">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_8_6.png" width="100%" height="100%" alt="PDU2040"
+            style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Rasgos Planimétricos</li>
+          <li class="list-group-item"><b>Grupo: </b>Rasgos Culturales</li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Andadores, Parques y Jardineras
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2007</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Área pública con vegetación, equipada con
+            dispositivos recreacionales, dedicada al esparcimiento, decoración
+            y conservación.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_ParquesyJardineras_2007.zip"
+              title="6.01 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="283 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_ParquesyJardineras_2007.zip"
+              title="2.96 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_ParquesyJardineras_2007.zip"
+              title="17.4 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_marco">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_1.jpg" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Unidades Administrativas
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Marco Político Administrativo
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Localidad (Área Urbana)
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Es la ciudad propiamente dicha, definida desde
+            todos los puntos de vista: geográfico, ecológico, demográfico,
+            social, económico. Es el área habitada o urbanizada, la ciudad
+            misma más el área contigua edificada, con usos de suelo de
+            naturaleza no agrícola y que, partiendo de un núcleo central,
+            presenta continuidad física en todas direcciones hasta ser
+            interrumpida, en forma notoria, por terrenos de uso no urbano como
+            bosques, sembradíos o cuerpos de agua. La población que ahí se
+            localiza es calificada como urbana.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_AreaUrbana_2016.zip"
+              title="454 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="454 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaUrbana_2016.zip"
+              title="344 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="344 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_AreaUrbana_2016.zip"
+              title="178 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="178 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaUrbana_2016.zip"
+              title="2,63 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.63 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_13.jpg" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <b>Tema: </b>Unidades Administrativas
+          </li>
+          <li class="list-group-item">
+            <b>Grupo: </b>Marco Político Administrativo
+          </li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Centro de Población Chihuahua
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+            (UTM) Zona 13N
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
+            Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
+            al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
+            Chih., 21 de Septiembre del 2016.
+          </li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Es la ciudad propiamente dicha, definida desde
+            todos los puntos de vista: geográfico, ecológico, demográfico,
+            social, económico. Es el área habitada o urbanizada, la ciudad
+            misma más el área contigua edificada, con usos de suelo de
+            naturaleza no agrícola y que, partiendo de un núcleo central,
+            presenta continuidad física en todas direcciones hasta ser
+            interrumpida, en forma notoria, por terrenos de uso no urbano como
+            bosques, sembradíos o cuerpos de agua. La población que ahí se
+            localiza es calificada como urbana.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CentrodePoblacion_2016.zip"
+              title="5.89 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="5.89 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CentrodePoblacion_2016.zip"
+              title="12.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="12.1 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_CentrodePoblacion_2016.zip"
+              title="2.21 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="2.21 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CentrodePoblacion_2016.zip"
+              title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="104 KB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_vias">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_6.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li><b>Tema: </b>Vías de Comunicación</li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Vías Urbanas y Rurales
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Red Vial
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b> Línea</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Es el trayecto que tiene como función
+            principal el transporte de personas y bienes; diseñado con una
+            superficie especialmente preparada para circulación, diferenciada
+            para peatones de toda condición; así como para cada tipo de
+            transporte: no motorizado, público y vehicular.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_RedVial_2016.zip"
+              title="22.6 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="454 kb" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_equipo">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_4.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Equipamiento Urbano</li>
+          <li class="list-group-item"><b>Grupo: </b>Recreación</li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Área Verde
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 2008</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Objetos geográficos que se relacionan con las
+            actividades recreativas y de ocio de las personas.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_AreaVerde_2016.zip"
+              title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="5.98 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_AreaVerde_2016.zip"
+              title="3.55 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="3.55 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_AreaVerde_2016.zip"
+              title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="3.32 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_AreaVerde_2016.zip"
+              title="22.59 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="22.59 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row bg-light" id="templatemo_educacion">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_7.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Equipamiento Urbano
+          </li>
+          <li class="list-group-item bg-light"><b>Grupo: </b>Educación</li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Escuela
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b> Punto</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2015
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 2008
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Representación puntual de la edificación de
+            las instituciones del sector público y privado que imparten
+            educación y enseñanza en todos sus niveles: inicial, primario,
+            secundario, medio superior y superior.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_Escuela_2015.zip"
+              title="547 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="547 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_Escuela_2015.zip"
+              title="366 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="366 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_Escuela_2015.zip"
+              title="78 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="78 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_Escuela_2015.zip"
+              title="2.54 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="2.54 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_equipo_18">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_16.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Equipamiento Urbano</li>
+          <li class="list-group-item">
+            <b>Grupo: </b>: Asociaciones y Organizaciones
+          </li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Centros de culto
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Punto</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> WGS84</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Los centros de culto son lugares que
+            proporcionan servicios de asistencia religiosa a la población.
+            Identifican a los distintos centros de diversas religiones que
+            profesan los habitantes en la Ciudad.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CentrosCulto_cgs.zip"
+              title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="5.98 MB" /></a>
+
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_CentrosdeCulto.zip"
+              title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="3.32 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_equipo_19">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_17.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Equipamiento Urbano
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>: Educación y Cultura
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Teatros Museos Bibliotecas
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Punto</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> WGS84
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Esta integrado por el conjunto de inmuebles
+            que proporcionan a la población la posibilidad de acceso a la
+            recreación intelectual y estética así como a la superación
+            cultural, complementarias al sistema de educación formal
+            (SEDESOL).
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/08019001_UnidadesEconomicas.zip"
+              title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="5.98 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas.zip"
+              title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="3.32 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_equipo_20">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_18.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Equipamiento Urbano</li>
+          <li class="list-group-item">
+            <b>Grupo: </b>: Hospedaje y Alimentación
+          </li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Hoteles y Moteles
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Punto</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> WGS84</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Los hoteles y moteles son los lugares que
+            prestan servicios de alojamiento temporal. Se identifican y
+            muestran los negocios de esta índole que se encuentran
+            distribuidos en la Ciudad.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/08019001_HotelesMoteles_cgs.zip"
+              title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="5.98 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_HotelesyMoteles.zip"
+              title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="3.32 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_equipo_21">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_19.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Equipamiento Urbano
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>: Hospedaje y Alimentación
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Restaurantes
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Punto</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> WGS84
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Incluye a los establecimientos que preparan y
+            sirven comidas. Se identifican y muestran los negocios de esta
+            índole que se encuentran distribuidos en la Ciudad.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_Restaurantes_cgs.zip"
+              title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="5.98 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_Restaurantes.zip"
+              title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="3.32 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_centro">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_9.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <b>Tema: </b>Planificación Territorial
+          </li>
+          <li class="list-group-item">
+            <b>Grupo: </b>Planeación del Centro de Población
+          </li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Centro Histórico
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 2008</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>El área que delimita los espacios urbanos,
+            vialidades e inmuebles a partir de los cuales se originaron los
+            centros de población. Su límite se establece a partir de eventos
+            históricos, nacionales, regionales o locales.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CentroHistorico_2016.zip"
+              title="2,096 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="2095 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroHistorico_2016.zip"
+              title="13.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="13.1 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_CentroHistorico_2016.zip"
+              title="4 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="4 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroHistorico_2016.zip"
+              title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="104 KB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_centroUrbano">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_10.jpg" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Planificación Territorial
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Planeación del Centro de Población
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Centro Urbano
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 2008
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>El área que delimita los espacios urbanos,
+            vialidades e inmuebles a partir de los cuales se originaron los
+            centros de población. Su límite se establece a partir de eventos
+            históricos, nacionales, regionales o locales.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_CentroUrbano_2016.zip"
+              title="2,096 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="2,096 kb" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_CentroUrbano_2016.zip"
+              title="13.1 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="13.1 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_CentroUrbano_2016.zip"
+              title="4 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="4 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_CentroUrbano_2016.zip"
+              title="104 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="104 KB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_ordenamiento">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_11.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <b>Tema: </b>Planificación Territorial
+          </li>
+          <li class="list-group-item">
+            <b>Grupo: </b>Planeación del Centro de Población
+          </li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Polígono de Ordenamiento
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+            (UTM) Zona 13N
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
+            Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
+            al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
+            Chih., 21 de Septiembre del 2016.
+          </li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Espacio delimitado en el que se definen
+            proyectos puntuales de alto impacto para la estructura urbana en
+            general.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_PoligonosdeOrdenamiento_2016.zip"
+              title="10 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="10 kb" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_PoligonosdeOrdenamiento_2016.zip"
+              title="20.9 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="20.9 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_PoligonosdeOrdenamiento_2016.zip"
+              title="7 KB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20" alt="7 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_PoligonosdeOrdenamiento_2016.zip"
+              title="177 KB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="177 KB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_zonificacion">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_12.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Planificación Territorial
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Planeación del Centro de Población
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Zonificación Primaria 2016
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+            (UTM) Zona 13N
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 1992
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
+            Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
+            al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
+            Chih., 21 de Septiembre del 2016.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>Es en la que se determinan los
+            aprovechamientos genéricos, o utilización general del suelo, en
+            las distintas zonas del área objeto de ordenamiento y regulación.
+            Corresponde a los planes regionales de desarrollo urbano y a los
+            planes de desarrollo urbano de centros de población.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionPrimaria_2016.zip"
+              title="1.29 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="1.29" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_ZonificacionPrimaria_2016.zip"
+              title="3.60 MB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="3.60 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionPrimaria_2016.zip"
+              title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="2.16 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_ZonificacionPrimaria_2016.zip"
+              title="31.7 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="31.7 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_PDU2040">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_14.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <b>Tema: </b>Planificación Territorial
+          </li>
+          <li class="list-group-item">
+            <b>Grupo: </b>Planeación del Centro de Población
+          </li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Zonificación Secundaria 2016
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+            (UTM) Zona 13N
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Datos de publicación: </b>Actualización al Plan de Desarrollo
+            Urbano del Centro de Población Chihuahua (PDU2040), folleto anexo
+            al periódico oficial del Gobierno del Estado No. 76, Chihuahua,
+            Chih., 21 de Septiembre del 2016, folio real 1258036 ante el
+            Registro Público de la Propiedad y del Notariado del Estado de
+            Chihuahua.
+          </li>
+          <li class="list-group-item">
+            <b>Descripción: </b>La Zonificación Secundaria es donde se
+            determinan los aprovechamientos propuestos o utilización de los
+            diversos usos del suelo al interior del Centro de Población.
+            Corresponde a los planes regionales de desarrollo urbano y a los
+            planes de desarrollo urbano de centros de población.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_ZonificacionSecundaria_2016.zip"
+              title="1.29 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="1.29" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_ZonificacionSecundaria_2016.zip"
+              title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="2.16 MB" /></a><a
+              href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/xls/PDU2040-2016_Catalogo_de_Usos_de_Suelo.xls"
+              title="Catalogo de Usos de Suelo" target="_blank"><img src="img/xls.jpg" width="20" height="20"
+                alt="2.16 MB" /></a><a
+              href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/ods/PDU2040-2016_Catalogo_de_Usos_de_Suelo.ods"
+              title="Catalogo de Usos de Suelo" target="_blank"><img src="img/xls.jpg" width="20" height="20"
+                alt="2.16 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_vial">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_15.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Planificación Territorial
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>Planeación del Centro de Población
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Estructura Vial 2016
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Línea</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+            (UTM) Zona 13N
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> ITRF 2008
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Datos de publicación: </b>Datos de publicación: Actualización
+            al Plan de Desarrollo Urbano del Centro de Población Chihuahua
+            (PDU2040), folleto anexo al periódico oficial del Gobierno del
+            Estado No. 76, Chihuahua, Chih., 21 de Septiembre del 2016, folio
+            real 1258036 ante el Registro Público de la Propiedad y del
+            Notariado del Estado de Chihuahua.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>La Estructura Vial constituye la vía y todos
+            los soportes que la conforman, identifica la jerarquía de las
+            vialidades regiosnales, primarias y secundarias del Centro de
+            Población Chihuahua, señalando longitud del tramo, sección, número
+            de carriles, y si se propone ciclovía y/o ruta troncal.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_EstructuraVial_2016.zip"
+              title="2.16 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="535 KB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_EstructuraVial_2016.zip"
+              title="2.16 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="448 KB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_urbano">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_10.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Transporte</li>
+          <li class="list-group-item">
+            <b>Grupo: </b>Transporte Ferroviario
+          </li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Vía Férrea
+          </li>
+          <li class="list-group-item"><b>Geometría:</b> Línea</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2007</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+            (UTM) Zona 13N
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Vía de comunicación terrestre cuya estructura
+            consta de un terraplén y dos rieles paralelos fijados mediante
+            durmientes, para el tránsito de trenes.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_ViaFerrea_2007.zip"
+              title="756 KB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="37.4 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dwg/080190001_ViaFerrea_2007.zip"
+              title="709 KB" target="_blank"><img src="img/Img_Des/dwg_90x37.png" width="47" height="20"
+                alt="26.2 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/dxf/080190001_ViaFerrea_2007.zip"
+              title="4.91 MB" target="_blank"><img src="img/Img_Des/dxf_90x37.png" width="47" height="20"
+                alt="181.4 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row bg-light" id="templatemo_MarcoGeoestadistico">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_20.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-light">
+            <b>Tema: </b>Marco Geoestadístico
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Grupo: </b>: Unidades Económicas
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Objeto geográfico: </b>Unidades Económicas: Agencias de Viaje,
+            Artesanías, Bares, Cantinas, Flores, Joyas, Librerías, Parques ,
+            Acuáticos Balnearios, Recreación, Información Turística,
+            Aeropuerto, Transporte Foráneo, Transporte Turístico
+          </li>
+          <li class="list-group-item bg-light"><b>Geometría:</b>Punto</li>
+          <li class="list-group-item bg-light"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item bg-light">
+            <strong>Edición:</strong> 2016
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>Sistema de Coordenadas Geográficas: </strong>WGS84(DD)
+          </li>
+          <li class="list-group-item bg-light">
+            <strong>DATUM:</strong> WGS84
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Descripción: </b>La unidad económica es la unidad de
+            observación que se refiere a la información de las actividades
+            realizada en la industria manufacturera, el comercio, los
+            servicios privados no financieros, servicios financieros y de
+            seguros. También incluye a las viviendas con actividad económica.
+            Excluye unidades económicas con actividades ambulantes o
+            desmontables, transporte colectivo urbano y suburbano, transporte
+            de pasajeros en taxis de sitio y ruleteo (INEGI, DENUE). Estas
+            unidades se presentan agrupadas según el giro de su actividad o
+            todo el conjunto de actividades existentes en la Ciudad.
+          </li>
+          <li class="list-group-item bg-light">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_UnidadesEconomicas_01.zip"
+              title="5.98 MB" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="5.98 MB" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_UnidadesEconomicas_01.zip"
+              title="3.32 MB" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="3.32 MB" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row" id="templatemo_NombresGeograficos">
+      <div class="col-sm-2">
+        <p>
+          <img src="img/Img_Des/DA_21.png" width="100%" height="100%" alt="PDU2040" style="padding: 4px; width: 100%" />
+        </p>
+      </div>
+      <div class="col-sm-10">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Tema: </b>Nombres Geograficos</li>
+          <li class="list-group-item"><b>Grupo: </b>Nombres y Direcciones</li>
+          <li class="list-group-item">
+            <b>Objeto geográfico: </b>Colonias y Fraccionamientos
+          </li>
+          <li class="list-group-item"><b>Geometría:</b>Polígono</li>
+          <li class="list-group-item"><b>Escala: </b>1:1 000</li>
+          <li class="list-group-item"><strong>Edición:</strong> 2016</li>
+          <li class="list-group-item">
+            <strong>Proyección: </strong>Universal Transversa de Mercator
+          </li>
+          <li class="list-group-item"><strong>DATUM:</strong> ITRF 1992</li>
+          <li class="list-group-item">
+            <b>Descripción: </b>Representan la división de la ciudad o centro
+            de población en agrupaciones de manzanas, lotes y calles para usos
+            habitacionales, comerciales e industriales. Incluyen el conjunto
+            de sus sistemas de convivencia, en un área físicamente localizada,
+            considerando dentro de la misma los elementos naturales y las
+            obras materiales que la integran. La denominación de colonia es el
+            nombre genérico que reciben los barrios en la mayoría de las
+            ciudades mexicanas.
+          </li>
+          <li class="list-group-item">
+            <b>Archivos Descargables: </b>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/shp/080190001_ColoniasyFraccionamientos_2016.zip"
+              title="734 Kb" target="_blank"><img src="img/Img_Des/shp_90x37.png" width="47" height="20"
+                alt="shp" /></a>
+            <a href="https://implanchihuahua.org/IMPLAN-Datos/Descargables/da/kml/080190001_ColoniasyFraccionamientos_2016.zip"
+              title="997 kb" target="_blank"><img src="img/Img_Des/kml_90x37.png" width="47" height="20"
+                alt="kml" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <!--foot -->
+  <script>
+    document.write(footer());
+  </script>
+  <!-- script -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-80309318-1");
+  </script>
+  <!-- fin -->
+</body>
+
 </html>
