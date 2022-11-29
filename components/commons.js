@@ -74,6 +74,14 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
+              <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li>
+                    <a href="Practicantes.html" target="_self">RESIDENCIAS PROFESIONALES</a>
+                  </li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
             </div>
           </ul>
         </li>
@@ -393,7 +401,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="PDU2040.html#Medio"
+                      href="PDU2040.html#descargables"
                       target="_self"
                       >ARCHIVOS DESCARGABLES PDU 2040
                     </a>
@@ -499,7 +507,7 @@ function navbar() {
                 <ul>
                   <li>
                     <a
-                      href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf"
+                      href="https://implanchihuahua.org/IMPLAN-Datos/pdf/Resolucion-Exp-ICHITAIPRR05662021.pdf"
                       target="_self"
                       >Cumplimiento a resolución ICHITAIP/RR-566/2021</a
                     >
