@@ -1,7 +1,6 @@
 
 var snowStorm = (
     function (window, document) {
-
         // --- common properties ---
 
         this.autoStart = true;          // Whether the snow should start automatically or not.
@@ -32,7 +31,7 @@ var snowStorm = (
         this.flakeHeight = 30;           // Max pixel height reserved for snow element
         this.vMaxX = 0;                 // Maximum X velocity range for snow
         this.vMaxY = 1;                 // Maximum Y velocity range for snow
-        this.zIndex = 0;                // CSS stacking order applied to each snowflake
+        this.zIndex = 11111110;                // CSS stacking order applied to each snowflake
 
         // --- "No user-serviceable parts inside" past this point, yadda yadda ---
 
@@ -649,7 +648,7 @@ var snowStorm = (
         const day = date.getDate();
         const month = date.toLocaleString('default', { month: 'long' });
         // hooks for starting the snow
-        if (storm.autoStart && ((month === 'December' && day >= 1 && day <= 31) || (month === 'November' && day >= 20 && day <= 30))) {
+        if (storm.autoStart) {
             storm.events.add(window, 'load', doStart, false);
         }
 
