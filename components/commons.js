@@ -316,6 +316,13 @@ function navbar() {
                       >PSAMUS</a
                     >
                   </li>
+                  <li class="divider">
+                    <a
+                      href="EstudioVivienda.html"
+                      target="_self"
+                      >ESTUDIO DE MERCADO DE VIVIENDA</a
+                    >
+                  </li>
                   <li class="divider"></li>
                 </ul>
               </li>
