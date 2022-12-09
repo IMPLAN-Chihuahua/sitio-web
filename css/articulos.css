@@ -142,9 +142,6 @@
 }
 
 .card {
-    max-width: 340px !important;
-    min-width: 340px;
-    margin: 10px 10px 10px 10px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     padding: 10px;
 }
