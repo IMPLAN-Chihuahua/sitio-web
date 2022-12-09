@@ -554,6 +554,14 @@ function navbar() {
             >DICTÁMENES
           </a>
         </li>
+        <li class="nav-item" style="background-color: #fcae41">
+        <a
+          class="nav-link"
+          href="AnalisisPublicados.html"
+          target="_blank"
+          >EDITORIAL</a
+        >
+      </li>       
       </ul>
     </div>
   </nav>  
