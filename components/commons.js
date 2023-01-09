@@ -490,7 +490,7 @@ function navbar() {
                 <ul>
                   <li>
                     <a
-                      href="https://www.plataformadetransparencia.org.mx/"
+                      href="https://ichitaip.org.mx/redireccion/?so=1555"
                       target="_blank"
                       >TRANSPARENCIA</a
                     >
