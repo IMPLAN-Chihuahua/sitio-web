@@ -77,7 +77,7 @@ function navbar() {
               <li class="col-md-3 dropdown-item bg-light">
                 <ul>
                   <li>
-                    <a href="Practicantes.html" target="_self">RESIDENCIAS PROFESIONALES</a>
+                    <a href="Practicantes.html" target="_self">PRÁCTICAS PROFESIONALES/SERVICIO SOCIAL</a>
                   </li>
                   <li class="divider"></li>
                 </ul>
