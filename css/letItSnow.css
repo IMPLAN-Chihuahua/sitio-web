@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.fa-snowflake {
+    color: #d7f3f6;
+    position: absolute;
+    top: -20px;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .social-panel-container.visible {
+        transform: translateX(0px);
+    }
+
+    .floating-btn {
+        right: 10px;
+    }
+}

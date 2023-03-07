@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./css/directorio.css">
 
   <title>Directorio</title>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> </head>
 
 <body>
   <script>
@@ -54,8 +54,8 @@
         nombre: 'Arq. Ana Gabriela Cervantes García',
         imagen: '4-Gaby.png',
         dpto: 'Planes y programas ',
-        correo: 'isabel.castaneda@implanchihuahua.org',
-        titulos: ['Arquitecto, por el Instituto Superior de Arquitectura y Diseño (ISAD)'],
+        correo: 'gabriela.cervantes@implanchihuahua.org',
+        titulos: ['Arquitecta, por el Instituto Tecnológico de Chihuahua II con especialidad en Arquitectura Regional Sustentable'],
         cedulas: ['Cédula profesional 11770560']
       },
       {
@@ -115,14 +115,6 @@
         cedulas: ['Cédula profesional 7719821'],
       },
       {
-        nombre: 'Ing. Alberto Fierro Reynoso',
-        imagen: '12-Beto.png',
-        dpto: 'Planes y programas',
-        correo: 'beto.fierro@implanchihuahua.org',
-        titulos: ['Ingeniero en Desarrollo Territorial (IDT), por la Universidad Autónoma de Chihuahua (UACH)'],
-        cedulas: [''],
-      },
-      {
         nombre: 'Lic. Guillermo Hernández Rodríguez',
         imagen: '13-Guillermo.png',
         dpto: 'Planes y programas',
@@ -143,8 +135,24 @@
         imagen: '15-CarlosR.png',
         dpto: 'Dirección',
         correo: 'carlos.hernandez@implanchihuahua.org',
-        titulos: ['Doctor en Estudios Urbanos (PhD in Urban Studies)) por la Universidad de Glasgow en Escocia', 'Maestro en Arquitectura (M. Arch) por la Universidad McGill en Monteral, Canadá; Especializado en vivienda en países en desarrollo', 'Arquitecto, por la Universidad Autónoma de Aguascalientes, México'],
+        titulos: ['Doctor en Estudios Urbanos (PhD in Urban Studies) por la Universidad de Glasgow en Escocia', 'Maestro en Arquitectura (M. Arch) por la Universidad McGill en Monteral, Canadá; Especializado en vivienda en países en desarrollo', 'Arquitecto, por la Universidad Autónoma de Aguascalientes, México'],
         cedulas: ['', '', 'Cédula profesional 2283497']
+      },
+      {
+        nombre: 'Lic. David Holguín Baca',
+        imagen: '33-David.png',
+        dpto: 'Normatividad y Transparencia ',
+        correo: 'david.holguin@implanchihuahua.org',
+        titulos: ['Licenciado en Derecho por la Universidad del Valle de México', 'Licenciado en Relaciones Comerciales por el Instituto Tecnológico de Chihuahua'],
+        cedulas: ['', '', 'Cédula profesional 2283497']
+      },
+      {
+        nombre: 'Dra. Ireyli Iracheta Lara',
+        imagen: '34-Ireyli.png',
+        dpto: 'Subdirectora Técnica',
+        correo: 'ireyli.iracheta@implanchihuahua.org',
+        titulos: ['Doctora  Philosophia, por la Universidad Autónoma de Chihuahua', 'Maestra en Ciencias por la Universidad Autónoma de Chihuahua', 'Ingeniero en Desarrollo Territorial, por la Universidad Autónoma de Chihuahua'],
+        cedulas: ['', '', '']
       },
       {
         nombre: 'L.S.C.A Martha Verónica Lugo Alarcón',
@@ -155,7 +163,7 @@
         cedulas: [''],
       },
       {
-        nombre: 'Ing. Joel Arturo López Quintana',
+        nombre: 'Ing. Joel Arturo López Gandarilla',
         imagen: '17-Joel.png',
         dpto: 'Geomática',
         correo: 'joel.lopez@implanchihuahua.org',
@@ -201,14 +209,6 @@
         correo: 'elmer.ornelas@implanchihuahua.org',
         titulos: ['Lic. en Geoinformática, por la Universidad Autónoma de Ciudad Juárez (UACJ)'],
         cedulas: ['Cédula profesional 8383939'],
-      },
-      {
-        nombre: 'Dr. José Antonio Pérez Sánchez',
-        imagen: '23-Jantonio.png',
-        dpto: 'Subdirección',
-        correo: 'jantonio.perez@implanchihuahua.org',
-        titulos: ['Doctor en Ingeniería, por la Universidad Autónoma de Chihuahua / Centro de Investigación Científica y de Educación Superior de Ensenada, B.C.', 'Maestro en Ingeniería, por la Universidad Autónoma de Chihuahua', 'Ingeniero Civil, por el Instituto Tecnológico de Pachuca'],
-        cedulas: ['Cédula profesional 11720459', 'Cédula profesional 3923904', 'Cédula profesional 2913099'],
       },
       {
         nombre: 'Ing. Jemima Abigail Plascencia Quezada',
@@ -298,11 +298,11 @@
       if (correo.length != 0) {
         html =
           '<a href="mailto: ' + correo + '" class="contacto">' +
-          '<img title="Da clic para ponerte en contacto con ' + nombre[1] + ' " src="../img/Imagenes-Elementos/' + imagen + '" alt=""/>' +
+          '<img title="Da clic para ponerte en contacto con ' + nombre[1] + ' "src="https://sitioimplan.s3.us-east-2.amazonaws.com/img/Imagenes-Elementos/' + imagen + '" alt=""/>' +
           '</a>'
       } else {
         html =
-          '<img src="../img/Imagenes-Elementos/' + imagen + '" alt=""/>'
+          '<img src="https://sitioimplan.s3.us-east-2.amazonaws.com/img/Imagenes-Elementos/' + imagen + '" alt=""/>'
       }
       return html;
     }
@@ -312,7 +312,7 @@
   </script>
 
   <div class="portada">
-    <img src="./img/portada/DIRECCION.png" />
+    <img src="https://sitioimplan.s3.us-east-2.amazonaws.com/img/DirectorioPortada.png" />
   </div>
   <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
     <script>
@@ -341,7 +341,7 @@
     document.write(footer());
   </script>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
+  
   <script src="js/bootstrap.min.js"></script>
 </body>
 
