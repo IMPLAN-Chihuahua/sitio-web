@@ -5,11 +5,12 @@
     <title>IMPLAN │ Chihuahua</title>
     <meta name="author" content="IMPLAN" />
         <!--meta para fcaebook-->
-        <meta property="og:url"                content="https://www.implanchihuahua.org/CaminarConLosDeaPie.html" />
-        <meta property="og:type"               content="Artículo" />
-        <meta property="og:title"              content="Caminar con los de apie" />
-        <meta property="og:description"        content="¿Sabías que en Chihuahua, durante el año 2020, ocurrieron 5,790 accidentes de tránsito?" />
-        <meta property="og:image"              content="https://sitioimplan.s3.us-east-2.amazonaws.com/img/articulos/CAMINAR.png" />
+        <meta property="og:url" content="https://www.implanchihuahua.org/CaminarConLosDeaPie.html" />
+        <meta property="og:type" content="Artículo" />
+        <meta property="og:title" content="Caminar con los de apie" />
+        <meta property="og:image:secure_url" content="¿Sabías que en Chihuahua, durante el año 2020, ocurrieron 5,790 accidentes de tránsito?" />
+        <meta property="og:image" content="https://sitioimplan.s3.us-east-2.amazonaws.com/img/articulos/CAMINAR.png" />
+        <meta content="blogger" name="generator"/>
         <!--fin-->
     <meta
       name="keywords"
@@ -101,6 +102,20 @@
         Ing. Carlos Martínez Mar, Coordinador de Gemomática, IMPLAN Chihuahua
       </figcaption>
       <br />
+      <div id="shareBtn" class="btn btn-success clearfix">Share Dialog</div>
+
+      <p>The Share Dialog enables you to share links to a person's profile without them having to use Facebook Login. <a href="https://developers.facebook.com/docs/sharing/reference/share-dialog">Read our Share Dialog guide</a> to learn more about how it works.</p>
+      
+      <script>
+      document.getElementById('shareBtn').onclick = function() {
+        FB.ui({
+          display: 'popup',
+          method: 'share',
+          href: 'https://developers.facebook.com/docs/',
+        }, function(response){});
+      }
+      </script>
+
     </div>
     <!--foot -->
     <script>
