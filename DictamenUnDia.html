@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <title>IMPLAN │ Chihuahua</title>
     <meta name="author" content="IMPLAN" />
+    <!--meta para fcaebook-->
+    <meta property="fb:app_id" content="247241327649814" />
+    <meta
+      property="og:url"
+      content="https://www.implanchihuahua.org/DictamenUnDia.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="UN DICTAMEN EN UN DIA" />
+    <meta
+      property="og:description"
+      content="Optimización para el proceso de Dictámenes Técnicos para las modificaciones menores de los usos de suelo del Plan Director Urbano."
+    />
+    <meta
+      property="og:image"
+      content="https://sitioimplan.s3.us-east-2.amazonaws.com/img/articulos/DICTAMENES.png"
+    />
+    <!--fin-->    
     <meta
       name="keywords"
       content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion,
@@ -132,7 +149,30 @@
         Programas del IMPLAN Chihuahua
       </figcaption>
       <br />
+      <!-- boton compartir -->
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
+
+      <!-- Your share button code -->
+      <div
+        class="fb-share-button"
+        data-href="https://www.implanchihuahua.org/CiudadCercana.html"
+        data-layout="button_count"
+      ></div>      
     </div>
+    <br />
     <!--foot -->
     <script>
       document.write(footer());
