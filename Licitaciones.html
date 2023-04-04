@@ -26,325 +26,500 @@
     <link rel="shortcut icon" href="/img/implan.ico">
     <link rel="stylesheet" type="text/css" href="/css/estilo.css">
     <link rel="stylesheet" type="text/css" href="/css/fuentes.css">
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> </head>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+</head>
 
 <body>
     <script>
         document.write(navbar());
     </script>
-<!--inicia página -->
-<div class="container">
-  <div class="row m-3">
-      <div class="col">
-          <h2 class="text-center text-warning"><strong>¿Cómo compra el IMPLAN Chihuahua?</strong></h2>
-          <h3 class="text-center text-secondary">En el IMPLAN estamos comprometidos con la transparencia y queremos que conozcas cómo invertimos tus impuestos.</h3>
-          <hr>
-          <h2 class="text-center">Proceso de Compra</h2>
-          <h4 class="text-secondary">Al igual que tú, el IMPLAN compara opciones y presupuestos antes de realizar una compra.</h4>
-          <div class="row">
-              <div class="col">
-                  <img class="img-fluid" src="https://sitioimplan.s3.us-east-2.amazonaws.com/img/licitaciones.png" alt="IMPLAN">
-              </div>
-          </div>
-          <hr>
-          <div class="row mt-3">
-              <div class="col">
-                  <h2 class="text-center">Convocatorias</h2>
-                  <nav>
-                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">2023</a>
-                          <a class="nav-item nav-link" id="nav-profile-tab5" data-toggle="tab" href="#nav-profile_5" role="tab" aria-controls="nav-profile5" aria-selected="false">2022</a>
-                          <a class="nav-item nav-link" id="nav-profile-tab4" data-toggle="tab" href="#nav-profile_4" role="tab" aria-controls="nav-profile4" aria-selected="false">2021</a>
-                          <a class="nav-item nav-link" id="nav-profile-tab3" data-toggle="tab" href="#nav-profile_3" role="tab" aria-controls="nav-profile3" aria-selected="false">2020</a>
-                          <a class="nav-item nav-link" id="nav-profile-tab1" data-toggle="tab" href="#nav-profile_1" role="tab" aria-controls="nav-profile1" aria-selected="false">2019</a>
-                          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">2018</a>
-                      </div>
-                  </nav>
-                  <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <br>  
-                        <h4>Buscar licitación</h4>
-                          <p>Teclea el numero o nombre de licitación:</p>
-                          <input class="form-control" id="myInput" type="text" placeholder="01-2023-IMPLAN CPP..">
-                          <br>
-                          <table class="table table-bordered">
-                              <thead>
-                                  <tr>
-                                      <th>Licitación</th>
-                                      <th>Convocatoria</th>
-                                      <th>Bases</th>
-                                      <th>Resolución</th>
-                                      <th>Status</th>
-                                  </tr>
-                              </thead>
-                              <tbody id="myTable">
-                                <td>Estudio para la elaboración de un Esquema de Planeación Simplificada del Centro de Población Tomas García, del Municipio de Chihuahua (017-2023-IMPLAN-CPP-EC)</td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No017-2023-IMPLAN-CPP-EC-POE-CONVOCATORIA.pdf" target="_blank">Convocatoria</a></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No017-2023-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a>
+    <!--inicia página -->
+    <div class="container">
+        <div class="row m-3">
+            <div class="col">
+                <h2 class="text-center text-warning"><strong>¿Cómo compra el IMPLAN Chihuahua?</strong></h2>
+                <h3 class="text-center text-secondary">En el IMPLAN estamos comprometidos con la transparencia y
+                    queremos que conozcas cómo invertimos tus impuestos.</h3>
+                <hr>
+                <h2 class="text-center">Proceso de Compra</h2>
+                <h4 class="text-secondary">Al igual que tú, el IMPLAN compara opciones y presupuestos antes de realizar
+                    una compra.</h4>
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid" src="https://sitioimplan.s3.us-east-2.amazonaws.com/img/licitaciones.png"
+                            alt="IMPLAN">
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-3">
+                    <div class="col">
+                        <h2 class="text-center">Convocatorias</h2>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                    role="tab" aria-controls="nav-home" aria-selected="true">2023</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab5" data-toggle="tab"
+                                    href="#nav-profile_5" role="tab" aria-controls="nav-profile5"
+                                    aria-selected="false">2022</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab4" data-toggle="tab"
+                                    href="#nav-profile_4" role="tab" aria-controls="nav-profile4"
+                                    aria-selected="false">2021</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab3" data-toggle="tab"
+                                    href="#nav-profile_3" role="tab" aria-controls="nav-profile3"
+                                    aria-selected="false">2020</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab1" data-toggle="tab"
+                                    href="#nav-profile_1" role="tab" aria-controls="nav-profile1"
+                                    aria-selected="false">2019</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                    role="tab" aria-controls="nav-profile" aria-selected="false">2018</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
                                 <br>
-                                <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No017-2023-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a></td>
-                                </td>
-                                <td>
-                                </td>
-                                <td>Abierta</td>                                  
-                                                                                                                                                                                                                                                    
-                    </tbody>
-                          </table>
-                          <div class="container mt-3">
-                            <h2 class="text-center">Plan de adquisiciones 2022</h2>
-                            <br>
-                            <iframe
-                                src="https://docs.google.com/viewer?url=https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/PlanAdquisiciones2022.pdf&amp;embedded=true"
-                                width="100%" height="420" style="border: none;"></iframe>
-                          </div>
-                      </div>
-                      <div class="tab-pane fade" id="nav-profile_5" role="tabpanel" aria-labelledby="nav-profile-tab5">
-                        <br>  
-                        <h4>Buscar licitación</h4>
-                          <p>Teclea el numero o nombre de licitación:</p>
-                          <input class="form-control" id="myInput5" type="text" placeholder="01-2022-IMPLAN CPP..">
-                          <br>
-                          <table class="table table-bordered">
-                              <thead>
-                                  <tr>
-                                      <th>Licitación</th>
-                                      <th>Convocatoria</th>
-                                      <th>Bases</th>
-                                      <th>Resolución</th>
-                                      <th>Status</th>
-                                  </tr>
-                              </thead>
-                              <tbody id="myTable5">
-                                <td>Estudio Vivienda Informal (013-2022-IMPLAN-CPP-EC-13BIS)</td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-bis-2022-IMPLAN-CPP-EC-CONVOCATORIA.pdf" target="_blank">Convocatoria</a></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-Bis-2022-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-Bis-2021-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a>
+                                <h4>Buscar licitación</h4>
+                                <p>Teclea el numero o nombre de licitación:</p>
+                                <input class="form-control" id="myInput" type="text" placeholder="01-2023-IMPLAN CPP..">
+                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Licitación</th>
+                                            <th>Convocatoria</th>
+                                            <th>Bases</th>
+                                            <th>Resolución</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="myTable">
+                                        <tr>
+                                            <td>Estudio para la elaboración de un Esquema de Planeación Simplificada del
+                                                Centro de Población Tomas García, del Municipio de Chihuahua
+                                                (017-2023-IMPLAN-CPP-EC)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No017-2023-IMPLAN-CPP-EC-POE-CONVOCATORIA.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No017-2023-IMPLAN-CPP-EC-BASES.pdf"
+                                                    target="_blank">Bases</a>
+                                                <br>
+                                                <a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No017-2023-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a>
+                                            </td>
+                                            </td>
+                                            <td>
+                                                <a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/NO+017-2023-IMPLAN-CPP-EC+FALLO.pdf"
+                                                    target="_blank">Fallo</a>
+                                            </td>
+                                            <td>Abierta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición mediante arrendamiento del servicio de Amazon Web Services
+                                                (AWS), por el periodo de 12 meses. (030-2023-IMPLAN-LP-AR)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/NO.030-2023-IMPLAN-CPP-EC+POE.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No030-2023-IMPLAN-LP-AR+BASES.pdf"
+                                                    target="_blank">Bases</a>
+                                            </td>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>Abierta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición de diverso equipo de cómputo, como lo son torres de trabajo,
+                                                monitor de 24”, laptops, entre otros. (031-2023-IMPLAN-CPP-EC)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/NO.031-2023-IMPLAN-CPP-EC+POE.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No031-2023-IMPLAN-CPP-EC+BASES.pdf"
+                                                    target="_blank">Bases</a>
+                                            </td>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td>Abierta</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <div class="container mt-3">
+                                    <h2 class="text-center">Plan de adquisiciones 2022</h2>
                                     <br>
-                                    <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-13BIS-PROPUESTAS.pdf" target="_blank">Propuestas</a>
+                                    <iframe
+                                        src="https://docs.google.com/viewer?url=https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/PlanAdquisiciones2022.pdf&amp;embedded=true"
+                                        width="100%" height="420" style="border: none;"></iframe>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile_5" role="tabpanel"
+                                aria-labelledby="nav-profile-tab5">
+                                <br>
+                                <h4>Buscar licitación</h4>
+                                <p>Teclea el numero o nombre de licitación:</p>
+                                <input class="form-control" id="myInput5" type="text"
+                                    placeholder="01-2022-IMPLAN CPP..">
+                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Licitación</th>
+                                            <th>Convocatoria</th>
+                                            <th>Bases</th>
+                                            <th>Resolución</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="myTable5">
+                                        <td>Estudio Vivienda Informal (013-2022-IMPLAN-CPP-EC-13BIS)</td>
+                                        <td><a class="transi"
+                                                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-bis-2022-IMPLAN-CPP-EC-CONVOCATORIA.pdf"
+                                                target="_blank">Convocatoria</a></td>
+                                        <td><a class="transi"
+                                                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-Bis-2022-IMPLAN-CPP-EC-BASES.pdf"
+                                                target="_blank">Bases</a></td>
+                                        <td><a class="transi"
+                                                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-Bis-2021-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                target="_blank">Aclaraciones</a>
+                                            <br>
+                                            <a class="transi"
+                                                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-13BIS-PROPUESTAS.pdf"
+                                                target="_blank">Propuestas</a>
+                                            <br>
+                                            <a class="transi"
+                                                href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-bis-2022-IMPLAN-CPP-EC-FALLO.pdf"
+                                                target="_blank">Fallo</a>
+                                        </td>
+                                        <td>Cerrada</td>
+                                        <tr>
+                                            <td>Estudio Vivienda Informal (013-2022-IMPLAN-CPP-EC)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-CONVOCATORIA.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-BASES.pdf"
+                                                    target="_blank">Bases</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a>
+                                                <br>
+                                                <a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-PROPUESTAS.pdf"
+                                                    target="_blank">Propuestas</a>
+                                                <br>
+                                                <a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-FALLO.pdf"
+                                                    target="_blank">Fallo</a>
+                                            </td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Búsqueda de talento profesional para aspirar al cargo de director del
+                                                IMPLAN (016-2022-IMPLAN-CPP-EC)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2022-IMPLAN-CPP-EC POE-CONVOCATORIA.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/NO016-2022-IMPLAN-CPP-EC-BASES.pdf"
+                                                    target="_blank">Bases</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2022-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a>
+                                                <br><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2021-IMPLAN-CPP-EC-PRESENTACION-PROPUESTAS.pdf"
+                                                    target="_blank">Propuestas</a>
+                                                <br><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2022-IMPLAN-CPP-EC-FALLO.pdf"
+                                                    target="_blank">Fallo</a>
+                                            </td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Auditoría Externa (11-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_AuditoriaExterna.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Estudio de Mercado (01-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Estudio_de_Mercado.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Estudio Reservas Industriales
+                                                (012-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Estudio_Reserva_Industrial.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Foro Capitulo Chihuahua (10-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Foro_Capitulo_Chihuahua.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Garantías DELL Server (07-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Adquisicion_Garantias.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa INRow (09-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Mantenimiento_INROW.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Licencias Arcgis (Renovacion Anual)
+                                                (002-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Renovacion_de_Licencias_ArcGis.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Office 365 (05-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Mantenimiento_licencia_Office_365.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Renovación Antivirus (03-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Adjudicacion_Licencia_Antivirus.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adquisición Directa Vehículo Eléctrico (08-2022-IMPLAN-CPP-EC)</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Adquisicion_Vehiculo_Electrico.pdf"
+                                                    target="_blank">Resolución</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="container mt-3">
+                                    <h2 class="text-center">Plan de adquisiciones 2022</h2>
                                     <br>
-                                    <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-bis-2022-IMPLAN-CPP-EC-FALLO.pdf" target="_blank">Fallo</a>
-                                </td>
-                                <td>Cerrada</td>                                  
-                                <tr>
-                                    <td>Estudio Vivienda Informal (013-2022-IMPLAN-CPP-EC)</td>
-                                    <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-CONVOCATORIA.pdf" target="_blank">Convocatoria</a></td>
-                                    <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a></td>
-                                    <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a>
-                                        <br>
-                                        <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-PROPUESTAS.pdf" target="_blank">Propuestas</a>
-                                        <br>
-                                        <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No013-2022-IMPLAN-CPP-EC-FALLO.pdf" target="_blank">Fallo</a>
-                                    </td>
-                                    <td>Cerrada</td>  
-                              </tr>                                 
-                                <tr>
-                                      <td>Búsqueda de talento profesional para aspirar al cargo de director del IMPLAN (016-2022-IMPLAN-CPP-EC)</td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2022-IMPLAN-CPP-EC POE-CONVOCATORIA.pdf" target="_blank">Convocatoria</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/NO016-2022-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2022-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a> 
-                                      <br><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2021-IMPLAN-CPP-EC-PRESENTACION-PROPUESTAS.pdf" target="_blank">Propuestas</a>
-                                      <br><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No016-2022-IMPLAN-CPP-EC-FALLO.pdf" target="_blank">Fallo</a> 
-                                    </td>
-                                    <td>Cerrada</td>  
-                                </tr>
-                                <tr>
-                                    <td>Adquisición Directa Auditoría Externa (11-2022-IMPLAN-CPP-EC)</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_AuditoriaExterna.pdf" target="_blank">Resolución</a></td>
-                                    <td>Cerrada</td>
-                                </tr>
-                                <tr>
-                                    <td>Adquisición Directa Estudio de Mercado (01-2022-IMPLAN-CPP-EC)</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Estudio_de_Mercado.pdf" target="_blank">Resolución</a></td>
-                                    <td>Cerrada</td>
-                                </tr>   
-                            </tr>
-                            <tr>
-                                <td>Adquisición Directa Estudio Reservas Industriales (012-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Estudio_Reserva_Industrial.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr> 
-                            <tr>
-                                <td>Adquisición Directa Foro Capitulo Chihuahua (10-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Foro_Capitulo_Chihuahua.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr>
-                            <tr>
-                                <td>Adquisición Directa Garantías DELL Server (07-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Adquisicion_Garantias.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr>  
-                            <tr>
-                                <td>Adquisición Directa INRow (09-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Mantenimiento_INROW.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr>    
-                            <tr>
-                                <td>Adquisición Directa Licencias Arcgis (Renovacion Anual) (002-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Renovacion_de_Licencias_ArcGis.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr>  
-                            <tr>
-                                <td>Adquisición Directa Office 365 (05-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Mantenimiento_licencia_Office_365.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr>   
-                            <tr>
-                                <td>Adquisición Directa Renovación Antivirus (03-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Adjudicacion_Licencia_Antivirus.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr>   
-                            <tr>
-                                <td>Adquisición Directa Vehículo Eléctrico (08-2022-IMPLAN-CPP-EC)</td>
-                                <td></td>
-                                <td></td>
-                                <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/Licitaciones/Resolucion_Adquisicion_Vehiculo_Electrico.pdf" target="_blank">Resolución</a></td>
-                                <td>Cerrada</td>
-                            </tr>                                                                                                                                                                                                                                                       
-                    </tbody>
-                          </table>
-                          <div class="container mt-3">
-                            <h2 class="text-center">Plan de adquisiciones 2022</h2>
-                            <br>
-                            <iframe
-                                src="https://docs.google.com/viewer?url=https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/PlanAdquisiciones2022.pdf&amp;embedded=true"
-                                width="100%" height="420" style="border: none;"></iframe>
-                          </div>
-                      </div>
-                      <div class="tab-pane fade" id="nav-profile_4" role="tabpanel" aria-labelledby="nav-profile-tab4">
-                        <br>
-                        <h4>Buscar licitación</h4>
-                        <p>Teclea el numero o nombre de licitación:</p>
-                        <input class="form-control" id="myInput2" type="text" placeholder="03-2021-IMPLAN CPP..">
-                        <br>
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Licitación</th>
-                                    <th>Convocatoria</th>
-                                    <th>Bases</th>
-                                    <th>Resolución</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody id="myTable5">
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="container mt-3">
-                            <h2 class="text-center">Plan de adquisiciones 2021</h2>
-                            <br>
-                            <iframe
-                                src="https://docs.google.com/viewer?url=https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/PlanAdquisiciones2021.pdf&amp;embedded=true"
-                                width="100%" height="420" style="border: none;"></iframe>
-                        </div>
-                    </div>                      
-                      <div class="tab-pane fade" id="nav-profile_3" role="tabpanel" aria-labelledby="nav-profile-tab3">
-                        <br>  
-                        <h4>Buscar licitación</h4>
-                          <p>Teclea el numero o nombre de licitación:</p>
-                          <input class="form-control" id="myInput2" type="text" placeholder="03-2020-IMPLAN CPP..">
-                          <br>
-                          <table class="table table-bordered">
-                              <thead>
-                                  <tr>
-                                      <th>Licitación</th>
-                                      <th>Convocatoria</th>
-                                      <th>Bases</th>
-                                      <th>Resolución</th>
-                                      <th>Status</th>
-                                  </tr>
-                              </thead>
-                              <tbody id="myTable2">
-                                  <tr>
-                                      <td>Estudio de muestreo (03-2020-IMPLAN-CPP-EC)</td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC-CONVOCATORIA.pdf" target="_blank">Convocatoria</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC BASES.pdf" target="_blank">Bases</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a>
-                                          <br><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC-CANCELACION.pdf" target="_blank">Cancelación</a>
-                                      </td>
-                                      <td>Cerrada</td>
-                                  </tr>
-                                  <tr>
-                                      <td>Estudio de muestreo (04-2020-IMPLAN-CPP-EC)</td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-CONVOCATORIA.pdf" target="_blank">Convocatoria</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a>
-                                          <br><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-PROPUESTAS.pdf" target="_blank">Propuestas</a>
-                                          <br><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-FALLO.pdf" target="_blank">Fallo</a>
-                                      </td>
-                                      <td>Cerrada</td>
-                                  </tr>
-                                  <tr>
-                                      <td>Servidor-Licenciamiento VMWare (No007-2020-IMPLAN-CPP-EC)</td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-CONVOCATORIA.pdf" target="_blank">Convocatoria</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a></td>
-                                      <td>
-                                          <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a>
-                                          <br>
-                                          <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-PROPUESTAS.pdf" target="_blank">Propuestas</a>
-                                          <br>
-                                          <a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-FALLO.pdf" target="_blank">Fallo</a>
-                                      </td>
-                                      <td>Cerrada</td>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </div>
-                      <div class="tab-pane fade" id="nav-profile_1" role="tabpanel" aria-labelledby="nav-profile-tab1">
-                        <br>  
-                        <h4>Buscar licitación</h4>
-                          <p>Teclea el numero o nombre de licitación:</p>
-                          <input class="form-control" id="myInput3" type="text" placeholder="001-2019-IMPLAN UPS..">
-                          <br>
-                          <p class="text-right"><a href="https://sitioimplan.s3.us-east-2.amazonaws.com/transparencia/PlanAdquisiciones2019.pdf" target="_blank">Consultar Plan de Adquisisciones 2019</a></p>
-                          <table class="table table-bordered">
-                              <thead>
-                                  <tr>
-                                      <th>Licitación</th>
-                                      <th>Convocatoria</th>
-                                      <th>Bases</th>
-                                      <th>Resolución</th>
-                                      <th>Status</th>
-                                  </tr>
-                              </thead>
-                              <tbody id="myTable3">
-                                  <tr>
-                                      <td>Audio y Vídeo (No003-2019-IMPLAN-CPP-EC-POE)</td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-POE.pdf" target="_blank">Convocatoria</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a><br><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/AUDIOVIDEO_IMPLAN.rar" target="_blank">Planos</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a><br/><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-PROPUESTAS.pdf" target="_blank">Propuestas</a><br/><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-FALLO.pdf" target="_blank">Fallo</a></td>
-                                      <td>Cerrada</td>
-                                  </tr>
-                                  <tr>
-                                      <td>Climas (No004-2019-IMPLAN-CPP-EC-POE)</td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-POE.pdf" target="_blank">Convocatoria</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-BASES.pdf" target="_blank">Bases</a><br><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/CLIMAS_IMPLAN.rar" target="_blank">Planos</a></td>
-                                      <td><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-ACLARACIONES.pdf" target="_blank">Aclaraciones</a><br/><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-PROPUESTAS.pdf" target="_blank">Propuestas</a><br/><a class="transi" href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-FALLO.pdf" target="_blank">Fallo</a></td>
-                                      <td>Cerrada</td>
+                                    <iframe
+                                        src="https://docs.google.com/viewer?url=https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/PlanAdquisiciones2022.pdf&amp;embedded=true"
+                                        width="100%" height="420" style="border: none;"></iframe>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile_4" role="tabpanel"
+                                aria-labelledby="nav-profile-tab4">
+                                <br>
+                                <h4>Buscar licitación</h4>
+                                <p>Teclea el numero o nombre de licitación:</p>
+                                <input class="form-control" id="myInput2" type="text"
+                                    placeholder="03-2021-IMPLAN CPP..">
+                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Licitación</th>
+                                            <th>Convocatoria</th>
+                                            <th>Bases</th>
+                                            <th>Resolución</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="myTable5">
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="container mt-3">
+                                    <h2 class="text-center">Plan de adquisiciones 2021</h2>
+                                    <br>
+                                    <iframe
+                                        src="https://docs.google.com/viewer?url=https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/PlanAdquisiciones2021.pdf&amp;embedded=true"
+                                        width="100%" height="420" style="border: none;"></iframe>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile_3" role="tabpanel"
+                                aria-labelledby="nav-profile-tab3">
+                                <br>
+                                <h4>Buscar licitación</h4>
+                                <p>Teclea el numero o nombre de licitación:</p>
+                                <input class="form-control" id="myInput2" type="text"
+                                    placeholder="03-2020-IMPLAN CPP..">
+                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Licitación</th>
+                                            <th>Convocatoria</th>
+                                            <th>Bases</th>
+                                            <th>Resolución</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="myTable2">
+                                        <tr>
+                                            <td>Estudio de muestreo (03-2020-IMPLAN-CPP-EC)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC-CONVOCATORIA.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC BASES.pdf"
+                                                    target="_blank">Bases</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a>
+                                                <br><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2020-IMPLAN-CPP-EC-CANCELACION.pdf"
+                                                    target="_blank">Cancelación</a>
+                                            </td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Estudio de muestreo (04-2020-IMPLAN-CPP-EC)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-CONVOCATORIA.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-BASES.pdf"
+                                                    target="_blank">Bases</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a>
+                                                <br><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-PROPUESTAS.pdf"
+                                                    target="_blank">Propuestas</a>
+                                                <br><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2020-IMPLAN-CPP-EC-FALLO.pdf"
+                                                    target="_blank">Fallo</a>
+                                            </td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Servidor-Licenciamiento VMWare (No007-2020-IMPLAN-CPP-EC)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-CONVOCATORIA.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-BASES.pdf"
+                                                    target="_blank">Bases</a></td>
+                                            <td>
+                                                <a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a>
+                                                <br>
+                                                <a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-PROPUESTAS.pdf"
+                                                    target="_blank">Propuestas</a>
+                                                <br>
+                                                <a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No007-2020-IMPLAN-CPP-EC-FALLO.pdf"
+                                                    target="_blank">Fallo</a>
+                                            </td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile_1" role="tabpanel"
+                                aria-labelledby="nav-profile-tab1">
+                                <br>
+                                <h4>Buscar licitación</h4>
+                                <p>Teclea el numero o nombre de licitación:</p>
+                                <input class="form-control" id="myInput3" type="text"
+                                    placeholder="001-2019-IMPLAN UPS..">
+                                <br>
+                                <p class="text-right"><a
+                                        href="https://sitioimplan.s3.us-east-2.amazonaws.com/transparencia/PlanAdquisiciones2019.pdf"
+                                        target="_blank">Consultar Plan de Adquisisciones 2019</a></p>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Licitación</th>
+                                            <th>Convocatoria</th>
+                                            <th>Bases</th>
+                                            <th>Resolución</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="myTable3">
+                                        <tr>
+                                            <td>Audio y Vídeo (No003-2019-IMPLAN-CPP-EC-POE)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-POE.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-BASES.pdf"
+                                                    target="_blank">Bases</a><br><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/AUDIOVIDEO_IMPLAN.rar"
+                                                    target="_blank">Planos</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a><br /><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-PROPUESTAS.pdf"
+                                                    target="_blank">Propuestas</a><br /><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No003-2019-IMPLAN-CPP-EC-FALLO.pdf"
+                                                    target="_blank">Fallo</a></td>
+                                            <td>Cerrada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Climas (No004-2019-IMPLAN-CPP-EC-POE)</td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-POE.pdf"
+                                                    target="_blank">Convocatoria</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-BASES.pdf"
+                                                    target="_blank">Bases</a><br><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/CLIMAS_IMPLAN.rar"
+                                                    target="_blank">Planos</a></td>
+                                            <td><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-ACLARACIONES.pdf"
+                                                    target="_blank">Aclaraciones</a><br /><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-PROPUESTAS.pdf"
+                                                    target="_blank">Propuestas</a><br /><a class="transi"
+                                                    href="https://sitioimplan.s3.us-east-2.amazonaws.com/IMPLAN-Datos/pdf/No004-2019-IMPLAN-CPP-EC-FALLO.pdf"
+                                                    target="_blank">Fallo</a></td>
+                                            <td>Cerrada</td>
 
                                             </td>
                                             <td>Abierta</td>
