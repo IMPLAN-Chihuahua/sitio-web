@@ -583,7 +583,7 @@ function footer() {
       <div class="col-sm-3 pt-5">
         <p class="text-center">
           <a
-            href="http://www.municipiochihuahua.gob.mx/Servicios/Tramites?buscar=dep:Direcci%C3%B3n%20de%20Desarrollo%20Urbano%20y%20Ecolog%C3%ADa"
+            href="https://tramitesenlineacuu.mpiochih.gob.mx/web/inicioWebc.do?opcion=noreg"
             class="trans"
             target="_blank"
             >Trámites municipales</a
