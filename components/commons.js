@@ -557,7 +557,7 @@ function navbar() {
         <li class="nav-item" style="background-color: #fcae41">
         <a
           class="nav-link"
-          href="AnalisisPublicados.html"
+          href="https://editorial.implanchihuahua.org"
           target="_blank"
           >EDITORIAL</a
         >
