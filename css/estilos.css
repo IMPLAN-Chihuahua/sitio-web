@@ -23,6 +23,7 @@
 body {
   background: #ffffff;
 }
+
 /* Make the image fully responsive */
 
 .carousel-inner img {
@@ -182,6 +183,7 @@ a.trans:active {
   .navbar-nav .open .dropdown-menu .dropdown-header {
     color: #fff;
   }
+
 }
 
 /* animacion */
@@ -338,10 +340,81 @@ a.trans:active {
   color: #F4B04A;
 }
 
+
 .transx {
   text-decoration: none;
   font-weight: bold;
 }
+
+.banner-container {
+  position: relative;
+}
+
+.banner-button-left {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translateY(-50%);
+  border: none;
+  color: white;
+  padding: 100px 200px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.banner-button-right {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  transform: translateY(-50%);
+  border: none;
+  color: white;
+  padding: 100px 200px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.banner-button-left-mobile {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translateY(-50%);
+  border: none;
+  color: white;
+  padding: 30px 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.banner-button-right-mobile {
+  position: absolute;
+  top: 72%;
+  right: 0;
+  transform: translateY(-50%);
+  border: none;
+  color: white;
+  padding: 30px 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  max-width: 130px;
+}
+
 
 /* aviso privacidad
 #aviso{
