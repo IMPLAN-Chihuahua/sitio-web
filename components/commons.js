@@ -323,7 +323,13 @@ function navbar() {
                       >ESTUDIO DE MERCADO DE VIVIENDA</a
                     >
                   </li>
-                  <li class="divider"></li>
+                  <li class="divider">
+                                      <a
+                      href="EstudioPoliticas.html"
+                      target="_self"
+                      >ESTUDIO PARA EL DISEÑO DE POLÍTICAS PÚBLICAS </a
+                    >
+                  </li>
                 </ul>
               </li>
             </div>
