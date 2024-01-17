@@ -350,7 +350,14 @@ function navbar() {
                     target="_self"
                     >ESTUDIO DE RESERVAS INDUSTRIALES </a
                 >
-                </li>                                
+                </li>
+                <li class="divider">
+                <a
+                  href="EstudioReservasIndustriales.html"
+                  target="_self"
+                  >VIVIENDA INFORMAL </a
+              >
+              </li>                                                
                 </ul>
               </li>
             </div>
