@@ -353,7 +353,7 @@ function navbar() {
                 </li>
                 <li class="divider">
                 <a
-                  href="EstudioReservasIndustriales.html"
+                  href="ViviendaInformal.html"
                   target="_self"
                   >VIVIENDA INFORMAL </a
               >
