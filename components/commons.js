@@ -579,18 +579,33 @@ function navbar() {
             >SIEE Chihuahua</a
           >
         </li>
-  
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="Dictamenes.html"
-            target="_self"
-            >DICTÁMENES
-          </a>
-        </li>
-        <li class="nav-item" style="background-color: #fcae41">
+        <li class="dropdown menu-large nav-item">
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">DICTAMENES</a>
+        <ul class="dropdown-menu megamenu">
+          <div class="row">
+            <li class="col-md-3 dropdown-item bg-light">
+              <ul>
+                <li>
+                  <a href="Dictamenes.html" target="_self">MODIFICAIONES AL PDUCP</a>
+                </li>
+                <li class="divider"></li>
+              </ul>
+            </li>
+            <li class="col-md-3 dropdown-item bg-light">
+              <ul>
+                <li>
+                  <a href="OpinionesTecnicas.html" target="_self">SESIONES EQUIPAMIENTO</a>
+                </li>
+                <li class="divider"></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li class="nav-item" style="background-color: #fcae41">
         <a
           class="nav-link"
+          style="color: var(--dark) !important;"
           href="https://editorial.implanchihuahua.org"
           target="_blank"
           >EDITORIAL</a
