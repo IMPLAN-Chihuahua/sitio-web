@@ -610,7 +610,23 @@ function navbar() {
           target="_blank"
           >EDITORIAL</a
         >
-      </li>       
+      </li>
+      <li class="nav-item">
+      <a
+        class="nav-link"
+        href="https://sitioimplan.s3.us-east-2.amazonaws.com/PDU_SeptimaActualizaci%C3%B3n.zip"
+        target="_blank"
+      ></a>
+    </li>
+    <li class="nav-item" style="background-color: #06A1FF">
+      <a
+        class="nav-link"
+        style="color: var(--dark) !important;"
+        href="https://sitioimplan.s3.us-east-2.amazonaws.com/PDU_SeptimaActualizaci%C3%B3n.zip"
+        target="_blank"
+        >PDU2040 7°</a
+      >
+    </li>              
       </ul>
     </div>
   </nav>  
