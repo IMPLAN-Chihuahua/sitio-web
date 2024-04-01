@@ -364,94 +364,12 @@ function navbar() {
           </ul>
         </li>
         <li class="dropdown menu-large nav-item">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
-            >PDU2040</a
-          >
-          <ul class="dropdown-menu megamenu">
-            <div class="row">
-              <li class="col-md-3 dropdown-item bg-light">
-                <ul>
-                  <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                  <li>
-                    <a
-                      href="PDU2040.html#Poblacion"
-                      target="_self"
-                      >POBLACIÓN</a
-                    >
-                  </li>
-                  <li class="disabled">
-                    <a
-                      href="PDU2040.html#Soporte"
-                      target="_self"
-                      >ECONOMÍA</a
-                    >
-                  </li>
-  
-                  <li class="divider"></li>
-                </ul>
-              </li>
-              <li class="col-md-3 dropdown-item bg-light">
-                <ul>
-                  <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                  <li>
-                    <a
-                      href="PDU2040.html#Marco"
-                      target="_self"
-                      >MARCO</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="PDU2040.html#Equipamiento"
-                      target="_self"
-                      >EQUIPAMIENTO</a
-                    >
-                  </li>
-                  <li class="divider"></li>
-                </ul>
-              </li>
-              <li class="col-md-3 dropdown-item bg-light">
-                <ul>
-                  <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                  <li>
-                    <a
-                      href="PDU2040.html#Movilidad"
-                      target="_self"
-                      >MOVILIDAD</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="PDU2040.html#Infraestructura"
-                      target="_self"
-                      >INFRAESTRUCTURA</a
-                    >
-                  </li>
-                  <li class="divider"></li>
-                </ul>
-              </li>
-              <li class="col-md-3 dropdown-item bg-light">
-                <ul>
-                  <li class="dropdown-header">TEMAS ESTRATÉGICOS</li>
-                  <li>
-                    <a
-                      href="PDU2040.html#Medio"
-                      target="_self"
-                      >AMBIENTE</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="PDU2040.html#descargables"
-                      target="_self"
-                      >ARCHIVOS DESCARGABLES PDU 2040
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                </ul>
-              </li>
-            </div>
-          </ul>
+          <a
+            href="PDU2040.html"
+            class="nav-link"
+            targe="_self">
+              PDU2040
+          </a>
         </li>
         <li class="dropdown menu-large nav-item">
           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
@@ -617,16 +535,7 @@ function navbar() {
         href="https://sitioimplan.s3.us-east-2.amazonaws.com/PDU_SeptimaActualizaci%C3%B3n.zip"
         target="_blank"
       ></a>
-    </li>
-    <li class="nav-item" style="background-color: #06A1FF">
-      <a
-        class="nav-link"
-        style="color: var(--dark) !important;"
-        href="https://sitioimplan.s3.us-east-2.amazonaws.com/PDU_SeptimaActualizaci%C3%B3n.zip"
-        target="_blank"
-        >PDU2040 7°</a
-      >
-    </li>              
+    </li>      
       </ul>
     </div>
   </nav>  
