@@ -586,7 +586,7 @@ function navbar() {
             <li class="col-md-3 dropdown-item bg-light">
               <ul>
                 <li>
-                  <a href="Dictamenes.html" target="_self">MODIFICAIONES AL PDUCP</a>
+                  <a href="Dictamenes.html" target="_self">MODIFICACIONES AL PDUCP</a>
                 </li>
                 <li class="divider"></li>
               </ul>
