@@ -313,7 +313,7 @@ function navbar() {
                     <a
                       href="PSAMUS.html"
                       target="_self"
-                      >PSAMUS</a
+                      >GOBERNANZA DEL PSAMUS</a
                     >
                   </li>
                   <li class="divider">
