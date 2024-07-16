@@ -184,6 +184,10 @@ a.trans:active {
     color: #fff;
   }
 
+  .proyectos-container {
+    max-height: 600px;
+    overflow-y: auto;
+  }
 }
 
 /* animacion */

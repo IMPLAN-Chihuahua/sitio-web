@@ -138,9 +138,9 @@ function navbar() {
           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
             >PROYECTOS</a
           >
-          <ul class="dropdown-menu megamenu">
+          <ul class="dropdown-menu megamenu proyectos-container">
             <div class="row">
-              <li class="col-md-3 dropdown-item bg-light">
+              <li class="col-md-3 dropdown-item bg-light proyectos-section">
                 <ul>
                   <li class="dropdown-header">SOCIALES</li>
                   <li>
@@ -165,7 +165,7 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
-              <li class="col-md-3 dropdown-item bg-light">
+              <li class="col-md-3 dropdown-item bg-light proyectos-section">
                 <ul>
                   <li class="dropdown-header">URBANOS</li>
                             <li><a href="/PlazaDeArmas.html" target="_self">PLAZA DE ARMAS</a>
@@ -191,7 +191,7 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
-              <li class="col-md-3 dropdown-item bg-light">
+              <li class="col-md-3 dropdown-item bg-light proyectos-section">
                 <ul>
                   <li class="dropdown-header">URBANOS</li>
                   <li>
@@ -232,7 +232,7 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
-              <li class="col-md-3 dropdown-item bg-light">
+              <li class="col-md-3 dropdown-item bg-light proyectos-section">
                 <ul>
                   <li class="dropdown-header">CENTRO DE ESTUDIOS</li>
                   <li>
