@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+#cardContainer {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 300px;
+    max-height: 600px;
+    max-width: 900px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#mapImage {
+    border-radius: 20px 0px 0px 20px;
+    padding: 20px;
+}
+
+#cardHeader {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#edicion {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0px 30px 0px 0px;
+    padding: 10px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+#datum {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0px 30px 0px 0px;
+    padding: 10px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+#escala {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: Roboto, sans-serif;
+    backdrop-filter: blur(1px);
+    padding: 2px;
+}
+
+#imgContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.buttonAction {
+    border-radius: 50px;
+    padding: 10px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.downloadType {
+    /* Put it on center of the svg */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    background-color: rgb(250, 128, 114, 1);
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+
+.downloadContainer {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+
+/* when button action hover, display downloadText */
+
+.buttonAction:hover .downloadtext {
+    display: block;
+}
+
+.downloadtext {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
