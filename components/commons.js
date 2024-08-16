@@ -330,13 +330,6 @@ function navbar() {
                       >ESTUDIO PARA EL DISEÑO DE POLÍTICAS PÚBLICAS </a
                     >
                   </li>
-                   <li class="divider">
-                                      <a
-                      href="EstudioPoliticas.html"
-                      target="_self"
-                      >ESTUDIO PARA EL DISEÑO DE POLÍTICAS PÚBLICAS </a
-                    >
-                  </li>
                   <li class="divider">
                     <a
                       href="EstudioLuisHAlvarez.html"
