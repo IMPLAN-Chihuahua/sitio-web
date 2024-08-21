@@ -188,12 +188,6 @@ function navbar() {
                       >CORREDOR ESCULTÓRICO</a
                     >
                   </li>
-                  <li class="divider"></li>
-                </ul>
-              </li>
-              <li class="col-md-3 dropdown-item bg-light proyectos-section">
-                <ul>
-                  <li class="dropdown-header">URBANOS</li>
                   <li>
                     <a
                       href="ParqueRejon.html"
@@ -228,7 +222,76 @@ function navbar() {
                       target="_self"
                       >PARQUE EL ENCINO</a
                     >
+                  </li>                  
+                  <li class="divider"></li>
+                </ul>
+              </li>
+              <li class="col-md-3 dropdown-item bg-light proyectos-section">
+                <ul>
+                  <li class="dropdown-header">CENTRO DE ESTUDIOS</li>
+                  <li>
+                    <a
+                      href="EstudioDefinicionIncentivosUrbanos.html"
+                      target="_self"
+                      >INCENTIVOS URBANOS</a
+                    >
                   </li>
+                  <li>
+                    <a
+                      href="EstudioMultimodal.html"
+                      target="_self"
+                      >ACTUALIZACIÓN DEL MACROMODELO</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="PSAMUS.html"
+                      target="_self"
+                      >GOBERNANZA DEL PSAMUS</a
+                    >
+                  </li>
+                  <li class="divider">
+                    <a
+                      href="EstudioVivienda.html"
+                      target="_self"
+                      >ESTUDIO DE MERCADO DE VIVIENDA</a
+                    >
+                  </li>
+                  <li class="divider">
+                                      <a
+                      href="EstudioPoliticas.html"
+                      target="_self"
+                      >ESTUDIO PARA EL DISEÑO DE POLÍTICAS PÚBLICAS </a
+                    >
+                  </li>
+                  <li class="divider">
+                    <a
+                      href="EstudioLuisHAlvarez.html"
+                      target="_self"
+                      >ESTUDIO LUIS H. ÁLVAREZ </a
+                  >
+                  </li>    
+                  <li class="divider">
+                  <a
+                    href="EstudioReservasIndustriales.html"
+                    target="_self"
+                    >ESTUDIO DE RESERVAS INDUSTRIALES </a
+                >
+                </li>
+                <li class="divider">
+                <a
+                  href="ViviendaInformal.html"
+                  target="_self"
+                  >VIVIENDA INFORMAL </a
+              >
+              </li> 
+                              <li class="divider">
+                <a
+                  href="EstudioEPMH.html"
+                  target="_self"
+                  >ESTUDIOS BASE - PLAN MUNICIPAL HÍDRICO</a
+              >
+              </li> 
                   <li class="divider"></li>
                 </ul>
               </li>
@@ -295,62 +358,7 @@ function navbar() {
                       >ESTUDIO ZONAS DE VALOR AMBIENTAL</a
                     >
                   </li>
-                  <li>
-                    <a
-                      href="EstudioDefinicionIncentivosUrbanos.html"
-                      target="_self"
-                      >INCENTIVOS URBANOS</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="EstudioMultimodal.html"
-                      target="_self"
-                      >ACTUALIZACIÓN DEL MACROMODELO</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="PSAMUS.html"
-                      target="_self"
-                      >GOBERNANZA DEL PSAMUS</a
-                    >
-                  </li>
-                  <li class="divider">
-                    <a
-                      href="EstudioVivienda.html"
-                      target="_self"
-                      >ESTUDIO DE MERCADO DE VIVIENDA</a
-                    >
-                  </li>
-                  <li class="divider">
-                                      <a
-                      href="EstudioPoliticas.html"
-                      target="_self"
-                      >ESTUDIO PARA EL DISEÑO DE POLÍTICAS PÚBLICAS </a
-                    >
-                  </li>
-                  <li class="divider">
-                    <a
-                      href="EstudioLuisHAlvarez.html"
-                      target="_self"
-                      >ESTUDIO LUIS H. ÁLVAREZ </a
-                  >
-                  </li>    
-                  <li class="divider">
-                  <a
-                    href="EstudioReservasIndustriales.html"
-                    target="_self"
-                    >ESTUDIO DE RESERVAS INDUSTRIALES </a
-                >
-                </li>
-                <li class="divider">
-                <a
-                  href="ViviendaInformal.html"
-                  target="_self"
-                  >VIVIENDA INFORMAL </a
-              >
-              </li>                                                
+                                               
                 </ul>
               </li>
             </div>
