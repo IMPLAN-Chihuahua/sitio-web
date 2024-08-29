@@ -1,0 +1,143 @@
+Z:\PDU2040\pdf\Diagnostico_Ambiente.pdf
+Z:\PDU2040\pdf\Diagnostico_Equipamiento.pdf
+Z:\PDU2040\pdf\Diagnostico_Estructura.pdf
+Z:\PDU2040\pdf\Diagnostico_Infraestructura.pdf
+Z:\PDU2040\pdf\Diagnostico_Marco.pdf
+Z:\PDU2040\pdf\Diagnostico_Movilidad.pdf
+Z:\PDU2040\pdf\Diagnostico_Poblacion.pdf
+Z:\PDU2040\pdf\Diagnostico_Soporte.pdf
+Z:\PDU2040\pdf\Estrategia_Ambiente.pdf
+Z:\PDU2040\pdf\Estrategia_Equipamiento.pdf
+Z:\PDU2040\pdf\Estrategia_Estructura.pdf
+Z:\PDU2040\pdf\Estrategia_Infraestructura.pdf
+Z:\PDU2040\pdf\Estrategia_Movilidad.pdf
+Z:\PDU2040\pdf\Estrategia_Poblacion.pdf
+Z:\PDU2040\pdf\Estrategia_Soporte.pdf
+Z:\PDU2040\pdf\Estrategia_Territorial.pdf
+Z:\PDU2040\pdf\EstrategiaGestiondelDesarrollo.pdf
+Z:\PDU2040\pdf\EstrategiaInstrumentosyNormas.pdf
+Z:\PDU2040\pdf\PDU2040_ACT2016.pdf
+Z:\PDU2040\pdf\PDU2040-2016-Quinta Actualizacion.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Diagnostico\1 Poblacion, desarrollo social y cultura urbana\PDU2040_2009-DG-101 - Densidad de Poblaci¢n.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Diagnostico\1 Poblacion, desarrollo social y cultura urbana\PDU2040_2009-DG-111 - Zonas de Atenci¢n Prioritaria.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-201 - Zonificacion Primaria.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-202 - Zonificacion Secundaria.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-203 - Estructura Urbana.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-401 - Protecci¢n Ambiental.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-402 - Sistema de Espacio Publico Abierto.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-501 - Captaci¢n, Regulaci¢n e Infiltraci¢n del Agua Pluvial.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-502 - Infraestructura de Agua Pluvial en Rios y Arroyos.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-601 - Macroproyectos de Jerarquia Urbana.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-701 - Estructura Vial.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-702 - Infraestructura Vial.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-711 - Transporte No Motorizado.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Cartografico\Estrategia\PDU2040_2009-ET-721 - Transporte Publico Urbano.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Anexo Secciones Viales\PDU2040_2009 - Anexo Secciones Viales.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-00 Indice general.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-01 Antecedentes.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-02 Diagnostico.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-03 Vision.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-04 Propuesta de desarrollo urbano.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-05 Estrategia de gestion.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-06 Instrumentos de desarrollo urbano.pdf
+Z:\PDU2040\pdf\PDU2040_2009\Documento\PDU2040_2009-07 Bibliografia Creditos Glosario.pdf
+Z:\PDU2040\pdf\PDU2040_2009\EstudiosSoporte\PSMAP - Etapa I, Diagnostico.pdf
+Z:\PDU2040\pdf\PDU2040_2009\EstudiosSoporte\PSMAP_II_Estrategia.pdf
+Z:\PDU2040\pdf\PDU2040_2009\EstudiosSoporte\PSMAP_III_Normatividad.pdf
+Z:\PDU2040\pdf\PDU2040_2009\EstudiosSoporte\PSMAP_IV_Programacion.pdf
+Z:\PDU2040\pdf\PDU2040_2010\Anexo Cartografico\PDU2040_2010-ET-202-B - Zonificacion Secundaria.pdf
+Z:\PDU2040\pdf\PDU2040_2010\Documento\PDU2040_2010 Ajustes tecnicos a Zonificacion Secundaria.pdf
+Z:\PDU2040\pdf\PDU2040_2013\Anexo Cartografico\PDU2040_2013-ET-201 - Zonificacion Primaria.pdf
+Z:\PDU2040\pdf\PDU2040_2013\Anexo Cartografico\PDU2040_2013-ET-202-A - Adecuaciones a Zonificacion Secundaria.pdf
+Z:\PDU2040\pdf\PDU2040_2013\Anexo Cartografico\PDU2040_2013-ET-202-B - Zonificacion Secundaria.pdf
+Z:\PDU2040\pdf\PDU2040_2013\Anexo Cartografico\PDU2040_2013-ET-701 - Estructura Vial.pdf
+Z:\PDU2040\pdf\PDU2040_2013\Anexo Secciones Viales\PDU2040_2013 - Anexo Secciones Viales.pdf
+Z:\PDU2040\pdf\PDU2040_2013\Carta Urbana\PDU2040_2013 - Carta Urbana.pdf
+Z:\PDU2040\pdf\PDU2040_2013\Documento\PDU2040-2013 - Cuarta Actualizacion.pdf
+Z:\PDU2040\pdf\PDU2040_2016\CARTA SINTESIS.pdf
+Z:\PDU2040\pdf\PDU2040_2016\PDF_CARTA PDU2040_2016.pdf
+Z:\PDU2040\pdf\PDU2040_2016\PDU2040-2016-Quinta Actualizacion.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Cartografico\PDU2040-2016-ET-201 - Zonificacion Primaria.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Cartografico\PDU2040-2016-ET-202-A - Adecuaciones a Zonificacion Secundaria.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Cartografico\PDU2040-2016-ET-202-B - Zonificacion Secundaria.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Cartografico\PDU2040-2016-ET-701 - Estructura Vial.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Cartografico\PDU2040-ET-702-2016 - Infraestructura Vial.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PAC Aeropuerto\PAC PLAN VISION AEROPUERTO - Anexo Cartografico.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PAC Aeropuerto\PAC PLAN VISION AEROPUERTO.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PAC Haciendita\PAC LA HACIENDITA - Anexo Cartografico.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PAC Haciendita\PAC LA HACIENDITA.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM Sacramento\PM RIO SACRAMENTO.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM Sacramento\MAPEABLES\corredores.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM Sacramento\MAPEABLES\PMRS - Planos de diagnostico.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM Sacramento\MAPEABLES\PMRS-ET-001 - Sintesis de la estrategia2.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM Sacramento\MAPEABLES\Politicas Plantilla.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\PROGRAMA MAESTRO SAN FELIPE.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-01 - Plano Base.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-02 - Curvas de Nivel.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-03 - Riesgos Geologicos.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-04 - Densidad de Poblaci¢n.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-05 - Densidad de Vivienda.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-06 - Concentracion de las actividades productivas.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-07 - Tenencia de la Tierra.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-08 - Caracteristicas generales del sector economico.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-09 - Personal Ocupado del Sector.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-10 - Usos de Suelo.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-11 - Corredores urbanos.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-12 - Equipamiento.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-13 - Coeficiente de Ocupaci¢n del Suelo.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-14 - Coeficiente de Utilizacion de Suelo.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-15 - Desocupaci¢n de vivienda por manzana.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-16 - Predios sin construccion.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-17 - Predios subutilizados.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-18 - Niveles Construidos.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-19 - Cobertura Agua Potable.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-20 - Red Morada.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-21 - Areas Inundables Drenaje y Alcantarilladol.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-22 - Energ¡a Electrica.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-23 - Riesgos Antropogenicos.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-24 - Antenas.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-25 - Estructura vial.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-26 - Infraestructura Vial.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-27 - Transporte Publico.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-28 - Distancias, desplazamientos a los destinos.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-29 - Red Peatonal.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-30 - Transporte no Motorizado.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-31 - Estacionamientos.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-32 - Zonas Homogeneas.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-33 - Parques y Jardines.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\DIAGNOSTICO\PMSF 2016-DG-34 - Llenos y vac¡os.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-01 - Estrategias Generales.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-02 - Estrategias por Sector.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-03 - Estrategias por Corredor.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-04 - Estrategia Movilidad Peatonal.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-05 - Estrategia de Movilidad Alternativa no Motorizada.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-06 - Estacionamiento y Predios Subutilizados.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-07 - Remanentes Urbanos.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\PM San Felipe\MAPEABLES\ESTRATEGIA\PMSF 2016-ET-08 -  Estrategia de Usos de Suelo PDU.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\ZEID Norte\PAC ZEID NORTE - Anexo Cartografico.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Documental\ZEID Norte\PAC ZEID NORTE.pdf
+Z:\PDU2040\pdf\PDU2040_2016\Anexo Secciones Viales\PDU2040-2016 - Anexo Secciones Viales.pdf
+Z:\PDU2040\pdf\PDU2040_2016\EQUIPA\2.4 Equipamieto Urbano.pdf
+Z:\PDU2040\pdf\PDU2040_2016\EQUIPA\4.6 Aportaciones a la Estrategia de Equipamieto.pdf
+Z:\PDU2040\pdf\PDU2040_2016\ESTRUCTURA URBANA\Poligono de Actuacion Concentrada_La Haciendita.pdf
+Z:\PDU2040\pdf\PDU2040_2016\ESTRUCTURA URBANA\Poligonos de Concenrtacion Urbana_Vision Zona Aeropuerto.pdf
+Z:\PDU2040\pdf\PDU2040_2016\ESTRUCTURA URBANA\Zona Especial de Integracion al Desarrollo_ZEID Norte.pdf
+Z:\PDU2040\pdf\PDU2040_2016\INFRA\2.6 Infraestructura Urbana.pdf
+Z:\PDU2040\pdf\PDU2040_2016\INFRA\2.7 Riesgo y Vulnerabilidad.pdf
+Z:\PDU2040\pdf\PDU2040_2016\INFRA\4.9  Aportaciones a la Estrategia de Infraestructura.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MARCO NORMATIVO\1.1 Justificacion.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MARCO NORMATIVO\1.2 Antecedentes.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MEDIO AMBIENTE\2.5 Medio Ambiente y Recursos Naturales.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MEDIO AMBIENTE\2.7 Riesgo y Vulnerabilidad.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MEDIO AMBIENTE\4.10 Aportaciones a la Estrategia de Riesgos y Vulnerabilidad.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MEDIO AMBIENTE\4.7 Aportaciones a la estrategia de medio ambiente y recursos naturales.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MEDIO AMBIENTE\PACMUN CHIHUAHUA_2016.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MOVILIDAD\2.3 Estructura de Movilidad.pdf
+Z:\PDU2040\pdf\PDU2040_2016\MOVILIDAD\4.5 Aportaciones a la Estrategia de Movilidad.pdf
+Z:\PDU2040\pdf\PDU2040_2016\PeriodicoOficial\ANEXO 076-2016 ACUERDO 099 I PDU 2040 BYN.pdf
+Z:\PDU2040\pdf\PDU2040_2016\PeriodicoOficial\ANEXO 076-2016 ACUERDO 099 II PDU 2040 BYN.pdf
+Z:\PDU2040\pdf\PDU2040_2016\POBLACION\1.3 Vision Metropolitana.pdf
+Z:\PDU2040\pdf\PDU2040_2016\POBLACION\2.1 Estructura Socioeconomica.pdf
+Z:\PDU2040\pdf\PDU2040_2016\POBLACION\PMSF.pdf
+Z:\PDU2040\pdf\PDU2040_2016\SOPORTE ECONOMIA\2.1.3 Soporte para la Economia.pdf
+Z:\PDU2040\pdf\PDU2040_2016\SOPORTE ECONOMIA\4.8 Aportaciones a la estrategia de gestion y adimistracion del desarrollo.pdf
