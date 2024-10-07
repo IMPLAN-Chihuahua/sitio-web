@@ -35,6 +35,32 @@
   <script type="text/javascript" src="./components/commons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 </head>
+<style>
+  .contenedora {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+
+  .centrada {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centrada a {
+  position: relative;
+  bottom: 4em;
+  right: 4em;
+  background-color: #595959;
+  border-radius: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}
+  
+</style>
 
 <body>
   <script>
@@ -51,9 +77,19 @@
 
       <!-- Banner 2 -->
       <div class="carousel-item active">
-        <a href="/Licitaciones.html" target="_blank">
-          <img class="img-fluid" src="banners/licitacion.png" alt="IMPLAN" width="1100" height="500" />
-        </a>
+        <div class="contenedora">
+          <img src="banners/Foro.jpg" />
+          <div class="row centrada">
+            <div class="col">
+              <a href="https://implan.eventbrite.com.mx" target="_blank">Registro</a>
+            </div>
+            <div class="col">
+              <a href="/general/pdf/ProgramaForo.pdf" target="_blank">Programa</a>
+            </div>
+            
+          </div>
+          
+        </div>
       </div>
 
       <!-- Banner 1 -->
@@ -88,9 +124,17 @@
       <div class="carousel-inner">
         <!-- Banner-phone 1 -->
         <div class="carousel-item active">
-          <a href="/Licitaciones.html" target="_blank">
-            <img class="img-fluid" src="banners/licitacion_cel.png" alt="IMPLAN" />
-          </a>
+          <div class="contenedora">
+            <img src="banners/ForoCell.jpg" />
+            <div class="row centrada">
+              <div class="col">
+                <a href="https://implan.eventbrite.com.mx" target="_blank">Registro</a>
+              </div>
+
+              
+            </div>
+            
+          </div>
         </div>
 
         <!-- Banner-phone 2 -->
@@ -194,27 +238,24 @@
           Datos para todos
         </h4>
         <p style="line-height: 1.6; font-family: 'Source Sans Pro', sans-serif">
-          <b>SEMANA DE LA LACTANCIA MATERNA</b>
+          <b>214 Aniversario del Grito de Independencia</b>
         </p>
         <p style="line-height: 1.6; font-family: 'Source Sans Pro', sans-serif">
-          En el marco de la Semana Mundial de la Lactancia, te compartimos las ubicaciones de los lactarios en la ciudad
-          y de las
-          actividades del Gobierno Municipal, a fin de promover y crear conciencia sobre la importancia que tiene la
-          lactancia
-          materna.
+          El Grito de Independencia es uno de los eventos históricos más importantes de nuestro país, pues marca el
+          inicio de la lucha por la independencia de México y se conmemora cada 15 de septiembre.
           <caption>
             <br />
             <br />
             <i>
-              "Contar con espacios especializados para que una mamá pueda alimentar dignamente a su bebé, es un
-              compromiso que tenemos como gobierno humanista, pero también en solidaridad”. - Karina Olivas, presidenta
-              del DIF municipal.
+              Es un evento que se celebra a nivel nacional, estatal y municipal, rememorando el momento histórico en
+              el cual se inició la lucha por la libertad nacional.
             </i>
           </caption>
           <br />
           <br />
           <cite>
-            Fuente: GOB MUNICIPAL, IMPLAN, DIF, IMM, IMPAS, IMPE
+            Fuente: IMPLAN, DENUE INEGI, GOB ESTATAL CHIH, GOB MUNICIPAL CHIH
+
           </cite>
         </p>
         <p class="text-right">
@@ -245,16 +286,11 @@
                 <h4 class="display-4 text-center text-secondary d-none d-lg-block principal">
                   Contáctanos
                 </h4>
-                <!-- form.123formbuilder.com script begins here --><iframe allowTransparency="true"
-                  style="min-height: 300px" width="100%" height="110%" id="contactform123" name="contactform123"
-                  marginwidth="0" marginheight="0" frameborder="0"
-                  src="https://form.123formbuilder.com/my-contact-form-3887722.html">
-                  <p>
-                    Your browser does not support iframes. The contact form
-                    cannot be displayed. Please use another contact method
-                    (phone, fax etc)
-                  </p>
-                </iframe><!-- form.123formbuilder.com script ends here -->
+                <!-- form.123formbuilder.com script begins here -->
+                <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/3887722.js"
+                  data-role="form" data-default-width="800px"
+                  data-custom-vars="hasEmbedFormStyle=1&hasTransparentBg=1"></script>
+                <!-- form.123formbuilder.com script ends here -->
               </div>
             </div>
           </div>
