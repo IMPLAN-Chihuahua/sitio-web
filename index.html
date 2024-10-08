@@ -42,13 +42,20 @@
     text-align: center;
   }
 
-
   .centrada {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
+  .centrada-small {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+
   .centrada a {
   position: relative;
   bottom: 4em;
@@ -59,7 +66,26 @@
   text-transform: uppercase;
   padding: 1em 1.5em;
 }
+
   
+  .centrada-small {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+
+  .centrada-small-button{
+    background-color: #595959;
+    border-radius: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+  }
+
 </style>
 
 <body>
@@ -113,6 +139,7 @@
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
+
   <!-- small -->
   <div class="d-lg-none">
     <div id="foto22" class="carousel slide" data-ride="carousel">
@@ -124,19 +151,24 @@
       <div class="carousel-inner">
         <!-- Banner-phone 1 -->
         <div class="carousel-item active">
+
+
           <div class="contenedora">
             <img src="banners/ForoCell.jpg" />
-            <div class="row centrada">
-              <div class="col centrada">
+
+            <div class="centrada-small">
+              <div class="centrada-small-button">
                 <a href="https://implan.eventbrite.com.mx" target="_blank">Registro</a>
               </div>
-              <div class="col centrada">
+              <div class="centrada-small-button">
                 <a href="/general/pdf/ProgramaForo.pdf" target="_blank">Programa</a>
               </div>
-              
+
             </div>
-            
+
           </div>
+
+
         </div>
 
         <!-- Banner-phone 2 -->
