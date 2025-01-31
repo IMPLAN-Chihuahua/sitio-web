@@ -439,7 +439,7 @@ function navbar() {
           >
           <ul class="dropdown-menu megamenu">
             <div class="row">
-              <li class="col-md-4 dropdown-item bg-light">
+              <li class="col-md-3 dropdown-item bg-light">
                 <ul>
                   <li>
                     <a
@@ -451,7 +451,19 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
-              <li class="col-md-4 dropdown-item bg-light">
+              <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li>
+                    <a
+                      href="general/pdf/PAOT-2025.pdf"
+                      target="_blank"
+                      >PADA 2025</a
+                    >
+                  </li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
+              <li class="col-md-3 dropdown-item bg-light">
                 <ul>
                   <li>
                     <a
@@ -463,7 +475,7 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
-              <li class="col-md-4 dropdown-item bg-light">
+              <li class="col-md-3 dropdown-item bg-light">
                 <ul>
                   <li>
                     <a
