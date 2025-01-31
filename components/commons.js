@@ -455,7 +455,7 @@ function navbar() {
                 <ul>
                   <li>
                     <a
-                      href="general/pdf/PADA2025.pdf"
+                      href="general/pdf/PADA2025_IMPLAN.pdf"
                       target="_blank"
                       >PADA 2025</a
                     >
