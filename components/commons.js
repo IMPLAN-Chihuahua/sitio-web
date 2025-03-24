@@ -85,55 +85,7 @@ function navbar() {
             </div>
           </ul>
         </li>
-        <li class="dropdown menu-large nav-item">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
-            >CHIHUAHUA</a
-          >
-          <ul class="dropdown-menu megamenu">
-            <div class="row">
-              <li class="col-md-3 dropdown-item bg-light">
-                <ul>
-                  <li class="dropdown-header">ÁMBITO</li>
-                  <li>
-                    <a
-                      href="Entorno.html#AmbitoRegional"
-                      target="_self"
-                      >REGIONAL</a
-                    >
-                  </li>
-                  <li class="disabled">
-                    <a
-                      href="Entorno.html#AmbitoMunicipal"
-                      target="_self"
-                      >MUNICIPAL</a
-                    >
-                  </li>
-                  <li class="divider"></li>
-                </ul>
-              </li>
-              <li class="col-md-3 dropdown-item bg-light">
-                <ul>
-                  <li class="dropdown-header">ENTORNO</li>
-                  <li>
-                    <a
-                      href="Entorno.html#AmbitoEconomico"
-                      target="_self"
-                      >ECONÓMICO</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="Entorno.html#AmbitoUrbano"
-                      target="_self"
-                      >URBANO</a
-                    >
-                  </li>
-                  <li class="divider"></li>
-                </ul>
-              </li>
-            </div>
-          </ul>
-        </li>
+
         <li class="dropdown menu-large nav-item">
           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
             >PROYECTOS</a
