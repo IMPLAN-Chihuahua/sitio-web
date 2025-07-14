@@ -502,8 +502,27 @@ function navbar() {
           >EDITORIAL</a
         >
       </li>
-      <li class="nav-item">
-    </li>      
+      <li class="dropdown menu-large nav-item">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
+            >TRANSPARENCIA</a
+          >
+          <ul class="dropdown-menu megamenu">
+            <div class="row">
+              <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li><a href="/transparencia/DOCUMENTO DE SEGURIDAD.pdf" target="_blank">DOCUMENTO DE SEGURIDAD</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
+              <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li><a href="/transparencia/AVISOS_PRIVACIDAD.zip" target="_blank">AVISOS DE PRIVACIDAD</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>  
