@@ -124,7 +124,10 @@ function navbar() {
                             </li>
                             <li><a href="/CalleMorelos.html" target="_self">PEATONALIZACIÓN CALLE MORELOS</a>
                             </li>
-                            <li><a href="/VenustianoCarranza.html" target="_self">AV. VENUSTIANO CARRANZA</a>
+                           
+                             <li><a href="/VenustianoCarranza.html" target="_self">AV. VENUSTIANO CARRANZA</a>
+                            </li>
+                             <li><a href="/EstudioCruceSeguros.html" target="_self">CRUCEROS SEGUROS</a>
                             </li>
                   <li>
                     <a
