@@ -133,14 +133,14 @@
       //   titulos: ['Licenciado en Ciencias de la Información, por la Universidad Autónoma de Chihuahua (UACH)'],
       //   cedulas: [''],
       // },
-      {
-        nombre: 'Lic. Alberto Hernández Segura',
-        imagen: '14-Alberto.png',
-        dpto: 'Vinculación y Difusión',
-        correo: 'alberto.hernandez@implanchihuahua.org',
-        titulos: ['Licenciado en Diseño Gráfico Industrial por la Universidad de Durango'],
-        cedulas: [''],
-      },
+      // {
+      //   nombre: 'Lic. Alberto Hernández Segura',
+      //   imagen: '14-Alberto.png',
+      //   dpto: 'Vinculación y Difusión',
+      //   correo: 'alberto.hernandez@implanchihuahua.org',
+      //   titulos: ['Licenciado en Diseño Gráfico Industrial por la Universidad de Durango'],
+      //   cedulas: [''],
+      // },
       // {
       //   nombre: 'Dr. Carlos R. Hernández Velasco',
       //   imagen: '15-CarlosR.png',
@@ -165,14 +165,14 @@
       //   titulos: ['Doctora  Philosophia, por la Universidad Autónoma de Chihuahua', 'Maestra en Ciencias por la Universidad Autónoma de Chihuahua', 'Ingeniero en Desarrollo Territorial, por la Universidad Autónoma de Chihuahua'],
       //   cedulas: ['', '', '']
       //},
-      {
-        nombre: 'L.S.C.A Martha Verónica Lugo Alarcón',
-        imagen: '16-Vero.png',
-        dpto: 'Coordinadora Administrativa',
-        correo: 'veronica.lugo@implanchihuahua.org',
-        titulos: ['Licenciada en Sistemas de Computación Administrativa, por la Universidad Autónoma de Chihuahua (UACH)'],
-        cedulas: [''],
-      },
+      // {
+      //   nombre: 'L.S.C.A Martha Verónica Lugo Alarcón',
+      //   imagen: '16-Vero.png',
+      //   dpto: 'Coordinadora Administrativa',
+      //   correo: 'veronica.lugo@implanchihuahua.org',
+      //   titulos: ['Licenciada en Sistemas de Computación Administrativa, por la Universidad Autónoma de Chihuahua (UACH)'],
+      //   cedulas: [''],
+      // },
       {
         nombre: 'Ing. Joel Arturo López Gandarilla',
         imagen: '17-Joel.png',
@@ -302,7 +302,7 @@
         titulos: ['Licenciado en Derecho, por la Universidad Autónoma de Chihuahua (UACH)'],
         cedulas: [''],
       },
-     // {
+      // {
       //  nombre: 'Ing. Luis Fernando Sánchez Gallegos',
       //  imagen: '38-LuisF.png',
       //  dpto: 'Planes y programas',
@@ -415,19 +415,22 @@
 
   <script src="js/bootstrap.min.js"></script>
   <!-- Modal del organigrama -->
-<div id="modalOrganigrama" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center; flex-direction:column;">
-  <button onclick="cerrarModal()" style="position:absolute; top:20px; right:30px; background-color:red; color:white; border:none; padding:10px 20px; font-size:16px; border-radius:5px; cursor:pointer;">Cerrar</button>
-  <img src="Imagenes-Elementos/ORGANIGRAMA01092025.png" alt="Organigrama" style="max-width:90%; max-height:80%; border-radius:10px; box-shadow:0 0 20px white;">
-</div>
-<script>
-  document.getElementById('organigrama').addEventListener('click', function() {
-    document.getElementById('modalOrganigrama').style.display = 'flex';
-  });
+  <div id="modalOrganigrama"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8); z-index:9999; justify-content:center; align-items:center; flex-direction:column;">
+    <button onclick="cerrarModal()"
+      style="position:absolute; top:20px; right:30px; background-color:red; color:white; border:none; padding:10px 20px; font-size:16px; border-radius:5px; cursor:pointer;">Cerrar</button>
+    <img src="Imagenes-Elementos/ORGANIGRAMA01092025.png" alt="Organigrama"
+      style="max-width:90%; max-height:80%; border-radius:10px; box-shadow:0 0 20px white;">
+  </div>
+  <script>
+    document.getElementById('organigrama').addEventListener('click', function () {
+      document.getElementById('modalOrganigrama').style.display = 'flex';
+    });
 
-  function cerrarModal() {
-    document.getElementById('modalOrganigrama').style.display = 'none';
-  }
-</script>
+    function cerrarModal() {
+      document.getElementById('modalOrganigrama').style.display = 'none';
+    }
+  </script>
 
 </body>
 
