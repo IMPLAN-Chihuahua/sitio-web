@@ -517,6 +517,12 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
+              <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li><a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank">SOLICITUDES DE ACCESO A LA INFORMACIÓN</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
             </div>
           </ul>
         </li>
