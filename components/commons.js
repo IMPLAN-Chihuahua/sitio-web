@@ -398,18 +398,6 @@ function navbar() {
                 <ul>
                   <li>
                     <a
-                      href="https://ichitaip.org.mx/redireccion/?so=1555"
-                      target="_blank"
-                      >TRANSPARENCIA</a
-                    >
-                  </li>
-                  <li class="divider"></li>
-                </ul>
-              </li>
-              <li class="col-md-3 dropdown-item bg-light">
-                <ul>
-                  <li>
-                    <a
                       href="general/pdf/PADA2025_IMPLAN.pdf"
                       target="_blank"
                       >PADA 2025</a
@@ -513,13 +501,19 @@ function navbar() {
             <div class="row">
               <li class="col-md-3 dropdown-item bg-light">
                 <ul>
-                  <li><a href="/transparencia/DOCUMENTO DE SEGURIDAD.pdf" target="_blank">DOCUMENTO DE SEGURIDAD</a></li>
+                  <li><a href="/transparencia/AVISOS_PRIVACIDAD.zip" target="_blank">AVISOS DE PRIVACIDAD</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
+               <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li><a href="/transparencia/Tabla de Aplicabilidad.pdf" target="_blank">TABLA DE APLICABILIDAD</a></li>
                   <li class="divider"></li>
                 </ul>
               </li>
               <li class="col-md-3 dropdown-item bg-light">
                 <ul>
-                  <li><a href="/transparencia/AVISOS_PRIVACIDAD.zip" target="_blank">AVISOS DE PRIVACIDAD</a></li>
+                  <li><a href="https://ichitaip.org.mx/redireccion/?so=1555" target="_blank">OBLIGACIONES DE TRANSPARENCIA</a></li>
                   <li class="divider"></li>
                 </ul>
               </li>
