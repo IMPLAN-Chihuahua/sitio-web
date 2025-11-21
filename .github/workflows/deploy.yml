@@ -8,9 +8,10 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-    #test 
       - name: Aplicar cambios del repositorio en el servidor.
         run: |
+          git config --global --add safe.directory /var/www/html
+          
           cd /var/www/html
 
           git pull origin main
