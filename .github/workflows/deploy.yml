@@ -1,0 +1,15 @@
+name: Pull new changes on main for implanchihuauha.org 
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Aplicar cambios del repositorio en el servidor.
+        run: |
+          cd /var/www/html
+
+          git pull origin main
