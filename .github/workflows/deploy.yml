@@ -8,6 +8,7 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
+    #test 
       - name: Aplicar cambios del repositorio en el servidor.
         run: |
           cd /var/www/html
