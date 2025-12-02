@@ -246,6 +246,13 @@ function navbar() {
                   target="_self"
                   >ESTUDIOS BASE - PLAN MUNICIPAL HÍDRICO</a
               >
+                                <li>
+                    <a
+                      href="InsumosAtlasMunicipalRiesgos.html"
+                      target="_self"
+                      >INSUMOS PARA ATLAS DE RIESGOS</a
+                    >
+                  </li>
               </li> 
                   <li class="divider"></li>
                 </ul>
@@ -313,6 +320,7 @@ function navbar() {
                       >ESTUDIO ZONAS DE VALOR AMBIENTAL</a
                     >
                   </li>
+
                                                
                 </ul>
               </li>
