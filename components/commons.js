@@ -320,6 +320,13 @@ function navbar() {
                       >ESTUDIO ZONAS DE VALOR AMBIENTAL</a
                     >
                   </li>
+                  <li>
+                    <a
+                      href="EstudiosAmbientales.html"
+                      target="_self"
+                      >ESTUDIO AMBIENTAL MESA DE LOS CABALLOS</a
+                    >
+                  </li>
 
                                                
                 </ul>
