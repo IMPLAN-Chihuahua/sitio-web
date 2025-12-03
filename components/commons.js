@@ -322,7 +322,7 @@ function navbar() {
                   </li>
                   <li>
                     <a
-                      href="EstudiosAmbientales.html"
+                      href="MesaDeLosCaballos.html"
                       target="_self"
                       >ESTUDIO AMBIENTAL MESA DE LOS CABALLOS</a
                     >
