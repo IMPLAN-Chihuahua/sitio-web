@@ -253,6 +253,13 @@ function navbar() {
                       >INSUMOS PARA ATLAS DE RIESGOS</a
                     >
                   </li>
+                  <li>
+                    <a
+                      href="EstudioInsumosHidricaMunicipal.html"
+                      target="_self"
+                      >INSUMOS PARA LA PLANEACIÓN HÍDRICA MUNICIPAL</a
+                    >
+                  </li>
               </li> 
                   <li class="divider"></li>
                 </ul>
