@@ -529,7 +529,7 @@ function navbar() {
               </li>
                <li class="col-md-3 dropdown-item bg-light">
                 <ul>
-                  <li><a href="/transparencia/Tabla de Aplicabilidad.pdf" target="_blank">TABLA DE APLICABILIDAD</a></li>
+                  <li><a href="/transparencia/Tabla de Aplicabilidad IMPLAN.pdf" target="_blank">TABLA DE APLICABILIDAD</a></li>
                   <li class="divider"></li>
                 </ul>
               </li>
