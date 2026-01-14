@@ -490,14 +490,6 @@ function navbar() {
             <li class="col-md-3 dropdown-item bg-light">
               <ul>
                 <li>
-                  <a href="OpinionesTecnicas.html" target="_self">CESIONES EQUIPAMIENTO</a>
-                </li>
-                <li class="divider"></li>
-              </ul>
-            </li>
-            <li class="col-md-3 dropdown-item bg-light">
-              <ul>
-                <li>
                   <a href="CiudadCercanaSolicitudes.html" target="_self">SOLICITUDES DE CIUDAD CERCANA</a>
                 </li>
                 <li class="divider"></li>
