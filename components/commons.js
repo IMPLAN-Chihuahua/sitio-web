@@ -647,6 +647,30 @@ function footer() {
           ><small>Aviso de Privacidad Simplificado</small></span
         ></a
       >
+      <br>
+    <a
+      class="trans"
+      href="general/pdf/avisos/aviso-comision-ejecutiva.pdf"
+      target="_blank"
+      title="Aviso de Privacidad Simplificado e Integral para Selección de la Comisión Ejecutiva"
+    >
+      <span class="float-right text-white">
+        <small>Aviso de privacidad – Comisión Ejecutiva</small>
+      </span>
+    </a>
+
+    <br />
+
+    <a
+      class="trans"
+      href="general/pdf/avisos/aviso-presidencia-consejo.pdf"
+      target="_blank"
+      title="Aviso de Privacidad Simplificado e Integral para Selección de Titular de la Presidencia del Consejo"
+    >
+      <span class="float-right text-white">
+        <small>Aviso de privacidad – Presidencia del Consejo</small>
+      </span>
+    </a>
     </div>
   </footer>`;
 }
