@@ -537,6 +537,12 @@ function navbar() {
                   <li class="divider"></li>
                 </ul>
               </li>
+              <li class="col-md-3 dropdown-item bg-light">
+                <ul>
+                  <li><a href="UnidadTransparencia.html" target="_blank">UNIDAD DE TRANSPARENCIA</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
             </div>
           </ul>
         </li>
