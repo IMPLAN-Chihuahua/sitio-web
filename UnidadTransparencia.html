@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>IMPLAN │ Chihuahua</title>
+    <meta name="author" content="IMPLAN" />
+    <meta name="keywords" content="IMPLAN..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/b4megamenu.css" />
+    <link rel="stylesheet" href="css/b5megamenu.css" />
+    <link rel="shortcut icon" href="img/implan.ico" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/fuentes.css" />
+
+    <script type="text/javascript" src="./components/commons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <style>
+        .transparencia-header {
+            background-color: #FDB94E;
+            color: white !important;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .section-description {
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+
+        /* --- ESTILOS DE LOS NODOS --- */
+        .node-box {
+            border-radius: 12px;
+            padding: 15px;
+            color: white !important;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+        }
+
+        .bg-dark-blue {
+            background-color: #1F3A4D;
+        }
+
+        .bg-teal {
+            background-color: #2A7B88;
+        }
+
+        /* --- CONECTORES --- */
+        .tree-line-down {
+            width: 3px;
+            height: 25px;
+            background-color: #1F3A4D;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .tree-bracket {
+            width: 50%;
+            height: 25px;
+            border-top: 3px solid #1F3A4D;
+            border-left: 3px solid #1F3A4D;
+            border-right: 3px solid #1F3A4D;
+            border-radius: 15px 15px 0 0;
+            margin: -3px auto 0 auto;
+            position: relative;
+        }
+
+        .tree-dot {
+            width: 12px;
+            height: 12px;
+            background-color: #1F3A4D;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .dot-top {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dot-left {
+            bottom: -6px;
+            left: -6px;
+        }
+
+        .dot-right {
+            bottom: -6px;
+            right: -6px;
+        }
+
+        .node-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            opacity: 0.8;
+        }
+
+        .node-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .node-info {
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Estilo para el contenedor del mapa */
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e9ecef;
+        }
+
+        @media (max-width: 768px) {
+
+            .tree-bracket,
+            .tree-line-down {
+                display: none;
+            }
+
+            .col-md-5 {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>document.write(navbar());</script>
+
+    <div class="container mt-5 mb-5">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="transparencia-header">
+                    Unidad de Transparencia
+                </div>
+                <p class="section-description">
+                    Servidores Públicos que conforman la Unidad de Transparencia del IMPLAN, de conformidad con el
+                    Artículo 37 de la Ley de Transparencia.
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-center mb-5">
+            <div class="node-box bg-dark-blue" style="width: 250px; z-index: 2;">
+                <i class="fas fa-university fa-2x mb-2" style="color: white;"></i>
+                <h5 class="m-0 text-white">UNIDAD DE<br>TRANSPARENCIA</h5>
+            </div>
+
+            <div class="d-none d-md-block"
+                style="width: 60px; height: 3px; background-color: #1F3A4D; position: relative;">
+                <div class="tree-dot" style="top: -4.5px; left: -5px;"></div>
+                <div class="tree-dot" style="top: -4.5px; right: -5px;"></div>
+            </div>
+            <div class="d-block d-md-none" style="width: 3px; height: 30px; background-color: #1F3A4D;"></div>
+
+            <div class="node-box bg-teal text-left pl-4" style="min-width: 320px; z-index: 2;">
+                <div class="node-title text-white-50">TITULAR</div>
+                <div class="node-name">Lic. Karla Irene Rosales Estrada</div>
+                <div class="node-info">
+                    <i class="fas fa-envelope mr-1"></i> karla.rosales@implanchihuahua.org<br>
+                    <i class="fas fa-phone mr-1"></i> Teléfono 6142004820, ext. 5720
+                </div>
+                <div class="mt-2 small font-italic text-white-50">
+                    Fecha de actualización: Febrero 2026
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="transparencia-header">
+                    Comité de Transparencia
+                </div>
+                <p class="section-description">
+                    Servidores Públicos que integran el Comité de Transparencia del IMPLAN, de conformidad con el
+                    Artículo 35 de la Ley de Transparencia.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 d-flex flex-column align-items-center">
+                <div class="node-box bg-dark-blue" style="width: 280px;">
+                    <i class="fas fa-users fa-2x mb-2" style="color: white;"></i>
+                    <h5 class="m-0 text-white">COMITÉ DE<br>TRANSPARENCIA</h5>
+                </div>
+                <div class="tree-line-down"></div>
+            </div>
+
+            <div class="col-12 d-flex flex-column align-items-center">
+                <div class="node-box bg-dark-blue" style="width: 400px;">
+                    <div class="node-title text-white-50">PRESIDENTE</div>
+                    <div class="node-name">Lic. Jesús Edson Muñoz Ramos</div>
+                    <div class="node-info">
+                        edson.munoz@implanchihuahua.org<br>
+                        Teléfono 6142004820, ext. 5720
+                    </div>
+                </div>
+                <div class="tree-line-down d-none d-md-block" style="height: 20px;"></div>
+            </div>
+
+            <div class="col-12">
+                <div class="tree-bracket d-none d-md-block">
+                    <div class="tree-dot dot-top"></div>
+                    <div class="tree-dot dot-left"></div>
+                    <div class="tree-dot dot-right"></div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 d-flex flex-column align-items-center">
+                        <div class="node-box bg-teal w-100" style="max-width: 350px;">
+                            <div class="node-title text-white-50">SECRETARIO</div>
+                            <div class="node-name">M.S.C. Carlos Alberto Martínez Mar</div>
+                            <div class="node-info">
+                                carlos.martinez@implanchihuahua.org<br>
+                                Teléfono 6142004820, ext. 5714
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 d-flex flex-column align-items-center mt-3 mt-md-0">
+                        <div class="node-box bg-teal w-100" style="max-width: 350px;">
+                            <div class="node-title text-white-50">VOCAL</div>
+                            <div class="node-name">M.D.U. Alma Denisse Quintana Chávez</div>
+                            <div class="node-info">
+                                denisse.quintana@implanchihuahua.org<br>
+                                Teléfono 6142004820, ext. 5712
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center mt-4">
+                    <div class="col-12 text-muted small font-italic">
+                        Fecha de actualización: Febrero 2026
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="transparencia-header">
+                    Mapa de Ubicación
+                </div>
+                <div class="d-flex align-items-center text-secondary">
+                    <div>
+                        <p class="m-0" style="font-size: 1.1rem;">
+                            Calle Victoria No. 14, Col. Centro, C.P. 31000, Chihuahua, Chihuahua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="map-container">
+                    <iframe
+                        src="https://maps.google.com/maps?q=IMPLAN+Chihuahua+Calle+Victoria+14&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>document.write(footer());</script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "UA-80309318-1");
+    </script>
+</body>
+
+</html>
