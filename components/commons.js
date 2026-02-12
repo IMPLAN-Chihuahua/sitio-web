@@ -515,7 +515,7 @@ function navbar() {
             <div class="row">
               <li class="col-md-3 dropdown-item bg-light">
                 <ul>
-                  <li><a href="/transparencia/AVISOS_PRIVACIDAD.zip" target="_blank">AVISOS DE PRIVACIDAD</a></li>
+                  <li><a href="/transparencia/AVISOS_PRIVACIDAD_2026.rar" target="_blank">AVISOS DE PRIVACIDAD</a></li>
                   <li class="divider"></li>
                 </ul>
               </li>
