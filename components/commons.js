@@ -391,7 +391,14 @@ function navbar() {
             </div>
           </ul>
         </li>
-   
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="Convenios.html"
+            target="_self"
+            >CONVENIOS</a
+          >
+        </li>
         <li class="nav-item">
           <a
             class="nav-link"
