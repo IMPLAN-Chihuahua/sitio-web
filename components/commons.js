@@ -1,5 +1,3 @@
-
-
 function navbar() {
   return `
     <div class="container-fluid bg-terrain">
@@ -20,7 +18,6 @@ function navbar() {
           ><span style="font-size: 32px; color: rgb(251, 174, 65)"
             ><i class="fab fa-facebook-square"></i></span
         ></a>
-        <!--<a href="https://twitter.com/IMPLANChih?s=08" target="_blank"><span style="font-size: 32px; color: rgb(251, 174, 65);"><i class="fab fa-twitter"></i></span></a>-->
         <a href="https://www.instagram.com/implanchihuahua/" target="_blank"
           ><span style="font-size: 32px; color: rgb(251, 174, 65)"
             ><i class="fab fa-instagram"></i></span
@@ -34,7 +31,7 @@ function navbar() {
       </div>
     </div>
   </div>
-  <nav class="sticky-top navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
+  <nav class="sticky-top navbar navbar-dark bg-dark navbar-static-top navbar-expand-lg">
     <button
       type="button"
       class="navbar-toggler"
@@ -47,7 +44,7 @@ function navbar() {
       <img src="img/IMPLAN05.png" height="40" alt="IMPLAN Chihuahua" />
     </a>
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" style="font-size: 14.5px;">
         <li class="dropdown menu-large nav-item">
           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
             >NOSOTROS</a
@@ -394,6 +391,7 @@ function navbar() {
             </div>
           </ul>
         </li>
+   
         <li class="nav-item">
           <a
             class="nav-link"
@@ -459,13 +457,6 @@ function navbar() {
           <a class="nav-link" href="http://ovie.mpiochih.gob.mx/" target="_blank"
             >OVIE</a
           >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="http://ovie.mpiochih.gob.mx/"
-            target="_blank"
-          ></a>
         </li>
         <li class="nav-item" style="background-color: #d11586">
           <a

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>IMPLAN │ Chihuahua - Convenios</title>
+    <meta name="author" content="IMPLAN" />
+    <meta name="keywords" content="IMPLAN, Convenios, Chihuahua" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/b4megamenu.css" />
+    <link rel="stylesheet" href="css/b5megamenu.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="img/implan.ico" />
+    <script src="https://kit.fontawesome.com/509388ec50.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=""
+        crossorigin="anonymous" />
+
+    <script type="text/javascript" src="./components/commons.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="/css/fuentes.css">
+</head>
+
+<body>
+    <script>
+        document.write(navbar());
+    </script>
+
+    <div class="container">
+        <div class="row m-3">
+            <div class="col">
+                <h2 class="text-center text-warning"><strong>Convenios del IMPLAN Chihuahua</strong></h2>
+                <h3 class="text-center text-secondary">En el IMPLAN estamos comprometidos con la transparencia y
+                    queremos que conozcas nuestra información.</h3>
+                <hr>
+
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid" src="licitaciones/img/licitaciones.png" alt="IMPLAN">
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 20px;">CONVENIOS</h2>
+
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-tab-2025" data-toggle="tab"
+                                    href="#content-2025" role="tab" aria-controls="content-2025"
+                                    aria-selected="true">2025</a>
+                                <a class="nav-item nav-link" id="nav-tab-2024" data-toggle="tab" href="#content-2024"
+                                    role="tab" aria-controls="content-2024" aria-selected="false">2024</a>
+                            </div>
+                        </nav>
+
+                        <div class="tab-content" id="nav-tabContent">
+
+                            <div class="tab-pane fade show active" id="content-2025" role="tabpanel"
+                                aria-labelledby="nav-tab-2025">
+                                <br>
+                                <h4>Buscar convenio</h4>
+                                <p>Teclea el número o nombre del convenio:</p>
+                                <input class="form-control" id="inputBusqueda2025" type="text"
+                                    placeholder="01-2025-IMPLAN...">
+                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Convenio</th>
+                                            <th>Términos de Referencia</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablaConvenios2025">
+                                        <tr>
+                                            <td>Convenio específico de coordinación UACJ/AG/CV-256/2025</td>
+                                            <td>
+                                                <a class="transi" href="#" target="_blank">Ver documento de términos de
+                                                    referencia</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tab-pane fade" id="content-2024" role="tabpanel" aria-labelledby="nav-tab-2024">
+                                <br>
+                                <h4>Buscar convenio</h4>
+                                <p>Teclea el número o nombre del convenio:</p>
+                                <input class="form-control" id="inputBusqueda2024" type="text"
+                                    placeholder="01-2024-IMPLAN...">
+                                <br>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Convenio</th>
+                                            <th>Términos de Referencia</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablaConvenios2024">
+                                        <tr>
+                                            <td>Convenio de colaboración académica con Universidad de Prueba
+                                                (001-2024-IMPLAN)</td>
+                                            <td>
+                                                <a class="transi" href="convenios/2025/Convenio UACJ_.pdf"
+                                                    target="_blank">Ver documento de términos de
+                                                    referencia</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Buscador para 2025
+            $("#inputBusqueda2025").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#tablaConvenios2025 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+
+            // Buscador para 2024
+            $("#inputBusqueda2024").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#tablaConvenios2024 tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.write(footer());
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-80309318-1');
+    </script>
+
+</body>
+
+</html>
