@@ -91,12 +91,37 @@
     transition: background 0.2s;
   }
 
+  #foto21 .carousel-item {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #foto21 .carousel-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px) brightness(0.6);
+    transform: scale(1.1);
+    z-index: 0;
+  }
+
+  #foto21 .carousel-item img {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    object-position: center;
+    z-index: 1;
+  }
+
   @media (max-width: 768px) {
     .principal.display-4 {
       font-size: 2rem;
-      /* Bájale a este número si lo sigues viendo muy grande */
       font-weight: 300;
-      /* Para mantener ese estilo delgado del display */
     }
   }
 </style>
@@ -112,46 +137,48 @@
       <li data-target="#foto21" data-slide-to="1"></li>
       <li data-target="#foto21" data-slide-to="2"></li>
       <li data-target="#foto21" data-slide-to="3"></li>
+      <li data-target="#foto21" data-slide-to="4"></li>
     </ul>
     <div class="carousel-inner">
 
-      <!-- Banner 2 -->
-      <!--- TODO: Cambiar este por algún otro, cuando nos lo pasen-->
-      <!-- <div class="carousel-item active">
-        <a href="https://www.eventbrite.com.mx/e/foro-urbano-de-vivienda-tickets-1680964392749?aff=oddtdtcreator"
-          target="_blank"><img class="img-fluid" src="banners/Foro2025.jpg" alt="IMPLAN" width="1100"
-            height="500" /></a>
-      </div> -->
-
       <!-- Banner 1 -->
-      <div class="carousel-item banner-container active">
+      <div class="carousel-item banner-container active" style="background-image: url('banners/metrica2.png')">
         <a href="https://www.chihuahuametrica.online/" target="_blank">
-          <img class="img-fluid" src="banners/metrica2.png" alt="IMPLAN" width="1100" height="500" />
+          <img class="img-fluid" src="banners/metrica2.png" alt="IMPLAN" />
         </a>
       </div>
 
       <!-- Banner 3 -->
-      <div class="carousel-item">
+      <div class="carousel-item" style="background-image: url('banners/web sigmun.jpg')">
         <a href="https://geoportal.mpiochih.gob.mx/sigmun/apps/webappviewer/index.html?id=abab1eab03774ce18c3610b842f11264"
-          target="_blank"><img class="img-fluid" src="banners/web sigmun.jpg" alt="IMPLAN" width="1100"
-            height="500" /></a>
+          target="_blank">
+          <img class="img-fluid" src="banners/web sigmun.jpg" alt="IMPLAN" />
+        </a>
       </div>
 
       <!-- Banner 4 -->
-      <div class="carousel-item">
+      <div class="carousel-item" style="background-image: url('banners/equipamiento_long.jpg')">
         <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c1c6e9ed25e44e039e1968d3e6a6e8b4"
           target="_blank">
-          <img class="img-fluid" src="banners/equipamiento_long.jpg" alt="IMPLAN" width="1100" height="500" />
+          <img class="img-fluid" src="banners/equipamiento_long.jpg" alt="IMPLAN" />
         </a>
       </div>
 
       <!-- Banner 5 -->
-      <div class="carousel-item">
+      <div class="carousel-item" style="background-image: url('banners/patrimonio_long.jpg')">
         <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c734857be5db47d58eae23dbf41b3930"
           target="_blank">
-          <img class="img-fluid" src="banners/patrimonio_long.jpg" alt="IMPLAN" width="1100" height="500" />
+          <img class="img-fluid" src="banners/patrimonio_long.jpg" alt="IMPLAN" />
         </a>
       </div>
+
+      <!-- Banner 6 -->
+      <div class="carousel-item" style="background-image: url('banners/banner_paleta_veg.jpeg')">
+        <a href="https://qrco.de/bgjzy2" target="_blank">
+          <img class="img-fluid" src="banners/banner_paleta_veg.jpeg" alt="IMPLAN" />
+        </a>
+      </div>
+
     </div>
     <a class="carousel-control-prev" href="#foto21" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
@@ -160,6 +187,65 @@
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
+
+  <style>
+    /* ===== BANNER MÓVIL - BLURRED BACKDROP ===== */
+    #foto22 .carousel-item {
+      height: 280px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #foto22 .carousel-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      filter: blur(16px) brightness(0.55);
+      transform: scale(1.1);
+      z-index: 0;
+    }
+
+    #foto22 .carousel-item img {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      object-fit: contain;
+      object-position: center;
+      z-index: 1;
+    }
+
+    #foto22 .carousel-item a {
+      position: relative;
+      z-index: 1;
+      display: block;
+      height: 100%;
+    }
+
+    /* Indicadores más visibles en móvil */
+    #foto22 .carousel-indicators li {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin: 0 4px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+    }
+
+    #foto22 .carousel-indicators .active {
+      background-color: #fff;
+      transform: scale(1.3);
+    }
+
+    /* Flechas más visibles en móvil */
+    #foto22 .carousel-control-prev,
+    #foto22 .carousel-control-next {
+      width: 12%;
+      opacity: 0.85;
+    }
+  </style>
 
   <!-- small -->
   <div class="d-lg-none">
@@ -170,19 +256,20 @@
         <li data-target="#foto22" data-slide-to="1"></li>
         <li data-target="#foto22" data-slide-to="2"></li>
         <li data-target="#foto22" data-slide-to="3"></li>
+        <li data-target="#foto22" data-slide-to="4"></li>
       </ul>
 
       <div class="carousel-inner">
 
         <!-- Banner-phone 1 -->
-        <div class="carousel-item banner-container active">
+        <div class="carousel-item banner-container active" style="background-image: url('banners/metrica-movil.jpg')">
           <a href="https://www.chihuahuametrica.online/" target="_blank">
             <img class="img-fluid" src="banners/metrica-movil.jpg" alt="IMPLAN" />
           </a>
         </div>
 
         <!-- Banner-phone 2 -->
-        <div class="carousel-item">
+        <div class="carousel-item" style="background-image: url('banners/cel sigmun.jpg')">
           <a href="https://geoportal.mpiochih.gob.mx/sigmun/apps/webappviewer/index.html?id=abab1eab03774ce18c3610b842f11264"
             target="_blank">
             <img class="img-fluid" src="banners/cel sigmun.jpg" alt="IMPLAN" />
@@ -190,7 +277,7 @@
         </div>
 
         <!-- Banner-phone 3 -->
-        <div class="carousel-item">
+        <div class="carousel-item" style="background-image: url('banners/equipamiento_mobile.jpg')">
           <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c1c6e9ed25e44e039e1968d3e6a6e8b4"
             target="_blank">
             <img class="img-fluid" src="banners/equipamiento_mobile.jpg" alt="IMPLAN" />
@@ -198,10 +285,17 @@
         </div>
 
         <!-- Banner-phone 4 -->
-        <div class="carousel-item">
+        <div class="carousel-item" style="background-image: url('banners/patrimonio_mobile.jpg')">
           <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c734857be5db47d58eae23dbf41b3930"
             target="_blank">
             <img class="img-fluid" src="banners/patrimonio_mobile.jpg" alt="IMPLAN" />
+          </a>
+        </div>
+
+        <!-- Banner-phone 5 -->
+        <div class="carousel-item" style="background-image: url('banners/banner_paleta_veg.jpeg')">
+          <a href="https://qrco.de/bgjzy2" target="_blank">
+            <img class="img-fluid" src="banners/banner_paleta_veg.jpeg" alt="IMPLAN" />
           </a>
         </div>
 
