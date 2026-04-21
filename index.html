@@ -7,12 +7,14 @@
   <meta name="author" content="IMPLAN" />
   <meta name="keywords"
     content="IMPLAN, PDU, PDU2040, Chihuahua, Planeacion Municipal, Planeacion, Planeacion Urbana, Vision 2040, Datos Abiertos, Planes y Programas, Plan Maestro, Plan Parcial, Atlas de Riesgos, Movilidad, Movilidad Urbana, Transporte Publico, Equipamiento Urbano, Infraestructura, Servicios Publicos, IMPLAN Chihuahua, Plan Sectorial, Zona Metropolitana, Zona Metropolitana de Chihuahua, Municipio de Chihuahua, Localidad Chihuahua, Presa Chuviscar, Presa Chihuahua, Presa Rejon, Proyectos Urbanos, Cajita, Proyectos Sociales, Geomatica, Planes y Programas, Regeneracion Urbana, Observatorio Urbano, Estudios y Proyectos, Ambito regional de Chihuahua, Ambito Municipal de Chihuahua, Ambito Economico de Chihuahua, Transparencia, IMPLAN Chihuahua 2017" />
+  <!--meta para fcaebook-->
   <meta property="og:url" content="https://www.implanchihuahua.org" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="IMPLAN CHIHUAHUA" />
   <meta property="og:description"
     content="El Plan Director Urbano es el instrumento que define las directrices hacia el desarrollo sostenible de nuestra ciudad con una proyección hacia el año 2040 considerando la participación ciudadana como principio rector para la construcción de un escenario de futuro o visión de largo plazo." />
   <meta property="og:image" content="img/webSIGMUN.png" />
+  <!--fin-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="0yPVad4Yfxr14YmG8dYjIcWMKjxfbvScqNQu7oVD66w" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
@@ -26,10 +28,13 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="stylesheet" href="css/fuentes.css" />
+  <!-- Nievecilla, descomentar para activar la nieve -->
+  <!-- <link rel="stylesheet" href="css/letItSnow.css" /> -->
+  <!-- <script type="text/javascript" src="./js/letItSnow.js"></script> -->
+
   <script type="text/javascript" src="./components/commons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 </head>
-
 <style>
   .contenedora {
     position: relative;
@@ -45,13 +50,10 @@
   }
 
   .centrada-small {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 70%;
+    position: relative;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -40%);
   }
 
   .centrada a {
@@ -65,16 +67,23 @@
     padding: 1em 1.5em;
   }
 
+
+  .centrada-small {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+
   .centrada-small-button {
     background-color: #595959;
     border-radius: 1.5em;
     color: white;
     text-transform: uppercase;
     padding: 1em 1.5em;
-  }
-
-  .btn-encuesta {
-    transition: background 0.2s;
   }
 
   .btn-encuesta:hover {
@@ -109,172 +118,11 @@
     z-index: 1;
   }
 
-  /* ===== BANNER MÓVIL ===== */
-  #foto22 .carousel-item {
-    height: 280px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  #foto22 .carousel-item::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
-    filter: blur(16px) brightness(0.55);
-    transform: scale(1.1);
-    z-index: 0;
-  }
-
-  #foto22 .carousel-item img {
-    position: relative;
-    width: 100%;
-    height: 280px;
-    object-fit: contain;
-    object-position: center;
-    z-index: 1;
-  }
-
-  #foto22 .carousel-item a {
-    position: relative;
-    z-index: 1;
-    display: block;
-    height: 100%;
-  }
-
-  #foto22 .carousel-indicators li {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin: 0 4px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-  }
-
-  #foto22 .carousel-indicators .active {
-    background-color: #fff;
-    transform: scale(1.3);
-  }
-
-  #foto22 .carousel-control-prev,
-  #foto22 .carousel-control-next {
-    width: 12%;
-    opacity: 0.85;
-  }
-
   @media (max-width: 768px) {
     .principal.display-4 {
       font-size: 2rem;
       font-weight: 300;
     }
-  }
-
-  /* ===== SECCIÓN PALETA VEGETAL ===== */
-  .pdf-topbar {
-    background: #f7f4f0;
-    border-bottom: 1px solid #e8e4e0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 18px;
-  }
-
-  .pdf-topbar span {
-    font-size: 13px;
-    color: #777;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  .pdf-topbar a {
-    font-size: 13px;
-    color: #595959;
-    font-weight: 600;
-    border-bottom: 1px solid #595959;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    transition: color 0.2s, border-color 0.2s;
-  }
-
-  .pdf-topbar a:hover {
-    color: #fcae41;
-    border-color: #fcae41;
-  }
-
-  /* ===== SECCIÓN MAPA + INSTAGRAM ===== */
-  .map-ig-col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ig-avatar-ring {
-    padding: 2px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    display: inline-flex;
-  }
-
-  .ig-avatar-inner {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ig-follow-btn {
-    margin-left: auto;
-    background: #fcae41;
-    color: #1a1000;
-    border-radius: 4px;
-    padding: 7px 18px;
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: background 0.2s;
-  }
-
-  .ig-follow-btn:hover {
-    background: #d4922e;
-    color: #1a1000;
-    text-decoration: none;
-  }
-
-  .ig-feed-placeholder {
-    background: #faf8f5;
-    border: 1px solid #e8e4e0;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
-    color: #bbb;
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
-    min-height: 300px;
-  }
-
-  .section-eyebrow {
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #aaa;
-    text-align: center;
-    margin-bottom: 0.3rem;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  .section-divider {
-    border: none;
-    border-top: 1px solid #f0ece8;
-    margin: 2.5rem 0;
   }
 </style>
 
@@ -282,8 +130,7 @@
   <script>
     document.write(navbar());
   </script>
-
-  <!-- ===== CAROUSEL DESKTOP ===== -->
+  <!-- empieza pagina-->
   <div id="foto21" class="carousel slide d-lg-block d-none" data-ride="carousel">
     <ul class="carousel-indicators">
       <li data-target="#foto21" data-slide-to="0" class="active"></li>
@@ -293,35 +140,45 @@
       <li data-target="#foto21" data-slide-to="4"></li>
     </ul>
     <div class="carousel-inner">
+
+      <!-- Banner 1 -->
       <div class="carousel-item banner-container active" style="background-image: url('banners/metrica2.png')">
         <a href="https://www.chihuahuametrica.online/" target="_blank">
           <img class="img-fluid" src="banners/metrica2.png" alt="IMPLAN" />
         </a>
       </div>
+
+      <!-- Banner 3 -->
       <div class="carousel-item" style="background-image: url('banners/web sigmun.jpg')">
         <a href="https://geoportal.mpiochih.gob.mx/sigmun/apps/webappviewer/index.html?id=abab1eab03774ce18c3610b842f11264"
           target="_blank">
           <img class="img-fluid" src="banners/web sigmun.jpg" alt="IMPLAN" />
         </a>
       </div>
+
+      <!-- Banner 4 -->
       <div class="carousel-item" style="background-image: url('banners/equipamiento_long.jpg')">
         <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c1c6e9ed25e44e039e1968d3e6a6e8b4"
           target="_blank">
           <img class="img-fluid" src="banners/equipamiento_long.jpg" alt="IMPLAN" />
         </a>
       </div>
+
+      <!-- Banner 5 -->
       <div class="carousel-item" style="background-image: url('banners/patrimonio_long.jpg')">
         <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c734857be5db47d58eae23dbf41b3930"
           target="_blank">
           <img class="img-fluid" src="banners/patrimonio_long.jpg" alt="IMPLAN" />
         </a>
       </div>
+
+      <!-- Banner 6 -->
       <div class="carousel-item" style="background-image: url('banners/banner_paleta_veg.jpeg')">
-        <a href="https://mpiochih-my.sharepoint.com/:b:/g/personal/implan_implanchihuahua_org/IQAmojIHFJEGTqTrA9tTejO4AezZRs-lru5cMnlIuVvRwR8?e=PBW9ux"
-          target="_blank">
+        <a href="https://qrco.de/bgjzy2" target="_blank">
           <img class="img-fluid" src="banners/banner_paleta_veg.jpeg" alt="IMPLAN" />
         </a>
       </div>
+
     </div>
     <a class="carousel-control-prev" href="#foto21" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
@@ -331,9 +188,69 @@
     </a>
   </div>
 
-  <!-- ===== CAROUSEL MÓVIL ===== -->
+  <style>
+    /* ===== BANNER MÓVIL - BLURRED BACKDROP ===== */
+    #foto22 .carousel-item {
+      height: 280px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #foto22 .carousel-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      filter: blur(16px) brightness(0.55);
+      transform: scale(1.1);
+      z-index: 0;
+    }
+
+    #foto22 .carousel-item img {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      object-fit: contain;
+      object-position: center;
+      z-index: 1;
+    }
+
+    #foto22 .carousel-item a {
+      position: relative;
+      z-index: 1;
+      display: block;
+      height: 100%;
+    }
+
+    /* Indicadores más visibles en móvil */
+    #foto22 .carousel-indicators li {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin: 0 4px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+    }
+
+    #foto22 .carousel-indicators .active {
+      background-color: #fff;
+      transform: scale(1.3);
+    }
+
+    /* Flechas más visibles en móvil */
+    #foto22 .carousel-control-prev,
+    #foto22 .carousel-control-next {
+      width: 12%;
+      opacity: 0.85;
+    }
+  </style>
+
+  <!-- small -->
   <div class="d-lg-none">
     <div id="foto22" class="carousel slide" data-ride="carousel">
+
       <ul class="carousel-indicators">
         <li data-target="#foto22" data-slide-to="0" class="active"></li>
         <li data-target="#foto22" data-slide-to="1"></li>
@@ -341,209 +258,207 @@
         <li data-target="#foto22" data-slide-to="3"></li>
         <li data-target="#foto22" data-slide-to="4"></li>
       </ul>
+
       <div class="carousel-inner">
+
+        <!-- Banner-phone 1 -->
         <div class="carousel-item banner-container active" style="background-image: url('banners/metrica-movil.jpg')">
           <a href="https://www.chihuahuametrica.online/" target="_blank">
             <img class="img-fluid" src="banners/metrica-movil.jpg" alt="IMPLAN" />
           </a>
         </div>
+
+        <!-- Banner-phone 2 -->
         <div class="carousel-item" style="background-image: url('banners/cel sigmun.jpg')">
           <a href="https://geoportal.mpiochih.gob.mx/sigmun/apps/webappviewer/index.html?id=abab1eab03774ce18c3610b842f11264"
             target="_blank">
             <img class="img-fluid" src="banners/cel sigmun.jpg" alt="IMPLAN" />
           </a>
         </div>
+
+        <!-- Banner-phone 3 -->
         <div class="carousel-item" style="background-image: url('banners/equipamiento_mobile.jpg')">
           <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c1c6e9ed25e44e039e1968d3e6a6e8b4"
             target="_blank">
             <img class="img-fluid" src="banners/equipamiento_mobile.jpg" alt="IMPLAN" />
           </a>
         </div>
+
+        <!-- Banner-phone 4 -->
         <div class="carousel-item" style="background-image: url('banners/patrimonio_mobile.jpg')">
           <a href="https://idecuu.mpiochih.gob.mx/implan/apps/storymaps/stories/c734857be5db47d58eae23dbf41b3930"
             target="_blank">
             <img class="img-fluid" src="banners/patrimonio_mobile.jpg" alt="IMPLAN" />
           </a>
         </div>
+
+        <!-- Banner-phone 5 -->
         <div class="carousel-item" style="background-image: url('banners/banner_paleta_veg.jpeg')">
-          <a href="https://mpiochih-my.sharepoint.com/:b:/g/personal/implan_implanchihuahua_org/IQAmojIHFJEGTqTrA9tTejO4AezZRs-lru5cMnlIuVvRwR8?e=PBW9ux"
-            target="_blank">
+          <a href="https://qrco.de/bgjzy2" target="_blank">
             <img class="img-fluid" src="banners/banner_paleta_veg.jpeg" alt="IMPLAN" />
           </a>
         </div>
+
       </div>
+
       <a class="carousel-control-prev" href="#foto22" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </a>
       <a class="carousel-control-next" href="#foto22" data-slide="next">
         <span class="carousel-control-next-icon"></span>
       </a>
+
     </div>
   </div>
+  <!--termina imagen-->
 
-  <!-- ===== SECCIÓN PALETA VEGETAL (full-width protagonista) ===== -->
-  <div class="container-fluid px-0 mt-5">
-    <div class="container">
-      <p class="section-eyebrow">Publicación destacada</p>
-      <h4 class="display-4 text-center text-secondary principal mb-4">Paleta Vegetal de Chihuahua</h4>
-    </div>
+  <!-- TODO: REACTIVATE DATOS PARA TODOS -->
+  <div class="m-5 pb-5">
 
-    <div class="container-fluid px-md-5 px-3">
-      <div style="border:1px solid #e8e4e0; overflow:hidden; max-width:1200px; margin:0 auto;">
-        <div class="pdf-topbar">
-          <span>Paleta Vegetal 6.pdf — IMPLAN Chihuahua</span>
-          <a href="https://qrco.de/bgjzy2" target="_blank">Descargar ↗</a>
-        </div>
-        <iframe
-          src="https://mpiochih-my.sharepoint.com/personal/implan_implanchihuahua_org/_layouts/15/embed.aspx?UniqueId=0732a226-9114-4e06-a4eb-03db537a33b8"
-          width="100%" height="680" frameborder="0" scrolling="no" allowfullscreen
-          title="Paleta Vegetal 2026 CUU"></iframe>
+    <div class="row align-items-center">
+      <div class="col-sm-6">
 
-        </iframe>
+        <h4 class="display-4 text-center text-secondary principal">GEO IMPLAN — Consulta de Información Espacial</h4>
+        <p style="line-height: 1.6; font-family: 'Source Sans Pro', sans-serif">
+          La plataforma GEO IMPLAN permite acceder a capas básicas de información geográfica, indispensables para las
+          actividades
+          que habitualmente se realizan en el SIGMUN, como la consulta de usos de suelo del Plan de Desarrollo Urbano,
+          datos
+          catastrales y elementos del ordenamiento territorial.
+          La información disponible es de carácter público y puede presentar inconsistencias o variaciones temporales,
+          por lo que
+          se recomienda utilizarla como referencia general y en su caso, verificar con la dependencia responsable de la
+          información.
+        </p>
+        <p class="text-right">
+          <a href="https://idecuu.mpiochih.gob.mx/implan/apps/experiencebuilder/experience/?id=cd1420d3cbef4892881c5a9484a7363b#zoom_to_selection=true"
+            class="trans1">Ver mapa en grande</a>
+        </p>
+        <h1 class="display-4 text-center text-secondary principal">PRESERVACIÓN ECOLÓGICA</h1>
+        <p style="line-height: 1.6; font-family: 'Source Sans Pro', sans-serif">Consulta los pasos para verificar si el
+          predio que buscas está en Preservación Ecológica.</p>
+        <video width="100%" height="230px" controls autoplay muted loop>
+          <source src="/SIGMUN/ReservasNaturales.mp4" type="video/mp4">
+          <source src="/SIGMUN/ReservasNaturales.webm" type="video/webm">
+          Tu navegador no soporta el video
+        </video>
       </div>
-    </div>
-  </div>
 
-  <!-- ===== SECCIÓN MAPA + INSTAGRAM (dos columnas) ===== -->
-  <div class="container mt-5">
-    <div class="card border-0 shadow-sm">
-      <div class="card-body p-4">
-
-        <div class="row" style="min-height: 480px;">
-
-          <!-- Columna izquierda: Mapa -->
-          <div class="col-12 col-md-6 map-ig-col mb-4 mb-md-0">
-            <p class="section-eyebrow" style="text-align:left;">Dónde estamos</p>
-            <h4 class="display-4 text-secondary principal mb-3" style="font-size:1.8rem;">IMPLAN Chihuahua</h4>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.801852988147!2d-106.07670478531969!3d28.635700182416546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea435267b907f1%3A0xb1f9a346a69807ad!2sIMPLAN!5e0!3m2!1sen!2smx!4v1530068393545"
-              width="100%" height="380" frameborder="0"
-              style="border:1px solid #e8e4e0; border-radius:2px; display:block;" allowfullscreen>
-            </iframe>
-          </div>
-
-          <!-- Separador vertical (solo desktop) -->
-          <div class="d-none d-md-block" style="width:1px; background:#f0ece8; margin: 0 0.5rem;"></div>
-
-          <!-- Columna derecha: Instagram -->
-          <div class="col-12 col-md map-ig-col">
-            <p class="section-eyebrow" style="text-align:left;">Síguenos en Instagram</p>
-            <h4 class="display-4 text-secondary principal mb-3" style="font-size:1.8rem;">@implanchihuahua</h4>
-
-            <div style="display:flex; align-items:center; gap:12px; margin-bottom:1.2rem;">
-              <div class="ig-avatar-ring">
-                <div class="ig-avatar-inner">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="#888" stroke-width="2" />
-                    <circle cx="12" cy="12" r="4" stroke="#888" stroke-width="2" />
-                    <circle cx="17.5" cy="6.5" r="1.5" fill="#888" />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <p style="font-weight:600; font-size:15px; margin:0; font-family:'Source Sans Pro',sans-serif;">IMPLAN
-                  Chihuahua</p>
-                <p style="font-size:13px; color:#999; margin:0; font-family:'Source Sans Pro',sans-serif;">
-                  @implanchihuahua</p>
-              </div>
-              <a href="https://www.instagram.com/implanchihuahua/" target="_blank" class="ig-follow-btn">Seguir</a>
-            </div>
-
-            <!-- TARJETA ESTÁTICA IG — reemplazar con snippet de Behold cuando esté listo -->
-            <div
-              style="background:#faf8f5; border:1px solid #e8e4e0; border-radius:2px; flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:2.5rem 2rem; text-align:center; min-height:300px; gap:1.2rem;">
-
-              <!-- Ícono IG grande con gradiente -->
-              <div
-                style="width:64px; height:64px; border-radius:16px; background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 16px rgba(220,39,67,0.2);">
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
-                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="2" />
-                  <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2" />
-                  <circle cx="17.5" cy="6.5" r="1.5" fill="white" />
-                </svg>
-              </div>
-
-              <!-- Texto -->
-              <div>
-                <p
-                  style="font-family:'Source Sans Pro',sans-serif; font-size:16px; font-weight:600; color:#595959; margin:0 0 0.3rem 0;">
-                  Visítanos en Instagram
-                </p>
-                <p style="font-family:'Source Sans Pro',sans-serif; font-size:13px; color:#aaa; margin:0;">
-                  579 publicaciones · 1,474 seguidores
-                </p>
-              </div>
-
-              <!-- Stats rápidos -->
-              <div
-                style="display:flex; gap:2rem; border-top:1px solid #e8e4e0; border-bottom:1px solid #e8e4e0; padding:0.9rem 0; width:100%; justify-content:center;">
-                <div style="text-align:center;">
-                  <p
-                    style="font-family:'Source Sans Pro',sans-serif; font-size:18px; font-weight:700; color:#595959; margin:0;">
-                    579</p>
-                  <p
-                    style="font-family:'Source Sans Pro',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#aaa; margin:0;">
-                    Publicaciones</p>
-                </div>
-                <div style="text-align:center;">
-                  <p
-                    style="font-family:'Source Sans Pro',sans-serif; font-size:18px; font-weight:700; color:#595959; margin:0;">
-                    1,474</p>
-                  <p
-                    style="font-family:'Source Sans Pro',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#aaa; margin:0;">
-                    Seguidores</p>
-                </div>
-              </div>
-
-              <!-- CTA -->
-              <a href="https://www.instagram.com/implanchihuahua/" target="_blank"
-                style="background:#fcae41; color:#1a1000; border-radius:4px; padding:10px 28px; font-size:14px; font-weight:700; text-decoration:none; font-family:'Source Sans Pro',sans-serif; text-transform:uppercase; letter-spacing:.06em; transition:background 0.2s;"
-                onmouseover="this.style.background='#d4922e'" onmouseout="this.style.background='#fcae41'">
-                Ver perfil completo ↗
-              </a>
-
-            </div>
-
-          </div>
-
+      <div class="col-sm-6">
+        <div class="embed-container">
+          <iframe width="100%" height="520" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            title="DDET-IMPLAN"
+            src="https://idecuu.mpiochih.gob.mx/implan/apps/experiencebuilder/experience/?id=cd1420d3cbef4892881c5a9484a7363b#zoom_to_selection=true"></iframe>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ===== FORMULARIO DE CONTACTO ===== -->
-  <div class="container mt-4 mb-5">
-    <div class="card border-0 shadow-sm mx-auto" style="max-width: 800px;">
-      <div class="card-body p-4">
-        <h4 class="display-4 text-center text-secondary mb-4">
-          Contáctanos
+    <style>
+      .btn-encuesta {
+        transition: background 0.2s;
+      }
+
+      .btn-encuesta:hover {
+        background: #d4922e !important;
+      }
+    </style>
+
+    <div class="row align-items-center pt-3">
+      <div class="col-sm-4">
+        <h4 class="display-4 text-center text-secondary principal">
+          Datos para todos
         </h4>
-        <div class="d-flex justify-content-center w-100">
-          <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/3887722.js" data-role="form"
-            data-default-width="100%" data-custom-vars="hasEmbedFormStyle=1&hasTransparentBg=1">
-            </script>
+        <p style="line-height: 1.6; font-family: 'Source Sans Pro', sans-serif">
+          <b>Espacios para la niñez, la recreación y la convivencia familiar</b>
+        </p>
+        <p style="line-height: 1.6; font-family: 'Source Sans Pro', sans-serif">
+          En el marco del mes de abril, el IMPLAN Chihuahua pone a disposición de la ciudadanía información sobre
+          espacios de recreación y convivencia familiar dentro del municipio. Este conjunto de datos incluye la
+          ubicación de
+          unidades deportivas, heladerías, museos, centros de recreación y parques de diversiones.
+          El objetivo es facilitar el acceso a opciones de esparcimiento para niñas, niños y sus familias, promoviendo
+          el uso de espacios que contribuyen al bienestar, la convivencia y el disfrute de la ciudad.
+          <br />
+          <cite>Fuente: DENUE INEGI, IMPLAN</cite>
+        </p>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 16px;">
+          <a class="btn-encuesta" href="https://arcg.is/0TyeHq0" target="_blank" style="display: inline-block; background-color: #fcae41; color: #1a1000;
+                font-size: 14px; font-weight: 700; padding: 11px 26px;
+                border-radius: 6px; text-decoration: none; font-family: 'Source Sans Pro', sans-serif;">
+            📝 ¡Cuéntanos tu opinión!
+          </a>
+          <div style="text-align: right;">
+            <p style="margin: 0 0 8px 0;">
+              <a href="https://idecuu.mpiochih.gob.mx/implan/apps/instant/interactivelegend/index.html?appid=bf3dd31e47294f97b6b2e44d3e6905ec"
+                class="trans1">Ver mapa en grande</a>
+            </p>
+            <p style="margin: 0;">
+              <a href="https://idecuu.mpiochih.gob.mx/implan/apps/instant/interactivelegend/index.html?appid=bf3dd31e47294f97b6b2e44d3e6905ec"
+                class="card-link">Portal de Datos para todos</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-8">
+        <iframe width="100%" height="520" frameborder="0"
+          src="https://idecuu.mpiochih.gob.mx/implan/apps/instant/interactivelegend/index.html?appid=bf3dd31e47294f97b6b2e44d3e6905ec"
+          allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="container text-center mt-4">
+      <div class="card border-0 shadow-sm mx-auto" style="max-width: 1100px;">
+        <div class="card-body">
+
+          <div class="row align-items-start g-4">
+
+            <!-- Mapa -->
+            <div class="col-md-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.801852988147!2d-106.07670478531969!3d28.635700182416546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea435267b907f1%3A0xb1f9a346a69807ad!2sIMPLAN!5e0!3m2!1sen!2smx!4v1530068393545"
+                class="w-100 border-0 rounded" height="450" allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Formulario -->
+            <div class="col-md-6">
+              <h4 class="display-4 text-secondary mb-4">Contáctanos</h4>
+              <div class="d-flex justify-content-center w-100">
+                <script type="text/javascript" defer src="https://form.123formbuilder.com/embed/3887722.js"
+                  data-role="form" data-default-width="100%" data-custom-vars="hasEmbedFormStyle=1&hasTransparentBg=1">
+                  </script>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
+    <br />
+    <!-- boton
 
-  <br />
+  <!--termina boton modal-->
+    <script>
+      document.write(footer());
+    </script>
+    <!-- script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
 
-  <script>
-    document.write(footer());
-  </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80309318-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "UA-80309318-1");
-  </script>
-
+      gtag("config", "UA-80309318-1");
+    </script>
+    <!-- fin -->
 </body>
 
 </html>
