@@ -496,15 +496,6 @@ function navbar() {
           </div>
         </ul>
       </li>
-      <li class="nav-item" style="background-color: #fcae41">
-        <a
-          class="nav-link"
-          style="color: var(--dark) !important;"
-          href="https://editorial.implanchihuahua.org"
-          target="_blank"
-          >EDITORIAL</a
-        >
-      </li>
       <li class="dropdown menu-large nav-item">
           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
             >TRANSPARENCIA</a
