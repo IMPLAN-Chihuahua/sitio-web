@@ -461,7 +461,7 @@ function navbar() {
           </ul>
         </li>
         <li class="nav-item" style="background-color: darkmagenta">
-          <a class="nav-link" href="http://ovie.mpiochih.gob.mx/" target="_blank"
+          <a class="nav-link" href="https://ovie.mpiochih.gob.mx/" target="_blank"
             >OVIE</a
           >
         </li>
