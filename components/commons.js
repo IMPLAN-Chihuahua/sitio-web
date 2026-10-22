@@ -465,14 +465,6 @@ function navbar() {
             >OVIE</a
           >
         </li>
-        <li class="nav-item" style="background-color: #d11586">
-          <a
-            class="nav-link"
-            href="http://siee.mpiochih.gob.mx/iclusterchih/"
-            target="_blank"
-            >SIEE Chihuahua</a
-          >
-        </li>
         <li class="dropdown menu-large nav-item">
         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">DICTAMENES</a>
         <ul class="dropdown-menu megamenu">
